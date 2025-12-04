@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: ragog/tiesse-servizi
   branch: main
 
 media_folder: "public/img"
