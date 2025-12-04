@@ -13,6 +13,9 @@ import '../styles/global.css';
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 		<title>TIESSE SERVIZI - Facility & Executive Management</title>
 		<meta name="description" content="Specializzazione in immobili di pregio. Facility e Executive Management per ville di lusso." />
+
+		<!-- Netlify Identity Widget -->
+		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body class="overflow-x-hidden">
 		<!-- Navigation -->
@@ -354,5 +357,18 @@ import '../styles/global.css';
 				</div>
 			</div>
 		</footer>
+
+		<!-- Netlify Identity redirect script -->
+		<script>
+		  if (window.netlifyIdentity) {
+		    window.netlifyIdentity.on("init", user => {
+		      if (!user) {
+		        window.netlifyIdentity.on("login", () => {
+		          document.location.href = "/admin/";
+		        });
+		      }
+		    });
+		  }
+		</script>
 	</body>
 </html>
