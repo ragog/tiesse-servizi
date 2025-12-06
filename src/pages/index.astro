@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import content from '../content/home.json';
 ---
 
 <html lang="it">
@@ -11,8 +12,8 @@ import '../styles/global.css';
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-		<title>TIESSE SERVIZI - Facility & Executive Management</title>
-		<meta name="description" content="Specializzazione in immobili di pregio. Facility e Executive Management per ville di lusso." />
+		<title>{content.site_title}</title>
+		<meta name="description" content={content.hero.description} />
 	</head>
 	<body class="overflow-x-hidden">
 		<!-- Navigation -->
@@ -53,12 +54,12 @@ import '../styles/global.css';
 				<h1 class="text-5xl md:text-7xl font-bold mb-6">
 					<span class="text-white">TIESSE</span><span class="text-[#8BC34A]">SERVIZI</span>
 				</h1>
-				<p class="text-xl md:text-2xl font-light mb-2">FACILITY • EXECUTIVE MANAGEMENT</p>
+				<p class="text-xl md:text-2xl font-light mb-2">{content.hero.subtitle}</p>
 				<p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mt-8">
-					Specializzazione in immobili di pregio
+					{content.hero.description}
 				</p>
 				<a href="#chi-siamo" class="inline-block mt-12 px-8 py-4 bg-[#8BC34A] hover:bg-[#689F38] text-white font-semibold rounded transition-colors">
-					Scopri di più
+					{content.hero.cta_text}
 				</a>
 			</div>
 		</section>
@@ -69,20 +70,14 @@ import '../styles/global.css';
 				<div class="grid md:grid-cols-2 gap-12 items-center">
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6">CHI SIAMO</h2>
+						<h2 class="text-4xl font-bold mb-6">{content.chi_siamo.title}</h2>
 						<div class="space-y-4 text-gray-700 leading-relaxed">
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Lottemciamo puntalmente tra la documentazione cartolated ed i servizi della vostra proprietà per creare la guida UMIID sia retrodatare oltre 2066.</span>
-							</p>
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Progettiamo spazio e dotazioni e tracverizzazione evers nummo e alert ringraziamo come potencia a servi.</span>
-							</p>
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Potrete il valuto e tarvin le tabelle vie oltre con versi di clima or atrir el portare da l'edición it vallom.</span>
-							</p>
+							{content.chi_siamo.points.map(point => (
+								<p class="flex items-start">
+									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
+									<span>{point}</span>
+								</p>
+							))}
 						</div>
 					</div>
 					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
@@ -101,32 +96,16 @@ import '../styles/global.css';
 					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">I NOSTRI SERVIZI</h2>
+						<h2 class="text-4xl font-bold mb-8">{content.servizi.title}</h2>
 						<div class="space-y-4">
-							<div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4">
-									1
+							{content.servizi.items.map((item, index) => (
+								<div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
+									<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4">
+										{index + 1}
+									</div>
+									<span class="font-semibold text-gray-900">{item}</span>
 								</div>
-								<span class="font-semibold text-gray-900">Direzione lavori</span>
-							</div>
-							<div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4">
-									2
-								</div>
-								<span class="font-semibold text-gray-900">Pianificazione complere</span>
-							</div>
-							<div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4">
-									3
-								</div>
-								<span class="font-semibold text-gray-900">Diversificazione servizi</span>
-							</div>
-							<div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4">
-									4
-								</div>
-								<span class="font-semibold text-gray-900">Gestione pagamenti</span>
-							</div>
+							))}
 						</div>
 					</div>
 				</div>
@@ -139,26 +118,16 @@ import '../styles/global.css';
 				<div class="grid md:grid-cols-2 gap-12 items-center">
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">PROCESSO OPERATIVO</h2>
+						<h2 class="text-4xl font-bold mb-8">{content.processo.title}</h2>
 						<div class="flex space-x-4">
-							<div class="flex-1 bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mb-4">
-									1
+							{content.processo.steps.map((step, index) => (
+								<div class="flex-1 bg-white/10 p-6 rounded-lg backdrop-blur-sm">
+									<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mb-4">
+										{index + 1}
+									</div>
+									<h3 class="font-semibold mb-2">{step}</h3>
 								</div>
-								<h3 class="font-semibold mb-2">Analisi arruali</h3>
-							</div>
-							<div class="flex-1 bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mb-4">
-									2
-								</div>
-								<h3 class="font-semibold mb-2">Pianificazione</h3>
-							</div>
-							<div class="flex-1 bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-								<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mb-4">
-									3
-								</div>
-								<h3 class="font-semibold mb-2">Monitoraggio</h3>
-							</div>
+							))}
 						</div>
 					</div>
 					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
@@ -177,44 +146,27 @@ import '../styles/global.css';
 					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">PERCHÉ SCEGLIERCI</h2>
+						<h2 class="text-4xl font-bold mb-8">{content.perche_sceglierci.title}</h2>
 						<div class="grid grid-cols-2 gap-6">
-							<div class="text-center">
-								<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-4">
-									<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-									</svg>
-								</div>
-								<h3 class="font-semibold mb-2">Emellimazio</h3>
-								<p class="text-sm text-gray-600">procavia rideal</p>
-							</div>
-							<div class="text-center">
-								<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-4">
-									<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-									</svg>
-								</div>
-								<h3 class="font-semibold mb-2">Crementro</h3>
-								<p class="text-sm text-gray-600">soluzioni</p>
-							</div>
-							<div class="text-center">
-								<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-4">
-									<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-									</svg>
-								</div>
-								<h3 class="font-semibold mb-2">Progressisme</h3>
-								<p class="text-sm text-gray-600">atiecko</p>
-							</div>
-							<div class="text-center">
-								<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-4">
-									<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-									</svg>
-								</div>
-								<h3 class="font-semibold mb-2">Cognizazione</h3>
-								<p class="text-sm text-gray-600">una lucida</p>
-							</div>
+							{content.perche_sceglierci.advantages.map((adv, index) => {
+								const icons = [
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />,
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />,
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />,
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+								];
+								return (
+									<div class="text-center">
+										<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-4">
+											<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+												{icons[index]}
+											</svg>
+										</div>
+										<h3 class="font-semibold mb-2">{adv.title}</h3>
+										<p class="text-sm text-gray-600">{adv.description}</p>
+									</div>
+								);
+							})}
 						</div>
 					</div>
 				</div>
@@ -227,20 +179,14 @@ import '../styles/global.css';
 				<div class="grid md:grid-cols-2 gap-12 items-center">
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6">SPECIALIZZAZIONE IN<br/>IMMOBILI DI PREGIO</h2>
+						<h2 class="text-4xl font-bold mb-6" set:html={content.specializzazione.title.replace(' ', '<br/>')}></h2>
 						<div class="space-y-4 text-gray-300">
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Esattribialted expli dedid or anonpiled vier puratore cirliegattacaminate tamellatico</span>
-							</p>
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Americhiave di piaregazite stadi</span>
-							</p>
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Emelliolum rayilde i-latantolittum ess con parti gire di sux per attemize a innowazioni.</span>
-							</p>
+							{content.specializzazione.points.map(point => (
+								<p class="flex items-start">
+									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
+									<span>{point}</span>
+								</p>
+							))}
 						</div>
 					</div>
 					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
@@ -255,36 +201,27 @@ import '../styles/global.css';
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-12">
 					<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-					<h2 class="text-4xl font-bold mb-4">ALCUNI NOSTRI VANTAGGI</h2>
+					<h2 class="text-4xl font-bold mb-4">{content.vantaggi.title}</h2>
 				</div>
 				<div class="grid md:grid-cols-3 gap-8">
-					<div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-						<div class="w-16 h-16 rounded-full bg-[#8BC34A]/20 flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-							</svg>
-						</div>
-						<h3 class="text-xl font-bold mb-3">Adoperture Inwesticion</h3>
-						<p class="text-gray-300">Toi demichuisamento ridest.</p>
-					</div>
-					<div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-						<div class="w-16 h-16 rounded-full bg-[#8BC34A]/20 flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-							</svg>
-						</div>
-						<h3 class="text-xl font-bold mb-3">Efficihore e Practiccia</h3>
-						<p class="text-gray-300">Ne veraviodustreza qualifica senza tralasso</p>
-					</div>
-					<div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-						<div class="w-16 h-16 rounded-full bg-[#8BC34A]/20 flex items-center justify-center mb-6">
-							<svg class="w-8 h-8 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-							</svg>
-						</div>
-						<h3 class="text-xl font-bold mb-3">Consulencia di Lerza</h3>
-						<p class="text-gray-300">Ne gestiam le gighi orologio forniamo expertare di qualita</p>
-					</div>
+					{content.vantaggi.items.map((item, index) => {
+						const icons = [
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />,
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+						];
+						return (
+							<div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+								<div class="w-16 h-16 rounded-full bg-[#8BC34A]/20 flex items-center justify-center mb-6">
+									<svg class="w-8 h-8 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+										{icons[index]}
+									</svg>
+								</div>
+								<h3 class="text-xl font-bold mb-3">{item.title}</h3>
+								<p class="text-gray-300">{item.description}</p>
+							</div>
+						);
+					})}
 				</div>
 			</div>
 		</section>
@@ -298,20 +235,14 @@ import '../styles/global.css';
 					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6">UN IMPIGIVO VERSO<br/>L'ECCELLENZA</h2>
+						<h2 class="text-4xl font-bold mb-6" set:html={content.eccellenza.title.replace(' VERSO', '<br/>VERSO')}></h2>
 						<div class="space-y-4 text-gray-700">
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Sentatium all'attuture immaginta.</span>
-							</p>
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Arichedere de Pringral di Projectione di</span>
-							</p>
-							<p class="flex items-start">
-								<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-								<span>Estentece siva al Providenze di</span>
-							</p>
+							{content.eccellenza.points.map(point => (
+								<p class="flex items-start">
+									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
+									<span>{point}</span>
+								</p>
+							))}
 						</div>
 					</div>
 				</div>
@@ -322,8 +253,8 @@ import '../styles/global.css';
 		<section id="contatti" class="py-20 bg-gradient-to-br from-[#8BC34A] to-[#689F38] text-white">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 				<div class="inline-block bg-white w-12 h-1 mb-6"></div>
-				<h2 class="text-4xl font-bold mb-6">CONTATTACI</h2>
-				<p class="text-xl mb-12">Siamo pronti ad ascoltare le tue esigenze</p>
+				<h2 class="text-4xl font-bold mb-6">{content.contatti.title}</h2>
+				<p class="text-xl mb-12">{content.contatti.subtitle}</p>
 				<div class="bg-white/10 backdrop-blur-sm p-8 rounded-lg">
 					<form class="space-y-6">
 						<div class="grid md:grid-cols-2 gap-6">

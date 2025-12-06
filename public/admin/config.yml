@@ -7,90 +7,101 @@ media_folder: "public/img"
 public_folder: "/img"
 
 collections:
-  - name: "pages"
-    label: "Pagine"
+  - name: "content"
+    label: "Contenuti"
     files:
       - label: "Home Page"
         name: "home"
-        file: "src/pages/index.astro"
+        file: "src/content/home.json"
         fields:
-          - { label: "Titolo Sito", name: "site_title", widget: "string", default: "TIESSE SERVIZI - Facility & Executive Management" }
-          
+          - { label: "Titolo Sito", name: "site_title", widget: "string" }
+
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Sottotitolo", name: "subtitle", widget: "string" }
+              - { label: "Descrizione", name: "description", widget: "string" }
+              - { label: "Testo CTA", name: "cta_text", widget: "string" }
+
           - label: "Chi Siamo"
             name: "chi_siamo"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "CHI SIAMO" }
-              - { label: "Punto 1", name: "point1", widget: "text" }
-              - { label: "Punto 2", name: "point2", widget: "text" }
-              - { label: "Punto 3", name: "point3", widget: "text" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Punti"
+                name: "points"
+                widget: "list"
+                field: { label: "Punto", name: "point", widget: "text" }
+
           - label: "Servizi"
             name: "servizi"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "I NOSTRI SERVIZI" }
-              - { label: "Servizio 1", name: "service1", widget: "string" }
-              - { label: "Servizio 2", name: "service2", widget: "string" }
-              - { label: "Servizio 3", name: "service3", widget: "string" }
-              - { label: "Servizio 4", name: "service4", widget: "string" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Servizi"
+                name: "items"
+                widget: "list"
+                field: { label: "Servizio", name: "item", widget: "string" }
+
           - label: "Processo Operativo"
             name: "processo"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "PROCESSO OPERATIVO" }
-              - { label: "Fase 1", name: "step1", widget: "string" }
-              - { label: "Fase 2", name: "step2", widget: "string" }
-              - { label: "Fase 3", name: "step3", widget: "string" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Fasi"
+                name: "steps"
+                widget: "list"
+                field: { label: "Fase", name: "step", widget: "string" }
+
           - label: "Perché Sceglierci"
             name: "perche_sceglierci"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "PERCHÉ SCEGLIERCI" }
-              - { label: "Vantaggio 1 - Titolo", name: "adv1_title", widget: "string" }
-              - { label: "Vantaggio 1 - Descrizione", name: "adv1_desc", widget: "string" }
-              - { label: "Vantaggio 2 - Titolo", name: "adv2_title", widget: "string" }
-              - { label: "Vantaggio 2 - Descrizione", name: "adv2_desc", widget: "string" }
-              - { label: "Vantaggio 3 - Titolo", name: "adv3_title", widget: "string" }
-              - { label: "Vantaggio 3 - Descrizione", name: "adv3_desc", widget: "string" }
-              - { label: "Vantaggio 4 - Titolo", name: "adv4_title", widget: "string" }
-              - { label: "Vantaggio 4 - Descrizione", name: "adv4_desc", widget: "string" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Vantaggi"
+                name: "advantages"
+                widget: "list"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string" }
+
           - label: "Specializzazione"
             name: "specializzazione"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "SPECIALIZZAZIONE IN IMMOBILI DI PREGIO" }
-              - { label: "Punto 1", name: "point1", widget: "text" }
-              - { label: "Punto 2", name: "point2", widget: "text" }
-              - { label: "Punto 3", name: "point3", widget: "text" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Punti"
+                name: "points"
+                widget: "list"
+                field: { label: "Punto", name: "point", widget: "text" }
+
           - label: "Vantaggi"
             name: "vantaggi"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "ALCUNI NOSTRI VANTAGGI" }
-              - { label: "Vantaggio 1 - Titolo", name: "v1_title", widget: "string" }
-              - { label: "Vantaggio 1 - Descrizione", name: "v1_desc", widget: "string" }
-              - { label: "Vantaggio 2 - Titolo", name: "v2_title", widget: "string" }
-              - { label: "Vantaggio 2 - Descrizione", name: "v2_desc", widget: "string" }
-              - { label: "Vantaggio 3 - Titolo", name: "v3_title", widget: "string" }
-              - { label: "Vantaggio 3 - Descrizione", name: "v3_desc", widget: "string" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Elementi"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Descrizione", name: "description", widget: "string" }
+
           - label: "Eccellenza"
             name: "eccellenza"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "UN IMPEGNO VERSO L'ECCELLENZA" }
-              - { label: "Punto 1", name: "point1", widget: "text" }
-              - { label: "Punto 2", name: "point2", widget: "text" }
-              - { label: "Punto 3", name: "point3", widget: "text" }
-          
+              - { label: "Titolo", name: "title", widget: "string" }
+              - label: "Punti"
+                name: "points"
+                widget: "list"
+                field: { label: "Punto", name: "point", widget: "text" }
+
           - label: "Contatti"
             name: "contatti"
             widget: "object"
             fields:
-              - { label: "Titolo", name: "title", widget: "string", default: "CONTATTACI" }
-              - { label: "Sottotitolo", name: "subtitle", widget: "string", default: "Siamo pronti ad ascoltare le tue esigenze" }
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Sottotitolo", name: "subtitle", widget: "string" }
