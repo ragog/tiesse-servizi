@@ -13,7 +13,7 @@ export default {
   },
   hero: {
     subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
-    description: wash the,
+    description: "wash the car",
     cta_text: "Scopri di più"
   },
   chi_siamo: {
