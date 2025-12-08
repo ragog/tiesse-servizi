@@ -19,7 +19,7 @@ export default {
   chi_siamo: {
     title: "CHI SIAMO",
     points: [
-      "Gestiamo in modo completo la documentazione tecnica e i servizi della vostra proprietà, creando una guida dettagliata per ottimizzare ogni aspetto della gestione immobiliare.",
+      "Tiesse supporta e collabora con imprese con: imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
       "Progettiamo spazi e dotazioni con tracciabilità completa, sistemi di monitoraggio e alert per garantire massima efficienza e sicurezza.",
       "Offriamo valutazioni approfondite e reportistica dettagliata con sistemi di controllo climatico e gestione avanzata delle proprietà."
     ]
