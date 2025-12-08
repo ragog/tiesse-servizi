@@ -38,13 +38,17 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 							</div>
 						</div>
 					</a>
-					<div class="hidden md:flex space-x-8">
-						<a href="#home" class="text-gray-700 hover:text-[#8BC34A] transition-colors">{content.nav.home}</a>
-						<a href={locale === 'it' ? '#chi-siamo' : '#about'} class="text-gray-700 hover:text-[#8BC34A] transition-colors">{content.nav.about}</a>
-						<a href={locale === 'it' ? '#servizi' : '#services'} class="text-gray-700 hover:text-[#8BC34A] transition-colors">{content.nav.services}</a>
-						<a href={locale === 'it' ? '#specializzazione' : '#specialization'} class="text-gray-700 hover:text-[#8BC34A] transition-colors">{content.nav.specialization}</a>
-						<a href={locale === 'it' ? '#contatti' : '#contact'} class="text-gray-700 hover:text-[#8BC34A] transition-colors">{content.nav.contact}</a>
-						<a href={otherLocaleUrl} class="text-gray-700 hover:text-[#8BC34A] transition-colors font-semibold">{otherLocale.toUpperCase()}</a>
+					<div class="hidden md:flex space-x-6">
+						<a href="#home" class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.home}</a>
+						<a href={locale === 'it' ? '#chi-siamo' : '#about'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.about}</a>
+						<a href={locale === 'it' ? '#missione' : '#mission'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.mission}</a>
+						<a href={locale === 'it' ? '#servizi-tecnici' : '#services'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.services}</a>
+						<a href={locale === 'it' ? '#invest-in-italy' : '#invest-in-italy'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.invest}</a>
+						<a href={locale === 'it' ? '#sostenibilita' : '#sustainability'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.sustainability}</a>
+						<a href="#news" class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.news}</a>
+						<a href="#partners" class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.partners}</a>
+						<a href={locale === 'it' ? '#contatti' : '#contact'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.contact}</a>
+						<a href={otherLocaleUrl} class="text-gray-700 hover:text-[#8BC34A] transition-colors font-semibold text-sm">{otherLocale.toUpperCase()}</a>
 					</div>
 				</div>
 			</div>
@@ -96,8 +100,29 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 			</div>
 		</section>
 
-		<!-- Servizi / Services Section -->
-		<section id={locale === 'it' ? 'servizi' : 'services'} class="py-20 bg-gray-50">
+		<!-- Missione / Mission Section -->
+		<section id={locale === 'it' ? 'missione' : 'mission'} class="py-20 bg-gray-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
+					<h2 class="text-4xl font-bold mb-6">{content.missione.title}</h2>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto">{content.missione.description}</p>
+				</div>
+				<div class="grid md:grid-cols-3 gap-8 mt-12">
+					{content.missione.points.map((point: string, index: number) => (
+						<div class="bg-white p-8 rounded-lg shadow-sm">
+							<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold text-xl mb-4">
+								{index + 1}
+							</div>
+							<p class="text-gray-700">{point}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Servizi Tecnici / Technical Services Section -->
+		<section id={locale === 'it' ? 'servizi-tecnici' : 'services'} class="py-20 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid md:grid-cols-2 gap-12 items-center">
 					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
@@ -105,11 +130,11 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">{content.servizi.title}</h2>
+						<h2 class="text-4xl font-bold mb-8">{content.servizi_tecnici.title}</h2>
 						<div class="space-y-4">
-							{content.servizi.items.map((item: string, index: number) => (
-								<div class="flex items-center bg-white p-4 rounded-lg shadow-sm">
-									<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4">
+							{content.servizi_tecnici.items.map((item: string, index: number) => (
+								<div class="flex items-center bg-gray-50 p-4 rounded-lg">
+									<div class="w-10 h-10 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
 										{index + 1}
 									</div>
 									<span class="font-semibold text-gray-900">{item}</span>
@@ -121,76 +146,16 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 			</div>
 		</section>
 
-		<!-- Processo Operativo Section -->
-		<section class="py-20 bg-[#2E2E2E] text-white">
+		<!-- Invest in Italy Section -->
+		<section id="invest-in-italy" class="py-20 bg-[#2E2E2E] text-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid md:grid-cols-2 gap-12 items-center">
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">{content.processo.title}</h2>
-						<div class="flex space-x-4">
-							{content.processo.steps.map((step: string, index: number) => (
-								<div class="flex-1 bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-									<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mb-4">
-										{index + 1}
-									</div>
-									<h3 class="font-semibold mb-2">{step}</h3>
-								</div>
-							))}
-						</div>
-					</div>
-					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164825.jpeg" alt="Modern Villa" class="w-full h-full object-cover" />
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Perché Sceglierci Section -->
-		<section class="py-20 bg-white">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164830.jpeg" alt="Luxury Pool" class="w-full h-full object-cover" />
-					</div>
-					<div>
-						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">{content.perche_sceglierci.title}</h2>
-						<div class="grid grid-cols-2 gap-6">
-							{content.perche_sceglierci.advantages.map((adv: any, index: number) => {
-								const icons = [
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />,
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />,
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />,
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-								];
-								return (
-									<div class="text-center">
-										<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-4">
-											<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-												{icons[index]}
-											</svg>
-										</div>
-										<h3 class="font-semibold mb-2">{adv.title}</h3>
-										<p class="text-sm text-gray-600">{adv.description}</p>
-									</div>
-								);
-							})}
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Specializzazione Section -->
-		<section id={locale === 'it' ? 'specializzazione' : 'specialization'} class="py-20 bg-[#2E2E2E] text-white">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div>
-						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6" set:html={content.specializzazione.titleBreak}></h2>
+						<h2 class="text-4xl font-bold mb-6" set:html={content.invest_in_italy.titleBreak}></h2>
+						<p class="text-xl text-gray-300 mb-8">{content.invest_in_italy.subtitle}</p>
 						<div class="space-y-4 text-gray-300">
-							{content.specializzazione.points.map((point: string) => (
+							{content.invest_in_italy.points.map((point: string) => (
 								<p class="flex items-start">
 									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
 									<span>{point}</span>
@@ -199,66 +164,82 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 						</div>
 					</div>
 					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164753_002.jpeg" alt="Premium Property" class="w-full h-full object-cover" />
+						<img src="/img/signal-2025-12-04-164825.jpeg" alt="Italian Property" class="w-full h-full object-cover" />
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Vantaggi Section -->
-		<section class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+		<!-- Sostenibilità / Sustainability Section -->
+		<section id={locale === 'it' ? 'sostenibilita' : 'sustainability'} class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+						<img src="/img/signal-2025-12-04-164830.jpeg" alt="Sustainability" class="w-full h-full object-cover" />
+					</div>
+					<div>
+						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
+						<h2 class="text-4xl font-bold mb-6">{content.sostenibilita.title}</h2>
+						<p class="text-lg text-gray-600 mb-6">{content.sostenibilita.description}</p>
+						<div class="space-y-4 text-gray-700">
+							{content.sostenibilita.points.map((point: string) => (
+								<p class="flex items-start">
+									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
+									<span>{point}</span>
+								</p>
+							))}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- News Section -->
+		<section id="news" class="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="text-center mb-12">
 					<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-					<h2 class="text-4xl font-bold mb-4">{content.vantaggi.title}</h2>
+					<h2 class="text-4xl font-bold mb-4">{content.news.title}</h2>
+					<p class="text-xl text-gray-300">{content.news.subtitle}</p>
 				</div>
 				<div class="grid md:grid-cols-3 gap-8">
-					{content.vantaggi.items.map((item: any, index: number) => {
-						const icons = [
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />,
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />,
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-						];
-						return (
-							<div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
-								<div class="w-16 h-16 rounded-full bg-[#8BC34A]/20 flex items-center justify-center mb-6">
-									<svg class="w-8 h-8 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										{icons[index]}
-									</svg>
-								</div>
-								<h3 class="text-xl font-bold mb-3">{item.title}</h3>
-								<p class="text-gray-300">{item.description}</p>
-							</div>
-						);
-					})}
-				</div>
-			</div>
-		</section>
-
-		<!-- Eccellenza Section -->
-		<section class="py-20 bg-white">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164753.jpeg" alt="Excellence" class="w-full h-full object-cover" />
-					</div>
-					<div>
-						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6" set:html={content.eccellenza.titleBreak}></h2>
-						<div class="space-y-4 text-gray-700">
-							{content.eccellenza.points.map((point: string) => (
-								<p class="flex items-start">
-									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
-									<span>{point}</span>
-								</p>
-							))}
+					{content.news.items.map((item: any) => (
+						<div class="bg-white/5 p-8 rounded-lg backdrop-blur-sm">
+							<div class="text-[#8BC34A] font-semibold mb-3">{item.date}</div>
+							<h3 class="text-xl font-bold mb-3">{item.title}</h3>
+							<p class="text-gray-300">{item.description}</p>
 						</div>
-					</div>
+					))}
 				</div>
 			</div>
 		</section>
 
-		<!-- Contatti Section -->
+		<!-- Partners Section -->
+		<section id="partners" class="py-20 bg-white">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-12">
+					<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
+					<h2 class="text-4xl font-bold mb-4">{content.partners.title}</h2>
+					<p class="text-xl text-gray-600 mb-4">{content.partners.subtitle}</p>
+					<p class="text-gray-600 max-w-3xl mx-auto">{content.partners.description}</p>
+				</div>
+				<div class="grid md:grid-cols-3 gap-8">
+					{content.partners.categories.map((category: any) => (
+						<div class="text-center p-8 bg-gray-50 rounded-lg">
+							<div class="w-20 h-20 rounded-full bg-[#8BC34A]/10 flex items-center justify-center mx-auto mb-6">
+								<svg class="w-10 h-10 text-[#8BC34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-bold mb-3">{category.title}</h3>
+							<p class="text-gray-600">{category.description}</p>
+						</div>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Contatti / Contact Section -->
 		<section id={locale === 'it' ? 'contatti' : 'contact'} class="py-20 bg-gradient-to-br from-[#8BC34A] to-[#689F38] text-white">
 			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 				<div class="inline-block bg-white w-12 h-1 mb-6"></div>

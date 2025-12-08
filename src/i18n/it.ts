@@ -3,8 +3,12 @@ export default {
   nav: {
     home: "Home",
     about: "Chi Siamo",
-    services: "Servizi",
-    specialization: "Specializzazione",
+    mission: "Missione",
+    services: "Servizi Tecnici",
+    invest: "Invest in Italy",
+    sustainability: "Sostenibilità",
+    news: "News",
+    partners: "Partners",
     contact: "Contatti"
   },
   hero: {
@@ -20,77 +24,85 @@ export default {
       "Offriamo valutazioni approfondite e reportistica dettagliata con sistemi di controllo climatico e gestione avanzata delle proprietà."
     ]
   },
-  servizi: {
-    title: "I NOSTRI SERVIZI",
+  missione: {
+    title: "LA NOSTRA MISSIONE",
+    description: "Essere il partner di riferimento per la gestione integrata di immobili di pregio, offrendo soluzioni innovative e personalizzate che valorizzano il patrimonio immobiliare dei nostri clienti.",
+    points: [
+      "Garantire eccellenza operativa attraverso servizi professionali e tecnologie all'avanguardia",
+      "Creare valore aggiunto per i nostri clienti attraverso una gestione efficiente e trasparente",
+      "Costruire relazioni durature basate su fiducia, competenza e risultati misurabili"
+    ]
+  },
+  servizi_tecnici: {
+    title: "SERVIZI TECNICI",
     items: [
-      "Direzione lavori e coordinamento",
-      "Pianificazione strategica completa",
-      "Diversificazione e ottimizzazione servizi",
-      "Gestione amministrativa e pagamenti"
+      "Direzione lavori e coordinamento tecnico",
+      "Manutenzione ordinaria e straordinaria",
+      "Gestione impianti tecnologici",
+      "Supervisione cantieri e ristrutturazioni",
+      "Certificazioni e conformità normative",
+      "Gestione fornitori e appaltatori"
     ]
   },
-  processo: {
-    title: "PROCESSO OPERATIVO",
-    steps: [
-      "Analisi iniziale",
-      "Pianificazione",
-      "Monitoraggio"
+  invest_in_italy: {
+    title: "INVEST IN ITALY",
+    titleBreak: "INVEST IN<br/>ITALY",
+    subtitle: "Il vostro gateway per investimenti immobiliari di successo in Italia",
+    points: [
+      "Assistenza completa per investitori internazionali interessati al mercato immobiliare italiano",
+      "Consulenza su normative fiscali, procedure burocratiche e opportunità di investimento",
+      "Network consolidato di professionisti locali: notai, commercialisti, avvocati e agenzie immobiliari",
+      "Gestione chiavi in mano: dall'acquisto alla valorizzazione dell'immobile"
     ]
   },
-  perche_sceglierci: {
-    title: "PERCHÉ SCEGLIERCI",
-    advantages: [
+  sostenibilita: {
+    title: "SOSTENIBILITÀ",
+    description: "Il nostro impegno per un futuro più sostenibile attraverso pratiche di gestione responsabile e innovative.",
+    points: [
+      "Implementazione di soluzioni energetiche efficienti e riduzione dell'impatto ambientale",
+      "Utilizzo di materiali e tecnologie eco-compatibili nella manutenzione e nelle ristrutturazioni",
+      "Ottimizzazione dei consumi attraverso sistemi di monitoraggio intelligente",
+      "Certificazioni ambientali e conformità agli standard di sostenibilità internazionali"
+    ]
+  },
+  news: {
+    title: "NEWS & AGGIORNAMENTI",
+    subtitle: "Rimani aggiornato sulle ultime novità e progetti",
+    items: [
       {
-        title: "Eccellenza",
-        description: "approccio professionale"
+        date: "Coming Soon",
+        title: "Nuovi progetti in arrivo",
+        description: "Scopri le nostre ultime iniziative e collaborazioni."
       },
       {
-        title: "Esperienza",
-        description: "soluzioni su misura"
+        date: "Coming Soon",
+        title: "Aggiornamenti dal settore",
+        description: "Le ultime tendenze nel facility management."
       },
       {
-        title: "Innovazione",
-        description: "tecnologie avanzate"
-      },
-      {
-        title: "Affidabilità",
-        description: "risultati garantiti"
+        date: "Coming Soon",
+        title: "Eventi e partnership",
+        description: "I nostri prossimi eventi e nuove partnership strategiche."
       }
     ]
   },
-  specializzazione: {
-    title: "SPECIALIZZAZIONE IN IMMOBILI DI PREGIO",
-    titleBreak: "SPECIALIZZAZIONE IN<br/>IMMOBILI DI PREGIO",
-    points: [
-      "Esperienza consolidata nella gestione di proprietà di lusso e coordinamento di servizi esclusivi per clienti esigenti.",
-      "Competenze specializzate nella manutenzione e valorizzazione di immobili di pregio con standard qualitativi elevati.",
-      "Eccellenza nella gestione di residenze di alto livello con attenzione al dettaglio e alle innovazioni tecnologiche."
-    ]
-  },
-  vantaggi: {
-    title: "ALCUNI NOSTRI VANTAGGI",
-    items: [
+  partners: {
+    title: "I NOSTRI PARTNERS",
+    subtitle: "Collaboriamo con i migliori professionisti del settore",
+    description: "La nostra rete di partner qualificati ci permette di offrire servizi eccellenti e soluzioni complete per ogni esigenza.",
+    categories: [
       {
-        title: "Ottimizzazione dei costi",
-        description: "Riduciamo i costi operativi attraverso una gestione efficiente."
+        title: "Partner Tecnici",
+        description: "Imprese specializzate in edilizia, impiantistica e manutenzione"
       },
       {
-        title: "Efficienza e professionalità",
-        description: "Team qualificato con esperienza consolidata nel settore."
+        title: "Partner Finanziari",
+        description: "Istituti bancari e consulenti per investimenti immobiliari"
       },
       {
-        title: "Consulenza dedicata",
-        description: "Vi affianchiamo con consulenza specializzata e supporto continuo."
+        title: "Partner Legali",
+        description: "Studi notarili, legali e commercialisti specializzati"
       }
-    ]
-  },
-  eccellenza: {
-    title: "UN IMPEGNO VERSO L'ECCELLENZA",
-    titleBreak: "UN IMPEGNO<br/>VERSO L'ECCELLENZA",
-    points: [
-      "Attenzione costante alla qualità e ai dettagli in ogni intervento.",
-      "Metodologie consolidate di project management e coordinamento.",
-      "Standard elevati nella fornitura di servizi e nella soddisfazione del cliente."
     ]
   },
   contatti: {

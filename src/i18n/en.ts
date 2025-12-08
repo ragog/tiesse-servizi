@@ -3,8 +3,12 @@ export default {
   nav: {
     home: "Home",
     about: "About",
-    services: "Services",
-    specialization: "Specialization",
+    mission: "Mission",
+    services: "Technical Services",
+    invest: "Invest in Italy",
+    sustainability: "Sustainability",
+    news: "News",
+    partners: "Partners",
     contact: "Contact"
   },
   hero: {
@@ -20,77 +24,85 @@ export default {
       "We provide in-depth evaluations and detailed reporting with climate control systems and advanced property management."
     ]
   },
-  servizi: {
-    title: "OUR SERVICES",
+  missione: {
+    title: "OUR MISSION",
+    description: "To be the reference partner for integrated management of prestigious properties, offering innovative and personalized solutions that enhance our clients' real estate assets.",
+    points: [
+      "Guarantee operational excellence through professional services and cutting-edge technologies",
+      "Create added value for our clients through efficient and transparent management",
+      "Build lasting relationships based on trust, expertise, and measurable results"
+    ]
+  },
+  servizi_tecnici: {
+    title: "TECHNICAL SERVICES",
     items: [
-      "Construction management and coordination",
-      "Complete strategic planning",
-      "Service diversification and optimization",
-      "Administrative and payment management"
+      "Construction management and technical coordination",
+      "Routine and extraordinary maintenance",
+      "Technological systems management",
+      "Construction site and renovation supervision",
+      "Certifications and regulatory compliance",
+      "Supplier and contractor management"
     ]
   },
-  processo: {
-    title: "OPERATIONAL PROCESS",
-    steps: [
-      "Initial analysis",
-      "Planning",
-      "Monitoring"
+  invest_in_italy: {
+    title: "INVEST IN ITALY",
+    titleBreak: "INVEST IN<br/>ITALY",
+    subtitle: "Your gateway to successful real estate investments in Italy",
+    points: [
+      "Complete assistance for international investors interested in the Italian real estate market",
+      "Consulting on tax regulations, bureaucratic procedures, and investment opportunities",
+      "Established network of local professionals: notaries, accountants, lawyers, and real estate agencies",
+      "Turnkey management: from acquisition to property enhancement"
     ]
   },
-  perche_sceglierci: {
-    title: "WHY CHOOSE US",
-    advantages: [
+  sostenibilita: {
+    title: "SUSTAINABILITY",
+    description: "Our commitment to a more sustainable future through responsible and innovative management practices.",
+    points: [
+      "Implementation of energy-efficient solutions and reduction of environmental impact",
+      "Use of eco-compatible materials and technologies in maintenance and renovations",
+      "Consumption optimization through intelligent monitoring systems",
+      "Environmental certifications and compliance with international sustainability standards"
+    ]
+  },
+  news: {
+    title: "NEWS & UPDATES",
+    subtitle: "Stay updated on the latest news and projects",
+    items: [
       {
-        title: "Excellence",
-        description: "professional approach"
+        date: "Coming Soon",
+        title: "New projects coming",
+        description: "Discover our latest initiatives and collaborations."
       },
       {
-        title: "Experience",
-        description: "tailored solutions"
+        date: "Coming Soon",
+        title: "Industry updates",
+        description: "The latest trends in facility management."
       },
       {
-        title: "Innovation",
-        description: "advanced technologies"
-      },
-      {
-        title: "Reliability",
-        description: "guaranteed results"
+        date: "Coming Soon",
+        title: "Events and partnerships",
+        description: "Our upcoming events and new strategic partnerships."
       }
     ]
   },
-  specializzazione: {
-    title: "SPECIALIZATION IN PRESTIGIOUS PROPERTIES",
-    titleBreak: "SPECIALIZATION IN<br/>PRESTIGIOUS PROPERTIES",
-    points: [
-      "Proven experience in managing luxury properties and coordinating exclusive services for discerning clients.",
-      "Specialized expertise in maintaining and enhancing prestigious properties with high quality standards.",
-      "Excellence in managing high-end residences with attention to detail and technological innovation."
-    ]
-  },
-  vantaggi: {
-    title: "OUR KEY ADVANTAGES",
-    items: [
+  partners: {
+    title: "OUR PARTNERS",
+    subtitle: "We collaborate with the best professionals in the industry",
+    description: "Our network of qualified partners allows us to offer excellent services and complete solutions for every need.",
+    categories: [
       {
-        title: "Cost optimization",
-        description: "We reduce operating costs through efficient management."
+        title: "Technical Partners",
+        description: "Companies specialized in construction, systems, and maintenance"
       },
       {
-        title: "Efficiency and professionalism",
-        description: "Qualified team with proven experience in the sector."
+        title: "Financial Partners",
+        description: "Banks and consultants for real estate investments"
       },
       {
-        title: "Dedicated consulting",
-        description: "We support you with specialized consulting and continuous assistance."
+        title: "Legal Partners",
+        description: "Notary, legal, and accounting firms specialized in real estate"
       }
-    ]
-  },
-  eccellenza: {
-    title: "A COMMITMENT TO EXCELLENCE",
-    titleBreak: "A COMMITMENT<br/>TO EXCELLENCE",
-    points: [
-      "Constant attention to quality and detail in every intervention.",
-      "Established project management and coordination methodologies.",
-      "High standards in service delivery and customer satisfaction."
     ]
   },
   contatti: {
