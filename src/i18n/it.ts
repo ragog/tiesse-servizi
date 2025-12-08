@@ -26,11 +26,11 @@ export default {
   },
   missione: {
     title: "LA NOSTRA MISSIONE",
-    description: "Essere il partner di riferimento per la gestione integrata di immobili di pregio, offrendo soluzioni innovative e personalizzate che valorizzano il patrimonio immobiliare dei nostri clienti.",
+    description: "Affiancare il partener trasformando la complessità del proceso edilizio in un ercorso fluido, governabile e conforme agli obiettivi tecnici ed economici. Il nostro lavoro riduce rischi operativi e finanzari, semplifia le interazioni tra i soggetti e tutela l'investimento.",
     points: [
-      "Garantire eccellenza operativa attraverso servizi professionali e tecnologie all'avanguardia",
-      "Creare valore aggiunto per i nostri clienti attraverso una gestione efficiente e trasparente",
-      "Costruire relazioni durature basate su fiducia, competenza e risultati misurabili"
+      "",
+      "",
+      ""
     ]
   },
   servizi_tecnici: {
