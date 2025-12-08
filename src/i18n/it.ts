@@ -36,8 +36,8 @@ export default {
   servizi_tecnici: {
     title: "SERVIZI TECNICI",
     items: [
-      "Direzione lavori e coordinamento tecnico",
-      "Manutenzione ordinaria e straordinaria",
+      "Studio di fattibilità tecnico–economica",
+      "Pianificazione e logistica di cantiere",
       "Gestione impianti tecnologici",
       "Supervisione cantieri e ristrutturazioni",
       "Certificazioni e conformità normative",
