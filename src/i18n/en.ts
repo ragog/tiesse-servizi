@@ -15,18 +15,18 @@ export default {
   chi_siamo: {
     title: "ABOUT US",
     points: [
-      "We manage all documentation and services for your property to create a comprehensive guide dating back to 2066.",
-      "We design spaces and equipment with full traceability and alerts to serve your needs.",
-      "You can evaluate and review all aspects with climate control and property management solutions."
+      "We comprehensively manage technical documentation and property services, creating detailed guides to optimize every aspect of real estate management.",
+      "We design spaces and facilities with complete traceability, monitoring systems, and alerts to ensure maximum efficiency and safety.",
+      "We provide in-depth evaluations and detailed reporting with climate control systems and advanced property management."
     ]
   },
   servizi: {
     title: "OUR SERVICES",
     items: [
-      "Construction management",
-      "Complete planning",
-      "Service diversification",
-      "Payment management"
+      "Construction management and coordination",
+      "Complete strategic planning",
+      "Service diversification and optimization",
+      "Administrative and payment management"
     ]
   },
   processo: {
@@ -42,19 +42,19 @@ export default {
     advantages: [
       {
         title: "Excellence",
-        description: "proven approach"
+        description: "professional approach"
       },
       {
-        title: "Growth",
-        description: "solutions"
+        title: "Experience",
+        description: "tailored solutions"
       },
       {
-        title: "Progress",
-        description: "attention"
+        title: "Innovation",
+        description: "advanced technologies"
       },
       {
-        title: "Recognition",
-        description: "clear vision"
+        title: "Reliability",
+        description: "guaranteed results"
       }
     ]
   },
@@ -62,25 +62,25 @@ export default {
     title: "SPECIALIZATION IN PRESTIGIOUS PROPERTIES",
     titleBreak: "SPECIALIZATION IN<br/>PRESTIGIOUS PROPERTIES",
     points: [
-      "Detailed expertise in luxury property management and coordination",
-      "Comprehensive property management services",
-      "Excellence in managing high-end properties with attention to innovation."
+      "Proven experience in managing luxury properties and coordinating exclusive services for discerning clients.",
+      "Specialized expertise in maintaining and enhancing prestigious properties with high quality standards.",
+      "Excellence in managing high-end residences with attention to detail and technological innovation."
     ]
   },
   vantaggi: {
     title: "OUR KEY ADVANTAGES",
     items: [
       {
-        title: "Smart Investment",
-        description: "Reduced operational costs."
+        title: "Cost optimization",
+        description: "We reduce operating costs through efficient management."
       },
       {
-        title: "Efficiency & Practice",
-        description: "Qualified professionals without compromise"
+        title: "Efficiency and professionalism",
+        description: "Qualified team with proven experience in the sector."
       },
       {
-        title: "Third-Party Consulting",
-        description: "We manage schedules and provide quality expertise"
+        title: "Dedicated consulting",
+        description: "We support you with specialized consulting and continuous assistance."
       }
     ]
   },
@@ -88,9 +88,9 @@ export default {
     title: "A COMMITMENT TO EXCELLENCE",
     titleBreak: "A COMMITMENT<br/>TO EXCELLENCE",
     points: [
-      "Attention to detail and execution.",
-      "Comprehensive project management principles",
-      "Excellence in service provision"
+      "Constant attention to quality and detail in every intervention.",
+      "Established project management and coordination methodologies.",
+      "High standards in service delivery and customer satisfaction."
     ]
   },
   contatti: {

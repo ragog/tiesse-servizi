@@ -15,24 +15,24 @@ export default {
   chi_siamo: {
     title: "CHI SIAMO",
     points: [
-      "Lottemciamo puntalmente tra la documentazione cartolated ed i servizi della vostra proprietà per creare la guida UMIID sia retrodatare oltre 2066.",
-      "Progettiamo spazio e dotazioni e tracverizzazione evers nummo e alert ringraziamo come potencia a servi.",
-      "Potrete il valuto e tarvin le tabelle vie oltre con versi di clima or atrir el portare da l'edición it vallom."
+      "Gestiamo in modo completo la documentazione tecnica e i servizi della vostra proprietà, creando una guida dettagliata per ottimizzare ogni aspetto della gestione immobiliare.",
+      "Progettiamo spazi e dotazioni con tracciabilità completa, sistemi di monitoraggio e alert per garantire massima efficienza e sicurezza.",
+      "Offriamo valutazioni approfondite e reportistica dettagliata con sistemi di controllo climatico e gestione avanzata delle proprietà."
     ]
   },
   servizi: {
     title: "I NOSTRI SERVIZI",
     items: [
-      "Direzione lavori",
-      "Pianificazione complere",
-      "Diversificazione servizi",
-      "Gestione pagamenti"
+      "Direzione lavori e coordinamento",
+      "Pianificazione strategica completa",
+      "Diversificazione e ottimizzazione servizi",
+      "Gestione amministrativa e pagamenti"
     ]
   },
   processo: {
     title: "PROCESSO OPERATIVO",
     steps: [
-      "Analisi arruali",
+      "Analisi iniziale",
       "Pianificazione",
       "Monitoraggio"
     ]
@@ -41,20 +41,20 @@ export default {
     title: "PERCHÉ SCEGLIERCI",
     advantages: [
       {
-        title: "Emellimazio",
-        description: "procavia rideal"
+        title: "Eccellenza",
+        description: "approccio professionale"
       },
       {
-        title: "Crementro",
-        description: "soluzioni"
+        title: "Esperienza",
+        description: "soluzioni su misura"
       },
       {
-        title: "Progressisme",
-        description: "atiecko"
+        title: "Innovazione",
+        description: "tecnologie avanzate"
       },
       {
-        title: "Cognizazione",
-        description: "una lucida"
+        title: "Affidabilità",
+        description: "risultati garantiti"
       }
     ]
   },
@@ -62,25 +62,25 @@ export default {
     title: "SPECIALIZZAZIONE IN IMMOBILI DI PREGIO",
     titleBreak: "SPECIALIZZAZIONE IN<br/>IMMOBILI DI PREGIO",
     points: [
-      "Esattribialted expli dedid or anonpiled vier puratore cirliegattacaminate tamellatico",
-      "Americhiave di piaregazite stadi",
-      "Emelliolum rayilde i-latantolittum ess con parti gire di sux per attemize a innowazioni."
+      "Esperienza consolidata nella gestione di proprietà di lusso e coordinamento di servizi esclusivi per clienti esigenti.",
+      "Competenze specializzate nella manutenzione e valorizzazione di immobili di pregio con standard qualitativi elevati.",
+      "Eccellenza nella gestione di residenze di alto livello con attenzione al dettaglio e alle innovazioni tecnologiche."
     ]
   },
   vantaggi: {
     title: "ALCUNI NOSTRI VANTAGGI",
     items: [
       {
-        title: "Adoperture Inwesticion",
-        description: "Toi demichuisamento ridest."
+        title: "Ottimizzazione dei costi",
+        description: "Riduciamo i costi operativi attraverso una gestione efficiente."
       },
       {
-        title: "Efficihore e Practiccia",
-        description: "Ne veraviodustreza qualifica senza tralasso"
+        title: "Efficienza e professionalità",
+        description: "Team qualificato con esperienza consolidata nel settore."
       },
       {
-        title: "Consulencia di Lerza",
-        description: "Ne gestiam le gighi orologio forniamo expertare di qualita"
+        title: "Consulenza dedicata",
+        description: "Vi affianchiamo con consulenza specializzata e supporto continuo."
       }
     ]
   },
@@ -88,9 +88,9 @@ export default {
     title: "UN IMPEGNO VERSO L'ECCELLENZA",
     titleBreak: "UN IMPEGNO<br/>VERSO L'ECCELLENZA",
     points: [
-      "Sentatium all'attuture immaginta.",
-      "Arichedere de Pringral di Projectione di",
-      "Estentece siva al Providenze di"
+      "Attenzione costante alla qualità e ai dettagli in ogni intervento.",
+      "Metodologie consolidate di project management e coordinamento.",
+      "Standard elevati nella fornitura di servizi e nella soddisfazione del cliente."
     ]
   },
   contatti: {
