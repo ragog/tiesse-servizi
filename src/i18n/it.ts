@@ -19,9 +19,9 @@ export default {
   chi_siamo: {
     title: "CHI SIAMO",
     points: [
-      "Tiesse supporta e collabora con imprese con: imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
-      "Progettiamo spazi e dotazioni con tracciabilità completa, sistemi di monitoraggio e alert per garantire massima efficienza e sicurezza.",
-      "Offriamo valutazioni approfondite e reportistica dettagliata con sistemi di controllo climatico e gestione avanzata delle proprietà."
+      "Tiesse supporta e collabora con: imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
+      "Garantiamo un coordinamento strutturato di progettazione, cantiere e sicurezza, offrendo al cliente una visione chiara dei processi e il controllo puntuale dei tempi, costi e qualità.",
+      
     ]
   },
   missione: {
