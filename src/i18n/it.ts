@@ -38,10 +38,10 @@ export default {
     items: [
       "Studio di fattibilità tecnico–economica",
       "Pianificazione e logistica di cantiere",
-      "Gestione impianti tecnologici",
-      "Supervisione cantieri e ristrutturazioni",
-      "Certificazioni e conformità normative",
-      "Gestione fornitori e appaltatori"
+      "Progettazione tecnica strutturale e architettonica",
+      "Coordinamento sicurezza e direzione lavori",
+      "Gestione fornitori, appaltatori e capitolati",
+      "Contabilità lavori, SAL e monitoraggio costi"
     ]
   },
   invest_in_italy: {
