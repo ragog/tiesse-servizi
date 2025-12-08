@@ -26,7 +26,7 @@ export default {
   },
   missione: {
     title: "LA NOSTRA MISSIONE",
-    description: "Affiancare il partner trasformando la complessità del processo edilizio in un percorso fluido, governabile e conforme agli obiettivi tecnici ed economici. Il nostro lavoro riduce rischi operativi e finanzari, semplifia le interazioni tra i soggetti e tutela l'investimento.",
+    description: "Affiancare il partner trasformando la complessità del processo edilizio in un percorso fluido, governabile e conforme agli obiettivi tecnici ed economici. Il nostro lavoro riduce rischi operativi e finanziari, semplifia le interazioni tra i soggetti e tutela l'investimento.",
     points: [
       "",
       "",
