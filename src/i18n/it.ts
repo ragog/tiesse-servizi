@@ -40,9 +40,10 @@ export default {
       "Pianificazione e logistica di cantiere",
       "Progettazione tecnica strutturale e architettonica",
       "Coordinamento sicurezza e direzione lavori",
-      "Gare d’appalto pubbliche e private",
       "Gestione fornitori, appaltatori e capitolati",
-      "Contabilità lavori, SAL e monitoraggio costi"
+      "Contabilità lavori, SAL e monitoraggio costi",
+      "Gare d’appalto pubbliche e private"
+      "Pianificazione dei pagamenti e gestione documentale"
     ]
   },
   invest_in_italy: {
