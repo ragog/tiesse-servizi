@@ -42,7 +42,7 @@ export default {
       "Coordinamento sicurezza e direzione lavori",
       "Gestione fornitori, appaltatori e capitolati",
       "Contabilità lavori, SAL e monitoraggio costi",
-      "Gare d’appalto pubbliche e private"
+      "Gare d’appalto pubbliche e private",
       "Pianificazione dei pagamenti e gestione documentale"
     ]
   },
