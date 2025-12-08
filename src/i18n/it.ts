@@ -35,6 +35,7 @@ export default {
   },
   servizi_tecnici: {
     title: "SERVIZI TECNICI",
+    description: "Forniamo una gestione strutturata della commessa grazie a servizi tecnici integrati:",
     items: [
       "Studio di fattibilità tecnico–economica",
       "Pianificazione e logistica di cantiere",
