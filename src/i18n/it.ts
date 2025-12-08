@@ -40,6 +40,7 @@ export default {
       "Pianificazione e logistica di cantiere",
       "Progettazione tecnica strutturale e architettonica",
       "Coordinamento sicurezza e direzione lavori",
+      "Gare d’appalto pubbliche e private",
       "Gestione fornitori, appaltatori e capitolati",
       "Contabilità lavori, SAL e monitoraggio costi"
     ]
