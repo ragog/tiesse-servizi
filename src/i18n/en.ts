@@ -6,6 +6,7 @@ export default {
     mission: "Mission",
     services: "Technical Services",
     invest: "Invest in Italy",
+    guarantees: "Guarantees & Transparency",
     sustainability: "Sustainability",
     news: "News",
     partners: "Partners",
@@ -35,35 +36,46 @@ export default {
   },
   servizi_tecnici: {
     title: "TECHNICAL SERVICES",
+    description: "We provide structured project management through integrated technical services:",
     items: [
-      "Construction management and technical coordination",
-      "Routine and extraordinary maintenance",
-      "Technological systems management",
-      "Construction site and renovation supervision",
-      "Certifications and regulatory compliance",
-      "Supplier and contractor management"
-    ]
+      "Technical-economic feasibility study",
+      "Construction site planning and logistics",
+      "Structural and architectural technical design",
+      "Safety coordination and construction management",
+      "Supplier, contractor, and specification management",
+      "Work accounting, progress reports, and cost monitoring",
+      "Public and private tenders",
+      "Payment planning and document management"
+    ],
+    closing: "Each service is calibrated to ensure operational transparency and maximum protection of the client's interests."
   },
   invest_in_italy: {
     title: "INVEST IN ITALY",
     titleBreak: "INVEST IN<br/>ITALY",
-    subtitle: "Your gateway to successful real estate investments in Italy",
+    intro: "We accompany foreign investors interested in the high-profile Italian real estate market.",
+    description: "Territories such as Sardinia and other Mediterranean islands are among the most sought-after destinations in the world for quality of life, cultural heritage, and real estate appreciation potential.",
+    subtitle: "Through Tiesse, investors can:",
     points: [
-      "Complete assistance for international investors interested in the Italian real estate market",
-      "Consulting on tax regulations, bureaucratic procedures, and investment opportunities",
-      "Established network of local professionals: notaries, accountants, lawyers, and real estate agencies",
-      "Turnkey management: from acquisition to property enhancement"
+      "Access premium properties in iconic locations",
+      "Execute real estate operations with high aesthetic and technological value",
+      "Enhance assets with Italian-made design and materials"
+    ],
+    closing: "A concrete opportunity to allocate capital in a dream scenario and tailor the offer to the investment capital."
+  },
+  garanzie: {
+    title: "GUARANTEES & TRANSPARENCY",
+    description: "Our method is based on control, traceability, and constant communication with the client.",
+    points: [
+      "Periodic reporting on work progress, timelines, and costs",
+      "Technical audits and regulatory compliance verification",
+      "Transparent contract management with suppliers and professionals",
+      "Legal protection and dispute management",
+      "Complete documentation for every project phase"
     ]
   },
   sostenibilita: {
     title: "SUSTAINABILITY",
-    description: "Our commitment to a more sustainable future through responsible and innovative management practices.",
-    points: [
-      "Implementation of energy-efficient solutions and reduction of environmental impact",
-      "Use of eco-compatible materials and technologies in maintenance and renovations",
-      "Consumption optimization through intelligent monitoring systems",
-      "Environmental certifications and compliance with international sustainability standards"
-    ]
+    description: "Our commitment to a more sustainable future through responsible and innovative management practices."
   },
   news: {
     title: "NEWS & UPDATES",
