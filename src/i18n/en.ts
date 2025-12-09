@@ -47,7 +47,7 @@ export default {
       "Public and private tenders",
       "Payment planning and document management"
     ],
-    closing: "Each service is calibrated to ensure operational transparency and maximum protection of the client's interests."
+    closing: "A single point of contact to manage all operational phases."
   },
   invest_in_italy: {
     title: "INVEST IN ITALY",
@@ -64,18 +64,21 @@ export default {
   },
   garanzie: {
     title: "GUARANTEES & TRANSPARENCY",
-    description: "Our method is based on control, traceability, and constant communication with the client.",
+    description: "Our approach is based on control, traceability, and constant communication with the client. We provide a financial, contractual, and management protection model based on international instruments.",
     points: [
-      "Periodic reporting on work progress, timelines, and costs",
-      "Technical audits and regulatory compliance verification",
-      "Transparent contract management with suppliers and professionals",
-      "Legal protection and dispute management",
-      "Complete documentation for every project phase"
+      "Bilingual contracts (ENG/ITA)",
+      "Mapped out operational timeline and shared milestones",
+      "Land search, architectural design, and construction",
+      "Escrow account or SPV dedicated to the investment",
+      "Certified monthly reports and financial forecasts",
+      "Market analysis using MCA – Market Comparison Approach",
+      "Business plan with return study (ROI and sensitivity)",
+      "Exit strategy: tourism/rental management and/or future resale"
     ]
   },
   sostenibilita: {
     title: "SUSTAINABILITY",
-    description: "Our commitment to a more sustainable future through responsible and innovative management practices."
+    description: "Walk into a future where innovation and renewable materials blend with the land, creating a product that respects nature and integrates with it, respecting the landscape."
   },
   news: {
     title: "NEWS & UPDATES",
