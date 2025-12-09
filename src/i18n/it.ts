@@ -63,10 +63,10 @@ export default {
     closing: "Un'opportunità concreta per allocare capitali in uno scenario da sogno e confezionare la propria offerta su misura in base al capitale da investire."
   },
   garanzie: {
-    title: "GARANZIE E TRASPARENZA",
+    title: "GARANZIA E TRASPARENZA",
     description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente. Forniamo un modello di tutela economica, contrattuale e gestionale basato su strumenti internazionali",
     points: [
-      "Contrattualistica bilingue (ENG/ITa)",
+      "Contrattualistica bilingue (ENG/ITA)",
       "Timeline operativa tracciata e milestone condivise",
       "Ricerca del terreno, progettazione achitettonica e costruzione",
       "Escrow account o SPV dedicata all’investimento",
