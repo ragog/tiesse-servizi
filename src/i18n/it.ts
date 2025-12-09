@@ -53,7 +53,7 @@ export default {
     title: "INVEST IN ITALY",
     titleBreak: "INVEST IN<br/>ITALY",
     intro: "Accompagniamo investitori esteri interessati al mercato immobiliare italiano di alto profilo.",
-    description: "Un occasione per promuovere le bellezze dei nostri territori come la Sardegna e le altre isole del Mediterraneo tra le più mete ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare, inserendosi in un settore che non conosce crisi.",
+    description: "Un occasione per promuovere le bellezze dei nostri territori come la Sardegna e le altre isole del Mediterraneo tra le mete più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare, inserendosi in un settore che non conosce crisi.",
     subtitle: "Attraverso Tiesse, gli investitori possono:",
     points: [
       "Accedere a immobili di pregio in zone iconiche",
