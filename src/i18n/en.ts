@@ -20,18 +20,18 @@ export default {
   chi_siamo: {
     title: "ABOUT US",
     points: [
-      "We comprehensively manage technical documentation and property services, creating detailed guides to optimize every aspect of real estate management.",
-      "We design spaces and facilities with complete traceability, monitoring systems, and alerts to ensure maximum efficiency and safety.",
-      "We provide in-depth evaluations and detailed reporting with climate control systems and advanced property management."
+      "Tiesse supports and collaborates with companies, investment funds, banks, and private individuals in the entire technical, legal, and financial management of construction projects.",
+      "We guarantee structured coordination of design, construction site and safety, offering the client a clear vision of the processes and timely control of: times, costs and quality."
+     
     ]
   },
   missione: {
     title: "OUR MISSION",
-    description: "To be the reference partner for integrated management of prestigious properties, offering innovative and personalized solutions that enhance our clients' real estate assets.",
+    description: "We support our partners by transforming the complexity of the construction process into a smooth, manageable process that meets technical and economic objectives. Our work reduces operational and financial risks, simplifies interactions between stakeholders, and protects investments.",
     points: [
-      "Guarantee operational excellence through professional services and cutting-edge technologies",
-      "Create added value for our clients through efficient and transparent management",
-      "Build lasting relationships based on trust, expertise, and measurable results"
+      "",
+      "",
+      ""
     ]
   },
   servizi_tecnici: {
