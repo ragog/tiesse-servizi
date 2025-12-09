@@ -122,7 +122,7 @@ export default {
   },
   contatti: {
     title: "CONTACT US",
-    subtitle: "We're ready to listen to your needs",
+    subtitle: "Join our network.",
     form: {
       name: "Name",
       email: "Email",
