@@ -39,11 +39,11 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 						</div>
 					</a>
 					<div class="hidden md:flex space-x-6">
-						<a href="#home" class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.home}</a>
 						<a href={locale === 'it' ? '#chi-siamo' : '#about'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.about}</a>
 						<a href={locale === 'it' ? '#missione' : '#mission'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.mission}</a>
 						<a href={locale === 'it' ? '#servizi-tecnici' : '#services'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.services}</a>
 						<a href={locale === 'it' ? '#invest-in-italy' : '#invest-in-italy'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.invest}</a>
+						<a href={locale === 'it' ? '#garanzie' : '#guarantees'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.guarantees}</a>
 						<a href={locale === 'it' ? '#sostenibilita' : '#sustainability'} class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.sustainability}</a>
 						<a href="#news" class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.news}</a>
 						<a href="#partners" class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">{content.nav.partners}</a>
@@ -103,20 +103,15 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 		<!-- Missione / Mission Section -->
 		<section id={locale === 'it' ? 'missione' : 'mission'} class="py-20 bg-gray-50">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center mb-12">
-					<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-					<h2 class="text-4xl font-bold mb-6">{content.missione.title}</h2>
-					<p class="text-xl text-gray-600 max-w-3xl mx-auto">{content.missione.description}</p>
-				</div>
-				<div class="grid md:grid-cols-3 gap-8 mt-12">
-					{content.missione.points.map((point: string, index: number) => (
-						<div class="bg-white p-8 rounded-lg shadow-sm">
-							<div class="w-12 h-12 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold text-xl mb-4">
-								{index + 1}
-							</div>
-							<p class="text-gray-700">{point}</p>
-						</div>
-					))}
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+						<img src="/img/signal-2025-12-04-164802.jpeg" alt="Mission" class="w-full h-full object-cover" />
+					</div>
+					<div>
+						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
+						<h2 class="text-4xl font-bold mb-6">{content.missione.title}</h2>
+						<p class="text-xl text-gray-600">{content.missione.description}</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -125,22 +120,24 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 		<section id={locale === 'it' ? 'servizi-tecnici' : 'services'} class="py-20 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164802.jpeg" alt="Construction Management" class="w-full h-full object-cover" />
-					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-8">{content.servizi_tecnici.title}</h2>
-						<div class="space-y-4">
+						<h2 class="text-4xl font-bold mb-6">{content.servizi_tecnici.title}</h2>
+						<p class="text-lg text-gray-600 mb-6">{content.servizi_tecnici.description}</p>
+						<div class="grid grid-cols-2 gap-3 mb-6">
 							{content.servizi_tecnici.items.map((item: string, index: number) => (
-								<div class="flex items-center bg-gray-50 p-4 rounded-lg">
-									<div class="w-10 h-10 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold mr-4 flex-shrink-0">
+								<div class="flex items-start bg-gray-50 p-3 rounded-lg">
+									<div class="w-8 h-8 rounded-full bg-[#8BC34A] flex items-center justify-center text-white font-bold text-sm mr-3 flex-shrink-0">
 										{index + 1}
 									</div>
-									<span class="font-semibold text-gray-900">{item}</span>
+									<span class="text-sm font-semibold text-gray-900 leading-tight">{item}</span>
 								</div>
 							))}
 						</div>
+						<p class="text-gray-600 italic">{content.servizi_tecnici.closing}</p>
+					</div>
+					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+						<img src="/img/signal-2025-12-04-164802.jpeg" alt="Construction Management" class="w-full h-full object-cover" />
 					</div>
 				</div>
 			</div>
@@ -150,11 +147,16 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 		<section id="invest-in-italy" class="py-20 bg-[#2E2E2E] text-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+						<img src="/img/signal-2025-12-04-164825.jpeg" alt="Italian Property" class="w-full h-full object-cover" />
+					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6" set:html={content.invest_in_italy.titleBreak}></h2>
-						<p class="text-xl text-gray-300 mb-8">{content.invest_in_italy.subtitle}</p>
-						<div class="space-y-4 text-gray-300">
+						<h2 class="text-4xl font-bold mb-6">{content.invest_in_italy.title}</h2>
+						<p class="text-lg text-gray-300 mb-4">{content.invest_in_italy.intro}</p>
+						<p class="text-gray-400 mb-6">{content.invest_in_italy.description}</p>
+						<p class="text-lg font-semibold text-white mb-4">{content.invest_in_italy.subtitle}</p>
+						<div class="space-y-3 text-gray-300 mb-6">
 							{content.invest_in_italy.points.map((point: string) => (
 								<p class="flex items-start">
 									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
@@ -162,33 +164,47 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 								</p>
 							))}
 						</div>
-					</div>
-					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164825.jpeg" alt="Italian Property" class="w-full h-full object-cover" />
+						<p class="text-gray-400 italic">{content.invest_in_italy.closing}</p>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Sostenibilità / Sustainability Section -->
-		<section id={locale === 'it' ? 'sostenibilita' : 'sustainability'} class="py-20 bg-white">
+		<!-- Garanzie e Trasparenza / Guarantees Section -->
+		<section id={locale === 'it' ? 'garanzie' : 'guarantees'} class="py-20 bg-white">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid md:grid-cols-2 gap-12 items-center">
-					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
-						<img src="/img/signal-2025-12-04-164830.jpeg" alt="Sustainability" class="w-full h-full object-cover" />
-					</div>
 					<div>
 						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-						<h2 class="text-4xl font-bold mb-6">{content.sostenibilita.title}</h2>
-						<p class="text-lg text-gray-600 mb-6">{content.sostenibilita.description}</p>
-						<div class="space-y-4 text-gray-700">
-							{content.sostenibilita.points.map((point: string) => (
+						<h2 class="text-4xl font-bold mb-6">{content.garanzie.title}</h2>
+						<p class="text-lg text-gray-600 mb-6">{content.garanzie.description}</p>
+						<div class="space-y-3 text-gray-700">
+							{content.garanzie.points.map((point: string) => (
 								<p class="flex items-start">
 									<span class="text-[#8BC34A] mr-3 text-xl">•</span>
 									<span>{point}</span>
 								</p>
 							))}
 						</div>
+					</div>
+					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+						<img src="/img/signal-2025-12-04-164830.jpeg" alt="Guarantees" class="w-full h-full object-cover" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sostenibilità / Sustainability Section -->
+		<section id={locale === 'it' ? 'sostenibilita' : 'sustainability'} class="py-20 bg-gray-50">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div class="relative h-[400px] rounded-lg overflow-hidden shadow-2xl">
+						<img src="/img/signal-2025-12-04-164802.jpeg" alt="Sustainability" class="w-full h-full object-cover" />
+					</div>
+					<div>
+						<div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
+						<h2 class="text-4xl font-bold mb-6">{content.sostenibilita.title}</h2>
+						<p class="text-lg text-gray-600">{content.sostenibilita.description}</p>
 					</div>
 				</div>
 			</div>

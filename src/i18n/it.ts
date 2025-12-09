@@ -6,6 +6,7 @@ export default {
     mission: "Missione",
     services: "Servizi Tecnici",
     invest: "Invest in Italy",
+    guarantees: "Garanzie e Trasparenza",
     sustainability: "Sostenibilità",
     news: "News",
     partners: "Partners",
@@ -43,30 +44,38 @@ export default {
       "Coordinamento sicurezza e direzione lavori",
       "Gestione fornitori, appaltatori e capitolati",
       "Contabilità lavori, SAL e monitoraggio costi",
-      "Gare d’appalto pubbliche e private",
+      "Gare d'appalto pubbliche e private",
       "Pianificazione dei pagamenti e gestione documentale"
-    ]
+    ],
+    closing: "Ogni servizio è calibrato per garantire trasparenza operativa e massima tutela degli interessi del committente."
   },
   invest_in_italy: {
     title: "INVEST IN ITALY",
     titleBreak: "INVEST IN<br/>ITALY",
-    subtitle: "Il vostro gateway per investimenti immobiliari di successo in Italia",
+    intro: "Accompagniamo investitori esteri interessati al mercato immobiliare italiano di alto profilo.",
+    description: "Territori come la Sardegna e le altre isole del Mediterraneo sono tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare.",
+    subtitle: "Attraverso Tiesse, gli investitori possono:",
     points: [
-      "Assistenza completa per investitori internazionali interessati al mercato immobiliare italiano",
-      "Consulenza su normative fiscali, procedure burocratiche e opportunità di investimento",
-      "Network consolidato di professionisti locali: notai, commercialisti, avvocati e agenzie immobiliari",
-      "Gestione chiavi in mano: dall'acquisto alla valorizzazione dell'immobile"
+      "Accedere a immobili di pregio in zone iconiche",
+      "Realizzare operazioni immobiliari con alto valore estetico e tecnologico",
+      "Valorizzare asset con design e materiali made in Italy"
+    ],
+    closing: "Un'opportunità concreta per allocare capitali in uno scenario da sogno e confezionare la propria offerta su misura in base al capitale da investire."
+  },
+  garanzie: {
+    title: "GARANZIE E TRASPARENZA",
+    description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente.",
+    points: [
+      "Reporting periodico su avanzamento lavori, tempi e costi",
+      "Audit tecnici e verifiche di conformità normativa",
+      "Gestione contrattuale trasparente con fornitori e professionisti",
+      "Tutela legale e gestione del contenzioso",
+      "Documentazione completa per ogni fase del progetto"
     ]
   },
   sostenibilita: {
     title: "SOSTENIBILITÀ",
-    description: "Il nostro impegno per un futuro più sostenibile attraverso pratiche di gestione responsabile e innovative.",
-    points: [
-      "Implementazione di soluzioni energetiche efficienti e riduzione dell'impatto ambientale",
-      "Utilizzo di materiali e tecnologie eco-compatibili nella manutenzione e nelle ristrutturazioni",
-      "Ottimizzazione dei consumi attraverso sistemi di monitoraggio intelligente",
-      "Certificazioni ambientali e conformità agli standard di sostenibilità internazionali"
-    ]
+    description: "Il nostro impegno per un futuro più sostenibile attraverso pratiche di gestione responsabile e innovative."
   },
   news: {
     title: "NEWS & AGGIORNAMENTI",
