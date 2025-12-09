@@ -21,7 +21,7 @@ export default {
     title: "CHI SIAMO",
     points: [
       "Tiesse supporta e collabora con: imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
-      "Garantiamo un coordinamento strutturato di progettazione, cantiere e sicurezza, offrendo al cliente una visione chiara dei processi e il controllo puntuale dei tempi, costi e qualità.",
+      "Garantiamo un coordinamento strutturato di progettazione, cantiere e sicurezza, offrendo al cliente una visione chiara dei processi e il controllo puntuale di: tempi, costi e qualità.",
       
     ]
   },
@@ -47,13 +47,13 @@ export default {
       "Gare d'appalto pubbliche e private",
       "Pianificazione dei pagamenti e gestione documentale"
     ],
-    closing: "Ogni servizio è calibrato per garantire trasparenza operativa e massima tutela degli interessi del committente."
+    closing: "Un unico interlocutore per gorvernare tutte le fasi operative."
   },
   invest_in_italy: {
     title: "INVEST IN ITALY",
     titleBreak: "INVEST IN<br/>ITALY",
     intro: "Accompagniamo investitori esteri interessati al mercato immobiliare italiano di alto profilo.",
-    description: "Territori come la Sardegna e le altre isole del Mediterraneo sono tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare.",
+    description: "Un occasione per promuovere le bellezze dei nostri territori come la Sardegna e le altre isole del Mediterraneo tra le più mete ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare, inserendosi in un settore che non conosce crisi.",
     subtitle: "Attraverso Tiesse, gli investitori possono:",
     points: [
       "Accedere a immobili di pregio in zone iconiche",
@@ -64,18 +64,21 @@ export default {
   },
   garanzie: {
     title: "GARANZIE E TRASPARENZA",
-    description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente.",
+    description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente. Forniamo un modello di tutela economica, contrattuale e gestionale basato su strumenti internazionali",
     points: [
-      "Reporting periodico su avanzamento lavori, tempi e costi",
-      "Audit tecnici e verifiche di conformità normativa",
-      "Gestione contrattuale trasparente con fornitori e professionisti",
-      "Tutela legale e gestione del contenzioso",
-      "Documentazione completa per ogni fase del progetto"
+      "Contrattualistica bilingue (ENG/ITa)",
+      "Timeline operativa tracciata e milestone condivise",
+      "Ricerca del terreno, progettazione achitettonica e costruzione",
+      "Escrow account o SPV dedicata all’investimento",
+      "Report mensili certificati e forecast finanziari",
+      "Analisi di mercato tramite MCA – Market Comparison Approach",
+      "Business plan con studio dei ritorni (ROI e sensitività)",
+      "Exit strategy: gestione turistica/affittuaria e/o futura rivendita"
     ]
   },
   sostenibilita: {
     title: "SOSTENIBILITÀ",
-    description: "Il nostro impegno per un futuro più sostenibile attraverso pratiche di gestione responsabile e innovative."
+    description: "Camminare in un futuro dove innovazione e materiali rinnovabili si fondano con il territorio, per dare vita ad un prodotto che rispetti la natura e si integri in essa rispettandone l'armonia paesaggistica."
   },
   news: {
     title: "NEWS & AGGIORNAMENTI",
@@ -119,7 +122,7 @@ export default {
   },
   contatti: {
     title: "CONTATTACI",
-    subtitle: "Siamo pronti ad ascoltare le tue esigenze",
+    subtitle: "Unisciti alla nostra rete.",
     form: {
       name: "Nome",
       email: "Email",
