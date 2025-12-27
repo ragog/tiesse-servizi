@@ -132,6 +132,19 @@ export default {
     }
   },
   footer: {
-    copyright: "All rights reserved."
+    copyright: "All rights reserved.",
+    // Section headings
+    company_info_title: "Company Information",
+    contacts_title: "Contacts",
+    // Labels
+    email_label: "Email",
+    pec_label: "PEC",
+    partita_iva_label: "VAT Number",
+    sede_label: "Headquarters",
+    // Values
+    email_value: "info@tiesseservizi.eu",
+    pec_value: "postmaster@pec.tiesseservizi.eu",
+    partita_iva_value: "02241091202",
+    sede_value: "Via Loderingo degli Andalò 5, 40124 Bologna"
   }
 };

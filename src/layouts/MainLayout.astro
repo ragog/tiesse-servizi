@@ -309,11 +309,53 @@ const otherLocaleUrl = locale === 'it' ? '/en' : '/';
 		<!-- Footer -->
 		<footer class="bg-[#2E2E2E] text-white py-12">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="text-center">
-					<h3 class="text-3xl font-bold mb-4">
-						<span class="text-white">TIESSE</span><span class="text-[#8BC34A]">SERVIZI</span>
-					</h3>
-					<p class="text-gray-400 mb-6">FACILITY • EXECUTIVE MANAGEMENT</p>
+				<!-- Multi-column grid -->
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+					<!-- Column 1: Company Branding -->
+					<div class="text-center md:text-left">
+						<h3 class="text-2xl md:text-3xl font-bold mb-2">
+							<span class="text-white">TIESSE</span><span class="text-[#8BC34A]">SERVIZI</span>
+						</h3>
+						<p class="text-gray-400 text-sm">FACILITY • EXECUTIVE MANAGEMENT</p>
+					</div>
+
+					<!-- Column 2: Company Info -->
+					<div class="text-center md:text-left">
+						<h4 class="text-lg font-semibold mb-3">{content.footer.company_info_title}</h4>
+						<div class="space-y-2 text-sm">
+							<p class="text-gray-400">
+								<span class="font-medium text-white">{content.footer.partita_iva_label}:</span><br/>
+								{content.footer.partita_iva_value}
+							</p>
+							<p class="text-gray-400">
+								<span class="font-medium text-white">{content.footer.sede_label}:</span><br/>
+								{content.footer.sede_value}
+							</p>
+						</div>
+					</div>
+
+					<!-- Column 3: Contacts -->
+					<div class="text-center md:text-left">
+						<h4 class="text-lg font-semibold mb-3">{content.footer.contacts_title}</h4>
+						<div class="space-y-2 text-sm">
+							<p class="text-gray-400">
+								<span class="font-medium text-white">{content.footer.email_label}:</span><br/>
+								<a href={`mailto:${content.footer.email_value}`} class="hover:text-[#8BC34A] transition-colors">
+									{content.footer.email_value}
+								</a>
+							</p>
+							<p class="text-gray-400">
+								<span class="font-medium text-white">{content.footer.pec_label}:</span><br/>
+								<a href={`mailto:${content.footer.pec_value}`} class="hover:text-[#8BC34A] transition-colors">
+									{content.footer.pec_value}
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Copyright row -->
+				<div class="border-t border-gray-700 pt-6 text-center">
 					<p class="text-sm text-gray-500">
 						&copy; 2024 TIESSE SERVIZI. {content.footer.copyright}
 					</p>
