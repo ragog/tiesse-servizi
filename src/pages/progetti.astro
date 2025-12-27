@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectHero from '../components/ProjectHero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getTranslations } from '../i18n';
+import { getCollection } from 'astro:content';
+
+const locale = 'it';
+const content = getTranslations(locale);
+
+// Fetch Italian projects
+const allProjects = await getCollection('projects', ({ id }) => {
+  return id.startsWith('it/');
+});
+
+// Sort by order field, then by year (newest first)
+const projects = allProjects.sort((a, b) => {
+  if (a.data.order !== undefined && b.data.order !== undefined) {
+    return a.data.order - b.data.order;
+  }
+  if (a.data.order !== undefined) return -1;
+  if (b.data.order !== undefined) return 1;
+  return b.data.year - a.data.year;
+});
+---
+
+<BaseLayout content={content} locale={locale} title={`${content.projects.page_title} - ${content.site_title}`}>
+  <ProjectHero
+    title={content.projects.page_title}
+    subtitle={content.projects.subtitle}
+    locale={locale}
+  />
+
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {projects.length > 0 ? (
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project) => {
+            const slug = project.id.replace('it/', '').replace('.md', '');
+            return (
+              <ProjectCard
+                title={project.data.title}
+                description={project.data.description}
+                location={project.data.location}
+                year={project.data.year}
+                coverImage={project.data.coverImage}
+                slug={slug}
+                locale={locale}
+                category={project.data.category}
+              />
+            );
+          })}
+        </div>
+      ) : (
+        <p class="text-center text-gray-600 text-xl">{content.projects.no_projects}</p>
+      )}
+    </div>
+  </section>
+</BaseLayout>
