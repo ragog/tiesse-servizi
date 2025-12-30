@@ -3,14 +3,7 @@ export default {
   nav: {
     home: "Home",
     about: "About",
-    mission: "Mission",
-    services: "Technical Services",
-    invest: "Invest in Italy",
-    guarantees: "Guarantees & Transparency",
-    sustainability: "Sustainability",
-    news: "News",
-    partners: "Partners",
-    contact: "Contact"
+    projects: "Projects"
   },
   hero: {
     subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
@@ -146,5 +139,15 @@ export default {
     pec_value: "postmaster@pec.tiesseservizi.eu",
     partita_iva_value: "02241091202",
     sede_value: "Via Loderingo degli Andalò 5, 40124 Bologna"
+  },
+  projects: {
+    page_title: "Our Projects",
+    subtitle: "Excellence delivered: discover the projects that turned visions into reality",
+    no_projects: "No projects available at the moment.",
+    specs_area: "Area",
+    specs_budget: "Budget",
+    specs_duration: "Duration",
+    specs_client: "Client",
+    specs_features: "Features"
   }
 };

@@ -3,14 +3,7 @@ export default {
   nav: {
     home: "Home",
     about: "Chi Siamo",
-    mission: "Missione",
-    services: "Servizi Tecnici",
-    invest: "Invest in Italy",
-    guarantees: "Garanzie e Trasparenza",
-    sustainability: "Sostenibilità",
-    news: "News",
-    partners: "Partners",
-    contact: "Contatti"
+    projects: "Progetti"
   },
   hero: {
     subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
@@ -146,5 +139,15 @@ export default {
     pec_value: "postmaster@pec.tiesseservizi.eu",
     partita_iva_value: "02241091202",
     sede_value: "Via Loderingo degli Andalò 5, 40124 Bologna"
+  },
+  projects: {
+    page_title: "I Nostri Progetti",
+    subtitle: "Eccellenza realizzata: scopri i progetti che hanno trasformato visioni in realtà",
+    no_projects: "Nessun progetto disponibile al momento.",
+    specs_area: "Superficie",
+    specs_budget: "Budget",
+    specs_duration: "Durata",
+    specs_client: "Cliente",
+    specs_features: "Caratteristiche"
   }
 };
