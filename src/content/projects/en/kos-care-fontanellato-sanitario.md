@@ -4,7 +4,7 @@ description: "Healthcare facility built in Fontanellato"
 location: "Fontanellato, Parma"
 year: 2024
 category: "commercial"
-coverImage: "./kos-care-fontanellato-sanitario/cover.webp"
+coverImage: "../_images/kos-care-fontanellato-sanitario/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

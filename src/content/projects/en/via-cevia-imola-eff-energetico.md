@@ -4,7 +4,7 @@ description: "Energy efficiency upgrade on Via Cevia"
 location: "Via Cevia, Imola"
 year: 2024
 category: "renovation"
-coverImage: "./via-cevia-imola-eff-energetico/cover.webp"
+coverImage: "../_images/via-cevia-imola-eff-energetico/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

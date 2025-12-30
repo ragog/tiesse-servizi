@@ -4,7 +4,7 @@ description: "Commercial/industrial facility built in Castenaso"
 location: "Castenaso, Bologna"
 year: 2024
 category: "commercial"
-coverImage: "./vaitosarelli-castenaso/cover.webp"
+coverImage: "../_images/vaitosarelli-castenaso/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

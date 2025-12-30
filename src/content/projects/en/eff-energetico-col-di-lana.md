@@ -4,7 +4,7 @@ description: "Energy efficiency upgrade for residential building"
 location: "Col di Lana, [TO BE COMPLETED]"
 year: 2024
 category: "renovation"
-coverImage: "./eff-energetico-col-di-lana/cover.webp"
+coverImage: "../_images/eff-energetico-col-di-lana/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

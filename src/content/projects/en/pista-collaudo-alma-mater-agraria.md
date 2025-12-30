@@ -4,7 +4,7 @@ description: "Test track for the Agriculture Department at the University of Bol
 location: "Bologna"
 year: 2024
 category: "commercial"
-coverImage: "./pista-collaudo-alma-mater-agraria/cover.webp"
+coverImage: "../_images/pista-collaudo-alma-mater-agraria/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

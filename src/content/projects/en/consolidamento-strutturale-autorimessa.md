@@ -4,7 +4,7 @@ description: "Structural consolidation work for garage facility"
 location: "[TO BE COMPLETED]"
 year: 2024
 category: "renovation"
-coverImage: "./consolidamento-strutturale-autorimessa/cover.webp"
+coverImage: "../_images/consolidamento-strutturale-autorimessa/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

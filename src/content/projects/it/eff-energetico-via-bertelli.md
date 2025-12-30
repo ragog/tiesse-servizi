@@ -4,7 +4,7 @@ description: "Intervento di riqualificazione energetica in Via Bertelli"
 location: "Via Bertelli, [DA COMPLETARE]"
 year: 2024
 category: "renovation"
-coverImage: "./eff-energetico-via-bertelli/cover.webp"
+coverImage: "../_images/eff-energetico-via-bertelli/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

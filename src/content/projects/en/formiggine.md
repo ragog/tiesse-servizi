@@ -4,7 +4,7 @@ description: "Construction project in Formiggine"
 location: "Formiggine, [TO BE COMPLETED]"
 year: 2024
 category: "mixed-use"
-coverImage: "./formiggine/cover.webp"
+coverImage: "../_images/formiggine/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

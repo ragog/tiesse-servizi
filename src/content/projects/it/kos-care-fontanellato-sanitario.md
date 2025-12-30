@@ -4,7 +4,7 @@ description: "Struttura sanitaria assistenziale realizzata a Fontanellato"
 location: "Fontanellato, Parma"
 year: 2024
 category: "commercial"
-coverImage: "./kos-care-fontanellato-sanitario/cover.webp"
+coverImage: "../_images/kos-care-fontanellato-sanitario/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

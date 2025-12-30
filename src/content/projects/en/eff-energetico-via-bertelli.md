@@ -4,7 +4,7 @@ description: "Energy efficiency upgrade on Via Bertelli"
 location: "Via Bertelli, [TO BE COMPLETED]"
 year: 2024
 category: "renovation"
-coverImage: "./eff-energetico-via-bertelli/cover.webp"
+coverImage: "../_images/eff-energetico-via-bertelli/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

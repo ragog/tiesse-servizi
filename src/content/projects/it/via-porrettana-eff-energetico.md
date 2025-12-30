@@ -4,7 +4,7 @@ description: "Intervento di riqualificazione energetica in Via Porrettana"
 location: "Via Porrettana, [DA COMPLETARE]"
 year: 2024
 category: "renovation"
-coverImage: "./via-porrettana-eff-energetico/cover.webp"
+coverImage: "../_images/via-porrettana-eff-energetico/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

@@ -4,7 +4,7 @@ description: "Pista di collaudo per il dipartimento di Agraria dell'Università 
 location: "Bologna"
 year: 2024
 category: "commercial"
-coverImage: "./pista-collaudo-alma-mater-agraria/cover.webp"
+coverImage: "../_images/pista-collaudo-alma-mater-agraria/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

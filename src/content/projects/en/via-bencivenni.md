@@ -4,7 +4,7 @@ description: "Residential project on Via Bencivenni"
 location: "Via Bencivenni, [TO BE COMPLETED]"
 year: 2024
 category: "residential"
-coverImage: "./via-bencivenni/cover.webp"
+coverImage: "../_images/via-bencivenni/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"
