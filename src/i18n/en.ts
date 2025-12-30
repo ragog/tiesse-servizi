@@ -14,7 +14,7 @@ export default {
     title: "ABOUT US",
     points: [
       "Tiesse supports and collaborates with companies, investment funds, banks, and private individuals in the entire technical, legal, and financial management of construction projects.",
-      "We guarantee structured coordination of design, construction site and safety, offering the client a clear vision of the processes and timely control of: times, costs and quality."
+      "We guarantee structured coordination of design, construction site and safety, offering the client a clear vision of the processes and timely control of times, costs and quality."
      
     ]
   },
