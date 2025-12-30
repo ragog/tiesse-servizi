@@ -14,7 +14,7 @@ export default {
     title: "CHI SIAMO",
     points: [
       "Tiesse supporta e collabora con: imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
-      "Garantiamo un coordinamento strutturato di progettazione, cantiere e sicurezza, offrendo al cliente una visione chiara dei processi e il controllo puntuale di: tempi, costi e qualità.",
+      "Garantiamo un coordinamento strutturato di progettazione, cantiere e sicurezza, offrendo al cliente una visione chiara dei processi e il controllo puntuale di tempi, costi e qualità.",
       
     ]
   },
