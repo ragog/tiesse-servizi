@@ -4,7 +4,7 @@ description: "Conservative restoration of historic building converted to student
 location: "Via Petroni, Bologna"
 year: 2024
 category: "renovation"
-coverImage: "./restauro-storico-studentato-via-petroni/cover.jpg"
+coverImage: "./restauro-storico-studentato-via-petroni/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

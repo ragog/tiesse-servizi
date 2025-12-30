@@ -4,7 +4,7 @@ description: "Restauro conservativo di edificio storico adibito a studentato"
 location: "Via Petroni, Bologna"
 year: 2024
 category: "renovation"
-coverImage: "./restauro-storico-studentato-via-petroni/cover.jpg"
+coverImage: "./restauro-storico-studentato-via-petroni/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

@@ -4,7 +4,7 @@ description: "Intervento di riqualificazione energetica edificio residenziale"
 location: "Col di Lana, [DA COMPLETARE]"
 year: 2024
 category: "renovation"
-coverImage: "./eff-energetico-col-di-lana/cover.jpg"
+coverImage: "./eff-energetico-col-di-lana/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

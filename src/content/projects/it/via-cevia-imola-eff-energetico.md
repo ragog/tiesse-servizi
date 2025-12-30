@@ -4,7 +4,7 @@ description: "Intervento di riqualificazione energetica in Via Cevia"
 location: "Via Cevia, Imola"
 year: 2024
 category: "renovation"
-coverImage: "./via-cevia-imola-eff-energetico/cover.jpg"
+coverImage: "./via-cevia-imola-eff-energetico/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

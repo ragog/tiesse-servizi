@@ -4,7 +4,7 @@ description: "Residential/care facility built in Castenaso, with dedicated servi
 location: "Castenaso, Bologna"
 year: 2024
 category: "commercial"
-coverImage: "./casa-della-gioia-castenaso/cover.jpg"
+coverImage: "./casa-della-gioia-castenaso/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

@@ -4,7 +4,7 @@ description: "Progetto edilizio a Formiggine"
 location: "Formiggine, [DA COMPLETARE]"
 year: 2024
 category: "mixed-use"
-coverImage: "./formiggine/cover.jpg"
+coverImage: "./formiggine/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

@@ -4,7 +4,7 @@ description: "Centro di riabilitazione e struttura sanitaria a Bagnolo"
 location: "Bagnolo, [DA COMPLETARE]"
 year: 2024
 category: "commercial"
-coverImage: "./kos-cre-bagnolo-sanitario/cover.jpg"
+coverImage: "./kos-cre-bagnolo-sanitario/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

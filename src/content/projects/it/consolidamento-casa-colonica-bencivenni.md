@@ -4,7 +4,7 @@ description: "Intervento di consolidamento strutturale per casa colonica storica
 location: "[DA COMPLETARE]"
 year: 2024
 category: "renovation"
-coverImage: "./consolidamento-casa-colonica-bencivenni/cover.jpg"
+coverImage: "./consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

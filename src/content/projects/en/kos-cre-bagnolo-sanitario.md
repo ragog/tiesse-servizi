@@ -4,7 +4,7 @@ description: "Rehabilitation center and healthcare facility in Bagnolo"
 location: "Bagnolo, [TO BE COMPLETED]"
 year: 2024
 category: "commercial"
-coverImage: "./kos-cre-bagnolo-sanitario/cover.jpg"
+coverImage: "./kos-cre-bagnolo-sanitario/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

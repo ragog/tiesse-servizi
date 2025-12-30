@@ -4,7 +4,7 @@ description: "Intervento di riqualificazione energetica in Via Tranquillo da Cre
 location: "Via Tranquillo da Cremona, [DA COMPLETARE]"
 year: 2024
 category: "renovation"
-coverImage: "./via-tranquillo-da-cremona-eff-energetico/cover.jpg"
+coverImage: "./via-tranquillo-da-cremona-eff-energetico/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

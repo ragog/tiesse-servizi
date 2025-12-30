@@ -4,7 +4,7 @@ description: "Intervento di consolidamento strutturale per autorimessa"
 location: "[DA COMPLETARE]"
 year: 2024
 category: "renovation"
-coverImage: "./consolidamento-strutturale-autorimessa/cover.jpg"
+coverImage: "./consolidamento-strutturale-autorimessa/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

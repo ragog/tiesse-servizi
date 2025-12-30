@@ -4,7 +4,7 @@ description: "Structural consolidation work for historic farmhouse"
 location: "[TO BE COMPLETED]"
 year: 2024
 category: "renovation"
-coverImage: "./consolidamento-casa-colonica-bencivenni/cover.jpg"
+coverImage: "./consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

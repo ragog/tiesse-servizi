@@ -4,7 +4,7 @@ description: "Advanced biotronic greenhouses for scientific research - Universit
 location: "Bologna"
 year: 2024
 category: "commercial"
-coverImage: "./serre-biotroniche-alma-mater/cover.jpg"
+coverImage: "./serre-biotroniche-alma-mater/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

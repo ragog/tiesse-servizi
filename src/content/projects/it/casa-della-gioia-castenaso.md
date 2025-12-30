@@ -4,7 +4,7 @@ description: "Struttura residenziale/assistenziale realizzata a Castenaso, con s
 location: "Castenaso, Bologna"
 year: 2024
 category: "commercial"
-coverImage: "./casa-della-gioia-castenaso/cover.jpg"
+coverImage: "./casa-della-gioia-castenaso/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"

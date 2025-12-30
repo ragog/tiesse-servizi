@@ -4,7 +4,7 @@ description: "Energy efficiency upgrade on Via Porrettana"
 location: "Via Porrettana, [TO BE COMPLETED]"
 year: 2024
 category: "renovation"
-coverImage: "./via-porrettana-eff-energetico/cover.jpg"
+coverImage: "./via-porrettana-eff-energetico/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"

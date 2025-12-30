@@ -4,7 +4,7 @@ description: "Energy efficiency upgrade on Via Tranquillo da Cremona"
 location: "Via Tranquillo da Cremona, [TO BE COMPLETED]"
 year: 2024
 category: "renovation"
-coverImage: "./via-tranquillo-da-cremona-eff-energetico/cover.jpg"
+coverImage: "./via-tranquillo-da-cremona-eff-energetico/cover.webp"
 specs:
   area: "[TO BE COMPLETED]"
   duration: "[TO BE COMPLETED]"
