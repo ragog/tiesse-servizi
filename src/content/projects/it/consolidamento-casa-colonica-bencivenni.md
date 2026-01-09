@@ -1,7 +1,7 @@
 ---
 title: "Consolidamento Casa Colonica Bencivenni"
 description: "Intervento di consolidamento strutturale per casa colonica storica"
-location: "[DA COMPLETARE]"
+location: "BOLOGNA"
 year: 2024
 category: "renovation"
 coverImage: "../_images/consolidamento-casa-colonica-bencivenni/cover.webp"
