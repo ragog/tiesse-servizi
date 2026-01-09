@@ -1,18 +1,18 @@
 ---
-title: "Efficientamento Energetico Col di Lana"
+title: "Efficientamento Energetico"
 description: "Intervento di riqualificazione energetica edificio residenziale"
-location: "Col di Lana, [DA COMPLETARE]"
+location: "BOLOGNA via Col di Lana"
 year: 2024
 category: "renovation"
 coverImage: "../_images/eff-energetico-col-di-lana/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  area: ""
+  duration: ""
+  client: "Azienda Privata"
   features:
     - "Cappotto termico"
     - "Sostituzione infissi"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - ""
 featured: false
 order: 5
 ---
