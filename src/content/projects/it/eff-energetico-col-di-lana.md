@@ -12,13 +12,12 @@ specs:
   features:
     - "Cappotto termico"
     - "Sostituzione infissi"
-    - "Impinato solare termico"
+    - "Impianto solare termico"
 featured: false
 order: 5
 ---
 
 # Efficientamento Energetico Col di Lana
 
-Progetto di riqualificazione energetica di un edificio residenziale.
 
 ****
