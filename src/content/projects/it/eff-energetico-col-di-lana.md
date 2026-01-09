@@ -12,7 +12,7 @@ specs:
   features:
     - "Cappotto termico"
     - "Sostituzione infissi"
-    - ""
+    - "Impinato solare termico"
 featured: false
 order: 5
 ---
@@ -21,4 +21,4 @@ order: 5
 
 Progetto di riqualificazione energetica di un edificio residenziale.
 
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+****
