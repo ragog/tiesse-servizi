@@ -10,7 +10,7 @@ specs:
   duration: "1 anno"
   client: "Privato"
   features:
-    - ""
+    - "Riqualificazione energetica con cappotti, infissi e solare termico"
 featured: false
 order: 7
 ---
