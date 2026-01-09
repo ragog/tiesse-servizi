@@ -1,7 +1,7 @@
 ---
 title: "Consolidamento Strutturale Autorimessa"
 description: "Intervento di consolidamento strutturale per autorimessa"
-location: "[DA COMPLETARE]"
+location: "BOLOGNA"
 year: 2024
 category: "renovation"
 coverImage: "../_images/consolidamento-strutturale-autorimessa/cover.webp"
