@@ -1,22 +1,22 @@
 ---
-title: "Formiggine"
-description: "Progetto edilizio a Formiggine"
-location: "Formiggine, [DA COMPLETARE]"
-year: 2024
+title: "Efficientamento energetico"
+description: "Intervento di riqualificazione energetica edificio residenziale"
+location: "Formiggine (Modena)"
+year: 2022
 category: "mixed-use"
 coverImage: "../_images/formiggine/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  area: ""
+  duration: "1 anno"
+  client: "Privato"
   features:
-    - "[DA COMPLETARE - caratteristiche]"
+    - ""
 featured: false
 order: 7
 ---
 
 # Formiggine
 
-Progetto edilizio realizzato a Formiggine.
 
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+
+****
