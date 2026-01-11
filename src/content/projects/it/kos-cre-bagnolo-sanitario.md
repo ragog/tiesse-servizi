@@ -6,13 +6,13 @@ year: 2024
 category: "commercial"
 coverImage: "../_images/kos-cre-bagnolo-sanitario/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
+  area: ""
+  duration: ""
   client: "KOS"
   features:
     - "Centro di riabilitazione"
     - "Struttura sanitaria specializzata"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - ""
 featured: false
 order: 9
 ---
