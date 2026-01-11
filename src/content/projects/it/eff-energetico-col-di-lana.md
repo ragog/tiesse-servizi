@@ -1,14 +1,14 @@
 ---
 title: "Efficientamento Energetico"
-description: "Intervento di riqualificazione energetica edificio residenziale"
-location: "BOLOGNA via Col di Lana"
-year: 2024
+description: "Intervento di riqualificazione energetica di edificio residenziale"
+location: "BOLOGNA"
+year: 2022
 category: "renovation"
 coverImage: "../_images/eff-energetico-col-di-lana/cover.webp"
 specs:
   area: ""
   duration: ""
-  client: "Azienda Privata"
+  client: "Cliente Privato"
   features:
     - "Cappotto termico"
     - "Sostituzione infissi"
