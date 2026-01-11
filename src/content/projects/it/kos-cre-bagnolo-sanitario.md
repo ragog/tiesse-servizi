@@ -1,6 +1,6 @@
 ---
 title: "KOS CARE - Struttura Sanitaria"
-description: "Centro di riabilitazione e struttura sanitaria a Bagnolo"
+description: "Centro di riabilitazione"
 location: "Bagnolo, Reggio Emilia"
 year: 2024
 category: "commercial"
