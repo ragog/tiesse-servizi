@@ -8,7 +8,7 @@ coverImage: "../_images/consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
   area: "[DA COMPLETARE]"
   duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Privato"
   features:
     - "Consolidamento strutturale"
     - "[DA COMPLETARE - altre caratteristiche]"
