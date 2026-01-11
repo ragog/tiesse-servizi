@@ -1,14 +1,14 @@
 ---
-title: "KOS CRE Bagnolo - Struttura Sanitaria"
+title: "KOS CARE - Struttura Sanitaria"
 description: "Centro di riabilitazione e struttura sanitaria a Bagnolo"
 location: "Bagnolo, Reggio Emilia"
 year: 2024
 category: "commercial"
 coverImage: "../_images/kos-cre-bagnolo-sanitario/cover.webp"
 specs:
-  area: "Parma"
+  area: "Reggio Emilia"
   duration: "6 mesi"
-  client: "KOS"
+  client: "KOS CARE"
   features:
     - "Centro di riabilitazione"
     - "Struttura sanitaria specializzata"
