@@ -19,6 +19,6 @@ order: 9
 
 # KOS CRE Bagnolo - Struttura Sanitaria
 
-Progetto di realizzazione di un centro di riabilitazione e struttura sanitaria a Bagnolo.
 
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+
+****
