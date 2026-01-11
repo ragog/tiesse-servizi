@@ -6,12 +6,12 @@ year: 2024
 category: "commercial"
 coverImage: "../_images/casa-della-gioia-castenaso/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  area: ""
+  duration: "1 anno"
+  client: "Comune di Bologna"
   features:
     - "Spazi comuni ampi e luminosi"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - ""
 featured: false
 order: 2
 ---
