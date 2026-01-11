@@ -3,7 +3,7 @@ title: "Efficientamento energetico"
 description: "Intervento di riqualificazione energetica edificio residenziale"
 location: "Formiggine (Modena)"
 year: 2022
-category: "Renovation"
+category: "renovation"
 coverImage: "../_images/formiggine/cover.webp"
 specs:
   area: ""
