@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
-    description: "",
+    description: "Strategic partnership for prestigiuos solutions",
     cta_text: "Scopri di più"
   },
   chi_siamo: {
