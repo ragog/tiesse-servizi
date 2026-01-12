@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
-    description: "Specialization in prestigious properties",
+    description: "Strategic partnership for prestigiuos solutions",
     cta_text: "Learn More"
   },
   chi_siamo: {
