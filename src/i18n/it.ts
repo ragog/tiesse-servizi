@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
-    description: "Strategic partner for real estate development and investment",
+    description: "STRATEGIC PARTNER FOR REAL ESTATE DEVELOPMENT AND INVESTMENT",
     cta_text: "Scopri di più"
   },
   chi_siamo: {
