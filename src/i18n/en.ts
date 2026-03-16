@@ -6,8 +6,8 @@ export default {
     projects: "Projects"
   },
   hero: {
-    subtitle: "FACILITY • EXECUTIVE MANAGEMENT",
-    description: "STRATEGIC PARTNER FOR REAL ESTATE DEVELOPMENT AND INVESTMENT",
+    subtitle: "Engineering-driven Real Estate Development and Investment",
+    description: "Operating company of Tiesse Group",
     cta_text: "Learn More"
   },
   chi_siamo: {
