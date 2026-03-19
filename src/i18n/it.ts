@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     subtitle: "Engineering Insight for Real Estate Development and Investment",
-    description: "Part of Tiesse Group",
+    description: "A company of Tiesse Group",
     cta_text: "Scopri di più"
   },
   chi_siamo: {
