@@ -6,8 +6,8 @@ export default {
     projects: "Progetti"
   },
   hero: {
-    subtitle: "Engineering-driven Real Estate Development and Investment",
-    description: "Operating company of Tiesse Group",
+    subtitle: "Engineering Insight for Real Estate Development and Investment",
+    description: "Operating company of TIESSE GROUP",
     cta_text: "Scopri di più"
   },
   chi_siamo: {
