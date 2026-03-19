@@ -6,7 +6,7 @@ export default {
     projects: "Projects"
   },
   hero: {
-    subtitle: "Engineering-driven Real Estate Development and Investment",
+    subtitle: "Engineering Insight for Real Estate Development and Investment",
     description: "Operating company of Tiesse Group",
     cta_text: "Learn More"
   },
