@@ -7,7 +7,7 @@ export default {
   },
   hero: {
     subtitle: "Engineering Approach to Real Estate Development & Investment",
-    description: "Technical expertise combined with investment and market analysis",
+    description: "",
     cta_text: "Learn More"
   },
   chi_siamo: {
