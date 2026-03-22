@@ -6,8 +6,8 @@ export default {
     projects: "Progetti"
   },
   hero: {
-    subtitle: "Engineering Insight for Real Estate Development and Investment",
-    description: "A company of Tiesse Group",
+    subtitle: "Engineering Approach to Real Estate Development & Investment",
+    description: "Technical expertise combined with investment and market analysis",
     cta_text: "Scopri di più"
   },
   chi_siamo: {
