@@ -15,14 +15,14 @@ export default {
     points: [
       "ABOUT US
 
-Tiesse Servizi operates at the intersection of engineering, real estate and investment analysis.
+"Tiesse Servizi operates at the intersection of engineering, real estate and investment analysis.
 
 We combine technical expertise with market and financial evaluation to support the development and assessment of real estate opportunities.
 
 • Technical and engineering analysis of real estate assets  
 • Coordination of design, construction and project stakeholders  
 • Evaluation of development opportunities from a technical and investment perspective  
-• Monitoring of timelines, costs and overall project performance  ",
+• Monitoring of timelines, costs and overall project performance",
       ""
      
     ]
