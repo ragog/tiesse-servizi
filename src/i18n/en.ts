@@ -20,7 +20,7 @@ export default {
   "Coordination of design, construction and project stakeholders",
   "Evaluation of development opportunities from a technical and investment perspective",
   "Monitoring of timelines, costs and overall project performance"
-]",
+],
       ""
      
     ]
