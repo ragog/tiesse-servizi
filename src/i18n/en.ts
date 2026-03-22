@@ -13,8 +13,17 @@ export default {
   chi_siamo: {
     title: "ABOUT US",
     points: [
-      "Tiesse supports and collaborates with companies, investment funds, banks, and private individuals in the entire technical, legal, and financial management of construction projects.",
-      "We guarantee structured coordination of design, construction site and safety, offering the client a clear vision of the processes and timely control of times, costs and quality."
+      "ABOUT US
+
+Tiesse Servizi operates at the intersection of engineering, real estate and investment analysis.
+
+We combine technical expertise with market and financial evaluation to support the development and assessment of real estate opportunities.
+
+• Technical and engineering analysis of real estate assets  
+• Coordination of design, construction and project stakeholders  
+• Evaluation of development opportunities from a technical and investment perspective  
+• Monitoring of timelines, costs and overall project performance  ",
+      ""
      
     ]
   },
