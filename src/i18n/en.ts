@@ -13,9 +13,7 @@ export default {
   chi_siamo: {
     title: "ABOUT US",
     points: [
-      "ABOUT US
-
-"Tpoints: [
+      
   "Tiesse Servizi operates at the intersection of engineering, real estate and investment analysis.",
   "We combine technical expertise with market and financial evaluation to support the development and assessment of real estate opportunities.",
   "Technical and engineering analysis of real estate assets",
