@@ -13,13 +13,8 @@ export default {
   chi_siamo: {
     title: "ABOUT US",
     points: [
-  
-  "We operate at the intersection of engineering, real estate and investment analysis, supporting the development and assessment of residential opportunities.",
-  "We combine technical expertise with strategic and financial evaluation to guide decisions across the entire development process."
-
-],
-      ""
-     
+      "We operate at the intersection of engineering, real estate and investment analysis, supporting the development and assessment of residential opportunities.",
+      "We combine technical expertise with strategic and financial evaluation to guide decisions across the entire development process."
     ]
   },
   missione: {
