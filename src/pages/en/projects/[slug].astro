@@ -24,11 +24,11 @@ const content = getTranslations(locale);
 
 <BaseLayout content={content} locale={locale} title={`${project.data.title} - ${content.site_title}`}>
   <!-- Project Hero -->
-  <section class="relative h-[60vh] overflow-hidden">
+  <section class="relative h-[60vh] overflow-hidden bg-black">
     <Image
       src={project.data.coverImage}
       alt={project.data.title}
-      class="w-full h-full object-cover"
+      class="w-full h-full object-contain"
       widths={[800, 1200, 1600]}
       sizes="100vw"
     />
