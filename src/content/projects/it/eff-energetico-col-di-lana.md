@@ -1,23 +1,18 @@
 ---
-title: "Efficientamento Energetico"
-description: "Intervento di riqualificazione energetica di edificio residenziale"
-location: "BOLOGNA"
+title: "Riqualificazione energetica · Bologna (Col di Lana)"
+description: "Efficientamento energetico di edificio residenziale a Bologna."
+location: "Bologna"
 year: 2022
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/eff-energetico-col-di-lana/cover.webp"
 specs:
-  area: ""
-  duration: ""
-  client: "Cliente Privato"
+  client: "Committenza privata"
   features:
-    - "Cappotto termico"
-    - "Sostituzione infissi"
+    - "Cappotto termico esterno"
+    - "Sostituzione integrale degli infissi"
     - "Impianto solare termico"
 featured: false
-order: 5
+order: 1
 ---
 
-# Efficientamento Energetico Col di Lana
-
-
-****
+Intervento di riqualificazione energetica su edificio residenziale a Bologna. Il pacchetto tecnico — cappotto termico, nuovi infissi e impianto solare termico — è stato dimensionato per massimizzare il salto di classe energetica e il rendimento degli incentivi fiscali applicabili.

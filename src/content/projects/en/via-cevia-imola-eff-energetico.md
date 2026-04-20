@@ -1,24 +1,18 @@
 ---
-title: "Via Cevia Energy Efficiency - Imola"
-description: "Energy efficiency upgrade on Via Cevia"
-location: "Via Cevia, Imola"
+title: "Energy retrofit · Imola"
+description: "Energy-efficiency upgrade of a residential building in Imola."
+location: "Imola (BO)"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/via-cevia-imola-eff-energetico/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Energy efficiency upgrade"
     - "Thermal insulation"
-    - "[TO BE COMPLETED - other features]"
+    - "Building envelope upgrade"
+    - "Technical management of fiscal incentives"
 featured: false
-order: 15
+order: 4
 ---
 
-# Via Cevia Energy Efficiency - Imola
-
-Energy efficiency upgrade project for a building on Via Cevia, Imola.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Energy retrofit of a residential building in Imola. The commission was delivered with integrated coordination between technical design, contractor and fiscal documentation, ensuring a firm schedule for the client.

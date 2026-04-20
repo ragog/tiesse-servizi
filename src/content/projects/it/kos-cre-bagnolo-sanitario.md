@@ -1,24 +1,19 @@
 ---
-title: "KOS CARE - Struttura Sanitaria"
-description: "Centro di riabilitazione"
-location: "Bagnolo, Reggio Emilia"
+title: "KOS Care · Bagnolo"
+description: "Centro di riabilitazione realizzato per il gruppo KOS Care nel polo di Bagnolo in Piano."
+location: "Bagnolo in Piano (RE)"
 year: 2024
-category: "commercial"
+category: "healthcare"
 coverImage: "../_images/kos-cre-bagnolo-sanitario/cover.webp"
 specs:
-  area: "Reggio Emilia"
+  client: "KOS Care"
   duration: "6 mesi"
-  client: "KOS CARE"
   features:
     - "Centro di riabilitazione"
-    - "Struttura sanitaria specializzata"
-    - ""
+    - "Spazi clinici e aree dedicate ai pazienti"
+    - "Gestione tecnica integrata della commessa"
 featured: false
-order: 9
+order: 2
 ---
 
-# KOS CARE Bagnolo - Struttura Sanitaria
-
-
-
-****
+Realizzazione di un centro di riabilitazione del gruppo KOS Care. L'intervento ha richiesto il rispetto degli standard dell'edilizia sanitaria, con coordinamento tra impianti specialistici, finiture cliniche e tempi contratti della committenza.

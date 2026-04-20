@@ -1,24 +1,19 @@
 ---
-title: "KOS CRE Bagnolo - Healthcare Facility"
-description: "Rehabilitation center and healthcare facility in Bagnolo"
-location: "Bagnolo, [TO BE COMPLETED]"
+title: "KOS Care · Bagnolo"
+description: "Rehabilitation centre delivered for KOS Care at their Bagnolo in Piano campus."
+location: "Bagnolo in Piano (RE)"
 year: 2024
-category: "commercial"
+category: "healthcare"
 coverImage: "../_images/kos-cre-bagnolo-sanitario/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "KOS"
+  client: "KOS Care"
+  duration: "6 months"
   features:
-    - "Rehabilitation center"
-    - "Specialized healthcare facility"
-    - "[TO BE COMPLETED - other features]"
+    - "Rehabilitation centre"
+    - "Clinical areas and patient-dedicated spaces"
+    - "Integrated technical management of the commission"
 featured: false
-order: 9
+order: 2
 ---
 
-# KOS CRE Bagnolo - Healthcare Facility
-
-Project for the construction of a rehabilitation center and healthcare facility in Bagnolo.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Delivery of a rehabilitation centre for the KOS Care group. The project required compliance with healthcare construction standards, coordination of specialist systems, clinical finishes, and the client's contractual timeline.

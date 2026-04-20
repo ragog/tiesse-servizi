@@ -1,23 +1,18 @@
 ---
-title: "Garage Structural Consolidation"
-description: "Structural consolidation work for garage facility"
-location: "[TO BE COMPLETED]"
+title: "Structural consolidation · Garage building, Bologna"
+description: "Structural consolidation of an existing garage building."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "structural"
 coverImage: "../_images/consolidamento-strutturale-autorimessa/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Structural reinforcement"
-    - "[TO BE COMPLETED - other features]"
+    - "Structural reinforcement of existing building"
+    - "Safety and load-bearing verifications"
+    - "Intervention under operational constraints"
 featured: false
-order: 4
+order: 2
 ---
 
-# Garage Structural Consolidation
-
-Structural consolidation project for a garage facility.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Structural consolidation of an existing garage building, with targeted reinforcements and load-bearing verifications. The project was delivered while maintaining the building in use and coordinating site works under operationally constrained conditions.

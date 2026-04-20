@@ -1,23 +1,19 @@
 ---
-title: "Casa della Gioia - Castenaso"
-description: "Struttura residenziale/assistenziale realizzata a Castenaso, con servizi dedicati e spazi comuni"
-location: "Castenaso, Bologna"
+title: "Casa della Gioia · Castenaso"
+description: "Struttura residenziale assistenziale realizzata per il Comune di Bologna."
+location: "Castenaso (BO)"
 year: 2024
-category: "commercial"
+category: "structural"
 coverImage: "../_images/casa-della-gioia-castenaso/cover.webp"
 specs:
-  area: ""
-  duration: "1 anno"
   client: "Comune di Bologna"
+  duration: "12 mesi"
   features:
-    - "Spazi comuni ampi e luminosi"
-    - ""
+    - "Struttura residenziale assistenziale"
+    - "Spazi collettivi e aree di supporto"
+    - "Commessa pubblica con coordinamento multidisciplinare"
 featured: false
-order: 2
+order: 3
 ---
 
-# Casa della Gioia - Castenaso
-
-Progetto di realizzazione di una struttura residenziale/assistenziale a Castenaso.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Realizzazione di una struttura residenziale assistenziale per il Comune di Bologna. L'intervento ha richiesto il coordinamento tra standard dell'edilizia sanitaria e sociale, procedure di committenza pubblica e gestione operativa della commessa.

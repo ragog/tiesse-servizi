@@ -1,25 +1,18 @@
 ---
-title: "Restauro Storico Studentato Via Petroni"
-description: "Restauro conservativo di edificio storico adibito a studentato"
-location: "Via Petroni, Bologna"
+title: "Restauro studentato storico · Bologna"
+description: "Restauro conservativo di edificio storico nel centro di Bologna, adibito a studentato universitario."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "heritage"
 coverImage: "../_images/restauro-storico-studentato-via-petroni/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "Restauro conservativo"
-    - "Adeguamento funzionale a studentato"
-    - "Rispetto vincoli storici"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Restauro conservativo di edificio vincolato"
+    - "Adeguamento funzionale a studentato universitario"
+    - "Coordinamento con Soprintendenza e vincoli storici"
 featured: false
-order: 11
+order: 1
 ---
 
-# Restauro Storico Studentato Via Petroni
-
-Progetto di restauro conservativo di un edificio storico in Via Petroni, adibito a studentato universitario.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Restauro conservativo di un edificio storico nel centro di Bologna, riconvertito a studentato universitario. La commessa ha richiesto la conciliazione tra vincoli di tutela, adeguamento funzionale e standard abitativi contemporanei, con coordinamento tecnico nei confronti degli enti preposti.

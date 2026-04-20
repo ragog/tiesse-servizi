@@ -1,24 +1,18 @@
 ---
-title: "Via Bertelli Energy Efficiency"
-description: "Energy efficiency upgrade on Via Bertelli"
-location: "Via Bertelli, [TO BE COMPLETED]"
+title: "Energy retrofit · Bologna (Bertelli)"
+description: "Energy-efficiency upgrade of a residential building in Bologna."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/eff-energetico-via-bertelli/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Thermal insulation"
-    - "Energy efficiency upgrade"
-    - "[TO BE COMPLETED - other features]"
+    - "Thermal insulation of the envelope"
+    - "Window replacement"
+    - "Document management for fiscal incentives"
 featured: false
-order: 6
+order: 2
 ---
 
-# Via Bertelli Energy Efficiency
-
-Energy efficiency upgrade project for a building on Via Bertelli.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Energy retrofit of a residential building in Bologna. The intervention combined envelope insulation, window replacement and integrated fiscal-incentive documentation, with technical oversight on materials and certifications.

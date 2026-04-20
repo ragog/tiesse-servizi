@@ -1,23 +1,19 @@
 ---
-title: "Casa della Gioia - Castenaso"
-description: "Residential/care facility built in Castenaso, with dedicated services and common areas"
-location: "Castenaso, Bologna"
+title: "Casa della Gioia · Castenaso"
+description: "Residential assisted-living facility delivered for the Municipality of Bologna."
+location: "Castenaso (BO)"
 year: 2024
-category: "commercial"
+category: "structural"
 coverImage: "../_images/casa-della-gioia-castenaso/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Municipality of Bologna"
+  duration: "12 months"
   features:
-    - "Large and bright common areas"
-    - "[TO BE COMPLETED - other features]"
+    - "Residential assisted-living facility"
+    - "Collective spaces and support areas"
+    - "Public commission with multidisciplinary coordination"
 featured: false
-order: 2
+order: 3
 ---
 
-# Casa della Gioia - Castenaso
-
-Project for the construction of a residential/care facility in Castenaso.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Delivery of a residential assisted-living facility for the Municipality of Bologna. The project required the coordination of healthcare and social-care construction standards, public-procurement procedures, and operational commission management.

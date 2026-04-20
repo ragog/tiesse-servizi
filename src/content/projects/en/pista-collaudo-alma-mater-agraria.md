@@ -1,24 +1,18 @@
 ---
-title: "Alma Mater Test Track - Agriculture Department"
-description: "Test track for the Agriculture Department at the University of Bologna"
+title: "Test track · Department of Agriculture, Alma Mater"
+description: "Specialist infrastructure delivered for the Department of Agricultural Sciences, University of Bologna."
 location: "Bologna"
 year: 2024
-category: "commercial"
+category: "research"
 coverImage: "../_images/pista-collaudo-alma-mater-agraria/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "University of Bologna - Alma Mater Studiorum"
+  client: "Alma Mater Studiorum — University of Bologna"
   features:
-    - "Specialized test track"
-    - "Infrastructure for Agriculture Department"
-    - "[TO BE COMPLETED - other features]"
+    - "Test track for agricultural machinery"
+    - "Technical infrastructure for the Department of Agriculture"
+    - "Public university commission"
 featured: false
-order: 10
+order: 1
 ---
 
-# Alma Mater Test Track - Agriculture Department
-
-Project for the construction of a test track for the Agriculture Department at the University of Bologna.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Specialist infrastructure delivered for the Department of Agricultural Sciences of the University of Bologna. The commission, executed under public university procurement, required technical coordination with the scientific leads and with the university's operational departments.

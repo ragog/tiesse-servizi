@@ -1,25 +1,18 @@
 ---
-title: "Serre Biotroniche Alma Mater"
-description: "Serre biotroniche avanzate per ricerca scientifica - Università di Bologna"
+title: "Serre biotroniche · Dipartimento di Agraria, Alma Mater"
+description: "Serre biotroniche ad alta tecnologia per la ricerca scientifica dell'Università di Bologna."
 location: "Bologna"
 year: 2024
-category: "commercial"
+category: "research"
 coverImage: "../_images/serre-biotroniche-alma-mater/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "Università di Bologna - Alma Mater Studiorum"
+  client: "Alma Mater Studiorum — Università di Bologna"
   features:
-    - "Serre ad alta tecnologia"
-    - "Controllo climatico avanzato"
-    - "Infrastrutture per ricerca scientifica"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Serre biotroniche per ricerca scientifica"
+    - "Controllo climatico e impianti specialistici"
+    - "Commessa pubblica universitaria"
 featured: false
-order: 12
+order: 2
 ---
 
-# Serre Biotroniche Alma Mater
-
-Progetto di realizzazione di serre biotroniche ad alta tecnologia per la ricerca scientifica presso l'Università di Bologna.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Realizzazione di serre biotroniche ad alta tecnologia per la ricerca scientifica dell'Università di Bologna. L'intervento ha richiesto il coordinamento tra impianti specialistici di controllo climatico, esigenze scientifiche dei dipartimenti e procedure di committenza pubblica.

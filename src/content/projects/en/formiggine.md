@@ -1,22 +1,19 @@
 ---
-title: "Formiggine"
-description: "Construction project in Formiggine"
-location: "Formiggine, [TO BE COMPLETED]"
-year: 2024
-category: "mixed-use"
+title: "Energy retrofit · Formigine (MO)"
+description: "Energy-efficiency upgrade of a residential building in Formigine."
+location: "Formigine (MO)"
+year: 2022
+category: "energy-retrofit"
 coverImage: "../_images/formiggine/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
+  duration: "12 months"
   features:
-    - "[TO BE COMPLETED - features]"
+    - "External thermal insulation"
+    - "Window replacement"
+    - "Solar thermal system"
 featured: false
-order: 7
+order: 3
 ---
 
-# Formiggine
-
-Construction project completed in Formiggine.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Full energy retrofit of a residential building in Formigine, in the Modena area. The intervention — insulation, windows and solar thermal — was structured to achieve a significant energy-class upgrade and to maximise the available fiscal incentives.

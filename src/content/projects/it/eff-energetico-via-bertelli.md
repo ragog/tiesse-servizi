@@ -1,24 +1,18 @@
 ---
-title: "Efficientamento Energetico Via Bertelli"
-description: "Intervento di riqualificazione energetica in Via Bertelli"
-location: "Via Bertelli, [DA COMPLETARE]"
+title: "Riqualificazione energetica · Bologna (Bertelli)"
+description: "Efficientamento energetico di edificio residenziale a Bologna."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/eff-energetico-via-bertelli/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "Isolamento termico"
-    - "Riqualificazione energetica"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Isolamento termico dell'involucro"
+    - "Aggiornamento dei serramenti"
+    - "Gestione documentale degli incentivi fiscali"
 featured: false
-order: 6
+order: 2
 ---
 
-# Efficientamento Energetico Via Bertelli
-
-Progetto di riqualificazione energetica di un edificio in Via Bertelli.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Riqualificazione energetica di un edificio residenziale a Bologna. L'intervento ha combinato isolamento dell'involucro, sostituzione dei serramenti e gestione integrata della pratica fiscale, con presidio tecnico su materiali e certificazioni.

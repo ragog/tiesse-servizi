@@ -1,24 +1,18 @@
 ---
-title: "Via Tranquillo da Cremona Energy Efficiency"
-description: "Energy efficiency upgrade on Via Tranquillo da Cremona"
-location: "Via Tranquillo da Cremona, [TO BE COMPLETED]"
+title: "Energy retrofit · Bologna (T. da Cremona)"
+description: "Energy-efficiency upgrade of a residential building in Bologna."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/via-tranquillo-da-cremona-eff-energetico/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Energy efficiency upgrade"
-    - "Thermal insulation"
-    - "[TO BE COMPLETED - other features]"
+    - "Thermal insulation of the envelope"
+    - "Window replacement"
+    - "Technical and fiscal coordination"
 featured: false
-order: 17
+order: 6
 ---
 
-# Via Tranquillo da Cremona Energy Efficiency
-
-Energy efficiency upgrade project for a building on Via Tranquillo da Cremona.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Energy retrofit of a residential building in Bologna. The technical package was sized to maximise the energy-class upgrade, with continuous oversight on execution quality and on the documentation supporting the fiscal incentives.

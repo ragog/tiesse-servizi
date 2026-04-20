@@ -159,21 +159,98 @@ export default {
     group_line: "Operating company of Tiesse Group",
     established: "Established 2001"
   },
+  real_estate: {
+    page_title: "Real Estate · Operations in the Mediterranean",
+    hero_eyebrow: "Real Estate · Operations",
+    hero_title: "Real Estate",
+    hero_subtitle: "Premium residential operations across the Italian Mediterranean.",
+    hero_meta: ["Sardinia · Gallura", "Active operations", "Since 2026"],
+
+    intro_eyebrow: "Where we operate",
+    intro_title: "Where the landscape protects value, engineering protects the investment.",
+    intro_body: [
+      "Sardinia and the Mediterranean islands rank among the world's most sought-after destinations for quality of life, cultural heritage and long-term real-estate appreciation — a segment that has proven resilient across market cycles.",
+      "We operate in areas with strict landscape constraints, where Tiesse Servizi's technical filter is not an accessory but the precondition to build at all: feasibility, permitting, costs, schedule and taxation are part of the deal from day one."
+    ],
+
+    sardegna_eyebrow: "Region",
+    sardegna_title: "Sardinia",
+    sardegna_body: "Gallura — between Palau, Porto Rotondo and Cannigione. The north-east coast, one of the most iconic in the Mediterranean, where landscape protection and the scarcity of buildable land make every operation an exercise in engineering and planning before it is a transaction.",
+
+    palau_eyebrow: "Active operation",
+    palau_title: "Palau",
+    palau_subtitle: "Barrabisa",
+    palau_meta: ["Palau (SS) · Sardinia", "5 premium villas", "2026 —"],
+    palau_brief_eyebrow: "Operation brief",
+    palau_brief_title: "Five premium villas overlooking Barrabisa.",
+    palau_brief_body: [
+      "A residential masterplan on the north-east coast of Sardinia, in one of the most sought-after landscape settings of the Mediterranean. Restrained architecture, local materials, domestic proportions — no showmanship.",
+      "Each villa is conceived as an independent unit with private garden, pool, and direct sea view. The operation is structured for Italian and international investors seeking premium assets with engineering-led governance and bilingual contracts."
+    ],
+    palau_specs_label: "Operation file",
+    palau_specs_items: [
+      { label: "Location", value: "Palau (SS) · Barrabisa" },
+      { label: "Units", value: "5 standalone villas" },
+      { label: "Typology", value: "Premium residential" },
+      { label: "Status", value: "Active operation" },
+      { label: "Target", value: "International investors" },
+      { label: "Contracts", value: "Bilingual ENG/ITA" }
+    ],
+    palau_feature_eyebrow: "Method",
+    palau_feature_quote: "An operation governed by engineering, designed around capital.",
+    palau_feature_body: "Tiesse Servizi's technical filter enters the deal at feasibility stage: landscape constraints, construction costs, permitting timeline, taxation. The MCA — Market Comparison Approach — analysis and the business plan with ROI and sensitivity sit inside the deal, not as an attachment.",
+    palau_gallery_eyebrow: "Gallery",
+
+    cta_eyebrow: "Confidential information",
+    cta_title: "Technical file and business plan on request.",
+    cta_body: "Our operations are addressed to qualified investors. Get in touch to receive the full file, business plan and permitting timeline.",
+    cta_button: "Request information"
+  },
   projects: {
-    page_title: "Our Projects",
-    subtitle: "Excellence delivered: discover the projects that turned visions into reality",
+    page_title: "Engineering Track Record",
+    hero_eyebrow: "Projects · Realized work · Since 2001",
+    subtitle: "Twenty-five years of delivered work across healthcare, residential, structural and energy projects. The technical foundation we use to evaluate and run every real-estate operation.",
+    intro_eyebrow: "Method",
+    intro_title: "Before developing an investment, engineering judges.",
+    intro_body: [
+      "The projects on this page are not a portfolio: they are the technical laboratory behind our real-estate judgment. Every commission — from the structural consolidation of a historic villa to a new-build healthcare centre — taught us how to read costs, timelines, risks and regulatory constraints of a building before buying, renovating or developing an operation around it.",
+      "This is the difference between a financial investor and an operator who knows the building from the inside. When Tiesse Servizi evaluates a real-estate opportunity, the engineering filter is already part of the deal.",
+    ],
+    stats: [
+      { value: "2001", label: "Year founded" },
+      { value: "25+", label: "Years active" },
+      { value: "5", label: "Sectors covered" },
+      { value: "IT", label: "Emilia-Romagna · Central Italy" }
+    ],
+    real_estate_banner_eyebrow: "Real estate operations",
+    real_estate_banner_title: "Current Real Estate operations",
+    real_estate_banner_text: "Premium residential development for Italian and international investors — see Palau · Barrabisa and the other active operations of the group.",
+    real_estate_banner_cta: "Real Estate operations",
+    technical_eyebrow: "Track Record",
+    technical_title: "Realized work, by sector.",
+    technical_subtitle: "Every commission is a technical file: client, year, site, role, outcome. Grouped by sector so the depth of technical experience reads at a glance.",
+    sectors: {
+      healthcare: { label: "Healthcare", description: "Healthcare and assisted-living facilities delivered for private operators and public clients." },
+      residential: { label: "Residential", description: "New residential construction and works on premium private properties." },
+      structural: { label: "Structural", description: "Structural consolidations, reinforcements and interventions on existing buildings — historic and contemporary." },
+      heritage: { label: "Heritage", description: "Conservation restoration and functional adaptation of listed historic buildings." },
+      "energy-retrofit": { label: "Energy retrofit", description: "Energy upgrades of residential buildings: insulation, glazing, systems, fiscal incentives." },
+      research: { label: "Research", description: "Specialist infrastructures delivered for universities and research centres." }
+    },
     no_projects: "No projects available at the moment.",
+    back_to_projects: "All work",
+    detail_brief: "Brief",
+    detail_approach: "Approach",
+    detail_outcome: "Outcome",
+    detail_gallery: "Gallery",
+    detail_facts: "Technical file",
     specs_area: "Area",
     specs_budget: "Budget",
     specs_duration: "Duration",
     specs_client: "Client",
     specs_features: "Features",
-    real_estate_banner_eyebrow: "Real estate operations",
-    real_estate_banner_title: "Current Real Estate operations",
-    real_estate_banner_text: "Premium residential development for Italian and international investors — see Palau · Barrabisa and the other active operations of the group.",
-    real_estate_banner_cta: "See Real Estate operations",
-    technical_eyebrow: "Technical projects",
-    technical_title: "Our engineering track record",
-    technical_subtitle: "25 years of residential, commercial and renovation work — the technical foundation behind every real-estate operation we run."
+    specs_year: "Year",
+    specs_location: "Location",
+    specs_category: "Sector"
   }
 };

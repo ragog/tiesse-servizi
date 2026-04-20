@@ -159,21 +159,98 @@ export default {
     group_line: "Società operativa del gruppo Tiesse Group",
     established: "Fondata nel 2001"
   },
+  real_estate: {
+    page_title: "Real Estate · Operazioni nel Mediterraneo",
+    hero_eyebrow: "Real Estate · Operazioni",
+    hero_title: "Real Estate",
+    hero_subtitle: "Operazioni residenziali di pregio nel Mediterraneo italiano.",
+    hero_meta: ["Sardegna · Gallura", "Operazioni attive", "Dal 2026"],
+
+    intro_eyebrow: "Dove operiamo",
+    intro_title: "Dove il paesaggio protegge il valore, l'ingegneria protegge l'investimento.",
+    intro_body: [
+      "Sardegna e isole del Mediterraneo sono oggi tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare — un segmento che ha dimostrato resilienza attraverso i cicli di mercato.",
+      "Operiamo su aree con vincoli paesaggistici stringenti, dove il filtro tecnico di Tiesse Servizi non è un accessorio ma la condizione per poter costruire: fattibilità, autorizzazioni, costi, tempi e fiscalità fanno parte del deal fin dal primo giorno."
+    ],
+
+    sardegna_eyebrow: "Regione",
+    sardegna_title: "Sardegna",
+    sardegna_body: "Gallura — tra Palau, Porto Rotondo e Cannigione. Costa nord-orientale, una delle più iconiche del Mediterraneo, dove la tutela paesaggistica e la rarità del suolo edificabile rendono ogni operazione un esercizio di ingegneria e pianificazione prima che di compravendita.",
+
+    palau_eyebrow: "Operazione in corso",
+    palau_title: "Palau",
+    palau_subtitle: "Barrabisa",
+    palau_meta: ["Palau (SS) · Sardegna", "5 ville di pregio", "2026 —"],
+    palau_brief_eyebrow: "Brief operazione",
+    palau_brief_title: "Cinque ville di pregio, affacciate su Barrabisa.",
+    palau_brief_body: [
+      "Un masterplan residenziale sulla costa nord-orientale della Sardegna, in uno dei contesti paesaggistici più ricercati del Mediterraneo. Architettura sobria, materiali locali, proporzioni domestiche — nessuna ostentazione.",
+      "Ogni villa è concepita come unità indipendente con giardino privato, piscina e vista diretta sul mare. L'operazione è strutturata per investitori italiani ed esteri che cercano asset di pregio con governance ingegneristica e contratti bilingue."
+    ],
+    palau_specs_label: "Scheda operazione",
+    palau_specs_items: [
+      { label: "Località", value: "Palau (SS) · Barrabisa" },
+      { label: "Unità", value: "5 ville indipendenti" },
+      { label: "Tipologia", value: "Residenziale di pregio" },
+      { label: "Stato", value: "Operazione in corso" },
+      { label: "Target", value: "Investitori internazionali" },
+      { label: "Contratti", value: "Bilingue ENG/ITA" }
+    ],
+    palau_feature_eyebrow: "Metodo",
+    palau_feature_quote: "Un'operazione governata dall'ingegneria, disegnata sul capitale.",
+    palau_feature_body: "Il filtro tecnico di Tiesse Servizi entra in gioco già in fase di fattibilità: vincoli paesaggistici, costi di costruzione, tempi autorizzativi, fiscalità. L'analisi MCA — Market Comparison Approach — e il business plan con ROI e sensitività sono parte integrante del deal, non un allegato.",
+    palau_gallery_eyebrow: "Galleria",
+
+    cta_eyebrow: "Informazioni riservate",
+    cta_title: "Scheda tecnica e business plan su richiesta.",
+    cta_body: "Le operazioni sono indirizzate a investitori qualificati. Contattaci per ricevere la scheda completa, il business plan e la timeline autorizzativa.",
+    cta_button: "Richiedi informazioni"
+  },
   projects: {
-    page_title: "I Nostri Progetti",
-    subtitle: "Eccellenza realizzata: scopri i progetti che hanno trasformato visioni in realtà",
-    no_projects: "Nessun progetto disponibile al momento.",
-    specs_area: "Superficie",
-    specs_budget: "Budget",
-    specs_duration: "Durata",
-    specs_client: "Cliente",
-    specs_features: "Caratteristiche",
+    page_title: "Engineering Track Record",
+    hero_eyebrow: "Progetti · Opere realizzate · Dal 2001",
+    subtitle: "Venticinque anni di commesse su edifici sanitari, residenziali, strutturali ed energetici. La base tecnica con cui valutiamo e sviluppiamo ogni operazione immobiliare.",
+    intro_eyebrow: "Metodo",
+    intro_title: "Prima di sviluppare un investimento, l'ingegneria giudica.",
+    intro_body: [
+      "Le opere che trovate in questa pagina non sono un semplice portfolio: sono il laboratorio tecnico su cui si fonda il nostro giudizio immobiliare. Ogni commessa — dal consolidamento strutturale di una villa storica al centro sanitario di nuova costruzione — ha insegnato a leggere costi, tempi, rischi e vincoli regolatori di un immobile prima di comprarlo, ristrutturarlo o sviluppare un'operazione.",
+      "È questa la differenza fra un investitore finanziario e un operatore che l'edificio lo conosce da dentro. Quando Tiesse Servizi valuta un'opportunità real estate, il filtro ingegneristico è già parte del deal.",
+    ],
+    stats: [
+      { value: "2001", label: "Anno di fondazione" },
+      { value: "25+", label: "Anni di attività" },
+      { value: "5", label: "Settori coperti" },
+      { value: "IT", label: "Emilia-Romagna · Centro Italia" }
+    ],
     real_estate_banner_eyebrow: "Operazioni immobiliari",
     real_estate_banner_title: "Operazioni Real Estate in corso",
     real_estate_banner_text: "Sviluppo residenziale di pregio per investitori italiani ed esteri — scopri Palau · Barrabisa e le altre operazioni del gruppo.",
-    real_estate_banner_cta: "Vedi le operazioni Real Estate",
-    technical_eyebrow: "Progetti tecnici",
-    technical_title: "Il track record ingegneristico",
-    technical_subtitle: "25 anni di commesse residenziali, commerciali e di riqualificazione: la base di competenze che struttura ogni nostra operazione immobiliare."
+    real_estate_banner_cta: "Operazioni Real Estate",
+    technical_eyebrow: "Track Record",
+    technical_title: "Le opere realizzate, per settore.",
+    technical_subtitle: "Ogni commessa è una scheda tecnica: committente, anno, sito, ruolo, esito. Raggruppate per settore per restituire la misura reale dell'esperienza tecnica.",
+    sectors: {
+      healthcare: { label: "Sanitario", description: "Strutture sanitarie e assistenziali realizzate per operatori privati e committenze pubbliche." },
+      residential: { label: "Residenziale", description: "Edifici residenziali di nuova costruzione e interventi su immobili privati di pregio." },
+      structural: { label: "Strutturale", description: "Consolidamenti, rinforzi e interventi strutturali su edifici esistenti — storici e contemporanei." },
+      heritage: { label: "Restauro", description: "Restauro conservativo e adeguamento funzionale di edifici storici vincolati." },
+      "energy-retrofit": { label: "Efficientamento energetico", description: "Riqualificazioni energetiche su edifici residenziali: cappotti, infissi, impianti, incentivi fiscali." },
+      research: { label: "Ricerca", description: "Infrastrutture specialistiche realizzate per università e centri di ricerca." }
+    },
+    no_projects: "Nessun progetto disponibile al momento.",
+    back_to_projects: "Tutte le opere",
+    detail_brief: "Brief",
+    detail_approach: "Approccio",
+    detail_outcome: "Esito",
+    detail_gallery: "Galleria",
+    detail_facts: "Scheda tecnica",
+    specs_area: "Superficie",
+    specs_budget: "Budget",
+    specs_duration: "Durata",
+    specs_client: "Committente",
+    specs_features: "Caratteristiche",
+    specs_year: "Anno",
+    specs_location: "Luogo",
+    specs_category: "Settore"
   }
 };

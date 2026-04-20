@@ -9,46 +9,37 @@ interface Props {
   coverImage: ImageMetadata;
   slug: string;
   locale: 'it' | 'en';
-  category?: string;
+  index?: number;
 }
 
-const { title, description, location, year, coverImage, slug, locale, category } = Astro.props;
+const { title, location, year, coverImage, slug, locale, index } = Astro.props;
 const projectUrl = `/${locale === 'it' ? 'progetti' : 'en/projects'}/${slug}`;
+const numberLabel = typeof index === 'number' ? String(index + 1).padStart(2, '0') : null;
 ---
 
-<article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-  <a href={projectUrl} class="block">
-    <div class="relative h-64 overflow-hidden">
-      <Image
-        src={coverImage}
-        alt={title}
-        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-        widths={[400, 600, 800]}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      />
-      {category && (
-        <div class="absolute top-4 right-4 bg-[#8BC34A] text-white px-3 py-1 rounded-full text-sm font-semibold capitalize">
-          {category}
-        </div>
-      )}
-    </div>
-    <div class="p-6">
-      <h3 class="text-2xl font-bold mb-2 text-gray-900">{title}</h3>
-      <div class="flex items-center text-gray-600 text-sm mb-3">
-        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-        </svg>
-        <span>{location}</span>
-        <span class="mx-2">•</span>
-        <span>{year}</span>
+<a href={projectUrl} class="group block">
+  <div class="relative overflow-hidden aspect-[4/5] bg-gray-100">
+    <Image
+      src={coverImage}
+      alt={title}
+      class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+      widths={[400, 600, 800, 1000]}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    />
+  </div>
+  <div class="pt-6">
+    {numberLabel && (
+      <div class="mb-3">
+        <span class="text-xs font-light text-gray-400 tabular-nums">{numberLabel}</span>
       </div>
-      <p class="text-gray-600 line-clamp-3">{description}</p>
-      <div class="mt-4 flex items-center text-[#8BC34A] font-semibold">
-        <span>{locale === 'it' ? 'Scopri di più' : 'Learn more'}</span>
-        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </div>
+    )}
+    <h3 class="text-xl md:text-2xl font-light leading-tight tracking-tight text-gray-900 mb-3 transition-colors group-hover:text-black">
+      {title}
+    </h3>
+    <div class="text-sm text-gray-500 tracking-wide">
+      <span>{location}</span>
+      <span class="mx-2 text-gray-300">·</span>
+      <span>{year}</span>
     </div>
-  </a>
-</article>
+  </div>
+</a>

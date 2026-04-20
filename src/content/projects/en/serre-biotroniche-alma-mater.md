@@ -1,25 +1,18 @@
 ---
-title: "Alma Mater Biotronic Greenhouses"
-description: "Advanced biotronic greenhouses for scientific research - University of Bologna"
+title: "Biotronic greenhouses · Department of Agriculture, Alma Mater"
+description: "High-technology biotronic greenhouses for scientific research, University of Bologna."
 location: "Bologna"
 year: 2024
-category: "commercial"
+category: "research"
 coverImage: "../_images/serre-biotroniche-alma-mater/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "University of Bologna - Alma Mater Studiorum"
+  client: "Alma Mater Studiorum — University of Bologna"
   features:
-    - "High-tech greenhouses"
-    - "Advanced climate control"
-    - "Infrastructure for scientific research"
-    - "[TO BE COMPLETED - other features]"
+    - "Biotronic greenhouses for scientific research"
+    - "Climate control and specialist systems"
+    - "Public university commission"
 featured: false
-order: 12
+order: 2
 ---
 
-# Alma Mater Biotronic Greenhouses
-
-Project for the construction of high-tech biotronic greenhouses for scientific research at the University of Bologna.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+High-technology biotronic greenhouses delivered for scientific research at the University of Bologna. The project required coordination between specialist climate-control systems, the scientific requirements of the departments, and public-procurement procedures.

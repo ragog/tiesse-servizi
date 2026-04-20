@@ -1,23 +1,18 @@
 ---
-title: "Consolidamento Casa Colonica Bencivenni"
-description: "Intervento di consolidamento strutturale per casa colonica storica"
-location: "BOLOGNA"
+title: "Consolidamento casa colonica storica · Bologna"
+description: "Consolidamento strutturale di una casa colonica storica nell'area bolognese."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "heritage"
 coverImage: "../_images/consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "Privato"
+  client: "Committenza privata"
   features:
-    - "Consolidamento strutturale"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Consolidamento strutturale di edificio storico"
+    - "Verifiche sismiche e diagnosi dello stato di fatto"
+    - "Interventi compatibili con il tessuto storico"
 featured: false
-order: 3
+order: 1
 ---
 
-# Consolidamento Casa Colonica Bencivenni
-
-Progetto di consolidamento strutturale di una casa colonica storica.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Consolidamento strutturale di una casa colonica storica nell'area bolognese. L'intervento ha richiesto la diagnosi dello stato di fatto, verifiche sismiche e scelte tecniche compatibili con la conservazione del manufatto storico, preservandone la continuità d'uso.

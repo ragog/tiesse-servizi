@@ -1,24 +1,18 @@
 ---
-title: "Efficientamento Energetico Via Porrettana"
-description: "Intervento di riqualificazione energetica in Via Porrettana"
-location: "Via Porrettana, [DA COMPLETARE]"
+title: "Riqualificazione energetica · Bologna (Porrettana)"
+description: "Efficientamento energetico di edificio residenziale a Bologna."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/via-porrettana-eff-energetico/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "Riqualificazione energetica"
-    - "Cappotto termico"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Cappotto termico esterno"
+    - "Riqualificazione dell'involucro"
+    - "Gestione tecnica e documentale della commessa"
 featured: false
-order: 16
+order: 5
 ---
 
-# Efficientamento Energetico Via Porrettana
-
-Progetto di riqualificazione energetica di un edificio in Via Porrettana.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Efficientamento energetico di un edificio residenziale a Bologna. L'intervento ha previsto la riqualificazione completa dell'involucro, con coordinamento tra progetto tecnico, impresa e gestione della pratica amministrativa.

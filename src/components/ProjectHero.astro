@@ -1,19 +1,55 @@
 ---
+import { Image } from 'astro:assets';
+import heroImage from '../assets/projects-hero.jpg';
+
 interface Props {
   title: string;
   subtitle: string;
+  eyebrow?: string;
   locale: 'it' | 'en';
 }
 
-const { title, subtitle } = Astro.props;
+const { title, subtitle, eyebrow } = Astro.props;
 ---
 
-<section class="relative py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center">
-      <div class="inline-block bg-[#8BC34A] w-12 h-1 mb-6"></div>
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">{title}</h1>
-      <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">{subtitle}</p>
+<section class="relative bg-gray-900 overflow-hidden">
+  <!-- Background image -->
+  <div class="absolute inset-0">
+    <Image
+      src={heroImage}
+      alt=""
+      class="w-full h-full object-cover"
+      widths={[1200, 1600, 2000, 2400]}
+      sizes="100vw"
+    />
+    <!-- Gradient overlay for legibility -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/80"></div>
+    <!-- Brand triangle corner accent -->
+    <div class="absolute top-0 right-0 w-36 h-36 md:w-48 md:h-48 pointer-events-none opacity-80" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="w-full h-full" preserveAspectRatio="none">
+        <polygon points="100,0 100,100 0,0" fill="#1B5E20" />
+      </svg>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="relative min-h-[72vh] md:min-h-[78vh] flex flex-col justify-end">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-14 md:pb-20">
+      <div class="grid md:grid-cols-12 gap-10 md:gap-12 items-end">
+        <div class="md:col-span-7">
+          {eyebrow && (
+            <p class="text-[11px] tracking-[0.35em] uppercase text-white/75 mb-5 md:mb-6">{eyebrow}</p>
+          )}
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extralight leading-[1.02] tracking-[-0.01em] text-white">
+            {title}
+          </h1>
+        </div>
+        <div class="md:col-span-5">
+          <p class="text-base md:text-lg leading-[1.55] font-light text-white/85 max-w-xl">
+            {subtitle}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -1,22 +1,18 @@
 ---
-title: "Vaitosarelli - Castenaso"
-description: "Struttura commerciale/industriale realizzata a Castenaso"
-location: "Castenaso, Bologna"
+title: "Residenza privata · Castenaso"
+description: "Nuova costruzione residenziale privata realizzata a Castenaso."
+location: "Castenaso (BO)"
 year: 2024
-category: "commercial"
+category: "residential"
 coverImage: "../_images/vaitosarelli-castenaso/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "[DA COMPLETARE - caratteristiche]"
+    - "Nuova costruzione residenziale"
+    - "Coordinamento tra progetto, cantiere e committenza"
+    - "Controllo di finiture, tempi e costi"
 featured: false
-order: 13
+order: 1
 ---
 
-# Vaitosarelli - Castenaso
-
-Progetto di realizzazione di una struttura a Castenaso.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Realizzazione di un edificio residenziale privato a Castenaso. La commessa ha richiesto la gestione integrata del cantiere — dalla fase autorizzativa alla consegna — con particolare attenzione al livello di finitura e al rispetto del cronoprogramma concordato con la committenza.

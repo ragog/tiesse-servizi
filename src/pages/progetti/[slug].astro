@@ -20,123 +20,139 @@ const { Content } = await project.render();
 
 const locale = 'it';
 const content = getTranslations(locale);
+
+const facts = [
+  { label: content.projects.specs_year, value: project.data.year },
+  { label: content.projects.specs_location, value: project.data.location },
+  { label: content.projects.specs_category, value: project.data.category },
+  { label: content.projects.specs_client, value: project.data.specs?.client },
+  { label: content.projects.specs_area, value: project.data.specs?.area },
+  { label: content.projects.specs_duration, value: project.data.specs?.duration },
+].filter((f) => f.value);
 ---
 
 <BaseLayout content={content} locale={locale} title={`${project.data.title} - ${content.site_title}`}>
-  <!-- Project Hero -->
-  <section class="relative h-[60vh] overflow-hidden bg-black">
-    <Image
-      src={project.data.coverImage}
-      alt={project.data.title}
-      class="w-full h-full object-contain"
-      widths={[800, 1200, 1600]}
-      sizes="100vw"
-    />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-    <div class="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white">
-      <div class="max-w-7xl mx-auto">
-        <div class="inline-block bg-[#8BC34A] text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 capitalize">
-          {project.data.category}
+  <!-- Breadcrumb / Back -->
+  <section class="bg-white border-b border-gray-200 pt-28 md:pt-32 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <a href="/progetti" class="inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-gray-500 hover:text-black transition-colors">
+        <span aria-hidden="true">←</span>
+        {content.projects.back_to_projects}
+      </a>
+    </div>
+  </section>
+
+  <!-- Project Title Block -->
+  <section class="bg-white pt-12 md:pt-20 pb-12 md:pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-12 items-end">
+        <div class="md:col-span-8">
+          {project.data.category && (
+            <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6 capitalize">{project.data.category}</p>
+          )}
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-tight text-gray-900">
+            {project.data.title}
+          </h1>
         </div>
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">{project.data.title}</h1>
-        <div class="flex items-center text-lg md:text-xl text-gray-200">
-          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-          </svg>
-          <span>{project.data.location}</span>
-          <span class="mx-4">•</span>
-          <span>{project.data.year}</span>
+        <div class="md:col-span-4 md:text-right">
+          <p class="text-sm text-gray-500 tracking-wide">
+            <span>{project.data.location}</span>
+            <span class="mx-2 text-gray-300">·</span>
+            <span class="tabular-nums">{project.data.year}</span>
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Project Content -->
-  <section class="py-20 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Back Link -->
-      <a href="/progetti" class="inline-flex items-center text-[#8BC34A] hover:text-[#689F38] font-semibold mb-8 transition-colors">
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-        </svg>
-        Torna ai Progetti
-      </a>
-
-      <!-- Description -->
-      <div class="prose prose-lg max-w-none mb-12">
-        <p class="text-xl text-gray-700 leading-relaxed">{project.data.description}</p>
+  <!-- Hero Image -->
+  <section class="bg-gray-50 py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white">
+        <Image
+          src={project.data.coverImage}
+          alt={project.data.title}
+          class="w-full h-auto max-h-[80vh] object-contain mx-auto"
+          widths={[800, 1200, 1600, 2000]}
+          sizes="(max-width: 1280px) 100vw, 1280px"
+        />
       </div>
+    </div>
+  </section>
 
-      <!-- Specs -->
-      {project.data.specs && (
-        <div class="bg-gray-50 rounded-lg p-8 mb-12">
-          <h2 class="text-2xl font-bold mb-6">Dettagli Tecnici</h2>
-          <div class="grid md:grid-cols-2 gap-6">
-            {project.data.specs.area && (
+  <!-- Facts Grid -->
+  {facts.length > 0 && (
+    <section class="bg-white border-y border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="py-6 md:py-8">
+          <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{content.projects.detail_facts}</p>
+          <div class="grid grid-cols-2 md:grid-cols-6 gap-y-8 gap-x-6">
+            {facts.map((fact) => (
               <div>
-                <div class="text-sm text-gray-600 font-semibold mb-1">{content.projects.specs_area}</div>
-                <div class="text-lg font-bold text-gray-900">{project.data.specs.area}</div>
-              </div>
-            )}
-            {project.data.specs.budget && (
-              <div>
-                <div class="text-sm text-gray-600 font-semibold mb-1">{content.projects.specs_budget}</div>
-                <div class="text-lg font-bold text-gray-900">{project.data.specs.budget}</div>
-              </div>
-            )}
-            {project.data.specs.duration && (
-              <div>
-                <div class="text-sm text-gray-600 font-semibold mb-1">{content.projects.specs_duration}</div>
-                <div class="text-lg font-bold text-gray-900">{project.data.specs.duration}</div>
-              </div>
-            )}
-            {project.data.specs.client && (
-              <div>
-                <div class="text-sm text-gray-600 font-semibold mb-1">{content.projects.specs_client}</div>
-                <div class="text-lg font-bold text-gray-900">{project.data.specs.client}</div>
-              </div>
-            )}
-          </div>
-          {project.data.specs.features && project.data.specs.features.length > 0 && (
-            <div class="mt-6">
-              <div class="text-sm text-gray-600 font-semibold mb-3">{content.projects.specs_features}</div>
-              <ul class="space-y-2">
-                {project.data.specs.features.map((feature: string) => (
-                  <li class="flex items-start">
-                    <span class="text-[#8BC34A] mr-3 text-xl">•</span>
-                    <span class="text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-      )}
-
-      <!-- Markdown Content -->
-      <div class="prose prose-lg max-w-none mb-12">
-        <Content />
-      </div>
-
-      <!-- Gallery -->
-      {project.data.gallery && project.data.gallery.length > 0 && (
-        <div class="mt-12">
-          <h2 class="text-2xl font-bold mb-6">Galleria</h2>
-          <div class="grid md:grid-cols-2 gap-4">
-            {project.data.gallery.map((image) => (
-              <div class="relative h-64 rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={image}
-                  alt={project.data.title}
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  widths={[400, 600, 800]}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+                <div class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-gray-500 mb-2">{fact.label}</div>
+                <div class="text-base md:text-lg font-light text-gray-900 tabular-nums capitalize">{fact.value}</div>
               </div>
             ))}
           </div>
         </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Description + Narrative -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{content.projects.detail_brief}</p>
+      <p class="text-xl md:text-2xl text-gray-900 leading-[1.5] font-light mb-16">
+        {project.data.description}
+      </p>
+
+      <div class="prose prose-lg max-w-none prose-headings:font-light prose-headings:tracking-tight prose-p:text-gray-700 prose-p:leading-relaxed prose-strong:text-gray-900 prose-strong:font-medium">
+        <Content />
+      </div>
+
+      {project.data.specs?.features && project.data.specs.features.filter((f: string) => f).length > 0 && (
+        <div class="mt-16 border-t border-gray-200 pt-12">
+          <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">{content.projects.specs_features}</p>
+          <ul class="space-y-0 border-t border-gray-200">
+            {project.data.specs.features.filter((f: string) => f).map((feature: string) => (
+              <li class="py-4 border-b border-gray-200 text-gray-800">{feature}</li>
+            ))}
+          </ul>
+        </div>
       )}
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  {project.data.gallery && project.data.gallery.length > 0 && (
+    <section class="py-20 md:py-24 bg-gray-50 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-12">{content.projects.detail_gallery}</p>
+        <div class="grid md:grid-cols-2 gap-6">
+          {project.data.gallery.map((image) => (
+            <div class="bg-white">
+              <Image
+                src={image}
+                alt={project.data.title}
+                class="w-full h-auto object-contain"
+                widths={[600, 900, 1200]}
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Closing Back Link -->
+  <section class="bg-white border-t border-gray-200 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <a href="/progetti" class="inline-flex items-center gap-3 text-sm tracking-[0.25em] uppercase text-gray-900 border-b border-gray-300 pb-1 hover:border-black transition-colors">
+        <span aria-hidden="true">←</span>
+        {content.projects.back_to_projects}
+      </a>
     </div>
   </section>
 </BaseLayout>

@@ -1,24 +1,18 @@
 ---
-title: "Efficientamento Energetico Via Cevia - Imola"
-description: "Intervento di riqualificazione energetica in Via Cevia"
-location: "Via Cevia, Imola"
+title: "Riqualificazione energetica · Imola"
+description: "Efficientamento energetico di edificio residenziale a Imola."
+location: "Imola (BO)"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/via-cevia-imola-eff-energetico/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "Efficientamento energetico"
     - "Isolamento termico"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Riqualificazione dell'involucro edilizio"
+    - "Gestione tecnica degli incentivi fiscali"
 featured: false
-order: 15
+order: 4
 ---
 
-# Efficientamento Energetico Via Cevia - Imola
-
-Progetto di riqualificazione energetica di un edificio in Via Cevia, Imola.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Intervento di riqualificazione energetica su edificio residenziale a Imola. La commessa è stata condotta con coordinamento integrato tra progetto tecnico, impresa esecutrice e pratica fiscale, garantendo tempi certi alla committenza.

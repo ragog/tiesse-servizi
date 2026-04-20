@@ -1,24 +1,18 @@
 ---
-title: "Col di Lana Energy Efficiency"
-description: "Energy efficiency upgrade for residential building"
-location: "Col di Lana, [TO BE COMPLETED]"
-year: 2024
-category: "renovation"
+title: "Energy retrofit · Bologna (Col di Lana)"
+description: "Energy-efficiency upgrade of a residential building in Bologna."
+location: "Bologna"
+year: 2022
+category: "energy-retrofit"
 coverImage: "../_images/eff-energetico-col-di-lana/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Thermal insulation"
-    - "Window replacement"
-    - "[TO BE COMPLETED - other features]"
+    - "External thermal insulation"
+    - "Full window replacement"
+    - "Solar thermal system"
 featured: false
-order: 5
+order: 1
 ---
 
-# Col di Lana Energy Efficiency
-
-Energy efficiency upgrade project for a residential building.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Energy retrofit of a residential building in Bologna. The technical package — external insulation, new windows, and solar thermal — was sized to maximise the energy-class upgrade and the fiscal incentive yield available under Italian legislation.

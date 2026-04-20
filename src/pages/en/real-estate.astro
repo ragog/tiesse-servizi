@@ -1,20 +1,192 @@
 ---
+import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getTranslations } from '../../i18n';
+import heroImg from '../../assets/real-estate/palau-barrabisa/hero.jpg';
+import featureImg from '../../assets/real-estate/palau-barrabisa/feature.jpg';
+import aerial1 from '../../assets/real-estate/palau-barrabisa/aerial-1.jpg';
+import aerial2 from '../../assets/real-estate/palau-barrabisa/aerial-2.jpg';
+import aerial3 from '../../assets/real-estate/palau-barrabisa/aerial-3.jpg';
 
 const locale = 'en';
 const content = getTranslations(locale);
+const re = content.real_estate;
 ---
 
-<BaseLayout content={content} locale={locale} title={`${content.nav.real_estate} - ${content.site_title}`}>
-  <section class="pt-32 pb-20 bg-white min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-        {content.nav.real_estate}
-      </h1>
-      <p class="text-lg text-gray-600">
-        Page under construction.
-      </p>
+<BaseLayout content={content} locale={locale} title={`${re.page_title} - ${content.site_title}`}>
+  <!-- PAGE HERO -->
+  <section class="relative bg-black overflow-hidden">
+    <div class="absolute inset-0">
+      <Image
+        src={heroImg}
+        alt="Real Estate · Sardinia"
+        class="w-full h-full object-cover"
+        widths={[1200, 1600, 2000, 2400]}
+        sizes="100vw"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/80"></div>
+      <div class="absolute top-0 right-0 w-36 h-36 md:w-52 md:h-52 pointer-events-none opacity-85" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="w-full h-full" preserveAspectRatio="none">
+          <polygon points="100,0 100,100 0,0" fill="#1B5E20" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="relative min-h-[78vh] md:min-h-[82vh] flex flex-col justify-end">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-40 pb-16 md:pb-20">
+        <p class="text-[11px] md:text-xs tracking-[0.35em] uppercase text-white/80 mb-6 md:mb-8">{re.hero_eyebrow}</p>
+        <div class="grid md:grid-cols-12 gap-10 md:gap-12 items-end">
+          <div class="md:col-span-7">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extralight leading-[0.95] tracking-[-0.02em] text-white">{re.hero_title}</h1>
+          </div>
+          <div class="md:col-span-5">
+            <p class="text-base md:text-lg leading-[1.55] font-light text-white/85 max-w-xl">{re.hero_subtitle}</p>
+          </div>
+        </div>
+        <div class="mt-10 md:mt-14 flex flex-wrap gap-x-10 gap-y-3 text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/70">
+          {re.hero_meta.map((m: string) => (<span>{m}</span>))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 — INTRO / POSITIONING -->
+  <section class="bg-white py-24 md:py-32 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">01 — {re.intro_eyebrow}</p>
+          <h2 class="text-3xl md:text-5xl font-light leading-[1.05] tracking-tight text-gray-900">{re.intro_title}</h2>
+        </div>
+        <div class="md:col-span-7 space-y-6 text-gray-700 leading-relaxed text-lg font-light">
+          {re.intro_body.map((p: string) => (<p>{p}</p>))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 — SARDINIA REGIONAL HEADER -->
+  <section class="bg-gray-50 py-20 md:py-24 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-12 items-end">
+        <div class="md:col-span-7">
+          <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">02 — {re.sardegna_eyebrow}</p>
+          <h2 class="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-[-0.02em] text-gray-900 leading-[0.95]">{re.sardegna_title}</h2>
+        </div>
+        <div class="md:col-span-5">
+          <p class="text-base md:text-lg text-gray-600 leading-relaxed font-light">{re.sardegna_body}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPERATION: PALAU · BARRABISA (nested inside Sardinia) -->
+  <section class="bg-white border-b border-gray-200">
+    <!-- operation mini-hero band -->
+    <div class="bg-[#1B5E20] text-white relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-24 h-24 md:w-32 md:h-32 pointer-events-none opacity-20" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="w-full h-full"><polygon points="100,0 100,100 0,0" fill="#ffffff" /></svg>
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative">
+        <p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-white/70 mb-5">{re.palau_eyebrow}</p>
+        <div class="grid md:grid-cols-12 gap-6 items-end">
+          <div class="md:col-span-8 flex items-baseline gap-4 md:gap-6 flex-wrap">
+            <h3 class="text-5xl md:text-7xl font-extralight leading-none tracking-[-0.02em]">{re.palau_title}</h3>
+            <span class="text-2xl md:text-4xl font-extralight text-white/75 tracking-[0.05em]">{re.palau_subtitle}</span>
+          </div>
+          <div class="md:col-span-4 md:text-right">
+            <div class="flex md:justify-end flex-wrap gap-x-6 gap-y-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/75">
+              {re.palau_meta.map((m: string) => (<span>{m}</span>))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brief -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">{re.palau_brief_eyebrow}</p>
+          <h4 class="text-3xl md:text-4xl font-light leading-[1.1] tracking-tight text-gray-900">{re.palau_brief_title}</h4>
+        </div>
+        <div class="md:col-span-7 space-y-6 text-gray-700 leading-relaxed text-lg font-light">
+          {re.palau_brief_body.map((p: string) => (<p>{p}</p>))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Specs -->
+    <div class="bg-gray-50 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-10">{re.palau_specs_label}</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-8">
+          {re.palau_specs_items.map((item: { label: string; value: string }) => (
+            <div>
+              <div class="text-[10px] md:text-xs tracking-[0.25em] uppercase text-gray-500 mb-3">{item.label}</div>
+              <div class="text-lg md:text-xl font-light text-gray-900 leading-snug">{item.value}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature image + quote -->
+    <div class="bg-white py-20 md:py-28 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-7">
+            <Image
+              src={featureImg}
+              alt={`${re.palau_title} · ${re.palau_subtitle}`}
+              class="w-full h-auto"
+              widths={[800, 1200, 1600]}
+              sizes="(max-width: 768px) 100vw, 60vw"
+            />
+          </div>
+          <div class="md:col-span-5">
+            <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">{re.palau_feature_eyebrow}</p>
+            <p class="text-2xl md:text-3xl font-light leading-[1.2] tracking-tight text-gray-900 mb-8">"{re.palau_feature_quote}"</p>
+            <p class="text-gray-700 leading-relaxed font-light">{re.palau_feature_body}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="bg-gray-50 py-16 md:py-20 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-10">{re.palau_gallery_eyebrow}</p>
+        <div class="grid md:grid-cols-2 gap-6">
+          <Image src={aerial1} alt="" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          <Image src={aerial2} alt="" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          <Image src={aerial3} alt="" class="w-full h-auto md:col-span-2" widths={[800, 1200, 1600, 2000]} sizes="100vw" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-[#1B5E20] text-white py-24 md:py-32 relative overflow-hidden">
+    <div class="absolute top-0 right-0 w-40 h-40 md:w-56 md:h-56 pointer-events-none opacity-20" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="w-full h-full">
+        <polygon points="100,0 100,100 0,0" fill="#ffffff" />
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid md:grid-cols-12 gap-12 items-end">
+        <div class="md:col-span-8">
+          <p class="text-xs tracking-[0.3em] uppercase text-white/60 mb-6">{re.cta_eyebrow}</p>
+          <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight mb-6">{re.cta_title}</h2>
+          <p class="text-white/80 leading-relaxed font-light max-w-2xl">{re.cta_body}</p>
+        </div>
+        <div class="md:col-span-4 md:text-right">
+          <a href={`mailto:${content.footer.email_value}?subject=Palau%20%C2%B7%20Barrabisa`} class="inline-flex items-center gap-3 text-sm tracking-[0.2em] uppercase text-white border-b border-white/50 pb-1 hover:border-white transition-colors">
+            {re.cta_button}
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>

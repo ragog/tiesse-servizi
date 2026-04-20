@@ -1,23 +1,18 @@
 ---
-title: "Bencivenni Farmhouse Structural Consolidation"
-description: "Structural consolidation work for historic farmhouse"
-location: "[TO BE COMPLETED]"
+title: "Structural consolidation · Historic farmhouse, Bologna"
+description: "Structural consolidation of a historic farmhouse in the Bologna area."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "heritage"
 coverImage: "../_images/consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Structural consolidation"
-    - "[TO BE COMPLETED - other features]"
+    - "Structural consolidation of a historic building"
+    - "Seismic verification and diagnostic survey"
+    - "Interventions compatible with the historic fabric"
 featured: false
-order: 3
+order: 1
 ---
 
-# Bencivenni Farmhouse Structural Consolidation
-
-Structural consolidation project for a historic farmhouse.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Structural consolidation of a historic farmhouse in the Bologna area. The intervention required a full diagnostic survey, seismic verifications, and technical choices compatible with the conservation of the historic fabric, preserving continuity of use.

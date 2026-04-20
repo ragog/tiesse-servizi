@@ -1,24 +1,18 @@
 ---
-title: "Pista di Collaudo Alma Mater - Agraria"
-description: "Pista di collaudo per il dipartimento di Agraria dell'Università di Bologna"
+title: "Pista di collaudo · Dipartimento di Agraria, Alma Mater"
+description: "Infrastruttura specialistica realizzata per il Dipartimento di Scienze Agrarie dell'Università di Bologna."
 location: "Bologna"
 year: 2024
-category: "commercial"
+category: "research"
 coverImage: "../_images/pista-collaudo-alma-mater-agraria/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "Università di Bologna - Alma Mater Studiorum"
+  client: "Alma Mater Studiorum — Università di Bologna"
   features:
-    - "Pista di collaudo specializzata"
-    - "Infrastrutture per dipartimento Agraria"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Pista di collaudo per macchine agricole"
+    - "Infrastruttura tecnica per il Dipartimento di Agraria"
+    - "Commessa pubblica universitaria"
 featured: false
-order: 10
+order: 1
 ---
 
-# Pista di Collaudo Alma Mater - Agraria
-
-Progetto di realizzazione di una pista di collaudo per il dipartimento di Scienze Agrarie dell'Università di Bologna.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Infrastruttura specialistica realizzata per il Dipartimento di Scienze Agrarie dell'Università di Bologna. La commessa, condotta all'interno di procedure di committenza pubblica universitaria, ha richiesto il coordinamento tecnico con i responsabili scientifici e con le strutture di ateneo.

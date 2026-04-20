@@ -1,23 +1,18 @@
 ---
-title: "Via Bencivenni"
-description: "Residential project on Via Bencivenni"
-location: "Via Bencivenni, [TO BE COMPLETED]"
+title: "Private residence · Bologna"
+description: "Private residential building delivered in the Bologna area."
+location: "Bologna"
 year: 2024
 category: "residential"
 coverImage: "../_images/via-bencivenni/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
     - "Residential building"
-    - "[TO BE COMPLETED - other features]"
+    - "Construction management and site coordination"
+    - "Quality control on finishes"
 featured: false
-order: 14
+order: 2
 ---
 
-# Via Bencivenni
-
-Residential project completed on Via Bencivenni.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Private residential commission in the Bologna area. The project was delivered with direct coordination between design, contractors and client, with constant technical oversight of execution quality and operational schedule.

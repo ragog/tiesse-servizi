@@ -8,76 +8,146 @@ import { getCollection } from 'astro:content';
 const locale = 'it';
 const content = getTranslations(locale);
 
-// Fetch Italian projects
 const allProjects = await getCollection('projects', ({ id }) => {
   return id.startsWith('it/');
 });
 
-// Sort by order field, then by year (newest first)
-const projects = allProjects.sort((a, b) => {
-  if (a.data.order !== undefined && b.data.order !== undefined) {
-    return a.data.order - b.data.order;
-  }
-  if (a.data.order !== undefined) return -1;
-  if (b.data.order !== undefined) return 1;
-  return b.data.year - a.data.year;
-});
+const sortProjects = (list: typeof allProjects) =>
+  list.sort((a, b) => {
+    if (a.data.order !== undefined && b.data.order !== undefined) {
+      return a.data.order - b.data.order;
+    }
+    if (a.data.order !== undefined) return -1;
+    if (b.data.order !== undefined) return 1;
+    return b.data.year - a.data.year;
+  });
+
+const sectorOrder: Array<keyof typeof content.projects.sectors> = [
+  'healthcare',
+  'residential',
+  'structural',
+  'heritage',
+  'energy-retrofit',
+  'research'
+];
+
+const groupedSectors = sectorOrder
+  .map((key) => ({
+    key,
+    label: content.projects.sectors[key].label,
+    description: content.projects.sectors[key].description,
+    items: sortProjects(allProjects.filter((p) => p.data.category === key))
+  }))
+  .filter((g) => g.items.length > 0);
 ---
 
 <BaseLayout content={content} locale={locale} title={`${content.projects.page_title} - ${content.site_title}`}>
   <ProjectHero
+    eyebrow={content.projects.hero_eyebrow}
     title={content.projects.page_title}
     subtitle={content.projects.subtitle}
     locale={locale}
   />
 
-  <!-- Real Estate Operations Banner -->
-  <section class="bg-[#1a1a1a] text-white py-16 md:py-20">
+  <!-- Positioning Intro -->
+  <section class="bg-white py-20 md:py-28 border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-12 gap-8 items-center">
-        <div class="md:col-span-8">
-          <p class="text-xs tracking-[0.25em] uppercase text-[#8BC34A] mb-4">{content.projects.real_estate_banner_eyebrow}</p>
-          <h2 class="text-3xl md:text-4xl font-light leading-tight tracking-tight mb-4">{content.projects.real_estate_banner_title}</h2>
-          <p class="text-gray-400 leading-relaxed max-w-2xl">{content.projects.real_estate_banner_text}</p>
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-5">
+          <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">01 — {content.projects.intro_eyebrow}</p>
+          <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900">
+            {content.projects.intro_title}
+          </h2>
         </div>
-        <div class="md:col-span-4 md:text-right">
-          <a href="/real-estate" class="inline-block px-8 py-4 bg-[#8BC34A] hover:bg-[#689F38] text-white font-semibold tracking-wide transition-colors">
-            {content.projects.real_estate_banner_cta} →
-          </a>
+        <div class="md:col-span-7 space-y-6 text-gray-700 leading-relaxed text-lg">
+          {content.projects.intro_body.map((p: string) => (
+            <p>{p}</p>
+          ))}
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technical Projects -->
-  <section class="py-24 md:py-32 bg-white">
+  <!-- Aggregate Stats Strip -->
+  <section class="bg-gray-50 border-b border-gray-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="mb-16 max-w-3xl">
-        <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">{content.projects.technical_eyebrow}</p>
-        <h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6">{content.projects.technical_title}</h2>
-        <p class="text-lg text-gray-600 leading-relaxed">{content.projects.technical_subtitle}</p>
+      <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
+        {content.projects.stats.map((item: { value: string; label: string }) => (
+          <div class="py-12 px-4 md:px-6 text-center">
+            <div class="text-3xl md:text-5xl font-light text-gray-900 mb-3 tabular-nums">{item.value}</div>
+            <div class="text-[10px] md:text-xs tracking-[0.25em] uppercase text-gray-500">{item.label}</div>
+          </div>
+        ))}
       </div>
-      {projects.length > 0 ? (
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => {
-            const slug = project.id.replace('it/', '').replace('.md', '');
-            return (
-              <ProjectCard
-                title={project.data.title}
-                description={project.data.description}
-                location={project.data.location}
-                year={project.data.year}
-                coverImage={project.data.coverImage}
-                slug={slug}
-                locale={locale}
-                category={project.data.category}
-              />
-            );
-          })}
-        </div>
-      ) : (
-        <p class="text-center text-gray-600 text-xl">{content.projects.no_projects}</p>
-      )}
     </div>
   </section>
+
+  <!-- Track Record introduction -->
+  <section class="bg-white pt-24 md:pt-32 pb-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-12 items-end">
+        <div class="md:col-span-7">
+          <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">02 — {content.projects.technical_eyebrow}</p>
+          <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900">{content.projects.technical_title}</h2>
+        </div>
+        <div class="md:col-span-5">
+          <p class="text-base md:text-lg text-gray-600 leading-relaxed font-light">{content.projects.technical_subtitle}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sector-grouped sections -->
+  {groupedSectors.length > 0 ? (
+    groupedSectors.map((sector, sectorIndex) => {
+      const sectorNumber = String(sectorIndex + 1).padStart(2, '0');
+      const isLast = sectorIndex === groupedSectors.length - 1;
+      return (
+        <section class={`bg-white ${isLast ? 'pt-16 pb-24 md:pb-32' : 'py-16'}`}>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="border-t border-gray-200 pt-12 md:pt-16 mb-12 md:mb-16">
+              <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-baseline">
+                <div class="md:col-span-7">
+                  <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-4">
+                    {sectorNumber} — {content.projects.technical_eyebrow}
+                  </p>
+                  <h3 class="text-2xl md:text-4xl font-light leading-[1.1] tracking-tight text-gray-900">
+                    {sector.label}
+                  </h3>
+                </div>
+                <div class="md:col-span-5">
+                  <p class="text-sm md:text-base text-gray-600 leading-relaxed font-light">
+                    {sector.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+              {sector.items.map((project, i) => {
+                const slug = project.id.replace('it/', '').replace('.md', '');
+                return (
+                  <ProjectCard
+                    title={project.data.title}
+                    description={project.data.description}
+                    location={project.data.location}
+                    year={project.data.year}
+                    coverImage={project.data.coverImage}
+                    slug={slug}
+                    locale={locale}
+                    index={i}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      );
+    })
+  ) : (
+    <section class="py-24 md:py-32 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center text-gray-600 text-xl">{content.projects.no_projects}</p>
+      </div>
+    </section>
+  )}
 </BaseLayout>

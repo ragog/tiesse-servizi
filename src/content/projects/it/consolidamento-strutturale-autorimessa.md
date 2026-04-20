@@ -1,23 +1,18 @@
 ---
-title: "Consolidamento Strutturale Autorimessa"
-description: "Intervento di consolidamento strutturale per autorimessa"
-location: "BOLOGNA"
+title: "Consolidamento strutturale autorimessa · Bologna"
+description: "Intervento di consolidamento strutturale su autorimessa esistente."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "structural"
 coverImage: "../_images/consolidamento-strutturale-autorimessa/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "Rinforzo strutturale"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Rinforzo strutturale su struttura esistente"
+    - "Verifiche di sicurezza e portata"
+    - "Intervento in condizioni operative vincolate"
 featured: false
-order: 4
+order: 2
 ---
 
-# Consolidamento Strutturale Autorimessa
-
-Progetto di consolidamento strutturale di un'autorimessa.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Consolidamento strutturale di un'autorimessa esistente, con rinforzi mirati e verifiche di portata. L'intervento è stato condotto mantenendo la fruibilità dell'immobile e coordinando le lavorazioni in condizioni di cantiere vincolate.

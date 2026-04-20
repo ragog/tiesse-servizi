@@ -1,24 +1,18 @@
 ---
-title: "Efficientamento Energetico Via Tranquillo da Cremona"
-description: "Intervento di riqualificazione energetica in Via Tranquillo da Cremona"
-location: "Via Tranquillo da Cremona, [DA COMPLETARE]"
+title: "Riqualificazione energetica · Bologna (T. da Cremona)"
+description: "Efficientamento energetico di edificio residenziale a Bologna."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/via-tranquillo-da-cremona-eff-energetico/cover.webp"
 specs:
-  area: "[DA COMPLETARE]"
-  duration: "[DA COMPLETARE]"
-  client: "[DA COMPLETARE]"
+  client: "Committenza privata"
   features:
-    - "Riqualificazione energetica"
-    - "Isolamento termico"
-    - "[DA COMPLETARE - altre caratteristiche]"
+    - "Isolamento termico dell'involucro"
+    - "Aggiornamento dei serramenti"
+    - "Coordinamento tecnico e fiscale della commessa"
 featured: false
-order: 17
+order: 6
 ---
 
-# Efficientamento Energetico Via Tranquillo da Cremona
-
-Progetto di riqualificazione energetica di un edificio in Via Tranquillo da Cremona.
-
-**[DA COMPLETARE: Inserire dettagli specifici del progetto, sfide tecniche, soluzioni implementate]**
+Riqualificazione energetica di un edificio residenziale a Bologna. Il progetto tecnico è stato dimensionato per massimizzare il salto di classe, con presidio costante sulla qualità esecutiva e sulla documentazione a supporto degli incentivi.

@@ -1,22 +1,18 @@
 ---
-title: "Vaitosarelli - Castenaso"
-description: "Commercial/industrial facility built in Castenaso"
-location: "Castenaso, Bologna"
+title: "Private residence · Castenaso"
+description: "New-build private residence delivered in Castenaso."
+location: "Castenaso (BO)"
 year: 2024
-category: "commercial"
+category: "residential"
 coverImage: "../_images/vaitosarelli-castenaso/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "[TO BE COMPLETED - features]"
+    - "New residential construction"
+    - "Coordination across design, site and client"
+    - "Control of finishes, schedule and costs"
 featured: false
-order: 13
+order: 1
 ---
 
-# Vaitosarelli - Castenaso
-
-Project for the construction of a facility in Castenaso.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Delivery of a new-build private residence in Castenaso. The commission required integrated site management — from permitting to handover — with particular focus on finish quality and adherence to the schedule agreed with the client.

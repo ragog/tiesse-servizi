@@ -1,22 +1,19 @@
 ---
-title: "Efficientamento energetico"
-description: "Intervento di riqualificazione energetica edificio residenziale"
-location: "Formiggine (Modena)"
+title: "Riqualificazione energetica · Formigine (MO)"
+description: "Efficientamento energetico di edificio residenziale a Formigine."
+location: "Formigine (MO)"
 year: 2022
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/formiggine/cover.webp"
 specs:
-  area: ""
-  duration: "1 anno"
-  client: "Privato"
+  client: "Committenza privata"
+  duration: "12 mesi"
   features:
-    - "Riqualificazione energetica con cappotti, infissi e solare termico"
+    - "Cappotto termico"
+    - "Sostituzione infissi"
+    - "Impianto solare termico"
 featured: false
-order: 7
+order: 3
 ---
 
-# Formiggine
-
-
-
-****
+Riqualificazione energetica completa di un edificio residenziale a Formigine, nel modenese. L'intervento — cappotto, infissi e solare termico — è stato strutturato per ottenere un significativo salto di classe energetica e valorizzare gli incentivi disponibili.

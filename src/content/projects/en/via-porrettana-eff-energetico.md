@@ -1,24 +1,18 @@
 ---
-title: "Via Porrettana Energy Efficiency"
-description: "Energy efficiency upgrade on Via Porrettana"
-location: "Via Porrettana, [TO BE COMPLETED]"
+title: "Energy retrofit · Bologna (Porrettana)"
+description: "Energy-efficiency upgrade of a residential building in Bologna."
+location: "Bologna"
 year: 2024
-category: "renovation"
+category: "energy-retrofit"
 coverImage: "../_images/via-porrettana-eff-energetico/cover.webp"
 specs:
-  area: "[TO BE COMPLETED]"
-  duration: "[TO BE COMPLETED]"
-  client: "[TO BE COMPLETED]"
+  client: "Private client"
   features:
-    - "Energy efficiency upgrade"
-    - "Thermal insulation"
-    - "[TO BE COMPLETED - other features]"
+    - "External thermal insulation"
+    - "Envelope upgrade"
+    - "Technical and document management"
 featured: false
-order: 16
+order: 5
 ---
 
-# Via Porrettana Energy Efficiency
-
-Energy efficiency upgrade project for a building on Via Porrettana.
-
-**[TO BE COMPLETED: Add specific project details, technical challenges, implemented solutions]**
+Energy retrofit of a residential building in Bologna. The intervention delivered a full building-envelope upgrade, with coordination between technical design, contractor and administrative filings.
