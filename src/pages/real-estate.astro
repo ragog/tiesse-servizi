@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTranslations } from '../i18n';
+
+const locale = 'it';
+const content = getTranslations(locale);
+---
+
+<BaseLayout content={content} locale={locale} title={`${content.nav.real_estate} - ${content.site_title}`}>
+  <section class="pt-32 pb-20 bg-white min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+        {content.nav.real_estate}
+      </h1>
+      <p class="text-lg text-gray-600">
+        Pagina in costruzione.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,35 +1,38 @@
 export default {
-  site_title: "TIESSE SERVIZI - Facility & Executive Management",
+  site_title: "Tiesse Servizi | Real Estate Investment, Built on Engineering — Tiesse Group",
   nav: {
     home: "Home",
     about: "Chi Siamo",
-    projects: "Progetti"
+    projects: "Progetti",
+    real_estate: "Real Estate"
   },
   hero: {
-    subtitle: "Engineering Approach to Real Estate Development & Investment",
-    description: "Technical expertise combined with investment and market analysis",
-    cta_text: "Scopri di più"
+    eyebrow: "Real Estate · Ingegneria · Investimento",
+    subtitle: "Investimenti immobiliari, fondati sull'ingegneria.",
+    description: "Tiesse Servizi è la società operativa del gruppo Tiesse Group: dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico, dalla fattibilità alla consegna.",
+    cta_text: "Operazioni in corso"
   },
-  chi_siamo: {
-    title: "CHI SIAMO",
-    points: [
-      "Tiesse supporta e collabora con: imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
-      "Garantiamo un coordinamento strutturato di progettazione, cantiere e sicurezza, offrendo al cliente una visione chiara dei processi e il controllo puntuale di tempi, costi e qualità.",
-      
+  key_facts: {
+    items: [
+      { value: "2001", label: "Anno di fondazione" },
+      { value: "25+", label: "Anni di attività" },
+      { value: "100%", label: "Residenziale di pregio" },
+      { value: "ENG+ITA", label: "Contratti bilingue" }
     ]
   },
-  missione: {
-    title: "LA NOSTRA MISSIONE",
-    description: "Affiancare il partner trasformando la complessità del processo edilizio in un percorso fluido, governabile e conforme agli obiettivi tecnici ed economici. Il nostro lavoro riduce rischi operativi e finanziari, semplifica le interazioni tra i soggetti e tutela l'investimento.",
+  chi_siamo: {
+    eyebrow: "Chi siamo",
+    title: "Una piattaforma ingegneristica per l'immobiliare residenziale di pregio.",
     points: [
-      "",
-      "",
-      ""
+      "Tiesse Servizi affianca imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
+      "Non siamo venditori improvvisati: strutturiamo ogni operazione con visione ingegneristica specialistica, garantendo controllo puntuale di tempi, costi e qualità — dalla fattibilità alla consegna.",
+      "Il nostro lavoro trasforma la complessità del processo edilizio in un percorso governabile. Riduce rischi operativi e finanziari, semplifica le interazioni tra i soggetti e tutela l'investimento."
     ]
   },
   servizi_tecnici: {
-    title: "SERVIZI TECNICI",
-    description: "Forniamo una gestione strutturata della commessa grazie a servizi tecnici integrati:",
+    eyebrow: "Servizi tecnici",
+    title: "Un unico interlocutore per l'intero ciclo della commessa.",
+    description: "Forniamo una gestione strutturata dell'operazione immobiliare attraverso servizi tecnici integrati.",
     items: [
       "Studio di fattibilità tecnico–economica",
       "Pianificazione e logistica di cantiere",
@@ -43,21 +46,24 @@ export default {
     closing: "Un unico interlocutore per gorvernare tutte le fasi operative."
   },
   invest_in_italy: {
-    title: "INVEST IN ITALY",
+    eyebrow: "Invest in Italy",
+    title: "Accompagniamo investitori esteri nel mercato immobiliare italiano di alto profilo.",
     titleBreak: "INVEST IN<br/>ITALY",
-    intro: "Accompagniamo investitori esteri interessati al mercato immobiliare italiano di alto profilo.",
-    description: "Un occasione per promuovere le bellezze dei nostri territori come la Sardegna e le altre isole del Mediterraneo tra le mete più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare, inserendosi in un settore che non conosce crisi.",
+    intro: "Un'opportunità concreta per allocare capitali in uno scenario iconico, con controllo tecnico e trasparenza su ogni fase.",
+    description: "Sardegna, isole del Mediterraneo e territori italiani selezionati rappresentano oggi tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare — un settore che non conosce crisi.",
     subtitle: "Attraverso Tiesse, gli investitori possono:",
     points: [
       "Accedere a immobili di pregio in zone iconiche",
-      "Realizzare operazioni immobiliari con alto valore estetico e tecnologico",
-      "Valorizzare asset con design e materiali made in Italy"
+      "Realizzare operazioni ad alto valore estetico e tecnologico",
+      "Valorizzare gli asset con design e materiali made in Italy",
+      "Strutturare l'operazione su misura rispetto al capitale disponibile"
     ],
-    closing: "Un'opportunità concreta per allocare capitali in uno scenario da sogno e confezionare la propria offerta su misura in base al capitale da investire."
+    closing: "Dall'analisi di fattibilità alla commercializzazione: un'unica regia ingegneristica."
   },
   garanzie: {
-    title: "GARANZIA E TRASPARENZA",
-    description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente. Forniamo un modello di tutela economica, contrattuale e gestionale basato su strumenti internazionali",
+    eyebrow: "Garanzie e trasparenza",
+    title: "Un modello di tutela basato su strumenti internazionali.",
+    description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente. Forniamo una protezione economica, contrattuale e gestionale pensata per investitori italiani ed esteri.",
     points: [
       "Contrattualistica bilingue (ENG/ITA)",
       "Timeline operativa tracciata e milestone condivise",
@@ -70,27 +76,37 @@ export default {
     ]
   },
   sostenibilita: {
-    title: "SOSTENIBILITÀ",
-    description: "Camminare in un futuro dove innovazione e materiali rinnovabili si fondano con il territorio, per dare vita ad un prodotto che rispetti la natura e si integri in essa rispettandone l'armonia paesaggistica."
+    eyebrow: "Sostenibilità",
+    title: "Un futuro dove innovazione e territorio si fondono.",
+    description: "Materiali rinnovabili, tecnologie avanzate e rispetto dell'armonia paesaggistica: ogni nostra operazione nasce per integrarsi nel contesto, non per imporsi ad esso."
   },
   news: {
-    title: "NEWS & AGGIORNAMENTI",
-    subtitle: "Rimani aggiornato sulle ultime novità e progetti",
+    eyebrow: "Ultime notizie",
+    title: "Aggiornamenti dal gruppo",
+    subtitle: "Seguici su LinkedIn per gli ultimi progetti, analisi di mercato e aggiornamenti operativi.",
+    linkedin_cta: "Segui su LinkedIn",
+    linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
       {
-        date: "Coming Soon",
-        title: "Nuovi progetti in arrivo",
-        description: "Scopri le nostre ultime iniziative e collaborazioni."
+        date: "01/2026",
+        category: "Operazione",
+        title: "Palau · Barrabisa: masterplan residenziale in Sardegna",
+        description: "Cinque ville di pregio in un contesto iconico della costa nord-orientale. Target investitori internazionali.",
+        href: "https://www.linkedin.com/company/tiesse-group/"
       },
       {
-        date: "Coming Soon",
-        title: "Aggiornamenti dal settore",
-        description: "Le ultime tendenze nel facility management."
+        date: "12/2025",
+        category: "Gruppo",
+        title: "Nasce Tiesse Group: la piattaforma strategica per il real estate",
+        description: "Il gruppo unisce ingegneria, analisi di investimento e sviluppo immobiliare in un'unica regia.",
+        href: "https://www.linkedin.com/company/tiesse-group/"
       },
       {
-        date: "Coming Soon",
-        title: "Eventi e partnership",
-        description: "I nostri prossimi eventi e nuove partnership strategiche."
+        date: "11/2025",
+        category: "Visione",
+        title: "Real Estate con mentalità ingegneristica",
+        description: "Dalla fattibilità all'execution: un approccio strutturato per controllo su qualità, costi e tempi.",
+        href: "https://www.linkedin.com/company/tiesse-group/"
       }
     ]
   },
@@ -114,8 +130,9 @@ export default {
     ]
   },
   contatti: {
-    title: "CONTATTACI",
-    subtitle: "Unisciti alla nostra rete.",
+    eyebrow: "Contatti",
+    title: "Parliamo della vostra prossima operazione.",
+    subtitle: "Ogni progetto inizia con un dialogo. Raccontateci obiettivi e tempistiche — vi rispondiamo in 48 ore.",
     form: {
       name: "Nome",
       email: "Email",
@@ -138,7 +155,9 @@ export default {
     email_value: "info@tiesseservizi.eu",
     pec_value: "postmaster@pec.tiesseservizi.eu",
     partita_iva_value: "02241091202",
-    sede_value: "Via Loderingo degli Andalò 5, 40124 Bologna"
+    sede_value: "Via Loderingo degli Andalò 5, 40124 Bologna",
+    group_line: "Società operativa del gruppo Tiesse Group",
+    established: "Fondata nel 2001"
   },
   projects: {
     page_title: "I Nostri Progetti",
@@ -148,6 +167,13 @@ export default {
     specs_budget: "Budget",
     specs_duration: "Durata",
     specs_client: "Cliente",
-    specs_features: "Caratteristiche"
+    specs_features: "Caratteristiche",
+    real_estate_banner_eyebrow: "Operazioni immobiliari",
+    real_estate_banner_title: "Operazioni Real Estate in corso",
+    real_estate_banner_text: "Sviluppo residenziale di pregio per investitori italiani ed esteri — scopri Palau · Barrabisa e le altre operazioni del gruppo.",
+    real_estate_banner_cta: "Vedi le operazioni Real Estate",
+    technical_eyebrow: "Progetti tecnici",
+    technical_title: "Il track record ingegneristico",
+    technical_subtitle: "25 anni di commesse residenziali, commerciali e di riqualificazione: la base di competenze che struttura ogni nostra operazione immobiliare."
   }
 };

@@ -31,8 +31,32 @@ const projects = allProjects.sort((a, b) => {
     locale={locale}
   />
 
-  <section class="py-20 bg-white">
+  <!-- Real Estate Operations Banner -->
+  <section class="bg-[#1a1a1a] text-white py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8">
+          <p class="text-xs tracking-[0.25em] uppercase text-[#8BC34A] mb-4">{content.projects.real_estate_banner_eyebrow}</p>
+          <h2 class="text-3xl md:text-4xl font-light leading-tight tracking-tight mb-4">{content.projects.real_estate_banner_title}</h2>
+          <p class="text-gray-400 leading-relaxed max-w-2xl">{content.projects.real_estate_banner_text}</p>
+        </div>
+        <div class="md:col-span-4 md:text-right">
+          <a href="/real-estate" class="inline-block px-8 py-4 bg-[#8BC34A] hover:bg-[#689F38] text-white font-semibold tracking-wide transition-colors">
+            {content.projects.real_estate_banner_cta} →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Projects -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-16 max-w-3xl">
+        <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">{content.projects.technical_eyebrow}</p>
+        <h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6">{content.projects.technical_title}</h2>
+        <p class="text-lg text-gray-600 leading-relaxed">{content.projects.technical_subtitle}</p>
+      </div>
       {projects.length > 0 ? (
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => {

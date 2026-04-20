@@ -13,19 +13,22 @@ const otherLocale = locale === 'it' ? 'en' : 'it';
 // Smart language switcher - preserve page type
 const currentPath = Astro.url.pathname;
 const isProjectsPage = currentPath.includes('/progetti') || currentPath.includes('/projects');
-const isHome = currentPath === '/' || currentPath === '/en';
+const isRealEstatePage = currentPath.includes('/real-estate');
+const isHome = currentPath === '/' || currentPath === '/it' || currentPath === '/it/';
 
-let otherLocaleUrl = '/';
+let otherLocaleUrl = locale === 'it' ? '/' : '/it';
 if (isProjectsPage) {
   otherLocaleUrl = locale === 'it' ? '/en/projects' : '/progetti';
-} else if (isHome) {
-  otherLocaleUrl = locale === 'it' ? '/en' : '/';
+} else if (isRealEstatePage) {
+  otherLocaleUrl = locale === 'it' ? '/en/real-estate' : '/real-estate';
 }
+
+// Home base path per locale (English is default on /)
+const homeBase = locale === 'it' ? '/it' : '/';
 
 // Helper to construct home section links
 function getHomeLink(section: string) {
-  const baseUrl = locale === 'it' ? '/' : '/en';
-  return `${baseUrl}#${section}`;
+  return `${homeBase}#${section}`;
 }
 ---
 
@@ -47,17 +50,21 @@ function getHomeLink(section: string) {
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex justify-between items-center py-3">
 					<!-- Logo - now links to home -->
-					<a href={locale === 'it' ? '/' : '/en'} class="flex-shrink-0">
-						<div class="leading-tight">
-							<div class="text-2xl font-bold">
-								<span class="text-gray-900">TIESSE</span><span style="color: var(--color-primary)">SERVIZI</span>
+					<a href={homeBase} class="flex-shrink-0">
+						<div class="flex items-center gap-3">
+							<img src="/img/tiesse-group-logo.jpeg" alt="Tiesse Group" class="h-10 w-10 object-cover rounded-sm" />
+							<div class="leading-tight text-center">
+								<div class="text-2xl font-bold">
+									<span class="text-gray-900">TIESSE</span><span style="color: var(--color-primary)">SERVIZI</span>
+								</div>
+								<div class="text-[10px] uppercase tracking-widest text-gray-500 mt-0.5">a Tiesse Group company</div>
 							</div>
 						</div>
 					</a>
 
 					<!-- Desktop Navigation -->
 					<div class="hidden xl:flex xl:space-x-6">
-						<a href={locale === 'it' ? '/' : '/en'}
+						<a href={homeBase}
 						   class={`transition-colors text-sm ${isHome ? 'text-[#8BC34A] font-semibold' : 'text-gray-700 hover:text-[#8BC34A]'}`}>
 							{content.nav.home}
 						</a>
@@ -68,6 +75,10 @@ function getHomeLink(section: string) {
 						<a href={locale === 'it' ? '/progetti' : '/en/projects'}
 						   class={`transition-colors text-sm ${isProjectsPage ? 'text-[#8BC34A] font-semibold' : 'text-gray-700 hover:text-[#8BC34A]'}`}>
 							{content.nav.projects}
+						</a>
+						<a href={locale === 'it' ? '/real-estate' : '/en/real-estate'}
+						   class={`transition-colors text-sm ${isRealEstatePage ? 'text-[#8BC34A] font-semibold' : 'text-gray-700 hover:text-[#8BC34A]'}`}>
+							{content.nav.real_estate}
 						</a>
 
 						<!-- Language Switcher -->
@@ -96,7 +107,7 @@ function getHomeLink(section: string) {
 		<div id="mobile-menu"
 			 class="fixed inset-0 z-40 bg-white transform translate-x-full transition-transform duration-300 ease-in-out xl:hidden">
 			<div class="flex flex-col h-full pt-20 px-6 py-6">
-				<a href={locale === 'it' ? '/' : '/en'}
+				<a href={homeBase}
 				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
 					{content.nav.home}
 				</a>
@@ -107,6 +118,10 @@ function getHomeLink(section: string) {
 				<a href={locale === 'it' ? '/progetti' : '/en/projects'}
 				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
 					{content.nav.projects}
+				</a>
+				<a href={locale === 'it' ? '/real-estate' : '/en/real-estate'}
+				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
+					{content.nav.real_estate}
 				</a>
 
 				<!-- Language Switcher -->
@@ -131,6 +146,8 @@ function getHomeLink(section: string) {
 						<h3 class="text-2xl md:text-3xl font-bold mb-2">
 							<span class="text-white">TIESSE</span><span class="text-[#8BC34A]">SERVIZI</span>
 						</h3>
+						<p class="text-xs text-gray-400 mt-2">{content.footer.group_line}</p>
+						<p class="text-xs text-gray-500 mt-1">{content.footer.established}</p>
 					</div>
 
 					<!-- Column 2: Company Info -->
@@ -171,7 +188,7 @@ function getHomeLink(section: string) {
 				<!-- Copyright row -->
 				<div class="border-t border-gray-700 pt-6 text-center">
 					<p class="text-sm text-gray-500">
-						&copy; 2024 TIESSE SERVIZI. {content.footer.copyright}
+						&copy; 2026 Tiesse Servizi S.r.l. — Tiesse Group. {content.footer.copyright}
 					</p>
 				</div>
 			</div>
