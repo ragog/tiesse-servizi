@@ -4,7 +4,9 @@ export default {
     home: "Home",
     about: "About",
     projects: "Projects",
-    real_estate: "Real Estate"
+    real_estate: "Real Estate",
+    news: "News",
+    contact: "Contact"
   },
   hero: {
     eyebrow: "Real Estate · Engineering · Investment",
@@ -28,6 +30,19 @@ export default {
       "We are engineers first, not intermediaries. Every operation is structured with specialist technical oversight, giving investors precise control over timelines, costs and quality — from feasibility to handover.",
       "We translate the complexity of construction into a governable process. That reduces operational and financial risk, simplifies stakeholder coordination, and protects capital at every stage."
     ]
+  },
+  home_sections: {
+    about_eyebrow: "About",
+    about_title: "An Italian platform, founded by engineers.",
+    about_body: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001 we operate in premium residential real estate with an engineering approach: every operation is structured with technical control over timelines, costs and quality.",
+    technical_eyebrow: "Method · Projects",
+    technical_title: "Engineering judges first.",
+    technical_body: "Twenty-five years of technical work — healthcare, residential, structural, heritage. The foundation behind every real-estate judgment we make before developing an operation.",
+    technical_cta: "View projects",
+    investment_eyebrow: "Real Estate · Investment",
+    investment_title: "Where the landscape protects value.",
+    investment_body: "Sardinia and the Mediterranean: resilient assets where scarcity of land and landscape constraints protect — and grow — the value of the property over time. Engineering governance, bilingual contracts, capital protection.",
+    investment_cta: "View operations"
   },
   servizi_tecnici: {
     eyebrow: "Technical services",

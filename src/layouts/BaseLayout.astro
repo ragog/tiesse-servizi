@@ -80,6 +80,14 @@ function getHomeLink(section: string) {
 						   class={`transition-colors text-sm ${isRealEstatePage ? 'text-[#8BC34A] font-semibold' : 'text-gray-700 hover:text-[#8BC34A]'}`}>
 							{content.nav.real_estate}
 						</a>
+						<a href={getHomeLink('news')}
+						   class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">
+							{content.nav.news}
+						</a>
+						<a href={getHomeLink(locale === 'it' ? 'contatti' : 'contact')}
+						   class="text-gray-700 hover:text-[#8BC34A] transition-colors text-sm">
+							{content.nav.contact}
+						</a>
 
 						<!-- Language Switcher -->
 						<a href={otherLocaleUrl}
@@ -122,6 +130,14 @@ function getHomeLink(section: string) {
 				<a href={locale === 'it' ? '/real-estate' : '/en/real-estate'}
 				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
 					{content.nav.real_estate}
+				</a>
+				<a href={getHomeLink('news')}
+				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
+					{content.nav.news}
+				</a>
+				<a href={getHomeLink(locale === 'it' ? 'contatti' : 'contact')}
+				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
+					{content.nav.contact}
 				</a>
 
 				<!-- Language Switcher -->

@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { Image } from 'astro:assets';
+import palauCover from '../assets/real-estate/palau-barrabisa/hero.jpg';
 
 interface Props {
   content: any;
@@ -7,6 +9,9 @@ interface Props {
 }
 
 const { content, locale } = Astro.props;
+const projectsUrl = locale === 'it' ? '/progetti' : '/en/projects';
+const realEstateUrl = locale === 'it' ? '/real-estate' : '/en/real-estate';
+const h = content.home_sections;
 ---
 
 <BaseLayout content={content} locale={locale}>
@@ -31,7 +36,7 @@ const { content, locale } = Astro.props;
 		</div>
 	</section>
 
-	<!-- Key Facts Strip -->
+	<!-- KEY STATS STRIP -->
 	<section class="bg-white border-b border-gray-200">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
@@ -45,185 +50,137 @@ const { content, locale } = Astro.props;
 		</div>
 	</section>
 
-	<!-- Chi Siamo / About Section -->
-	<section id={locale === 'it' ? 'chi-siamo' : 'about'} class="py-24 md:py-32 bg-white">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-12 gap-12 items-start">
-				<div class="md:col-span-5">
-					<p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">01 — {content.chi_siamo.eyebrow}</p>
-					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-0">
-						{content.chi_siamo.title}
-					</h2>
-				</div>
-				<div class="md:col-span-7 space-y-6 text-gray-700 leading-relaxed text-lg">
-					{content.chi_siamo.points.map((point: string) => (
-						<p>{point}</p>
-					))}
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Garanzie e Trasparenza / Guarantees Section — MOVED UP for investor trust -->
-	<section id={locale === 'it' ? 'garanzie' : 'guarantees'} class="py-24 md:py-32 bg-gray-50">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-12 gap-12 items-start mb-16">
-				<div class="md:col-span-5">
-					<p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">02 — {content.garanzie.eyebrow}</p>
-					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6">
-						{content.garanzie.title}
-					</h2>
-				</div>
+	<!-- 01 — ABOUT -->
+	<section id={locale === 'it' ? 'chi-siamo' : 'about'} class="py-28 md:py-40 bg-white border-b border-gray-200">
+		<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+			<div class="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
 				<div class="md:col-span-7">
-					<p class="text-lg text-gray-700 leading-relaxed">{content.garanzie.description}</p>
+					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-400 mb-10">01 — {h.about_eyebrow}</p>
+					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight text-gray-900">
+						{h.about_title}
+					</h2>
 				</div>
-			</div>
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-0 border-t border-gray-300">
-				{content.garanzie.points.map((point: string, index: number) => (
-					<div class="flex items-start gap-6 py-6 border-b border-gray-300">
-						<span class="text-sm font-light text-gray-400 tabular-nums w-8 flex-shrink-0">{String(index + 1).padStart(2, '0')}</span>
-						<span class="text-gray-800">{point}</span>
-					</div>
-				))}
-			</div>
-		</div>
-	</section>
-
-	<!-- Servizi Tecnici / Technical Services Section -->
-	<section id={locale === 'it' ? 'servizi-tecnici' : 'services'} class="py-24 md:py-32 bg-white">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-12 gap-12 items-start mb-16">
 				<div class="md:col-span-5">
-					<p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">03 — {content.servizi_tecnici.eyebrow}</p>
-					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6">
-						{content.servizi_tecnici.title}
-					</h2>
+					<p class="text-base md:text-lg leading-[1.6] font-light text-gray-700">
+						{h.about_body}
+					</p>
 				</div>
-				<div class="md:col-span-7">
-					<p class="text-lg text-gray-700 leading-relaxed mb-4">{content.servizi_tecnici.description}</p>
-					<p class="text-gray-500 italic">{content.servizi_tecnici.closing}</p>
-				</div>
-			</div>
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200">
-				{content.servizi_tecnici.items.map((item: string, index: number) => (
-					<div class="bg-white p-8 hover:bg-gray-50 transition-colors">
-						<div class="text-xs tracking-widest text-[#8BC34A] mb-4 tabular-nums">{String(index + 1).padStart(2, '0')}</div>
-						<div class="text-base font-medium text-gray-900 leading-snug">{item}</div>
-					</div>
-				))}
 			</div>
 		</div>
 	</section>
 
-	<!-- Invest in Italy Section -->
-	<section id="invest-in-italy" class="py-24 md:py-32 bg-[#1a1a1a] text-white">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-12 gap-12 items-start">
+	<!-- 02 — TECHNICAL · PROJECTS -->
+	<section id="technical" class="py-28 md:py-40 bg-gray-50 border-b border-gray-200">
+		<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+			<div class="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
+				<div class="md:col-span-7">
+					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-400 mb-10">02 — {h.technical_eyebrow}</p>
+					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight text-gray-900">
+						{h.technical_title}
+					</h2>
+				</div>
 				<div class="md:col-span-5">
-					<p class="text-xs tracking-[0.25em] uppercase text-white/50 mb-6">04 — {content.invest_in_italy.eyebrow}</p>
-					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-8">
-						{content.invest_in_italy.title}
-					</h2>
-					<div class="relative h-[320px] overflow-hidden">
-						<img src="/img/ChatGPT Image Dec 9, 2025, 10_23_55 PM.png" alt="Italian Property" class="w-full h-full object-cover" />
-					</div>
-				</div>
-				<div class="md:col-span-7 space-y-6">
-					<p class="text-xl md:text-2xl font-light leading-relaxed text-white">{content.invest_in_italy.intro}</p>
-					<p class="text-gray-400 leading-relaxed">{content.invest_in_italy.description}</p>
-					<div class="pt-4">
-						<p class="text-sm tracking-widest uppercase text-white/70 mb-6">{content.invest_in_italy.subtitle}</p>
-						<div class="space-y-0 border-t border-white/20">
-							{content.invest_in_italy.points.map((point: string, index: number) => (
-								<div class="flex items-start gap-6 py-5 border-b border-white/20">
-									<span class="text-sm font-light text-white/40 tabular-nums w-6 flex-shrink-0">{String(index + 1).padStart(2, '0')}</span>
-									<span class="text-gray-200">{point}</span>
-								</div>
-							))}
-						</div>
-					</div>
-					<p class="text-gray-500 italic text-sm pt-2">{content.invest_in_italy.closing}</p>
+					<p class="text-base md:text-lg leading-[1.6] font-light text-gray-700 mb-10">
+						{h.technical_body}
+					</p>
+					<a href={projectsUrl}
+					   class="inline-flex items-center gap-3 text-xs md:text-sm tracking-[0.25em] uppercase text-gray-900 border-b border-gray-900/50 hover:border-gray-900 pb-2 transition-colors">
+						<span>{h.technical_cta}</span>
+						<span aria-hidden="true">→</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Sostenibilità / Sustainability Section -->
-	<section id={locale === 'it' ? 'sostenibilita' : 'sustainability'} class="py-24 md:py-32 bg-white">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-12 gap-12 items-center">
-				<div class="md:col-span-6 relative h-[420px] overflow-hidden">
-					<img src="/img/Borryssss.jpeg" alt="Sustainability" class="w-full h-full object-cover" />
-				</div>
-				<div class="md:col-span-6">
-					<p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">05 — {content.sostenibilita.eyebrow}</p>
-					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-8">
-						{content.sostenibilita.title}
-					</h2>
-					<p class="text-lg text-gray-700 leading-relaxed">{content.sostenibilita.description}</p>
+	<!-- 03 — REAL ESTATE · INVESTMENT (full-bleed image background) -->
+	<section id="investment" class="relative bg-black overflow-hidden">
+		<div class="absolute inset-0">
+			<Image
+				src={palauCover}
+				alt="Palau · Barrabisa"
+				class="w-full h-full object-cover"
+				widths={[1200, 1600, 2000, 2400]}
+				sizes="100vw"
+			/>
+			<div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-black/25"></div>
+		</div>
+		<div class="relative min-h-[78vh] md:min-h-[82vh] flex flex-col justify-end">
+			<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full pt-32 pb-16 md:pb-24">
+				<div class="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
+					<div class="md:col-span-7">
+						<p class="text-[10px] md:text-xs tracking-[0.35em] uppercase text-white/70 mb-10">03 — {h.investment_eyebrow}</p>
+						<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight text-white">
+							{h.investment_title}
+						</h2>
+					</div>
+					<div class="md:col-span-5">
+						<p class="text-base md:text-lg leading-[1.6] font-light text-white/85 mb-10">
+							{h.investment_body}
+						</p>
+						<a href={realEstateUrl}
+						   class="inline-flex items-center gap-3 text-xs md:text-sm tracking-[0.25em] uppercase text-white border-b border-white/50 hover:border-white pb-2 transition-colors">
+							<span>{h.investment_cta}</span>
+							<span aria-hidden="true">→</span>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- News Section -->
-	<section id="news" class="py-24 md:py-32 bg-gray-50">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid md:grid-cols-12 gap-12 items-end mb-16">
+	<!-- NEWS — simplified, borderless cards -->
+	<section id="news" class="py-28 md:py-40 bg-white border-b border-gray-200">
+		<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+			<div class="grid md:grid-cols-12 gap-10 md:gap-16 items-end mb-16 md:mb-20">
 				<div class="md:col-span-7">
-					<p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">06 — {content.news.eyebrow}</p>
-					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6">
+					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-400 mb-10">— {content.news.eyebrow}</p>
+					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight text-gray-900">
 						{content.news.title}
 					</h2>
-					<p class="text-lg text-gray-600 font-light max-w-xl">{content.news.subtitle}</p>
 				</div>
 				<div class="md:col-span-5 md:text-right">
 					<a href={content.news.linkedin_url} target="_blank" rel="noopener"
-					   class="inline-flex items-center gap-3 text-sm font-semibold tracking-wide text-gray-900 hover:text-[#8BC34A] transition-colors border-b border-gray-900 hover:border-[#8BC34A] pb-1">
-						<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-						{content.news.linkedin_cta} →
+					   class="inline-flex items-center gap-3 text-xs md:text-sm tracking-[0.25em] uppercase text-gray-900 border-b border-gray-900/50 hover:border-gray-900 pb-2 transition-colors">
+						<span>{content.news.linkedin_cta}</span>
+						<span aria-hidden="true">→</span>
 					</a>
 				</div>
 			</div>
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-300">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 border-t border-gray-200 pt-12 md:pt-16">
 				{content.news.items.map((item: { date: string; category: string; title: string; description: string; href: string }) => (
-					<a href={item.href} target="_blank" rel="noopener" class="group bg-white p-8 md:p-10 hover:bg-gray-50 transition-colors flex flex-col">
-						<div class="flex items-center justify-between mb-8">
-							<span class="text-sm font-light text-gray-500 tabular-nums">{item.date}</span>
-							<span class="text-[10px] tracking-[0.2em] uppercase text-[#8BC34A] font-semibold">{item.category}</span>
+					<a href={item.href} target="_blank" rel="noopener" class="group block">
+						<div class="flex items-center justify-between mb-6">
+							<span class="text-xs tracking-widest uppercase text-gray-400 tabular-nums">{item.date}</span>
+							<span class="text-[10px] tracking-[0.2em] uppercase text-gray-400">{item.category}</span>
 						</div>
-						<h3 class="text-xl font-medium text-gray-900 leading-snug mb-4 group-hover:text-[#8BC34A] transition-colors">{item.title}</h3>
-						<p class="text-gray-600 leading-relaxed text-sm flex-grow">{item.description}</p>
-						<div class="mt-8 text-xs tracking-widest uppercase text-gray-400 group-hover:text-[#8BC34A] transition-colors">
-							LinkedIn →
-						</div>
+						<h3 class="text-xl md:text-2xl font-light text-gray-900 leading-snug tracking-tight mb-4 group-hover:text-[#8BC34A] transition-colors">{item.title}</h3>
+						<p class="text-sm text-gray-600 font-light leading-relaxed">{item.description}</p>
 					</a>
 				))}
 			</div>
 		</div>
 	</section>
 
-	<!-- Contatti / Contact Section -->
-	<section id={locale === 'it' ? 'contatti' : 'contact'} class="py-24 md:py-32 bg-[#1a1a1a] text-white">
-		<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="mb-16">
-				<p class="text-xs tracking-[0.25em] uppercase text-white/50 mb-6">07 — {content.contatti.eyebrow}</p>
-				<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight mb-6 max-w-3xl">
-					{content.contatti.title}
-				</h2>
-				<p class="text-xl text-gray-400 font-light max-w-2xl">{content.contatti.subtitle}</p>
-			</div>
-			<form class="space-y-6 max-w-3xl">
-				<div class="grid md:grid-cols-2 gap-6">
-					<input type="text" placeholder={content.contatti.form.name} class="w-full px-0 py-4 bg-transparent border-0 border-b border-white/30 placeholder-white/50 text-white focus:outline-none focus:border-[#8BC34A] transition-colors" />
-					<input type="email" placeholder={content.contatti.form.email} class="w-full px-0 py-4 bg-transparent border-0 border-b border-white/30 placeholder-white/50 text-white focus:outline-none focus:border-[#8BC34A] transition-colors" />
+	<!-- CONTACT — minimal -->
+	<section id={locale === 'it' ? 'contatti' : 'contact'} class="py-28 md:py-40 bg-[#1a1a1a] text-white">
+		<div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+			<div class="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
+				<div class="md:col-span-7">
+					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-white/40 mb-10">— {content.contatti.eyebrow}</p>
+					<h2 class="text-3xl md:text-5xl font-light leading-tight tracking-tight">
+						{content.contatti.title}
+					</h2>
 				</div>
-				<input type="text" placeholder={content.contatti.form.subject} class="w-full px-0 py-4 bg-transparent border-0 border-b border-white/30 placeholder-white/50 text-white focus:outline-none focus:border-[#8BC34A] transition-colors" />
-				<textarea rows="4" placeholder={content.contatti.form.message} class="w-full px-0 py-4 bg-transparent border-0 border-b border-white/30 placeholder-white/50 text-white focus:outline-none focus:border-[#8BC34A] transition-colors resize-none"></textarea>
-				<button type="submit" class="mt-8 px-10 py-4 bg-[#8BC34A] hover:bg-[#689F38] text-white font-semibold tracking-wide transition-colors">
-					{content.contatti.form.submit} →
-				</button>
-			</form>
+				<div class="md:col-span-5">
+					<p class="text-base md:text-lg text-white/70 font-light leading-[1.6] mb-10">{content.contatti.subtitle}</p>
+					<a href={`mailto:${content.footer.email_value}`}
+					   class="inline-flex items-center gap-4 text-base md:text-lg font-light text-white border-b border-white/50 hover:border-white pb-2 transition-colors">
+						<span>{content.footer.email_value}</span>
+						<span aria-hidden="true">→</span>
+					</a>
+				</div>
+			</div>
 		</div>
 	</section>
 </BaseLayout>

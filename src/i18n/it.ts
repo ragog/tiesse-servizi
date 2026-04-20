@@ -4,7 +4,9 @@ export default {
     home: "Home",
     about: "Chi Siamo",
     projects: "Progetti",
-    real_estate: "Real Estate"
+    real_estate: "Real Estate",
+    news: "News",
+    contact: "Contatti"
   },
   hero: {
     eyebrow: "Real Estate · Ingegneria · Valorizzazione",
@@ -28,6 +30,19 @@ export default {
       "Non siamo venditori improvvisati: strutturiamo ogni operazione con visione ingegneristica specialistica, garantendo controllo puntuale di tempi, costi e qualità — dalla fattibilità alla consegna.",
       "Il nostro lavoro trasforma la complessità del processo edilizio in un percorso governabile. Riduce rischi operativi e finanziari, semplifica le interazioni tra i soggetti e tutela l'investimento."
     ]
+  },
+  home_sections: {
+    about_eyebrow: "Chi siamo",
+    about_title: "Una piattaforma italiana, fondata da ingegneri.",
+    about_body: "Tiesse Servizi è la società operativa di Tiesse Group. Dal 2001 operiamo nel real estate residenziale di pregio con un approccio ingegneristico: ogni operazione è strutturata con controllo tecnico su tempi, costi e qualità.",
+    technical_eyebrow: "Metodo · Progetti",
+    technical_title: "L'ingegneria giudica prima.",
+    technical_body: "Venticinque anni di commesse tecniche — sanitario, residenziale, strutturale, restauro. La base con cui valutiamo ogni operazione immobiliare prima di svilupparla.",
+    technical_cta: "Vedi i progetti",
+    investment_eyebrow: "Real Estate · Investimento",
+    investment_title: "Dove il paesaggio protegge il valore.",
+    investment_body: "Sardegna e Mediterraneo: asset resilienti dove la rarità del suolo e i vincoli paesaggistici proteggono — e accrescono — il valore dell'immobile nel tempo. Governance ingegneristica, contratti bilingue, capitale tutelato.",
+    investment_cta: "Vedi le operazioni"
   },
   servizi_tecnici: {
     eyebrow: "Servizi tecnici",
