@@ -40,11 +40,11 @@ export default {
     technical_body: "Fattibilità, costi, rischi.<br>Valutiamo tutto prima di costruire nulla.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Fattibilità · Acquisizione · Sviluppo · Exit</span>",
     technical_cta: "Vedi i progetti",
     investment_eyebrow: "Real Estate · Investimento",
-    investment_title: "Dove l'esclusività crea valore.",
-    investment_body: "Location selezionate. Sviluppo controllato.<br>Asset pensati per mantenere e accrescere il valore nel tempo.",
+    investment_title: "Location esclusive, valore nel tempo.",
+    investment_body: "Asset strutturati per preservare e accrescere il valore nel tempo.",
     investment_cta: "Vedi le operazioni",
     investment_featured_label: "Progetto in evidenza",
-    investment_project_tag: "Sardegna — Sviluppo residenziale · 5 ville · Investimento privato"
+    investment_project_tag: "Sviluppo residenziale privato"
   },
   servizi_tecnici: {
     eyebrow: "Servizi tecnici",
@@ -173,7 +173,7 @@ export default {
     hero_eyebrow: "Real Estate · Operazioni",
     hero_title: "Real Estate",
     hero_subtitle: "Operazioni residenziali di pregio nel Mediterraneo italiano.",
-    hero_meta: ["Sardegna · Gallura", "Operazioni attive", "Dal 2026"],
+    hero_meta: ["Sardegna", "Toscana", "Corsica"],
 
     intro_eyebrow: "Dove operiamo",
     intro_title: "Dove il paesaggio protegge il valore, l'ingegneria protegge l'investimento.",

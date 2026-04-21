@@ -40,11 +40,11 @@ export default {
     technical_body: "Feasibility, costs, risks.<br>We evaluate everything before building anything.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Feasibility · Acquisition · Development · Exit</span>",
     technical_cta: "View Projects",
     investment_eyebrow: "Real Estate · Investment",
-    investment_title: "Where exclusivity drives value.",
-    investment_body: "Selected locations. Controlled development.<br>Assets designed to hold and grow value over time.",
+    investment_title: "Selected locations. Engineered value.",
+    investment_body: "Assets structured to preserve and grow value over time.",
     investment_cta: "View Operations",
     investment_featured_label: "Featured development",
-    investment_project_tag: "Sardinia — Residential development · 5 villas · Private investment"
+    investment_project_tag: "Private residential development"
   },
   servizi_tecnici: {
     eyebrow: "Technical services",
@@ -173,7 +173,7 @@ export default {
     hero_eyebrow: "Real Estate · Operations",
     hero_title: "Real Estate",
     hero_subtitle: "Premium residential operations across the Italian Mediterranean.",
-    hero_meta: ["Sardinia · Gallura", "Active operations", "Since 2026"],
+    hero_meta: ["Sardinia", "Tuscany", "Corsica"],
 
     intro_eyebrow: "Where we operate",
     intro_title: "Where the landscape protects value, engineering protects the investment.",
