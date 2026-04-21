@@ -10,7 +10,7 @@ export default {
   },
   hero: {
     eyebrow: "Real Estate · Ingegneria · Investimento",
-    subtitle: "Diamo forma al valore.",
+    subtitle: "Costruiamo valore.",
     description: "Tiesse Servizi è la società operativa di Tiesse Group. Dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico — dalla fattibilità alla consegna.",
     cta_text: "Operazioni in corso"
   },
