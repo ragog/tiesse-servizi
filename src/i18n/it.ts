@@ -186,7 +186,11 @@ export default {
 
     sardegna_eyebrow: "Regione",
     sardegna_title: "Sardegna",
-    sardegna_body: "Gallura — tra Palau, Porto Rotondo e Cannigione. Costa nord-orientale, una delle più iconiche del Mediterraneo, dove la tutela paesaggistica e la rarità del suolo edificabile rendono ogni operazione un esercizio di ingegneria e pianificazione prima che di compravendita.",
+    sardegna_body: [
+      "La Costa Smeralda — tra le aree più prestigiose e a offerta limitata del Mediterraneo, tra cui Porto Cervo, Porto Rotondo, Palau e Cannigione — rappresenta un segmento unico in cui rarità e complessità normativa incidono direttamente sul valore.",
+      "Operiamo in un mercato guidato dalla selettività più che dai volumi, dove ogni sviluppo è definito molto prima dell'inizio dei lavori.",
+      "La nostra presenza è completata da una pipeline in crescita nel nord della Sardegna, inclusa Costa Paradiso, dove stiamo avviando nuove operazioni allineate alla nostra strategia di investimento e sviluppo di lungo periodo."
+    ],
 
     palau_eyebrow: "Operazione in corso",
     palau_title: "Palau",
@@ -211,6 +215,24 @@ export default {
     palau_feature_quote: "Un'operazione governata dall'ingegneria, disegnata sul capitale.",
     palau_feature_body: "Il filtro tecnico di Tiesse Servizi entra in gioco già in fase di fattibilità: vincoli paesaggistici, costi di costruzione, tempi autorizzativi, fiscalità. L'analisi MCA — Market Comparison Approach — e il business plan con ROI e sensitività sono parte integrante del deal, non un allegato.",
     palau_gallery_eyebrow: "Galleria",
+
+    costa_paradiso_eyebrow: "Operazione in corso",
+    costa_paradiso_title: "Costa Paradiso",
+    costa_paradiso_meta: ["Sardegna nord", "2 lotti edificabili", "Land banking"],
+    costa_paradiso_brief_eyebrow: "Brief operazione",
+    costa_paradiso_brief_title: "Un tratto di costa nord dalla memoria densa.",
+    costa_paradiso_brief_body: [
+      "Costa Paradiso, sulla costa nord della Sardegna, è un tratto di litorale tutelato e di forte riconoscibilità, legato da tempo al cinema italiano. Michelangelo Antonioni aveva qui la sua residenza, condivisa con Monica Vitti, e questo paesaggio è entrato nella memoria visiva del Paese.",
+      "La costa è segnata anche da una delle architetture sperimentali più distintive del Novecento italiano: La Cupola, progettata da Dante Bini, ancora oggi una delle residenze private più riconoscibili dell'isola.",
+      "La nostra presenza in zona è oggi definita da due lotti edificabili in portafoglio — aree ancora da sviluppare, nella stessa cornice di fattibilità, progetto e disciplina del capitale che governa l'operazione di Palau."
+    ],
+    costa_paradiso_specs_label: "Scheda operazione",
+    costa_paradiso_specs_items: [
+      { label: "Ubicazione", value: "Costa Paradiso · Costa nord Sardegna" },
+      { label: "Portafoglio", value: "2 lotti edificabili" },
+      { label: "Fase", value: "Land banking · da sviluppare" },
+      { label: "Contesto", value: "Paesaggio costiero tutelato" }
+    ],
 
     cta_eyebrow: "Informazioni riservate",
     cta_title: "Scheda tecnica e business plan su richiesta.",

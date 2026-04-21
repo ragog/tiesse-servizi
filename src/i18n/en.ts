@@ -186,7 +186,11 @@ export default {
 
     sardegna_eyebrow: "Region",
     sardegna_title: "Sardinia",
-    sardegna_body: "Gallura — between Palau, Porto Rotondo and Cannigione. The north-east coast, one of the most iconic in the Mediterranean, where landscape protection and the scarcity of buildable land make every operation an exercise in engineering and planning before it is a transaction.",
+    sardegna_body: [
+      "The Costa Smeralda — among the most prestigious and supply-constrained areas in the Mediterranean, including Porto Cervo, Porto Rotondo, Palau and Cannigione — represents a unique segment where scarcity and regulatory complexity directly influence value.",
+      "We operate in a market driven by selectivity rather than volume, where each development is defined long before construction begins.",
+      "Our presence is complemented by a growing pipeline in northern Sardinia, including Costa Paradiso, where we are initiating new operations aligned with our long-term investment and development strategy."
+    ],
 
     palau_eyebrow: "Active operation",
     palau_title: "Palau",
@@ -211,6 +215,24 @@ export default {
     palau_feature_quote: "An operation governed by engineering, designed around capital.",
     palau_feature_body: "Tiesse Servizi's technical filter enters the deal at feasibility stage: landscape constraints, construction costs, permitting timeline, taxation. The MCA — Market Comparison Approach — analysis and the business plan with ROI and sensitivity sit inside the deal, not as an attachment.",
     palau_gallery_eyebrow: "Gallery",
+
+    costa_paradiso_eyebrow: "Active operation",
+    costa_paradiso_title: "Costa Paradiso",
+    costa_paradiso_meta: ["Northern Sardinia", "2 building lots", "Land banking"],
+    costa_paradiso_brief_eyebrow: "Operation brief",
+    costa_paradiso_brief_title: "A storied stretch of the north coast.",
+    costa_paradiso_brief_body: [
+      "Costa Paradiso sits on Sardinia's northern coast — a protected, granite-cut stretch long tied to the cultural footprint of Italian cinema. Michelangelo Antonioni kept his residence here, shared with Monica Vitti, and the area entered the visual memory of the country.",
+      "The coastline is also marked by one of the most distinctive pieces of Italian experimental architecture: La Cupola, designed by Dante Bini, still one of the most recognisable private houses on the island.",
+      "Our current presence in the area is defined by two building lots held in portfolio — plots still to be developed, under the same framework of feasibility, design and capital discipline that shapes our Palau operation."
+    ],
+    costa_paradiso_specs_label: "Operation file",
+    costa_paradiso_specs_items: [
+      { label: "Location", value: "Costa Paradiso · Northern Sardinia" },
+      { label: "Holdings", value: "2 building lots" },
+      { label: "Stage", value: "Land banking · to be developed" },
+      { label: "Context", value: "Protected coastal landscape" }
+    ],
 
     cta_eyebrow: "Confidential information",
     cta_title: "Technical file and business plan on request.",
