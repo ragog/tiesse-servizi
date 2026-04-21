@@ -34,7 +34,7 @@ export default {
   home_sections: {
     about_eyebrow: "Chi siamo",
     about_title: "Pensiamo da ingegneri. Agiamo da investitori.",
-    about_body: "Originiamo e gestiamo operazioni immobiliari con pieno controllo tecnico — dall'acquisizione del terreno alla consegna. Ogni decisione nasce da fattibilità, costi e valore nel tempo.",
+    about_body: "Strutturiamo e gestiamo operazioni immobiliari con pieno controllo tecnico — dall'acquisizione del terreno alla consegna. Ogni decisione nasce da fattibilità, costi e valore nel tempo.",
     technical_eyebrow: "Metodo · Progetti",
     technical_title: "Ogni operazione inizia prima del progetto.",
     technical_body: "Fattibilità, costi, rischi.<br>Valutiamo tutto prima di costruire nulla.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Fattibilità · Acquisizione · Sviluppo · Exit</span>",
@@ -217,7 +217,7 @@ export default {
   },
   projects: {
     page_title: "Dove l'ingegneria diventa giudizio d'investimento.",
-    hero_eyebrow: "Opere selezionate · Esperienza tecnica dal 2001",
+    hero_eyebrow: "Ingegneria, eseguita con precisione e controllo.",
     subtitle: "Progetti selezionati che hanno costruito la nostra capacità di valutare, trasformare e sviluppare asset immobiliari.",
     intro_eyebrow: "Metodo",
     intro_title: "Prima di sviluppare un investimento, l'ingegneria decide.",
@@ -225,7 +225,7 @@ export default {
       "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa — da restauri storici a strutture sanitarie — ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
     ],
     categories_eyebrow: "Portfolio",
-    categories_title: "Dove operiamo.",
+    categories_title: "Aree di competenza.",
     category_work_single: "opera",
     category_work_plural: "opere",
     category_back: "Tutti i settori",

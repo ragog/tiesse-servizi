@@ -217,7 +217,7 @@ export default {
   },
   projects: {
     page_title: "Where engineering becomes investment judgment.",
-    hero_eyebrow: "Selected Work · Technical Experience Since 2001",
+    hero_eyebrow: "Engineering, delivered with precision and control.",
     subtitle: "Selected projects that built our ability to evaluate, transform and develop real estate assets.",
     intro_eyebrow: "Method",
     intro_title: "Before developing an investment, engineering decides.",
@@ -225,7 +225,7 @@ export default {
       "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission — from historic renovations to healthcare facilities — refined our ability to evaluate costs, risks and development potential."
     ],
     categories_eyebrow: "Portfolio",
-    categories_title: "Where we operate.",
+    categories_title: "Areas of expertise.",
     category_work_single: "work",
     category_work_plural: "works",
     category_back: "All sectors",
