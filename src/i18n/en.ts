@@ -40,7 +40,7 @@ export default {
     technical_body: "Feasibility, costs, risks.<br>We evaluate everything before building anything.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Feasibility · Acquisition · Development · Exit</span>",
     technical_cta: "View Projects",
     investment_eyebrow: "Real Estate · Investment",
-    investment_title: "Where scarcity creates value.",
+    investment_title: "Where exclusivity drives value.",
     investment_body: "Selected locations. Controlled development.<br>Assets designed to hold and grow value over time.",
     investment_cta: "View Operations",
     investment_featured_label: "Featured development",
