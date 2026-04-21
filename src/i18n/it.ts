@@ -244,11 +244,11 @@ export default {
     technical_title: "Le opere realizzate, per settore.",
     technical_subtitle: "Ogni commessa è una scheda tecnica: committente, anno, sito, ruolo, esito. Raggruppate per settore per restituire la misura reale dell'esperienza tecnica.",
     sectors: {
-      healthcare: { label: "Sanitario", description: "Sviluppo e gestione tecnica di strutture sanitarie e assistenziali per operatori privati e pubblici." },
-      "historic-renovation": { label: "Restauro storico", description: "Consolidamento strutturale e restauro di edifici vincolati e storici." },
-      "energy-retrofit": { label: "Efficientamento energetico", description: "Riqualificazioni energetiche profonde e interventi sull'involucro di edifici residenziali esistenti." },
-      "residential-development": { label: "Sviluppo residenziale", description: "Nuove costruzioni e ristrutturazioni complete per clienti privati e sviluppatori." },
-      "public-sector": { label: "Settore pubblico", description: "Commesse per committenze pubbliche e istituzioni — da infrastrutture universitarie di ricerca a opere per enti pubblici." }
+      healthcare: { label: "Sanitario", description: "Ambienti ad alta complessità che richiedono precisione, conformità e continuità operativa." },
+      "historic-renovation": { label: "Restauro storico", description: "Valorizzare il patrimonio storico attraverso trasformazione strutturale e funzionale." },
+      "energy-retrofit": { label: "Efficientamento energetico", description: "Migliorare prestazioni ed efficienza per aumentare il valore dell'asset nel tempo." },
+      "residential-development": { label: "Sviluppo residenziale", description: "Dal concept al completamento: creazione e riposizionamento di asset residenziali." },
+      "public-sector": { label: "Settore pubblico", description: "Realizzare opere regolamentate all'interno di rigorosi quadri tecnici e amministrativi." }
     },
     no_projects: "Nessun progetto disponibile al momento.",
     back_to_projects: "Tutte le opere",

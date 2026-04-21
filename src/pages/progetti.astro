@@ -38,6 +38,7 @@ const categoryTiles = sectorOrder
       ? {
           key,
           label: content.projects.sectors[key].label,
+          description: content.projects.sectors[key].description,
           count: items.length,
           cover: flagship.data.coverImage
         }
@@ -81,14 +82,17 @@ const categoryTiles = sectorOrder
         </h2>
       </div>
       {categoryTiles.length > 0 ? (
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 md:gap-x-6 gap-y-10 md:gap-y-12">
           {categoryTiles.map((tile) => (
-            <CategoryTile
-              label={tile.label}
-              count={tile.count}
-              countLabel={tile.count === 1 ? content.projects.category_work_single : content.projects.category_work_plural}
-              coverImage={tile.cover}
-            />
+            <div>
+              <CategoryTile
+                label={tile.label}
+                count={tile.count}
+                countLabel={tile.count === 1 ? content.projects.category_work_single : content.projects.category_work_plural}
+                coverImage={tile.cover}
+              />
+              <p class="mt-4 text-sm md:text-[15px] leading-[1.55] font-normal text-gray-700">{tile.description}</p>
+            </div>
           ))}
         </div>
       ) : (
