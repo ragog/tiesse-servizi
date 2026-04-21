@@ -3,7 +3,7 @@ title: "Structural consolidation · Garage building, Bologna"
 description: "Structural consolidation of an existing garage building."
 location: "Bologna"
 year: 2024
-category: "structural"
+category: "public-sector"
 coverImage: "../_images/consolidamento-strutturale-autorimessa/cover.webp"
 specs:
   client: "Private client"

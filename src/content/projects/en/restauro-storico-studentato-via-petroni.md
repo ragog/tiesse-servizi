@@ -3,7 +3,7 @@ title: "Historic student-housing restoration · Bologna"
 description: "Conservation restoration of a listed historic building in central Bologna, converted into student housing."
 location: "Bologna"
 year: 2024
-category: "heritage"
+category: "historic-renovation"
 coverImage: "../_images/restauro-storico-studentato-via-petroni/cover.webp"
 specs:
   client: "Private client"

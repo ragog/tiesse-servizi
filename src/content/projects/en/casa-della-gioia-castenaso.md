@@ -3,7 +3,7 @@ title: "Casa della Gioia · Castenaso"
 description: "Residential assisted-living facility delivered for the Municipality of Bologna."
 location: "Castenaso (BO)"
 year: 2024
-category: "structural"
+category: "public-sector"
 coverImage: "../_images/casa-della-gioia-castenaso/cover.webp"
 specs:
   client: "Municipality of Bologna"

@@ -3,7 +3,7 @@ title: "Structural consolidation · Historic farmhouse, Bologna"
 description: "Structural consolidation of a historic farmhouse in the Bologna area."
 location: "Bologna"
 year: 2024
-category: "heritage"
+category: "historic-renovation"
 coverImage: "../_images/consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
   client: "Private client"

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProjectHero from '../../components/ProjectHero.astro';
-import ProjectCard from '../../components/ProjectCard.astro';
+import CategoryTile from '../../components/CategoryTile.astro';
 import { getTranslations } from '../../i18n';
 import { getCollection } from 'astro:content';
 
@@ -24,21 +24,26 @@ const sortProjects = (list: typeof allProjects) =>
 
 const sectorOrder: Array<keyof typeof content.projects.sectors> = [
   'healthcare',
-  'residential',
-  'structural',
-  'heritage',
+  'historic-renovation',
   'energy-retrofit',
-  'research'
+  'residential-development',
+  'public-sector'
 ];
 
-const groupedSectors = sectorOrder
-  .map((key) => ({
-    key,
-    label: content.projects.sectors[key].label,
-    description: content.projects.sectors[key].description,
-    items: sortProjects(allProjects.filter((p) => p.data.category === key))
-  }))
-  .filter((g) => g.items.length > 0);
+const categoryTiles = sectorOrder
+  .map((key) => {
+    const items = sortProjects(allProjects.filter((p) => p.data.category === key));
+    const flagship = items[0];
+    return flagship
+      ? {
+          key,
+          label: content.projects.sectors[key].label,
+          count: items.length,
+          cover: flagship.data.coverImage
+        }
+      : null;
+  })
+  .filter((t): t is NonNullable<typeof t> => t !== null);
 ---
 
 <BaseLayout content={content} locale={locale} title={`${content.projects.page_title} - ${content.site_title}`}>
@@ -49,27 +54,11 @@ const groupedSectors = sectorOrder
     locale={locale}
   />
 
-  <!-- Positioning Intro -->
-  <section class="bg-white py-20 md:py-28 border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-12 gap-12 items-start">
-        <div class="md:col-span-5">
-          <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">01 — {content.projects.intro_eyebrow}</p>
-          <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900">
-            {content.projects.intro_title}
-          </h2>
-        </div>
-        <div class="md:col-span-7 space-y-6 text-gray-700 leading-relaxed text-lg">
-          {content.projects.intro_body.map((p: string) => (
-            <p>{p}</p>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Aggregate Stats Strip -->
+  <!-- Stats Strip -->
   <section class="bg-gray-50 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14">
+      <p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 text-center">{content.projects.stats_eyebrow}</p>
+    </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
         {content.projects.stats.map((item: { value: string; label: string }) => (
@@ -82,72 +71,29 @@ const groupedSectors = sectorOrder
     </div>
   </section>
 
-  <!-- Track Record introduction -->
-  <section class="bg-white pt-24 md:pt-32 pb-4">
+  <!-- Portfolio grid -->
+  <section class="bg-white py-20 md:py-28">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-12 gap-12 items-end">
-        <div class="md:col-span-7">
-          <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-6">02 — {content.projects.technical_eyebrow}</p>
-          <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900">{content.projects.technical_title}</h2>
-        </div>
-        <div class="md:col-span-5">
-          <p class="text-base md:text-lg text-gray-600 leading-relaxed font-light">{content.projects.technical_subtitle}</p>
-        </div>
+      <div class="mb-12 md:mb-16">
+        <p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">{content.projects.categories_eyebrow}</p>
+        <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900 max-w-3xl">
+          {content.projects.categories_title}
+        </h2>
       </div>
+      {categoryTiles.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+          {categoryTiles.map((tile) => (
+            <CategoryTile
+              label={tile.label}
+              count={tile.count}
+              countLabel={tile.count === 1 ? content.projects.category_work_single : content.projects.category_work_plural}
+              coverImage={tile.cover}
+            />
+          ))}
+        </div>
+      ) : (
+        <p class="text-center text-gray-600 text-xl">{content.projects.no_projects}</p>
+      )}
     </div>
   </section>
-
-  <!-- Sector-grouped sections -->
-  {groupedSectors.length > 0 ? (
-    groupedSectors.map((sector, sectorIndex) => {
-      const sectorNumber = String(sectorIndex + 1).padStart(2, '0');
-      const isLast = sectorIndex === groupedSectors.length - 1;
-      return (
-        <section class={`bg-white ${isLast ? 'pt-16 pb-24 md:pb-32' : 'py-16'}`}>
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="border-t border-gray-200 pt-12 md:pt-16 mb-12 md:mb-16">
-              <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-baseline">
-                <div class="md:col-span-7">
-                  <p class="text-xs tracking-[0.25em] uppercase text-gray-500 mb-4">
-                    {sectorNumber} — {content.projects.technical_eyebrow}
-                  </p>
-                  <h3 class="text-2xl md:text-4xl font-light leading-[1.1] tracking-tight text-gray-900">
-                    {sector.label}
-                  </h3>
-                </div>
-                <div class="md:col-span-5">
-                  <p class="text-sm md:text-base text-gray-600 leading-relaxed font-light">
-                    {sector.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-              {sector.items.map((project, i) => {
-                const slug = project.id.replace('en/', '').replace('.md', '');
-                return (
-                  <ProjectCard
-                    title={project.data.title}
-                    description={project.data.description}
-                    location={project.data.location}
-                    year={project.data.year}
-                    coverImage={project.data.coverImage}
-                    slug={slug}
-                    locale={locale}
-                    index={i}
-                  />
-                );
-              })}
-            </div>
-          </div>
-        </section>
-      );
-    })
-  ) : (
-    <section class="py-24 md:py-32 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p class="text-center text-gray-600 text-xl">{content.projects.no_projects}</p>
-      </div>
-    </section>
-  )}
 </BaseLayout>

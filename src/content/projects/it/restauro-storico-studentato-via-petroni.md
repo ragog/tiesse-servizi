@@ -3,7 +3,7 @@ title: "Restauro studentato storico · Bologna"
 description: "Restauro conservativo di edificio storico nel centro di Bologna, adibito a studentato universitario."
 location: "Bologna"
 year: 2024
-category: "heritage"
+category: "historic-renovation"
 coverImage: "../_images/restauro-storico-studentato-via-petroni/cover.webp"
 specs:
   client: "Committenza privata"

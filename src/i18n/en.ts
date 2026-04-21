@@ -216,20 +216,25 @@ export default {
     cta_button: "Request information"
   },
   projects: {
-    page_title: "Engineering Track Record",
-    hero_eyebrow: "Projects · Realized work · Since 2001",
-    subtitle: "Twenty-five years of delivered work across healthcare, residential, structural and energy projects. The technical foundation we use to evaluate and run every real-estate operation.",
+    page_title: "Where engineering becomes investment judgment.",
+    hero_eyebrow: "Selected Work · Technical Experience Since 2001",
+    subtitle: "Selected projects that built our ability to evaluate, transform and develop real estate assets.",
     intro_eyebrow: "Method",
-    intro_title: "Before developing an investment, engineering judges.",
+    intro_title: "Before developing an investment, engineering decides.",
     intro_body: [
-      "The projects on this page are not a portfolio: they are the technical laboratory behind our real-estate judgment. Every commission — from the structural consolidation of a historic villa to a new-build healthcare centre — taught us how to read costs, timelines, risks and regulatory constraints of a building before buying, renovating or developing an operation around it.",
-      "This is the difference between a financial investor and an operator who knows the building from the inside. When Tiesse Servizi evaluates a real-estate opportunity, the engineering filter is already part of the deal.",
+      "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission — from historic renovations to healthcare facilities — refined our ability to evaluate costs, risks and development potential."
     ],
+    categories_eyebrow: "Portfolio",
+    categories_title: "Selected work, by sector.",
+    category_work_single: "work",
+    category_work_plural: "works",
+    category_back: "All sectors",
+    stats_eyebrow: "Track record",
     stats: [
-      { value: "2001", label: "Year founded" },
-      { value: "25+", label: "Years active" },
-      { value: "5", label: "Sectors covered" },
-      { value: "IT", label: "Emilia-Romagna · Central Italy" }
+      { value: "2001", label: "Founded" },
+      { value: "25+", label: "Years of activity" },
+      { value: "5", label: "Key sectors" },
+      { value: "IT", label: "Operating region" }
     ],
     real_estate_banner_eyebrow: "Real estate operations",
     real_estate_banner_title: "Current Real Estate operations",
@@ -239,12 +244,11 @@ export default {
     technical_title: "Realized work, by sector.",
     technical_subtitle: "Every commission is a technical file: client, year, site, role, outcome. Grouped by sector so the depth of technical experience reads at a glance.",
     sectors: {
-      healthcare: { label: "Healthcare", description: "Healthcare and assisted-living facilities delivered for private operators and public clients." },
-      residential: { label: "Residential", description: "New residential construction and works on premium private properties." },
-      structural: { label: "Structural", description: "Structural consolidations, reinforcements and interventions on existing buildings — historic and contemporary." },
-      heritage: { label: "Heritage", description: "Conservation restoration and functional adaptation of listed historic buildings." },
-      "energy-retrofit": { label: "Energy retrofit", description: "Energy upgrades of residential buildings: insulation, glazing, systems, fiscal incentives." },
-      research: { label: "Research", description: "Specialist infrastructures delivered for universities and research centres." }
+      healthcare: { label: "Healthcare", description: "Development and technical management of healthcare and assisted-living facilities for private and public operators." },
+      "historic-renovation": { label: "Historic renovation", description: "Structural consolidation and restoration of heritage and listed buildings." },
+      "energy-retrofit": { label: "Energy retrofit", description: "Deep energy retrofits and envelope upgrades on existing residential buildings." },
+      "residential-development": { label: "Residential development", description: "New-build and full renovation residential projects for private clients and developers." },
+      "public-sector": { label: "Public sector", description: "Commissions for public clients and institutions — from university research facilities to public infrastructure." }
     },
     no_projects: "No projects available at the moment.",
     back_to_projects: "All work",

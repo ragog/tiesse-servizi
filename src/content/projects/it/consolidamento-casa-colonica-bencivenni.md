@@ -3,7 +3,7 @@ title: "Consolidamento casa colonica storica · Bologna"
 description: "Consolidamento strutturale di una casa colonica storica nell'area bolognese."
 location: "Bologna"
 year: 2024
-category: "heritage"
+category: "historic-renovation"
 coverImage: "../_images/consolidamento-casa-colonica-bencivenni/cover.webp"
 specs:
   client: "Committenza privata"

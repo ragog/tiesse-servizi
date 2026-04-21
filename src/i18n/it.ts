@@ -216,20 +216,25 @@ export default {
     cta_button: "Richiedi informazioni"
   },
   projects: {
-    page_title: "Engineering Track Record",
-    hero_eyebrow: "Progetti · Opere realizzate · Dal 2001",
-    subtitle: "Venticinque anni di commesse su edifici sanitari, residenziali, strutturali ed energetici. La base tecnica con cui valutiamo e sviluppiamo ogni operazione immobiliare.",
+    page_title: "Dove l'ingegneria diventa giudizio d'investimento.",
+    hero_eyebrow: "Opere selezionate · Esperienza tecnica dal 2001",
+    subtitle: "Progetti selezionati che hanno costruito la nostra capacità di valutare, trasformare e sviluppare asset immobiliari.",
     intro_eyebrow: "Metodo",
-    intro_title: "Prima di sviluppare un investimento, l'ingegneria giudica.",
+    intro_title: "Prima di sviluppare un investimento, l'ingegneria decide.",
     intro_body: [
-      "Le opere che trovate in questa pagina non sono un semplice portfolio: sono il laboratorio tecnico su cui si fonda il nostro giudizio immobiliare. Ogni commessa — dal consolidamento strutturale di una villa storica al centro sanitario di nuova costruzione — ha insegnato a leggere costi, tempi, rischi e vincoli regolatori di un immobile prima di comprarlo, ristrutturarlo o sviluppare un'operazione.",
-      "È questa la differenza fra un investitore finanziario e un operatore che l'edificio lo conosce da dentro. Quando Tiesse Servizi valuta un'opportunità real estate, il filtro ingegneristico è già parte del deal.",
+      "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa — da restauri storici a strutture sanitarie — ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
     ],
+    categories_eyebrow: "Portfolio",
+    categories_title: "Opere selezionate, per settore.",
+    category_work_single: "opera",
+    category_work_plural: "opere",
+    category_back: "Tutti i settori",
+    stats_eyebrow: "Track record",
     stats: [
-      { value: "2001", label: "Anno di fondazione" },
+      { value: "2001", label: "Fondazione" },
       { value: "25+", label: "Anni di attività" },
-      { value: "5", label: "Settori coperti" },
-      { value: "IT", label: "Emilia-Romagna · Centro Italia" }
+      { value: "5", label: "Settori chiave" },
+      { value: "IT", label: "Area operativa" }
     ],
     real_estate_banner_eyebrow: "Operazioni immobiliari",
     real_estate_banner_title: "Operazioni Real Estate in corso",
@@ -239,12 +244,11 @@ export default {
     technical_title: "Le opere realizzate, per settore.",
     technical_subtitle: "Ogni commessa è una scheda tecnica: committente, anno, sito, ruolo, esito. Raggruppate per settore per restituire la misura reale dell'esperienza tecnica.",
     sectors: {
-      healthcare: { label: "Sanitario", description: "Strutture sanitarie e assistenziali realizzate per operatori privati e committenze pubbliche." },
-      residential: { label: "Residenziale", description: "Edifici residenziali di nuova costruzione e interventi su immobili privati di pregio." },
-      structural: { label: "Strutturale", description: "Consolidamenti, rinforzi e interventi strutturali su edifici esistenti — storici e contemporanei." },
-      heritage: { label: "Restauro", description: "Restauro conservativo e adeguamento funzionale di edifici storici vincolati." },
-      "energy-retrofit": { label: "Efficientamento energetico", description: "Riqualificazioni energetiche su edifici residenziali: cappotti, infissi, impianti, incentivi fiscali." },
-      research: { label: "Ricerca", description: "Infrastrutture specialistiche realizzate per università e centri di ricerca." }
+      healthcare: { label: "Sanitario", description: "Sviluppo e gestione tecnica di strutture sanitarie e assistenziali per operatori privati e pubblici." },
+      "historic-renovation": { label: "Restauro storico", description: "Consolidamento strutturale e restauro di edifici vincolati e storici." },
+      "energy-retrofit": { label: "Efficientamento energetico", description: "Riqualificazioni energetiche profonde e interventi sull'involucro di edifici residenziali esistenti." },
+      "residential-development": { label: "Sviluppo residenziale", description: "Nuove costruzioni e ristrutturazioni complete per clienti privati e sviluppatori." },
+      "public-sector": { label: "Settore pubblico", description: "Commesse per committenze pubbliche e istituzioni — da infrastrutture universitarie di ricerca a opere per enti pubblici." }
     },
     no_projects: "Nessun progetto disponibile al momento.",
     back_to_projects: "Tutte le opere",

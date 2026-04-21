@@ -12,7 +12,7 @@ specs:
     - "Full window replacement"
     - "Solar thermal system"
 featured: false
-order: 1
+order: 3
 ---
 
 Energy retrofit of a residential building in Bologna. The technical package — external insulation, new windows, and solar thermal — was sized to maximise the energy-class upgrade and the fiscal incentive yield available under Italian legislation.

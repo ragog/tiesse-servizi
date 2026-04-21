@@ -3,7 +3,7 @@ title: "Casa della Gioia · Castenaso"
 description: "Struttura residenziale assistenziale realizzata per il Comune di Bologna."
 location: "Castenaso (BO)"
 year: 2024
-category: "structural"
+category: "public-sector"
 coverImage: "../_images/casa-della-gioia-castenaso/cover.webp"
 specs:
   client: "Comune di Bologna"

@@ -3,7 +3,7 @@ title: "Consolidamento strutturale autorimessa · Bologna"
 description: "Intervento di consolidamento strutturale su autorimessa esistente."
 location: "Bologna"
 year: 2024
-category: "structural"
+category: "public-sector"
 coverImage: "../_images/consolidamento-strutturale-autorimessa/cover.webp"
 specs:
   client: "Committenza privata"

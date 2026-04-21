@@ -7,7 +7,7 @@ const projectsCollection = defineCollection({
     description: z.string(),
     location: z.string(),
     year: z.number(),
-    category: z.enum(['healthcare', 'residential', 'structural', 'heritage', 'energy-retrofit', 'research']),
+    category: z.enum(['healthcare', 'historic-renovation', 'energy-retrofit', 'residential-development', 'public-sector']),
     coverImage: image(),
     gallery: z.array(image()).optional(),
     specs: z.object({

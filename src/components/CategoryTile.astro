@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  label: string;
+  count: number;
+  countLabel: string;
+  coverImage: ImageMetadata;
+}
+
+const { label, count, countLabel, coverImage } = Astro.props;
+---
+
+<div class="block relative overflow-hidden aspect-[4/3] bg-gray-900">
+  <Image
+    src={coverImage}
+    alt={label}
+    class="w-full h-full object-cover"
+    widths={[600, 900, 1200, 1600]}
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+  <div class="absolute inset-x-0 bottom-0 p-6 md:p-7 text-white">
+    <h3 class="text-xl md:text-2xl font-light leading-tight tracking-tight mb-2">{label}</h3>
+    <div class="text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/70">
+      {count} {countLabel}
+    </div>
+  </div>
+</div>

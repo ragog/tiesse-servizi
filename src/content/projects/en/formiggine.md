@@ -13,7 +13,7 @@ specs:
     - "Window replacement"
     - "Solar thermal system"
 featured: false
-order: 3
+order: 1
 ---
 
 Full energy retrofit of a residential building in Formigine, in the Modena area. The intervention — insulation, windows and solar thermal — was structured to achieve a significant energy-class upgrade and to maximise the available fiscal incentives.
