@@ -216,8 +216,8 @@ export default {
     cta_button: "Richiedi informazioni"
   },
   projects: {
-    page_title: "Dove l'ingegneria diventa giudizio d'investimento.",
-    hero_eyebrow: "Ingegneria, eseguita con precisione e controllo.",
+    page_title: "Ingegneria, eseguita con precisione e controllo.",
+    hero_eyebrow: "Opere selezionate · Esperienza tecnica dal 2001",
     subtitle: "Progetti selezionati che hanno costruito la nostra capacità di valutare, trasformare e sviluppare asset immobiliari.",
     intro_eyebrow: "Metodo",
     intro_title: "Prima di sviluppare un investimento, l'ingegneria decide.",

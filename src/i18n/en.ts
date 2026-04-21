@@ -216,8 +216,8 @@ export default {
     cta_button: "Request information"
   },
   projects: {
-    page_title: "Where engineering becomes investment judgment.",
-    hero_eyebrow: "Engineering, delivered with precision and control.",
+    page_title: "Engineering, delivered with precision and control.",
+    hero_eyebrow: "Selected Work · Technical Experience Since 2001",
     subtitle: "Selected projects that built our ability to evaluate, transform and develop real estate assets.",
     intro_eyebrow: "Method",
     intro_title: "Before developing an investment, engineering decides.",
