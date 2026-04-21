@@ -10,7 +10,7 @@ export default {
   },
   hero: {
     eyebrow: "Real Estate · Engineering · Investment",
-    subtitle: "We Build Value<br>Before We Sell It.",
+    subtitle: "We Build Value.",
     description: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001, we deliver residential real-estate operations with engineering rigor — from feasibility to handover.",
     cta_text: "View current operations"
   },
