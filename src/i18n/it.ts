@@ -225,7 +225,7 @@ export default {
       "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa — da restauri storici a strutture sanitarie — ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
     ],
     categories_eyebrow: "Portfolio",
-    categories_title: "Opere selezionate, per settore.",
+    categories_title: "Dove operiamo.",
     category_work_single: "opera",
     category_work_plural: "opere",
     category_back: "Tutti i settori",

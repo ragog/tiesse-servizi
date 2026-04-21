@@ -225,7 +225,7 @@ export default {
       "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission — from historic renovations to healthcare facilities — refined our ability to evaluate costs, risks and development potential."
     ],
     categories_eyebrow: "Portfolio",
-    categories_title: "Selected work, by sector.",
+    categories_title: "Where we operate.",
     category_work_single: "work",
     category_work_plural: "works",
     category_back: "All sectors",
@@ -246,7 +246,7 @@ export default {
     sectors: {
       healthcare: { label: "Healthcare", description: "Development and technical management of healthcare and assisted-living facilities for private and public operators." },
       "historic-renovation": { label: "Historic renovation", description: "Structural consolidation and restoration of heritage and listed buildings." },
-      "energy-retrofit": { label: "Energy retrofit", description: "Deep energy retrofits and envelope upgrades on existing residential buildings." },
+      "energy-retrofit": { label: "Energy upgrade", description: "Deep energy upgrades and envelope retrofits on existing residential buildings." },
       "residential-development": { label: "Residential development", description: "New-build and full renovation residential projects for private clients and developers." },
       "public-sector": { label: "Public sector", description: "Commissions for public clients and institutions — from university research facilities to public infrastructure." }
     },
