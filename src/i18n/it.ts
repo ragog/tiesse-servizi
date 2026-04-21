@@ -9,16 +9,16 @@ export default {
     contact: "Contatti"
   },
   hero: {
-    eyebrow: "Real Estate · Ingegneria · Valorizzazione",
-    subtitle: "Ingegneria per la valorizzazione immobiliare.",
-    description: "Tiesse Servizi è la società operativa del gruppo Tiesse Group: dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico, dalla fattibilità alla consegna.",
+    eyebrow: "Real Estate · Ingegneria · Investimento",
+    subtitle: "Creiamo valore<br>prima di venderlo.",
+    description: "Tiesse Servizi è la società operativa di Tiesse Group. Dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico — dalla fattibilità alla consegna.",
     cta_text: "Operazioni in corso"
   },
   key_facts: {
     items: [
       { value: "2001", label: "Anno di fondazione" },
       { value: "25+", label: "Anni di attività" },
-      { value: "100%", label: "Residenziale di pregio" },
+      { value: "100%", label: "Sviluppi residenziali" },
       { value: "ENG+ITA", label: "Contratti bilingue" }
     ]
   },
@@ -33,16 +33,18 @@ export default {
   },
   home_sections: {
     about_eyebrow: "Chi siamo",
-    about_title: "Una piattaforma italiana, fondata da ingegneri.",
-    about_body: "Tiesse Servizi è la società operativa di Tiesse Group. Dal 2001 operiamo nel real estate residenziale di pregio con un approccio ingegneristico: ogni operazione è strutturata con controllo tecnico su tempi, costi e qualità.",
+    about_title: "Pensiamo da ingegneri. Agiamo da investitori.",
+    about_body: "Originiamo e gestiamo operazioni immobiliari con pieno controllo tecnico — dall'acquisizione del terreno alla consegna. Ogni decisione nasce da fattibilità, costi e valore nel tempo.",
     technical_eyebrow: "Metodo · Progetti",
-    technical_title: "L'ingegneria giudica prima.",
-    technical_body: "Venticinque anni di commesse tecniche — sanitario, residenziale, strutturale, restauro. La base con cui valutiamo ogni operazione immobiliare prima di svilupparla.",
+    technical_title: "Ogni operazione inizia prima del progetto.",
+    technical_body: "Fattibilità, costi, rischi.<br>Valutiamo tutto prima di costruire nulla.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Fattibilità · Acquisizione · Sviluppo · Exit</span>",
     technical_cta: "Vedi i progetti",
     investment_eyebrow: "Real Estate · Investimento",
-    investment_title: "Dove il paesaggio protegge il valore.",
-    investment_body: "Sardegna e Mediterraneo: asset resilienti dove la rarità del suolo e i vincoli paesaggistici proteggono — e accrescono — il valore dell'immobile nel tempo. Governance ingegneristica, contratti bilingue, capitale tutelato.",
-    investment_cta: "Vedi le operazioni"
+    investment_title: "Dove la qualità crea valore.",
+    investment_body: "Location selezionate. Sviluppo controllato.<br>Asset pensati per mantenere e accrescere il valore nel tempo.",
+    investment_cta: "Vedi le operazioni",
+    investment_featured_label: "Progetto in evidenza",
+    investment_project_tag: "Sardegna — Sviluppo residenziale · 5 ville · Investimento privato"
   },
   servizi_tecnici: {
     eyebrow: "Servizi tecnici",
@@ -96,9 +98,9 @@ export default {
     description: "Materiali rinnovabili, tecnologie avanzate e rispetto dell'armonia paesaggistica: ogni nostra operazione nasce per integrarsi nel contesto, non per imporsi ad esso."
   },
   news: {
-    eyebrow: "Ultime notizie",
-    title: "Aggiornamenti dal gruppo",
-    subtitle: "Seguici su LinkedIn per gli ultimi progetti, analisi di mercato e aggiornamenti operativi.",
+    eyebrow: "Insights",
+    title: "Ultimi insights.",
+    subtitle: "Operazioni, cantieri e analisi di mercato — direttamente dal campo.",
     linkedin_cta: "Segui su LinkedIn",
     linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
@@ -126,28 +128,20 @@ export default {
     ]
   },
   partners: {
-    title: "I NOSTRI PARTNERS",
-    subtitle: "Collaboriamo con i migliori professionisti del settore",
-    description: "La nostra rete di partner qualificati ci permette di offrire servizi eccellenti e soluzioni complete per ogni esigenza.",
+    eyebrow: "Partner",
+    title: "Partner selezionati.",
+    body: "Operiamo all'interno di una rete di soggetti istituzionali — banche, fondi di investimento, imprese di costruzione, network immobiliari internazionali e capitale privato.",
     categories: [
-      {
-        title: "Partner Tecnici",
-        description: "Imprese specializzate in edilizia, impiantistica e manutenzione"
-      },
-      {
-        title: "Partner Finanziari",
-        description: "Istituti bancari e consulenti per investimenti immobiliari"
-      },
-      {
-        title: "Partner Legali",
-        description: "Studi notarili, legali e commercialisti specializzati"
-      }
+      { title: "Capitale istituzionale", description: "Banche, fondi di investimento e veicoli istituzionali." },
+      { title: "General contractor & specialisti", description: "Imprese di costruzione e trade specialistici selezionati." },
+      { title: "Network immobiliari", description: "Brokerage internazionale e canali di distribuzione." },
+      { title: "Capital partner", description: "Investitori privati e co-investitori." }
     ]
   },
   contatti: {
     eyebrow: "Contatti",
-    title: "Parliamo della vostra prossima operazione.",
-    subtitle: "Ogni progetto inizia con un dialogo. Raccontateci obiettivi e tempistiche — vi rispondiamo in 48 ore.",
+    title: "Iniziamo una conversazione sulla tua prossima operazione.",
+    subtitle: "Ogni progetto inizia con un dialogo. Raccontaci obiettivi e tempistiche — rispondiamo entro 48 ore.",
     form: {
       name: "Nome",
       email: "Email",

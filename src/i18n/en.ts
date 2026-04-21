@@ -10,7 +10,7 @@ export default {
   },
   hero: {
     eyebrow: "Real Estate · Engineering · Investment",
-    subtitle: "Real Estate Investment, Built on Engineering.",
+    subtitle: "We Build Value<br>Before We Sell It.",
     description: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001, we deliver residential real-estate operations with engineering rigor — from feasibility to handover.",
     cta_text: "View current operations"
   },
@@ -18,7 +18,7 @@ export default {
     items: [
       { value: "2001", label: "Year founded" },
       { value: "25+", label: "Years of operation" },
-      { value: "100%", label: "Premium residential" },
+      { value: "100%", label: "Residential developments" },
       { value: "ENG+ITA", label: "Bilingual contracts" }
     ]
   },
@@ -33,16 +33,18 @@ export default {
   },
   home_sections: {
     about_eyebrow: "About",
-    about_title: "An Italian platform, founded by engineers.",
-    about_body: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001 we operate in premium residential real estate with an engineering approach: every operation is structured with technical control over timelines, costs and quality.",
+    about_title: "We think like engineers. We act like investors.",
+    about_body: "We originate and manage real estate operations with full technical control — from land acquisition to delivery. Every decision is driven by feasibility, cost and long-term value.",
     technical_eyebrow: "Method · Projects",
-    technical_title: "Engineering judges first.",
-    technical_body: "Twenty-five years of technical work — healthcare, residential, structural, heritage. The foundation behind every real-estate judgment we make before developing an operation.",
-    technical_cta: "View projects",
+    technical_title: "Every deal starts before the project.",
+    technical_body: "Feasibility, costs, risks.<br>We evaluate everything before building anything.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Feasibility · Acquisition · Development · Exit</span>",
+    technical_cta: "View Projects",
     investment_eyebrow: "Real Estate · Investment",
-    investment_title: "Where the landscape protects value.",
-    investment_body: "Sardinia and the Mediterranean: resilient assets where scarcity of land and landscape constraints protect — and grow — the value of the property over time. Engineering governance, bilingual contracts, capital protection.",
-    investment_cta: "View operations"
+    investment_title: "Where scarcity creates value.",
+    investment_body: "Selected locations. Controlled development.<br>Assets designed to hold and grow value over time.",
+    investment_cta: "View Operations",
+    investment_featured_label: "Featured development",
+    investment_project_tag: "Sardinia — Residential development · 5 villas · Private investment"
   },
   servizi_tecnici: {
     eyebrow: "Technical services",
@@ -96,9 +98,9 @@ export default {
     description: "Renewable materials, advanced construction technology and respect for landscape harmony: every operation we deliver is designed to integrate with its context, not impose on it."
   },
   news: {
-    eyebrow: "Latest news",
-    title: "Updates from the group",
-    subtitle: "Follow us on LinkedIn for the latest projects, market insights and operational updates.",
+    eyebrow: "Insights",
+    title: "Latest insights.",
+    subtitle: "Operations, construction sites and market thinking — straight from the field.",
     linkedin_cta: "Follow on LinkedIn",
     linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
@@ -126,27 +128,19 @@ export default {
     ]
   },
   partners: {
-    title: "OUR PARTNERS",
-    subtitle: "We collaborate with the best professionals in the industry",
-    description: "Our network of qualified partners allows us to offer excellent services and complete solutions for every need.",
+    eyebrow: "Partners",
+    title: "Selected partners.",
+    body: "We operate inside a network of institutional players — banks, investment funds, construction firms, international real-estate networks and private capital.",
     categories: [
-      {
-        title: "Technical Partners",
-        description: "Companies specialized in construction, systems, and maintenance"
-      },
-      {
-        title: "Financial Partners",
-        description: "Banks and consultants for real estate investments"
-      },
-      {
-        title: "Legal Partners",
-        description: "Notary, legal, and accounting firms specialized in real estate"
-      }
+      { title: "Institutional Capital", description: "Banks, investment funds and institutional vehicles." },
+      { title: "General Contractors & Specialists", description: "Selected construction firms and specialist trades." },
+      { title: "Real-Estate Networks", description: "International brokerage and distribution." },
+      { title: "Capital Partners", description: "Private investors and co-investors." }
     ]
   },
   contatti: {
     eyebrow: "Contact",
-    title: "Let's talk about your next operation.",
+    title: "Start a conversation about your next operation.",
     subtitle: "Every project begins with a conversation. Share your goals and timeline — we'll respond within 48 hours.",
     form: {
       name: "Name",
