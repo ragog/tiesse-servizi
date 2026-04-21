@@ -244,11 +244,11 @@ export default {
     technical_title: "Realized work, by sector.",
     technical_subtitle: "Every commission is a technical file: client, year, site, role, outcome. Grouped by sector so the depth of technical experience reads at a glance.",
     sectors: {
-      healthcare: { label: "Healthcare", description: "High-complexity environments requiring precision, compliance and operational continuity." },
-      "historic-renovation": { label: "Historic renovation", description: "Unlocking value from heritage assets through structural and functional transformation." },
-      "energy-retrofit": { label: "Energy upgrade", description: "Improving performance and efficiency to enhance long-term asset value." },
-      "residential-development": { label: "Residential development", description: "From concept to completion: creating and repositioning residential assets." },
-      "public-sector": { label: "Public sector", description: "Delivering regulated projects within strict technical and administrative frameworks." }
+      healthcare: { label: "Healthcare", description: "High-complexity assets requiring precision, compliance and operational continuity." },
+      "historic-renovation": { label: "Historic renovation", description: "Repositioning heritage assets through structural and functional transformation." },
+      "energy-retrofit": { label: "Energy upgrade", description: "Enhancing asset performance through targeted efficiency improvements." },
+      "residential-development": { label: "Residential development", description: "Development and repositioning of residential real estate assets." },
+      "public-sector": { label: "Public sector", description: "Managing regulated projects within complex technical and administrative frameworks." }
     },
     no_projects: "No projects available at the moment.",
     back_to_projects: "All work",
