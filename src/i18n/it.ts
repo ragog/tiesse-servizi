@@ -178,8 +178,10 @@ export default {
     intro_eyebrow: "Dove operiamo",
     intro_title: "Dove il paesaggio protegge il valore, l'ingegneria protegge l'investimento.",
     intro_body: [
-      "Sardegna e isole del Mediterraneo sono oggi tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare — un segmento che ha dimostrato resilienza attraverso i cicli di mercato.",
-      "Operiamo su aree con vincoli paesaggistici stringenti, dove il filtro tecnico di Tiesse Servizi non è un accessorio ma la condizione per poter costruire: fattibilità, autorizzazioni, costi, tempi e fiscalità fanno parte del deal fin dal primo giorno."
+      "Interpretiamo il real estate come una strategia di allocazione del capitale di lungo periodo, selezionando solo opportunità in grado di preservare e accrescere il valore nel tempo.",
+      "La nostra attività si concentra su asset residenziali di alta qualità, concepiti sia come immobili a uso privato sia come investimenti strutturati all'interno di una più ampia strategia di diversificazione.",
+      "Grazie a un'esperienza consolidata nella ricerca, nello sviluppo e nella gestione di operazioni complesse, seguiamo l'intero ciclo di vita — dall'acquisizione e fattibilità fino allo sviluppo e all'asset management di lungo termine.",
+      "Ogni decisione è guidata da un rigoroso framework tecnico e finanziario, che garantisce trasparenza, controllo e coerenza tra risultati attesi e risultati effettivi."
     ],
 
     sardegna_eyebrow: "Regione",

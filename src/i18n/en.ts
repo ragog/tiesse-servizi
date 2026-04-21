@@ -178,8 +178,10 @@ export default {
     intro_eyebrow: "Where we operate",
     intro_title: "Where the landscape protects value, engineering protects the investment.",
     intro_body: [
-      "Sardinia and the Mediterranean islands rank among the world's most sought-after destinations for quality of life, cultural heritage and long-term real-estate appreciation — a segment that has proven resilient across market cycles.",
-      "We operate in areas with strict landscape constraints, where Tiesse Servizi's technical filter is not an accessory but the precondition to build at all: feasibility, permitting, costs, schedule and taxation are part of the deal from day one."
+      "We approach real estate as a long-term capital allocation strategy, selecting only opportunities that can preserve and grow value over time.",
+      "Our activity focuses on high-quality residential assets, conceived both as private use properties and as structured investments within a broader diversification strategy.",
+      "With years of experience in sourcing, developing and managing complex operations, we oversee the entire lifecycle — from acquisition and feasibility to development and long-term asset management.",
+      "Every decision is driven by a rigorous technical and financial framework, ensuring clarity, control and alignment between expected and actual outcomes."
     ],
 
     sardegna_eyebrow: "Region",
