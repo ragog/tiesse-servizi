@@ -247,8 +247,9 @@ export default {
   },
   projects: {
     page_title: "Ingegneria, eseguita con precisione e controllo.",
-    hero_eyebrow: "Opere selezionate · Esperienza tecnica dal 2001",
-    subtitle: "Progetti selezionati che hanno costruito la nostra capacità di valutare, trasformare e sviluppare asset immobiliari.",
+    hero_eyebrow: "Opere Selezionate · Esperienza Ingegneristica dal 2001",
+    subtitle: "Progetti selezionati che rappresentano il nostro approccio all'ingegneria, all'integrazione progettuale e al controllo tecnico in contesti complessi.",
+    hero_tag: "Progettazione · Ingegneria · BIM · Esecuzione",
     intro_eyebrow: "Metodo",
     intro_title: "Prima di sviluppare un investimento, l'ingegneria decide.",
     intro_body: [
