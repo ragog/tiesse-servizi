@@ -36,7 +36,11 @@ export default {
   home_sections: {
     about_eyebrow: "Chi siamo",
     about_title: "Pensiamo da ingegneri. Agiamo da investitori.",
-    about_body: "Strutturiamo e gestiamo operazioni immobiliari con pieno controllo tecnico — dall'acquisizione del terreno alla consegna. Ogni decisione nasce da fattibilità, costi e valore nel tempo.",
+    about_body: [
+      "Originiamo e gestiamo investimenti immobiliari con pieno controllo tecnico e finanziario, dall'acquisizione fino all'uscita.",
+      "Ogni decisione è guidata da analisi di fattibilità, controllo dei costi e tutela del valore nel lungo periodo."
+    ],
+    about_closing: "Nessuna approssimazione. Nessuna sorpresa. Solo esecuzione controllata.",
     technical_eyebrow: "Metodo · Progetti",
     technical_title: "Ogni operazione inizia prima del progetto.",
     technical_body: "Fattibilità, costi, rischi.<br>Valutiamo tutto prima di costruire nulla.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Fattibilità · Acquisizione · Sviluppo · Exit</span>",
