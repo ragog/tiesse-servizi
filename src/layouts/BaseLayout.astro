@@ -5,9 +5,11 @@ interface Props {
   content: any;
   locale: 'it' | 'en';
   title?: string;
+  description?: string;
+  ogImage?: string;
 }
 
-const { content, locale, title } = Astro.props;
+const { content, locale, title, description, ogImage } = Astro.props;
 const otherLocale = locale === 'it' ? 'en' : 'it';
 
 // Smart language switcher - preserve page type
@@ -30,6 +32,12 @@ const homeBase = locale === 'it' ? '/it' : '/';
 function getHomeLink(section: string) {
   return `${homeBase}#${section}`;
 }
+
+// SEO + social sharing metadata
+const pageTitle = title || content.site_title;
+const pageDescription = description || content.hero?.description || content.site_title;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
+const socialImage = new URL(ogImage || '/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.url.origin).toString();
 ---
 
 <html lang={locale}>
@@ -38,11 +46,27 @@ function getHomeLink(section: string) {
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalUrl} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-		<title>{title || content.site_title}</title>
-		<meta name="description" content={content.hero?.description || content.site_title} />
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDescription} />
+
+		<!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Tiesse Group" />
+		<meta property="og:locale" content={locale === 'it' ? 'it_IT' : 'en_US'} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:image" content={socialImage} />
+
+		<!-- Twitter / X -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		<meta name="twitter:image" content={socialImage} />
 	</head>
 	<body class="overflow-x-hidden">
 		<!-- Navigation -->

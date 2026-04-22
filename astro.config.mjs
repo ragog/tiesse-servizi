@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://tiesse-group.com',
   i18n: {
     defaultLocale: 'en',
     locales: ['it', 'en'],

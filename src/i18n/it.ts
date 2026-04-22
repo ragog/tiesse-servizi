@@ -60,7 +60,7 @@ export default {
       "Gare d'appalto pubbliche e private",
       "Pianificazione dei pagamenti e gestione documentale"
     ],
-    closing: "Un unico interlocutore per gorvernare tutte le fasi operative."
+    closing: "Un unico interlocutore per governare tutte le fasi operative."
   },
   invest_in_italy: {
     eyebrow: "Invest in Italy",
@@ -84,7 +84,7 @@ export default {
     points: [
       "Contrattualistica bilingue (ENG/ITA)",
       "Timeline operativa tracciata e milestone condivise",
-      "Ricerca del terreno, progettazione achitettonica e costruzione",
+      "Ricerca del terreno, progettazione architettonica e costruzione",
       "Escrow account o SPV dedicata all’investimento",
       "Report mensili certificati e forecast finanziari",
       "Analisi di mercato tramite MCA – Market Comparison Approach",

@@ -15,7 +15,7 @@ const content = getTranslations(locale);
 const re = content.real_estate;
 ---
 
-<BaseLayout content={content} locale={locale} title={`Sardegna · ${re.page_title} - ${content.site_title}`}>
+<BaseLayout content={content} locale={locale} title={`Sardegna · ${re.page_title} - ${content.site_title}`} description="Sviluppi residenziali di pregio in Sardegna. Palau Barrabisa: cinque ville in un contesto iconico della costa nord-orientale. Controllo ingegneristico dalla fattibilità alla consegna.">
   <!-- PAGE HERO -->
   <section class="relative bg-black overflow-hidden">
     <div class="absolute inset-0">
@@ -142,9 +142,9 @@ const re = content.real_estate;
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{re.palau_gallery_eyebrow}</p>
       <div class="grid md:grid-cols-2 gap-5 md:gap-6">
-        <Image src={aerial1} alt="" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
-        <Image src={aerial2} alt="" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
-        <Image src={aerial3} alt="" class="w-full h-auto md:col-span-2" widths={[800, 1200, 1600, 2000]} sizes="100vw" />
+        <Image src={aerial1} alt="Palau · Barrabisa — vista aerea del sito" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+        <Image src={aerial2} alt="Palau · Barrabisa — vista aerea sulla costa" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+        <Image src={aerial3} alt="Palau · Barrabisa — planimetria dell'area con vista aerea dall'alto" class="w-full h-auto md:col-span-2" widths={[800, 1200, 1600, 2000]} sizes="100vw" />
       </div>
     </div>
   </section>

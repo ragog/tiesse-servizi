@@ -47,7 +47,7 @@ const categoryTiles = sectorOrder
   .filter((t): t is NonNullable<typeof t> => t !== null);
 ---
 
-<BaseLayout content={content} locale={locale} title={`${content.projects.page_title} - ${content.site_title}`}>
+<BaseLayout content={content} locale={locale} title={`${content.projects.page_title} - ${content.site_title}`} description="Tiesse Servizi portfolio: premium residential operations and engineered developments. Technical control, cost control and tracked timelines, from feasibility to handover.">
   <ProjectHero
     eyebrow={content.projects.hero_eyebrow}
     title={content.projects.page_title}
