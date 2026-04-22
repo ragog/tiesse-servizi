@@ -36,7 +36,11 @@ export default {
   home_sections: {
     about_eyebrow: "About",
     about_title: "We think like engineers. We act like investors.",
-    about_body: "We originate and manage real estate operations with full technical control — from land acquisition to delivery. Every decision is driven by feasibility, cost and long-term value.",
+    about_body: [
+      "We originate and manage real estate investments with full technical and financial control — from land acquisition to exit.",
+      "Every decision is driven by feasibility, cost discipline and long-term capital preservation."
+    ],
+    about_closing: "No assumptions. No surprises. Just controlled execution.",
     technical_eyebrow: "Method · Projects",
     technical_title: "Every deal starts before the project.",
     technical_body: "Feasibility, costs, risks.<br>We evaluate everything before building anything.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Feasibility · Acquisition · Development · Exit</span>",
