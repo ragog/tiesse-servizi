@@ -34,7 +34,7 @@ const facts = [
 <BaseLayout content={content} locale={locale} title={`${project.data.title} - ${content.site_title}`}>
   <!-- Breadcrumb / Back -->
   <section class="bg-white border-b border-gray-200 pt-28 md:pt-32 pb-8">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
       <a href="/progetti" class="inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-gray-500 hover:text-black transition-colors">
         <span aria-hidden="true">←</span>
         {content.projects.back_to_projects}
@@ -44,7 +44,7 @@ const facts = [
 
   <!-- Project Title Block -->
   <section class="bg-white pt-12 md:pt-20 pb-12 md:pb-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-12 gap-12 items-end">
         <div class="md:col-span-8">
           {project.data.category && (
@@ -67,7 +67,7 @@ const facts = [
 
   <!-- Hero Image -->
   <section class="bg-gray-50 py-12 md:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
       <div class="bg-white">
         <Image
           src={project.data.coverImage}
@@ -83,7 +83,7 @@ const facts = [
   <!-- Facts Grid -->
   {facts.length > 0 && (
     <section class="bg-white border-y border-gray-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div class="py-6 md:py-8">
           <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{content.projects.detail_facts}</p>
           <div class="grid grid-cols-2 md:grid-cols-6 gap-y-8 gap-x-6">
@@ -101,7 +101,7 @@ const facts = [
 
   <!-- Description + Narrative -->
   <section class="py-24 md:py-32 bg-white">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
       <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{content.projects.detail_brief}</p>
       <p class="text-xl md:text-2xl text-gray-900 leading-[1.5] font-light mb-16">
         {project.data.description}
@@ -127,7 +127,7 @@ const facts = [
   <!-- Gallery -->
   {project.data.gallery && project.data.gallery.length > 0 && (
     <section class="py-20 md:py-24 bg-gray-50 border-t border-gray-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-12">{content.projects.detail_gallery}</p>
         <div class="grid md:grid-cols-2 gap-6">
           {project.data.gallery.map((image) => (
@@ -148,7 +148,7 @@ const facts = [
 
   <!-- Closing Back Link -->
   <section class="bg-white border-t border-gray-200 py-16 md:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
       <a href="/progetti" class="inline-flex items-center gap-3 text-sm tracking-[0.25em] uppercase text-gray-900 border-b border-gray-300 pb-1 hover:border-black transition-colors">
         <span aria-hidden="true">←</span>
         {content.projects.back_to_projects}

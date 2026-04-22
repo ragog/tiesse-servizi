@@ -21,4 +21,20 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-bold;
   }
+
+  /* Prevent long words from overflowing narrow mobile viewports */
+  p, h1, h2, h3, h4, h5, h6, a, span, li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+}
+
+/* On narrow mobile screens, reduce overly-wide letter-spacing so
+   uppercase eyebrows / meta text don't overflow the viewport. */
+@media (max-width: 640px) {
+  [class*="tracking-[0.3em]"],
+  [class*="tracking-[0.35em]"],
+  [class*="tracking-[0.25em]"] {
+    letter-spacing: 0.15em !important;
+  }
 }
