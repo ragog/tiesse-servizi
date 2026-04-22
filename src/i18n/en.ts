@@ -247,8 +247,9 @@ export default {
   },
   projects: {
     page_title: "Engineering, delivered with precision and control.",
-    hero_eyebrow: "Selected Work · Technical Experience Since 2001",
-    subtitle: "Selected projects that built our ability to evaluate, transform and develop real estate assets.",
+    hero_eyebrow: "Selected Projects · Engineering Experience Since 2001",
+    subtitle: "Selected projects demonstrating our approach to engineering, design integration and technical control across complex environments.",
+    hero_tag: "Design · Engineering · BIM · Execution",
     intro_eyebrow: "Method",
     intro_title: "Before developing an investment, engineering decides.",
     intro_body: [
