@@ -18,10 +18,10 @@ export default {
   },
   key_facts: {
     items: [
-      { value: "2001", label: "Year founded" },
-      { value: "25+", label: "Years of operation" },
-      { value: "100%", label: "Residential developments" },
-      { value: "ENG+ITA", label: "Bilingual contracts" }
+      { value: "2001", label: "Established" },
+      { value: "25+", label: "Years Track Record" },
+      { value: "100%", label: "Residential Focus" },
+      { value: "ENG+ITA", label: "International Investors (EN/IT)" }
     ]
   },
   chi_siamo: {
