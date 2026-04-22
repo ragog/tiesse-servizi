@@ -10,7 +10,7 @@ export default {
   },
   hero: {
     eyebrow: "Real Estate · Engineering · Investment",
-    subtitle: "We engineer real estate investments.",
+    subtitle: "We build value through engineered real estate investments.",
     body: "From acquisition to exit. Structured, controlled, and built for long-term value.",
     trust: "Independent. Structured. Aligned with investors.",
     description: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001, we deliver residential real-estate operations with engineering rigor — from feasibility to handover.",
