@@ -256,9 +256,10 @@ export default {
       "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa — da restauri storici a strutture sanitarie — ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
     ],
     categories_eyebrow: "Portfolio",
-    categories_title: "Aree di competenza.",
-    category_work_single: "opera",
-    category_work_plural: "opere",
+    categories_title: "Settori di intervento",
+    categories_subtitle: "Competenze ingegneristiche applicate in settori diversi.",
+    category_work_single: "progetto selezionato",
+    category_work_plural: "progetti selezionati",
     category_back: "Tutti i settori",
     stats_eyebrow: "Track record",
     stats: [
@@ -275,11 +276,11 @@ export default {
     technical_title: "Le opere realizzate, per settore.",
     technical_subtitle: "Ogni commessa è una scheda tecnica: committente, anno, sito, ruolo, esito. Raggruppate per settore per restituire la misura reale dell'esperienza tecnica.",
     sectors: {
-      healthcare: { label: "Sanitario", description: "Asset ad alta complessità che richiedono precisione, conformità e continuità operativa." },
-      "historic-renovation": { label: "Restauro storico", description: "Riposizionamento di asset storici attraverso trasformazione strutturale e funzionale." },
-      "energy-retrofit": { label: "Efficientamento energetico", description: "Miglioramento della performance degli asset attraverso interventi mirati di efficientamento." },
-      "residential-development": { label: "Sviluppo residenziale", description: "Sviluppo e riposizionamento di asset residenziali." },
-      "public-sector": { label: "Settore pubblico", description: "Gestione di opere regolamentate all'interno di complessi quadri tecnici e amministrativi." }
+      healthcare: { label: "Sanitario", description: "Progettazione e realizzazione di strutture sanitarie ad alta complessità, con attenzione alla conformità normativa, precisione e continuità operativa." },
+      "historic-renovation": { label: "Riqualificazione del patrimonio", description: "Interventi su edifici esistenti e vincolati, attraverso progettazione strutturale e integrazione funzionale." },
+      "energy-retrofit": { label: "Efficientamento energetico", description: "Interventi tecnici mirati al miglioramento delle prestazioni energetiche e impiantistiche degli edifici." },
+      "residential-development": { label: "Edilizia residenziale", description: "Progettazione architettonica e strutturale di edifici residenziali, dal concept alla realizzazione." },
+      "public-sector": { label: "Settore pubblico", description: "Gestione di progetti in contesti regolati, tra complessità tecnica e vincoli amministrativi." }
     },
     no_projects: "Nessun progetto disponibile al momento.",
     back_to_projects: "Tutte le opere",

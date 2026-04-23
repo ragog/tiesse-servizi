@@ -78,9 +78,12 @@ const categoryTiles = sectorOrder
     <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
       <div class="mb-12 md:mb-16">
         <p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">{content.projects.categories_eyebrow}</p>
-        <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900 max-w-3xl">
+        <h2 class="text-3xl md:text-5xl font-light leading-[1.1] tracking-tight text-gray-900 max-w-3xl mb-4">
           {content.projects.categories_title}
         </h2>
+        {content.projects.categories_subtitle && (
+          <p class="text-base md:text-lg font-light text-gray-500 max-w-2xl">{content.projects.categories_subtitle}</p>
+        )}
       </div>
       {categoryTiles.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 md:gap-x-6 gap-y-10 md:gap-y-12">
