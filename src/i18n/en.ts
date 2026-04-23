@@ -258,8 +258,8 @@ export default {
     categories_eyebrow: "Portfolio",
     categories_title: "Project sectors",
     categories_subtitle: "Engineering expertise applied across different sectors.",
-    category_work_single: "work",
-    category_work_plural: "works",
+    category_work_single: "project",
+    category_work_plural: "projects",
     category_back: "All sectors",
     stats_eyebrow: "Track record",
     stats: [
