@@ -200,28 +200,37 @@ export default {
     ],
 
     palau_eyebrow: "Active operation",
-    palau_title: "Palau",
-    palau_subtitle: "Barrabisa",
-    palau_meta: ["Palau (SS) · Sardinia", "5 premium villas", "2026 —"],
+    palau_title: "Barrabisa",
+    palau_subtitle: "Wind-shaped coastline, engineered for long-term value.",
+    palau_meta: ["Palau, Northern Sardinia", "Facing Isola dei Gabbiani", "5 premium villas"],
     palau_brief_eyebrow: "Operation brief",
     palau_brief_title: "Five premium villas overlooking Barrabisa.",
     palau_brief_body: [
-      "A residential masterplan on the north-east coast of Sardinia, in one of the most sought-after landscape settings of the Mediterranean. Restrained architecture, local materials, domestic proportions — no showmanship.",
-      "Each villa is conceived as an independent unit with private garden, pool, and direct sea view. The operation is structured for Italian and international investors seeking premium assets with engineering-led governance and bilingual contracts."
+      "A residential masterplan set along the wind-exposed coastline of northern Sardinia, overlooking one of the most distinctive landscapes in the Mediterranean. Architecture is restrained, grounded in local materials and proportion — designed to belong rather than to impress.",
+      "The site directly faces the Isola dei Gabbiani, internationally recognized for its constant winds and as one of Europe's most established windsurf and kitesurf destinations.",
+      "Each villa is conceived as an independent unit with private garden, pool, and unobstructed sea views.",
+      "The operation is structured for Italian and international investors through a defined SPV framework, controlled capital deployment and milestone-based execution.",
+      "Governance is engineering-led, with integrated technical oversight and bilingual contractual structure."
     ],
     palau_specs_label: "Operation file",
     palau_specs_items: [
-      { label: "Location", value: "Palau (SS) · Barrabisa" },
-      { label: "Units", value: "5 standalone villas" },
-      { label: "Typology", value: "Premium residential" },
-      { label: "Status", value: "Active operation" },
-      { label: "Target", value: "International investors" },
-      { label: "Contracts", value: "Bilingual ENG/ITA" }
+      { label: "Asset", value: "5 detached villas · premium residential" },
+      { label: "Location", value: "Palau (SS), Northern Sardinia · Facing Isola dei Gabbiani" },
+      { label: "Structure", value: "SPV-based operation · Controlled capital deployment" },
+      { label: "Target", value: "International private investors" },
+      { label: "Contracts", value: "Bilingual ENG / ITA" },
+      { label: "Status", value: "Active development phase" }
     ],
     palau_feature_eyebrow: "Method",
-    palau_feature_quote: "An operation governed by engineering, designed around capital.",
-    palau_feature_body: "Tiesse Servizi's technical filter enters the deal at feasibility stage: landscape constraints, construction costs, permitting timeline, taxation. The MCA — Market Comparison Approach — analysis and the business plan with ROI and sensitivity sit inside the deal, not as an attachment.",
+    palau_feature_quote: "An investment structured through engineering discipline.",
+    palau_feature_body: "Technical validation begins at feasibility stage — including landscape constraints, cost structure, permitting timelines and fiscal framework. Market comparison analysis and financial modeling (ROI, sensitivity scenarios) are embedded within the operation, not treated as external assumptions.",
     palau_gallery_eyebrow: "Gallery",
+    palau_gallery_captions: [
+      "Masterplan integration within natural terrain",
+      "Private villa layout and spatial hierarchy",
+      "Wind exposure and coastal orientation"
+    ],
+    palau_closing: "A coastal asset shaped by landscape, structured through engineering, and aligned with long-term capital.",
 
     costa_paradiso_eyebrow: "Active operation",
     costa_paradiso_title: "Costa Paradiso",

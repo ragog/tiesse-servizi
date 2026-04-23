@@ -31,14 +31,13 @@ const re = content.real_estate;
 
     <div class="relative min-h-[72vh] md:min-h-[78vh] flex flex-col justify-end">
       <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 w-full pt-40 pb-16 md:pb-20">
-        <a href="/en/real-estate" class="inline-flex items-center gap-2 text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/70 hover:text-white transition-colors mb-10">
+        <a href="/en/real-estate" class="inline-flex items-center gap-2 text-sm md:text-base tracking-[0.15em] uppercase text-white/80 hover:text-white transition-colors mb-10">
           <span aria-hidden="true">←</span>
           <span>Real Estate</span>
         </a>
-        <p class="text-xs tracking-[0.3em] uppercase text-white/80 mb-6">{re.sardegna_eyebrow}</p>
         <div class="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
           <div class="md:col-span-7">
-            <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extralight leading-[0.95] tracking-[-0.02em] text-white">{re.sardegna_title}</h1>
+            <h1 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight leading-[0.95] tracking-[-0.02em] text-white">{re.sardegna_title}</h1>
           </div>
           <div class="md:col-span-5 space-y-3 md:space-y-4">
             {re.sardegna_body.map((p: string) => (
@@ -60,10 +59,8 @@ const re = content.real_estate;
       </div>
       <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-end">
         <div class="md:col-span-8">
-          <div class="flex items-baseline gap-4 md:gap-8 flex-wrap">
-            <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight leading-[0.9] tracking-[-0.02em] text-gray-900">{re.palau_title}</h2>
-            <span class="text-3xl md:text-5xl font-extralight text-gray-500 tracking-[0.02em]">{re.palau_subtitle}</span>
-          </div>
+          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight leading-[0.9] tracking-[-0.02em] text-gray-900 mb-4">{re.palau_title}</h2>
+          <p class="text-lg md:text-xl font-light text-gray-500 tracking-tight">{re.palau_subtitle}</p>
         </div>
         <div class="md:col-span-4 md:text-right">
           <div class="flex md:justify-end flex-wrap gap-x-6 gap-y-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-gray-500">
@@ -75,11 +72,11 @@ const re = content.real_estate;
   </section>
 
   <!-- OPERATION: PALAU · BARRABISA — full-bleed hero cover (clean image) -->
-  <section class="relative bg-black overflow-hidden">
+  <section class="relative bg-black overflow-hidden h-[60vh] md:h-[75vh]">
     <Image
       src={palauCover}
       alt={`${re.palau_title} · ${re.palau_subtitle}`}
-      class="block w-full h-auto"
+      class="block w-full h-full object-cover"
       widths={[1200, 1600, 2000, 2400]}
       sizes="100vw"
     />
@@ -142,10 +139,30 @@ const re = content.real_estate;
     <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
       <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{re.palau_gallery_eyebrow}</p>
       <div class="grid md:grid-cols-2 gap-5 md:gap-6">
-        <Image src={aerial1} alt="Palau · Barrabisa — aerial view of the site" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
-        <Image src={aerial2} alt="Palau · Barrabisa — aerial view along the coast" class="w-full h-auto" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
-        <Image src={aerial3} alt="Palau · Barrabisa — site plan with overhead aerial view" class="w-full h-auto md:col-span-2" widths={[800, 1200, 1600, 2000]} sizes="100vw" />
+        <div>
+          <div class="overflow-hidden h-[280px] md:h-[400px]">
+            <Image src={aerial1} alt="Palau · Barrabisa — aerial view of the site" class="w-full h-full object-cover" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          </div>
+          <p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-gray-400 mt-3">{re.palau_gallery_captions[0]}</p>
+        </div>
+        <div>
+          <div class="overflow-hidden h-[280px] md:h-[400px]">
+            <Image src={aerial2} alt="Palau · Barrabisa — aerial view along the coast" class="w-full h-full object-cover" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          </div>
+          <p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-gray-400 mt-3">{re.palau_gallery_captions[1]}</p>
+        </div>
+        <div class="md:col-span-2">
+          <Image src={aerial3} alt="Palau · Barrabisa — site plan with overhead aerial view" class="w-full h-auto" widths={[800, 1200, 1600, 2000]} sizes="100vw" />
+          <p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-gray-400 mt-3">{re.palau_gallery_captions[2]}</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Palau — Closing statement -->
+  <section class="bg-white py-14 md:py-20 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <p class="text-xl md:text-2xl font-light leading-[1.4] tracking-tight text-gray-700 max-w-3xl">{re.palau_closing}</p>
     </div>
   </section>
 
@@ -171,11 +188,11 @@ const re = content.real_estate;
   </section>
 
   <!-- Costa Paradiso — full-bleed hero cover (filtered) -->
-  <section class="relative bg-black overflow-hidden">
+  <section class="relative bg-black overflow-hidden h-[60vh] md:h-[75vh]">
     <Image
       src={costaParadisoHero}
       alt={re.costa_paradiso_title}
-      class="block w-full h-auto saturate-[.7] brightness-[.92] contrast-[1.05]"
+      class="block w-full h-full object-cover saturate-[.7] brightness-[.92] contrast-[1.05]"
       widths={[1200, 1600, 2000, 2400]}
       sizes="100vw"
     />

@@ -199,29 +199,38 @@ export default {
       "La nostra presenza è completata da una pipeline in crescita nel nord della Sardegna, inclusa Costa Paradiso, dove stiamo avviando nuove operazioni allineate alla nostra strategia di investimento e sviluppo di lungo periodo."
     ],
 
-    palau_eyebrow: "Operazione in corso",
-    palau_title: "Palau",
-    palau_subtitle: "Barrabisa",
-    palau_meta: ["Palau (SS) · Sardegna", "5 ville di pregio", "2026 —"],
+    palau_eyebrow: "Operazione attiva",
+    palau_title: "Barrabisa",
+    palau_subtitle: "Paesaggio esposto al vento, progettato per generare valore nel tempo.",
+    palau_meta: ["Palau, Sardegna Nord", "Di fronte all'Isola dei Gabbiani", "5 ville premium"],
     palau_brief_eyebrow: "Brief operazione",
-    palau_brief_title: "Cinque ville di pregio, affacciate su Barrabisa.",
+    palau_brief_title: "Cinque ville premium, affacciate su Barrabisa.",
     palau_brief_body: [
-      "Un masterplan residenziale sulla costa nord-orientale della Sardegna, in uno dei contesti paesaggistici più ricercati del Mediterraneo. Architettura sobria, materiali locali, proporzioni domestiche — nessuna ostentazione.",
-      "Ogni villa è concepita come unità indipendente con giardino privato, piscina e vista diretta sul mare. L'operazione è strutturata per investitori italiani ed esteri che cercano asset di pregio con governance ingegneristica e contratti bilingue."
+      "Un masterplan residenziale lungo la costa esposta al vento della Sardegna settentrionale, affacciato su uno dei paesaggi più distintivi del Mediterraneo. L'architettura è contenuta, radicata nei materiali e nelle proporzioni locali — pensata per appartenere al luogo piuttosto che per impressionare.",
+      "Il sito si affaccia direttamente sull'Isola dei Gabbiani, riconosciuta internazionalmente per la costanza dei venti e come una delle destinazioni più consolidate in Europa per il windsurf e il kitesurf.",
+      "Ogni villa è concepita come unità indipendente con giardino privato, piscina e vista mare senza ostacoli.",
+      "L'operazione è strutturata per investitori italiani e internazionali attraverso un veicolo SPV dedicato, con impegno di capitale definito ed esecuzione per fasi.",
+      "La governance è guidata dall'ingegneria, con supervisione tecnica integrata e struttura contrattuale bilingue."
     ],
     palau_specs_label: "Scheda operazione",
     palau_specs_items: [
-      { label: "Località", value: "Palau (SS) · Barrabisa" },
-      { label: "Unità", value: "5 ville indipendenti" },
-      { label: "Tipologia", value: "Residenziale di pregio" },
-      { label: "Stato", value: "Operazione in corso" },
-      { label: "Target", value: "Investitori internazionali" },
-      { label: "Contratti", value: "Bilingue ENG/ITA" }
+      { label: "Asset", value: "5 ville indipendenti · residenziale premium" },
+      { label: "Localizzazione", value: "Palau (SS), Sardegna Nord · Di fronte all'Isola dei Gabbiani" },
+      { label: "Struttura", value: "Operazione SPV · Impegno di capitale controllato" },
+      { label: "Target", value: "Investitori privati internazionali" },
+      { label: "Contratti", value: "Bilingue ENG / ITA" },
+      { label: "Stato", value: "Fase di sviluppo attiva" }
     ],
     palau_feature_eyebrow: "Metodo",
-    palau_feature_quote: "Un'operazione governata dall'ingegneria, disegnata sul capitale.",
-    palau_feature_body: "Il filtro tecnico di Tiesse Servizi entra in gioco già in fase di fattibilità: vincoli paesaggistici, costi di costruzione, tempi autorizzativi, fiscalità. L'analisi MCA — Market Comparison Approach — e il business plan con ROI e sensitività sono parte integrante del deal, non un allegato.",
+    palau_feature_quote: "Un'operazione strutturata attraverso il controllo tecnico.",
+    palau_feature_body: "La validazione tecnica inizia già in fase di fattibilità — vincoli paesaggistici, struttura dei costi, tempistiche autorizzative e quadro fiscale. L'analisi comparativa di mercato e la modellazione finanziaria (ROI, scenari di sensitività) sono parte integrante dell'operazione, non assunzioni esterne.",
     palau_gallery_eyebrow: "Galleria",
+    palau_gallery_captions: [
+      "Integrazione del masterplan nel terreno naturale",
+      "Planimetria della villa privata e gerarchia spaziale",
+      "Esposizione al vento e orientamento costiero"
+    ],
+    palau_closing: "Un asset costiero definito dal paesaggio, strutturato attraverso il controllo tecnico e orientato alla creazione di valore nel tempo.",
 
     costa_paradiso_eyebrow: "Operazione in corso",
     costa_paradiso_title: "Costa Paradiso",
