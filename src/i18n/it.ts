@@ -45,12 +45,13 @@ export default {
     technical_title: "Le competenze tecniche guidano ogni progetto.",
     technical_body: "Applichiamo competenze ingegneristiche in contesti complessi.<br><br>Dalla sanità al residenziale fino al settore pubblico, ogni progetto è guidato da controllo tecnico, integrazione progettuale e processi basati su metodologia BIM.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Progettazione · Ingegneria · BIM · Realizzazione</span>",
     technical_cta: "Esplora i progetti",
-    investment_eyebrow: "Real Estate · Investimento",
-    investment_title: "Location esclusive, valore nel tempo.",
-    investment_body: "Asset strutturati per preservare e accrescere il valore nel tempo.",
-    investment_cta: "Vedi le operazioni",
-    investment_featured_label: "Progetto in evidenza",
-    investment_project_tag: "Sviluppo residenziale privato"
+    investment_eyebrow: "Real Estate · Investimenti",
+    investment_title: "Sviluppo immobiliare guidato dall'ingegneria.",
+    investment_body: "Progetti immobiliari sviluppati attraverso progettazione integrata, ingegneria e controllo dell'esecuzione.",
+    investment_location: "Sviluppi in corso in Sardegna.",
+    investment_cta: "Esplora gli sviluppi",
+    investment_featured_label: "Sviluppo in evidenza",
+    investment_project_tag: "Sviluppo residenziale integrato"
   },
   servizi_tecnici: {
     eyebrow: "Servizi tecnici",

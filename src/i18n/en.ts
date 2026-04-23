@@ -46,11 +46,12 @@ export default {
     technical_body: "Engineering expertise applied to complex environments.<br><br>From healthcare to residential and public sector, our projects are driven by technical control, design integration and BIM-based processes.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Design · Engineering · BIM · Execution</span>",
     technical_cta: "Explore Projects",
     investment_eyebrow: "Real Estate · Investment",
-    investment_title: "Selected locations. Engineered value.",
-    investment_body: "Assets structured to preserve and grow value over time.",
-    investment_cta: "View Operations",
+    investment_title: "Real estate, driven by engineering.",
+    investment_body: "Real estate projects developed through integrated design, engineering and execution control.",
+    investment_location: "Current developments in Sardinia.",
+    investment_cta: "Explore developments",
     investment_featured_label: "Featured development",
-    investment_project_tag: "Private residential development"
+    investment_project_tag: "Integrated residential development"
   },
   servizi_tecnici: {
     eyebrow: "Technical services",
