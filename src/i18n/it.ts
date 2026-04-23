@@ -47,10 +47,10 @@ export default {
     technical_cta: "Esplora i progetti",
     investment_eyebrow: "Real Estate · Investimenti",
     investment_title: "Dove l'ingegneria incontra il real estate.",
-    investment_body: "Progetti immobiliari sviluppati attraverso progettazione integrata, ingegneria e controllo dell'esecuzione.",
-    investment_location: "Sviluppi in corso in Sardegna.",
-    investment_cta: "Esplora gli sviluppi",
-    investment_featured_label: "Sviluppo in evidenza",
+    investment_body: "Progetti immobiliari sviluppati con un approccio integrato tra progettazione architettonica e strutturale, coordinamento tecnico e controllo dell'esecuzione.",
+    investment_location: "Operazioni in corso in Sardegna.",
+    investment_cta: "Scopri le operazioni",
+    investment_featured_label: "Operazioni in corso",
     investment_project_tag: "Sviluppo residenziale integrato"
   },
   servizi_tecnici: {
