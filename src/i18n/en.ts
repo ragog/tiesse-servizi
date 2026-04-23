@@ -186,9 +186,9 @@ export default {
     intro_title: "Where the landscape protects value, engineering protects the investment.",
     intro_body: [
       "We approach real estate as a long-term capital allocation strategy, selecting only opportunities that can preserve and grow value over time.",
-      "Our activity focuses on high-quality residential assets, conceived both as private use properties and as structured investments within a broader diversification strategy.",
-      "With years of experience in sourcing, developing and managing complex operations, we oversee the entire lifecycle — from acquisition and feasibility to development and long-term asset management.",
-      "Every decision is driven by a rigorous technical and financial framework, ensuring clarity, control and alignment between expected and actual outcomes."
+      "Our activity focuses on high-quality residential assets, conceived both as private use properties and as structured investment operations within a broader diversification strategy.",
+      "With years of experience in sourcing, developing and managing complex projects, we oversee the entire lifecycle — from acquisition and feasibility to development and long-term asset management.",
+      "Each operation is structured through dedicated vehicles and transparent financial frameworks, ensuring control over capital deployment, execution and risk management throughout the entire process."
     ],
 
     sardegna_eyebrow: "Region",
