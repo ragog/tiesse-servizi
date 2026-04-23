@@ -37,7 +37,7 @@ export default {
     about_eyebrow: "Chi siamo",
     about_title: "Pensiamo da ingegneri. Agiamo da investitori.",
     about_body: [
-      "Originiamo e gestiamo investimenti immobiliari con pieno controllo tecnico e finanziario, dall'acquisizione fino all'uscita.",
+      "Strutturiamo e gestiamo investimenti immobiliari con pieno controllo tecnico e finanziario, dall'acquisizione fino all'uscita.",
       "Ogni decisione è guidata da analisi di fattibilità, controllo dei costi e tutela del valore nel lungo periodo."
     ],
     about_closing: "Nessuna approssimazione. Nessuna sorpresa. Solo esecuzione controllata.",
@@ -234,6 +234,7 @@ export default {
 
     costa_paradiso_eyebrow: "Operazione in corso",
     costa_paradiso_title: "Costa Paradiso",
+    costa_paradiso_subtitle: "Costa tutelata in granito, in attesa di sviluppo.",
     costa_paradiso_meta: ["Sardegna nord", "2 lotti edificabili", "Land banking"],
     costa_paradiso_brief_eyebrow: "Brief operazione",
     costa_paradiso_brief_title: "Un tratto di costa nord dalla memoria densa.",
@@ -249,6 +250,15 @@ export default {
       { label: "Fase", value: "Land banking · da sviluppare" },
       { label: "Contesto", value: "Paesaggio costiero tutelato" }
     ],
+    costa_paradiso_feature_eyebrow: "Contesto",
+    costa_paradiso_feature_quote: "Un luogo che precede l'architettura.",
+    costa_paradiso_feature_body: "Costa Paradiso occupa un tratto della costa nord-occidentale definito da formazioni granitiche, paesaggio tutelato e una storia culturale che ne ha segnato l'identità molto prima di qualsiasi sviluppo. I due lotti che deteniamo sono un punto d'accesso a un contesto in cui scarsità, normativa e posizione convergono a proteggere il valore nel lungo periodo.",
+    costa_paradiso_gallery_eyebrow: "Location",
+    costa_paradiso_gallery_captions: [
+      "Costa di granito al tramonto",
+      "Caletta riparata · paesaggio tutelato"
+    ],
+    costa_paradiso_closing: "Due lotti detenuti in un paesaggio costiero tutelato — una posizione paziente in un mercato dove scarsità e vincoli normativi definiscono il valore.",
 
     cta_eyebrow: "Informazioni riservate",
     cta_title: "Scheda tecnica e business plan su richiesta.",

@@ -9,6 +9,9 @@ import aerial1 from '../../assets/real-estate/palau-barrabisa/aerial-1.jpg';
 import aerial2 from '../../assets/real-estate/palau-barrabisa/aerial-2.jpg';
 import aerial3 from '../../assets/real-estate/palau-barrabisa/aerial-3.jpg';
 import costaParadisoHero from '../../assets/real-estate/costa-paradiso/hero.jpg';
+import costaParadisoFeature from '../../assets/real-estate/costa-paradiso/feature.jpg';
+import cpGallery1 from '../../assets/real-estate/costa-paradiso/gallery-1.jpg';
+import cpGallery2 from '../../assets/real-estate/costa-paradiso/gallery-2.jpg';
 
 const locale = 'it';
 const content = getTranslations(locale);
@@ -176,7 +179,8 @@ const re = content.real_estate;
       </div>
       <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-end">
         <div class="md:col-span-8">
-          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight leading-[0.9] tracking-[-0.02em] text-gray-900">{re.costa_paradiso_title}</h2>
+          <h2 class="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extralight leading-[0.9] tracking-[-0.02em] text-gray-900 mb-4">{re.costa_paradiso_title}</h2>
+          <p class="text-lg md:text-xl font-light text-gray-500 tracking-tight">{re.costa_paradiso_subtitle}</p>
         </div>
         <div class="md:col-span-4 md:text-right">
           <div class="flex md:justify-end flex-wrap gap-x-6 gap-y-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-gray-500">
@@ -226,6 +230,56 @@ const re = content.real_estate;
           </div>
         ))}
       </div>
+    </div>
+  </section>
+
+  <!-- Costa Paradiso — Feature image + quote -->
+  <section class="bg-white py-14 md:py-20 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7">
+          <Image
+            src={costaParadisoFeature}
+            alt="Costa Paradiso · scogliere di granito e costa"
+            class="w-full h-auto"
+            widths={[800, 1200, 1600]}
+            sizes="(max-width: 768px) 100vw, 60vw"
+          />
+        </div>
+        <div class="md:col-span-5">
+          <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-6">{re.costa_paradiso_feature_eyebrow}</p>
+          <p class="text-2xl md:text-3xl font-light leading-[1.2] tracking-tight text-gray-900 mb-8">"{re.costa_paradiso_feature_quote}"</p>
+          <p class="text-gray-700 leading-relaxed font-light">{re.costa_paradiso_feature_body}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Costa Paradiso — Gallery -->
+  <section class="bg-gray-50 py-12 md:py-16 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <p class="text-xs tracking-[0.3em] uppercase text-gray-500 mb-8">{re.costa_paradiso_gallery_eyebrow}</p>
+      <div class="grid md:grid-cols-2 gap-5 md:gap-6">
+        <div>
+          <div class="overflow-hidden h-[280px] md:h-[400px]">
+            <Image src={cpGallery1} alt="Costa Paradiso · tramonto sulla costa di granito" class="w-full h-full object-cover" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          </div>
+          <p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-gray-400 mt-3">{re.costa_paradiso_gallery_captions[0]}</p>
+        </div>
+        <div>
+          <div class="overflow-hidden h-[280px] md:h-[400px]">
+            <Image src={cpGallery2} alt="Costa Paradiso · caletta di granito e acqua turchese" class="w-full h-full object-cover" widths={[600, 900, 1200]} sizes="(max-width: 768px) 100vw, 50vw" />
+          </div>
+          <p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-gray-400 mt-3">{re.costa_paradiso_gallery_captions[1]}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Costa Paradiso — Closing statement -->
+  <section class="bg-white py-14 md:py-20 border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
+      <p class="text-xl md:text-2xl font-light leading-[1.4] tracking-tight text-gray-700 max-w-3xl">{re.costa_paradiso_closing}</p>
     </div>
   </section>
 

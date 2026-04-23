@@ -234,6 +234,7 @@ export default {
 
     costa_paradiso_eyebrow: "Active operation",
     costa_paradiso_title: "Costa Paradiso",
+    costa_paradiso_subtitle: "Protected granite coast, held for long-term development.",
     costa_paradiso_meta: ["Northern Sardinia", "2 building lots", "Land banking"],
     costa_paradiso_brief_eyebrow: "Operation brief",
     costa_paradiso_brief_title: "A storied stretch of the north coast.",
@@ -249,6 +250,15 @@ export default {
       { label: "Stage", value: "Land banking · to be developed" },
       { label: "Context", value: "Protected coastal landscape" }
     ],
+    costa_paradiso_feature_eyebrow: "Context",
+    costa_paradiso_feature_quote: "A location that precedes architecture.",
+    costa_paradiso_feature_body: "Costa Paradiso occupies a stretch of the north-western coast defined by granite formations, protected landscape and a cultural history that has shaped its identity long before any development. The two building lots we hold are an entry point into a context where scarcity, regulation and location converge to protect long-term value.",
+    costa_paradiso_gallery_eyebrow: "Location",
+    costa_paradiso_gallery_captions: [
+      "Granite coastline at sunset",
+      "Sheltered cove · protected landscape"
+    ],
+    costa_paradiso_closing: "Two lots held in a protected coastal landscape — a patient position in a market where scarcity and regulatory constraint define value.",
 
     cta_eyebrow: "Confidential information",
     cta_title: "Technical file and business plan on request.",
