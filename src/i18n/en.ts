@@ -256,7 +256,8 @@ export default {
       "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission — from historic renovations to healthcare facilities — refined our ability to evaluate costs, risks and development potential."
     ],
     categories_eyebrow: "Portfolio",
-    categories_title: "Areas of expertise.",
+    categories_title: "Project sectors",
+    categories_subtitle: "Engineering expertise applied across different sectors.",
     category_work_single: "work",
     category_work_plural: "works",
     category_back: "All sectors",
@@ -275,11 +276,11 @@ export default {
     technical_title: "Realized work, by sector.",
     technical_subtitle: "Every commission is a technical file: client, year, site, role, outcome. Grouped by sector so the depth of technical experience reads at a glance.",
     sectors: {
-      healthcare: { label: "Healthcare", description: "High-complexity assets requiring precision, compliance and operational continuity." },
-      "historic-renovation": { label: "Historic renovation", description: "Repositioning heritage assets through structural and functional transformation." },
-      "energy-retrofit": { label: "Energy upgrade", description: "Enhancing asset performance through targeted efficiency improvements." },
-      "residential-development": { label: "Residential development", description: "Development and repositioning of residential real estate assets." },
-      "public-sector": { label: "Public sector", description: "Managing regulated projects within complex technical and administrative frameworks." }
+      healthcare: { label: "Healthcare", description: "Design and delivery of high-complexity healthcare facilities, ensuring regulatory compliance, precision and operational continuity." },
+      "historic-renovation": { label: "Heritage renovation", description: "Structural and architectural interventions on existing and heritage buildings, integrating technical upgrades with functional transformation." },
+      "energy-retrofit": { label: "Energy efficiency", description: "Targeted technical interventions to improve building performance through energy and systems optimization." },
+      "residential-development": { label: "Residential", description: "Architectural and structural design of residential buildings, from concept development to construction." },
+      "public-sector": { label: "Public sector", description: "Delivery of projects within regulated environments, managing technical complexity and administrative requirements." }
     },
     no_projects: "No projects available at the moment.",
     back_to_projects: "All work",
