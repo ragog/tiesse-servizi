@@ -232,14 +232,14 @@ const h = content.home_sections;
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14 border-t border-gray-200 pt-12 md:pt-16">
 				{content.news.items.map((item: { date: string; category: string; title: string; description: string; href: string }) => (
-					<a href={item.href} target="_blank" rel="noopener" class="group block">
+					<div>
 						<div class="flex items-center justify-between mb-6">
 							<span class="text-xs tracking-widest uppercase text-gray-400 tabular-nums">{item.date}</span>
 							<span class="text-[10px] tracking-[0.2em] uppercase text-gray-400">{item.category}</span>
 						</div>
-						<h3 class="text-xl md:text-2xl font-light text-gray-900 leading-snug tracking-tight mb-4 group-hover:text-[#8BC34A] transition-colors">{item.title}</h3>
+						<h3 class="text-xl md:text-2xl font-light text-gray-900 leading-snug tracking-tight mb-4">{item.title}</h3>
 						<p class="text-sm text-gray-600 font-light leading-relaxed">{item.description}</p>
-					</a>
+					</div>
 				))}
 			</div>
 		</div>
