@@ -68,7 +68,7 @@ export default {
     team: [
       { name: "Piero Giusti", title: "Senior Advisor · Institutional Relations & Business Development", linkedin: "https://www.linkedin.com/in/piero-giusti-ba635967/" },
       { name: "Ignazio Celardi", title: "Structural Engineer · External Partner", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
-      { name: "Arturo Tucci", title: "Public Tenders & Cost Management", linkedin: "" },
+      { name: "Arturo Tucci", title: "Public Tenders & Cost Management", linkedin: "https://www.linkedin.com/in/arturo-tucci-81687b47/" },
       { name: "Andrea Calidori", title: "Structural Engineer · External Consultant", linkedin: "" }
     ]
   },
