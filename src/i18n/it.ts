@@ -53,6 +53,25 @@ export default {
     investment_featured_label: "Operazioni in corso",
     investment_project_tag: "Sviluppo residenziale integrato"
   },
+  founder: {
+    eyebrow: "Fondatore",
+    name: "Angelo Matteo Tucci",
+    title: "Ingegnere Civile · Fondatore, Tiesse Group",
+    bio: [
+      "Ingegnere civile con laurea magistrale all'Università di Bologna. Co-titolare di Tiesse Servizi dal 2001 e fondatore di Tiesse Group.",
+      "Approccio il real estate con la disciplina dell'ingegnere: prima la fattibilità tecnica, poi l'impegno finanziario. La mia formazione comprende progettazione strutturale, gestione cantieri e direzione lavori su complessi interventi residenziali e commerciali in Italia Centrale e Settentrionale.",
+      "Questa base guida il modo in cui strutturiamo e realizziamo gli investimenti immobiliari — con controllo completo del ciclo di vita dall'acquisizione alla consegna, allineati agli obiettivi dell'investitore in ogni fase."
+    ],
+    linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/",
+    linkedin_label: "Connettiti su LinkedIn",
+    team_eyebrow: "Team",
+    team: [
+      { name: "Piero Giusti", title: "Consulente Senior · Relazioni Istituzionali e Sviluppo", linkedin: "https://www.linkedin.com/in/piero-giusti-ba635967/" },
+      { name: "Ignazio Celardi", title: "Ingegnere Strutturista · Partner Esterno", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
+      { name: "Arturo Tucci", title: "Gare d'Appalto e Gestione Costi", linkedin: "" },
+      { name: "Andrea Calidori", title: "Ingegnere Strutturista · Consulente Esterno", linkedin: "" }
+    ]
+  },
   servizi_tecnici: {
     eyebrow: "Servizi tecnici",
     title: "Un unico interlocutore per l'intero ciclo della commessa.",

@@ -53,6 +53,25 @@ export default {
     investment_featured_label: "Featured development",
     investment_project_tag: "Integrated residential development"
   },
+  founder: {
+    eyebrow: "Founder",
+    name: "Angelo Matteo Tucci",
+    title: "Civil Engineer · Founder, Tiesse Group",
+    bio: [
+      "Civil engineer with a Master's degree from the Università di Bologna. Co-owner of Tiesse Servizi since 2001 and founder of Tiesse Group.",
+      "I approach real estate with an engineer's discipline: technical feasibility first, financial commitment second. My background spans structural design, construction management and site supervision across complex commercial and residential developments in Central and Northern Italy.",
+      "That foundation drives how we structure and execute real estate investments — with full lifecycle control from land acquisition to handover, aligned with the investor's objectives at every phase."
+    ],
+    linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/",
+    linkedin_label: "Connect on LinkedIn",
+    team_eyebrow: "Team",
+    team: [
+      { name: "Piero Giusti", title: "Senior Advisor · Institutional Relations & Business Development", linkedin: "https://www.linkedin.com/in/piero-giusti-ba635967/" },
+      { name: "Ignazio Celardi", title: "Structural Engineer · External Partner", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
+      { name: "Arturo Tucci", title: "Public Tenders & Cost Management", linkedin: "" },
+      { name: "Andrea Calidori", title: "Structural Engineer · External Consultant", linkedin: "" }
+    ]
+  },
   servizi_tecnici: {
     eyebrow: "Technical services",
     title: "A single point of contact for the entire project cycle.",
