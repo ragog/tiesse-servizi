@@ -66,9 +66,9 @@ export default {
     linkedin_label: "Connettiti su LinkedIn",
     team_eyebrow: "Team",
     team: [
-      { name: "Piero Giusti", title: "Consulente Senior · Relazioni Istituzionali e Sviluppo", linkedin: "https://www.linkedin.com/in/piero-giusti-ba635967/" },
+      { name: "Piero Giusti", title: "Consulente Senior · Relazioni Istituzionali e Sviluppo", linkedin: "" },
       { name: "Ignazio Celardi", title: "Ingegnere Strutturista · Partner Esterno", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
-      { name: "Arturo Tucci", title: "Gare d'Appalto e Gestione Costi", linkedin: "https://www.linkedin.com/in/arturo-tucci-81687b47/" },
+      { name: "Arturo Tucci", title: "Gare d'Appalto e Gestione Costi", linkedin: "" },
       { name: "Andrea Calidori", title: "Ingegnere Strutturista · Consulente Esterno", linkedin: "" }
     ]
   },
