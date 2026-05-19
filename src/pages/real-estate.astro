@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getTranslations } from '../i18n';
 import sardiniaHero from '../assets/real-estate/sardinia-hero.jpg';
-import sardegnaTile from '../assets/real-estate/palau-barrabisa/home-hero.jpg';
+import sardegnaTile from '../assets/real-estate/sardinia-tile.jpg';
 import toscanaTile from '../assets/real-estate/toscana/cover.jpg';
 import corsicaTile from '../assets/real-estate/corsica/cover.jpg';
 
@@ -12,7 +12,7 @@ const content = getTranslations(locale);
 const re = content.real_estate;
 
 const locations = [
-  { key: 'sardegna', label: 'Sardegna', cover: sardegnaTile, href: '/real-estate/sardegna' },
+  { key: 'sardegna', label: 'Sardegna', cover: sardegnaTile, href: null },
   { key: 'toscana', label: 'Toscana', cover: toscanaTile, href: null },
   { key: 'corsica', label: 'Corsica', cover: corsicaTile, href: null }
 ];
