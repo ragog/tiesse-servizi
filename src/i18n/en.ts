@@ -186,11 +186,13 @@ export default {
     pec_label: "PEC",
     partita_iva_label: "VAT Number",
     sede_label: "Headquarters",
+    sede_us_label: "US Office",
     // Values
     email_value: "info@tiesseservizi.eu",
     pec_value: "postmaster@pec.tiesseservizi.eu",
     partita_iva_value: "02241091202",
     sede_value: "Via Loderingo degli Andalò 5, 40124 Bologna",
+    sede_us_value: "468 N Camden Dr, Beverly Hills, CA 90210",
     group_line: "Operating company of Tiesse Group",
     established: "Established 2001"
   },
