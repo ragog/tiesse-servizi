@@ -140,8 +140,8 @@ export default {
       {
         date: "01/2026",
         category: "Operazione",
-        title: "Palau: masterplan residenziale in Sardegna",
-        description: "Cinque ville di pregio in un contesto iconico della costa nord-orientale. Target investitori internazionali.",
+        title: "Operazioni residenziali di pregio in Sardegna",
+        description: "Sviluppo residenziale di fascia alta nel Mediterraneo italiano, strutturato con controllo ingegneristico dalla fattibilità alla consegna. Dettagli riservati.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
       {
@@ -318,7 +318,7 @@ export default {
     ],
     real_estate_banner_eyebrow: "Operazioni immobiliari",
     real_estate_banner_title: "Operazioni Real Estate in corso",
-    real_estate_banner_text: "Sviluppo residenziale di pregio per investitori italiani ed esteri — scopri Palau · Barrabisa e le altre operazioni del gruppo.",
+    real_estate_banner_text: "Sviluppo residenziale di pregio per investitori italiani ed esteri. Operazioni selezionate, dettagli riservati.",
     real_estate_banner_cta: "Operazioni Real Estate",
     technical_eyebrow: "Track Record",
     technical_title: "Le opere realizzate, per settore.",

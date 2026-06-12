@@ -140,8 +140,8 @@ export default {
       {
         date: "01/2026",
         category: "Operation",
-        title: "Palau: residential masterplan in Sardinia",
-        description: "Five premium villas in an iconic setting on Sardinia's north-east coast. Target: international investors.",
+        title: "Premium residential operations in Sardinia",
+        description: "High-end residential development in the Italian Mediterranean, structured with engineering control from feasibility to handover. Details under confidentiality.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
       {
@@ -318,7 +318,7 @@ export default {
     ],
     real_estate_banner_eyebrow: "Real estate operations",
     real_estate_banner_title: "Current Real Estate operations",
-    real_estate_banner_text: "Premium residential development for Italian and international investors — see Palau · Barrabisa and the other active operations of the group.",
+    real_estate_banner_text: "Premium residential development for Italian and international investors. Selected operations, details under confidentiality.",
     real_estate_banner_cta: "Real Estate operations",
     technical_eyebrow: "Track Record",
     technical_title: "Realized work, by sector.",
