@@ -54,9 +54,9 @@ export default {
     investment_project_tag: "Integrated residential development"
   },
   founder: {
-    eyebrow: "Founder",
+    eyebrow: "Tiesse Group",
     name: "Angelo Matteo Tucci",
-    title: "Civil Engineer · Founder, Tiesse Group",
+    title: "Civil Engineer · Senior Partner, Tiesse Group",
     bio: [
       "Civil engineer with a Master's degree from the Università di Bologna. Co-owner of Tiesse Servizi since 2001 and founder of Tiesse Group.",
       "I approach real estate with an engineer's discipline: technical feasibility first, financial commitment second. My background spans structural design, construction management and site supervision across complex commercial and residential developments in Central and Northern Italy.",

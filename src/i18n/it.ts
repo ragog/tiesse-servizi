@@ -54,9 +54,9 @@ export default {
     investment_project_tag: "Sviluppo residenziale integrato"
   },
   founder: {
-    eyebrow: "Fondatore",
+    eyebrow: "Tiesse Group",
     name: "Angelo Matteo Tucci",
-    title: "Ingegnere Civile · Fondatore, Tiesse Group",
+    title: "Ingegnere Civile · Senior Partner, Tiesse Group",
     bio: [
       "Ingegnere civile con laurea magistrale all'Università di Bologna. Co-titolare di Tiesse Servizi dal 2001 e fondatore di Tiesse Group.",
       "Approccio il real estate con la disciplina dell'ingegnere: prima la fattibilità tecnica, poi l'impegno finanziario. La mia formazione comprende progettazione strutturale, gestione cantieri e direzione lavori su complessi interventi residenziali e commerciali in Italia Centrale e Settentrionale.",
