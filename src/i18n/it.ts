@@ -131,9 +131,16 @@ export default {
     linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
       {
+        date: "06/2026",
+        category: "Gruppo",
+        title: "Tiesse Group apre la sede USA a Beverly Hills",
+        description: "468 N Camden Dr, Beverly Hills — una nuova base per servire gli investitori americani che vogliono allocare capitale nel real estate italiano di pregio.",
+        href: "https://www.linkedin.com/company/tiesse-group/"
+      },
+      {
         date: "01/2026",
         category: "Operazione",
-        title: "Palau · Barrabisa: masterplan residenziale in Sardegna",
+        title: "Palau: masterplan residenziale in Sardegna",
         description: "Cinque ville di pregio in un contesto iconico della costa nord-orientale. Target investitori internazionali.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
