@@ -164,11 +164,32 @@ export default {
     eyebrow: "Partners",
     title: "Selected partners.",
     body: "We operate inside a network of institutional players — banks, investment funds, construction firms, international real-estate networks and private capital.",
-    categories: [
-      { title: "Institutional Capital", description: "Banks, investment funds and institutional vehicles." },
-      { title: "General Contractors & Specialists", description: "Selected construction firms and specialist trades." },
-      { title: "Real-Estate Networks", description: "International brokerage and distribution." },
-      { title: "Capital Partners", description: "Private investors and co-investors." }
+    // Three pillars of every operation. Partner logos live inside the right
+    // pillar. To add a partner: drop the logo file in public/partners/ and add
+    // a line to that group's "logos" array. url is optional (partner website).
+    groups: [
+      {
+        title: "Institutional",
+        description: "Public bodies, chambers of commerce and institutional vehicles that bring credibility and access to our operations.",
+        logos: []
+      },
+      {
+        title: "Capital Partners",
+        description: "Private investors, co-investors and capital backing each operation.",
+        logos: []
+      },
+      {
+        title: "Our Construction Partners",
+        description: "Selected construction firms and specialist trades that deliver the projects with us.",
+        logos: [
+          { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png" },
+        ]
+      },
+      {
+        title: "Real-Estate Networks",
+        description: "International brokerage and distribution channels for commercialization.",
+        logos: []
+      }
     ]
   },
   contatti: {

@@ -164,11 +164,33 @@ export default {
     eyebrow: "Partner",
     title: "Partner selezionati.",
     body: "Operiamo all'interno di una rete di soggetti istituzionali — banche, fondi di investimento, imprese di costruzione, network immobiliari internazionali e capitale privato.",
-    categories: [
-      { title: "Capitale istituzionale", description: "Banche, fondi di investimento e veicoli istituzionali." },
-      { title: "General contractor & specialisti", description: "Imprese di costruzione e trade specialistici selezionati." },
-      { title: "Network immobiliari", description: "Brokerage internazionale e canali di distribuzione." },
-      { title: "Capital partner", description: "Investitori privati e co-investitori." }
+    // Tre pilastri di ogni operazione. I loghi dei partner vivono dentro il
+    // pilastro giusto. Per aggiungere un partner: metti il file del logo in
+    // public/partners/ e aggiungi una riga nell'array "logos" del gruppo.
+    // url è opzionale (link al sito del partner).
+    groups: [
+      {
+        title: "Istituzionali",
+        description: "Enti, camere di commercio e veicoli istituzionali che danno credibilità e accesso alle operazioni.",
+        logos: []
+      },
+      {
+        title: "Capital partner",
+        description: "Investitori privati, co-investitori e capitale che finanzia le operazioni.",
+        logos: []
+      },
+      {
+        title: "Le nostre imprese",
+        description: "Imprese di costruzione e specialisti tecnici selezionati che realizzano i progetti insieme a noi.",
+        logos: [
+          { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png" },
+        ]
+      },
+      {
+        title: "Network immobiliari",
+        description: "Brokerage internazionale e canali di distribuzione per la commercializzazione.",
+        logos: []
+      }
     ]
   },
   contatti: {
