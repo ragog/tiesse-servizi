@@ -184,6 +184,7 @@ export default {
         description: "Imprese di costruzione e specialisti tecnici selezionati che realizzano i progetti insieme a noi.",
         logos: [
           { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png" },
+          { name: "EPM Costruzione e Servizi S.r.l.", src: "/partners/epm.png" },
         ]
       },
       {

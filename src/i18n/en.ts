@@ -183,6 +183,7 @@ export default {
         description: "Selected construction firms and specialist trades that deliver the projects with us.",
         logos: [
           { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png" },
+          { name: "EPM Costruzione e Servizi S.r.l.", src: "/partners/epm.png" },
         ]
       },
       {
