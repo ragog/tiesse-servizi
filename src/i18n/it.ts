@@ -67,7 +67,7 @@ export default {
     team_eyebrow: "Team",
     team: [
       { name: "Piero Giusti", title: "Consulente Senior · Relazioni Istituzionali e Sviluppo", linkedin: "" },
-      { name: "Ignazio Celardi", title: "Partner & Direttore Regionale Medio Oriente", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
+      { name: "Ignazio Celardi", title: "Ingegnere Strutturista · Partner & Direttore Regionale Medio Oriente", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
       { name: "Arturo Tucci", title: "Gare d'Appalto e Gestione Costi", linkedin: "" },
       { name: "Andrea Calidori", title: "Ingegnere Strutturista · Consulente Esterno", linkedin: "" }
     ]

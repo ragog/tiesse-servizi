@@ -67,7 +67,7 @@ export default {
     team_eyebrow: "Team",
     team: [
       { name: "Piero Giusti", title: "Senior Advisor · Institutional Relations & Business Development", linkedin: "" },
-      { name: "Ignazio Celardi", title: "Partner & Middle East Regional Director", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
+      { name: "Ignazio Celardi", title: "Structural Engineer · Partner & Middle East Regional Director", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
       { name: "Arturo Tucci", title: "Public Tenders & Cost Management", linkedin: "" },
       { name: "Andrea Calidori", title: "Structural Engineer · External Consultant", linkedin: "" }
     ]
