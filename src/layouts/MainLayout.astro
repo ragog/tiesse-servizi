@@ -206,7 +206,7 @@ const h = content.home_sections;
 				</div>
 			</div>
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-px bg-gray-200 border border-gray-200">
-				{content.partners.groups.map((group: { title: string; description: string; logos: { name: string; src: string; url?: string }[] }, i: number) => (
+				{content.partners.groups.map((group: { title: string; description: string; logos: { name: string; src: string; url?: string; imgClass?: string }[] }, i: number) => (
 					<div class="bg-gray-50 p-8 md:p-10 flex flex-col min-h-[22rem] md:min-h-[36rem]">
 						<div class="text-xs tracking-widest text-[#8BC34A] mb-4 tabular-nums">{String(i + 1).padStart(2, '0')}</div>
 						<h3 class="text-lg md:text-xl font-light text-gray-900 leading-snug mb-3 tracking-tight">{group.title}</h3>
@@ -218,10 +218,10 @@ const h = content.home_sections;
 									{group.logos.map((logo) => {
 										const inner = (
 											<img src={logo.src} alt={logo.name} loading="lazy"
-												class="max-h-20 md:max-h-28 w-auto object-contain" />
+												class={logo.imgClass ?? "max-h-20 md:max-h-28 w-auto object-contain"} />
 										);
 										return logo.url
-											? <a href={logo.url} target="_blank" rel="noopener" aria-label={logo.name}>{inner}</a>
+											? <a href={logo.url} target="_blank" rel="noopener" aria-label={logo.name} class={logo.imgClass ? "block w-full" : ""}>{inner}</a>
 											: inner;
 									})}
 								</div>

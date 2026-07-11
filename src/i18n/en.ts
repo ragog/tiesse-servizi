@@ -171,7 +171,9 @@ export default {
       {
         title: "Institutional",
         description: "Public bodies, chambers of commerce and institutional vehicles that bring credibility and access to our operations.",
-        logos: []
+        logos: [
+          { name: "Italy-America Chamber of Commerce West", src: "/partners/iaccw-west.png", url: "https://www.iaccw.net/", imgClass: "block max-w-none w-[calc(100%+4rem)] -mx-8 h-9 md:h-12 object-fill" },
+        ]
       },
       {
         title: "Capital Partners",
