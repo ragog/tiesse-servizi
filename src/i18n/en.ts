@@ -191,7 +191,9 @@ export default {
       {
         title: "Real-Estate Networks",
         description: "International brokerage and distribution channels for commercialization.",
-        logos: []
+        logos: [
+          { name: "Desiderata Domus", src: "/partners/desiderata-domus.png", url: "https://desideratadomus.it/" },
+        ]
       }
     ]
   },

@@ -192,7 +192,9 @@ export default {
       {
         title: "Network immobiliari",
         description: "Brokerage internazionale e canali di distribuzione per la commercializzazione.",
-        logos: []
+        logos: [
+          { name: "Desiderata Domus", src: "/partners/desiderata-domus.png", url: "https://desideratadomus.it/" },
+        ]
       }
     ]
   },
