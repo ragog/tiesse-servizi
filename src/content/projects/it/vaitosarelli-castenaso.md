@@ -15,4 +15,4 @@ featured: false
 order: 2
 ---
 
-Realizzazione di un edificio residenziale privato a Castenaso. La commessa ha richiesto la gestione integrata del cantiere — dalla fase autorizzativa alla consegna — con particolare attenzione al livello di finitura e al rispetto del cronoprogramma concordato con la committenza.
+Realizzazione di un edificio residenziale privato a Castenaso. La commessa ha richiesto la gestione integrata del cantiere, dalla fase autorizzativa alla consegna, con particolare attenzione al livello di finitura e al rispetto del cronoprogramma concordato con la committenza.

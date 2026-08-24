@@ -6,7 +6,7 @@ year: 2024
 category: "public-sector"
 coverImage: "../_images/serre-biotroniche-alma-mater/cover.webp"
 specs:
-  client: "Alma Mater Studiorum — University of Bologna"
+  client: "Alma Mater Studiorum, University of Bologna"
   features:
     - "Biotronic greenhouses for scientific research"
     - "Climate control and specialist systems"

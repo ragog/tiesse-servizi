@@ -15,4 +15,4 @@ featured: false
 order: 2
 ---
 
-Delivery of a new-build private residence in Castenaso. The commission required integrated site management — from permitting to handover — with particular focus on finish quality and adherence to the schedule agreed with the client.
+Delivery of a new-build private residence in Castenaso. The commission required integrated site management, from permitting to handover, with particular focus on finish quality and adherence to the schedule agreed with the client.

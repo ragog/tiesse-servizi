@@ -16,4 +16,4 @@ featured: false
 order: 1
 ---
 
-Riqualificazione energetica completa di un edificio residenziale a Formigine, nel modenese. L'intervento — cappotto, infissi e solare termico — è stato strutturato per ottenere un significativo salto di classe energetica e valorizzare gli incentivi disponibili.
+Riqualificazione energetica completa di un edificio residenziale a Formigine, nel modenese. L'intervento, cappotto, infissi e solare termico, è stato strutturato per ottenere un significativo salto di classe energetica e valorizzare gli incentivi disponibili.

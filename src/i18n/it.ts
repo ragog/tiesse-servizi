@@ -1,5 +1,5 @@
 export default {
-  site_title: "Tiesse Servizi | Real Estate Investment, Built on Engineering — Tiesse Group",
+  site_title: "Tiesse Servizi | Real Estate Investment, Built on Engineering, Tiesse Group",
   nav: {
     home: "Home",
     about: "Chi Siamo",
@@ -13,7 +13,7 @@ export default {
     subtitle: "Creiamo valore.",
     body: "Operazioni immobiliari strutturate con metodo ingegneristico e orientate alla performance nel lungo periodo.",
     trust: "Indipendenti. Strutturati. Al fianco degli investitori.",
-    description: "Tiesse Servizi è la società operativa di Tiesse Group. Dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico — dalla fattibilità alla consegna.",
+    description: "Tiesse Servizi è la società operativa di Tiesse Group. Dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico, dalla fattibilità alla consegna.",
     cta_text: "Operazioni in corso"
   },
   key_facts: {
@@ -29,7 +29,7 @@ export default {
     title: "Una piattaforma ingegneristica per l'immobiliare residenziale di pregio.",
     points: [
       "Tiesse Servizi affianca imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
-      "Non siamo venditori improvvisati: strutturiamo ogni operazione con visione ingegneristica specialistica, garantendo controllo puntuale di tempi, costi e qualità — dalla fattibilità alla consegna.",
+      "Non siamo venditori improvvisati: strutturiamo ogni operazione con visione ingegneristica specialistica, garantendo controllo puntuale di tempi, costi e qualità, dalla fattibilità alla consegna.",
       "Il nostro lavoro trasforma la complessità del processo edilizio in un percorso governabile. Riduce rischi operativi e finanziari, semplifica le interazioni tra i soggetti e tutela l'investimento."
     ]
   },
@@ -60,7 +60,7 @@ export default {
     bio: [
       "Ingegnere civile con laurea magistrale all'Università di Bologna. Co-titolare di Tiesse Servizi dal 2001 e fondatore di Tiesse Group.",
       "Approccio il real estate con la disciplina dell'ingegnere: prima la fattibilità tecnica, poi l'impegno finanziario. La mia formazione comprende progettazione strutturale, gestione cantieri e direzione lavori su complessi interventi residenziali e commerciali in Italia Centrale e Settentrionale.",
-      "Questa base guida il modo in cui strutturiamo e realizziamo gli investimenti immobiliari — con controllo completo del ciclo di vita dall'acquisizione alla consegna, allineati agli obiettivi dell'investitore in ogni fase."
+      "Questa base guida il modo in cui strutturiamo e realizziamo gli investimenti immobiliari, con controllo completo del ciclo di vita dall'acquisizione alla consegna, allineati agli obiettivi dell'investitore in ogni fase."
     ],
     linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/",
     linkedin_label: "Connettiti su LinkedIn",
@@ -77,7 +77,7 @@ export default {
     title: "Un unico interlocutore per l'intero ciclo della commessa.",
     description: "Forniamo una gestione strutturata dell'operazione immobiliare attraverso servizi tecnici integrati.",
     items: [
-      "Studio di fattibilità tecnico–economica",
+      "Studio di fattibilità tecnico-economica",
       "Pianificazione e logistica di cantiere",
       "Progettazione tecnica strutturale e architettonica",
       "Coordinamento sicurezza e direzione lavori",
@@ -93,7 +93,7 @@ export default {
     title: "Accompagniamo investitori esteri nel mercato immobiliare italiano di alto profilo.",
     titleBreak: "INVEST IN<br/>ITALY",
     intro: "Un'opportunità concreta per allocare capitali in uno scenario iconico, con controllo tecnico e trasparenza su ogni fase.",
-    description: "Sardegna, isole del Mediterraneo e territori italiani selezionati rappresentano oggi tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare — un settore che non conosce crisi.",
+    description: "Sardegna, isole del Mediterraneo e territori italiani selezionati rappresentano oggi tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare, un settore che non conosce crisi.",
     subtitle: "Attraverso Tiesse, gli investitori possono:",
     points: [
       "Accedere a immobili di pregio in zone iconiche",
@@ -113,7 +113,7 @@ export default {
       "Ricerca del terreno, progettazione architettonica e costruzione",
       "Escrow account o SPV dedicata all’investimento",
       "Report mensili certificati e forecast finanziari",
-      "Analisi di mercato tramite MCA – Market Comparison Approach",
+      "Analisi di mercato tramite MCA (Market Comparison Approach)",
       "Business plan con studio dei ritorni (ROI e sensitività)",
       "Exit strategy: gestione turistica/affittuaria e/o futura rivendita"
     ]
@@ -126,7 +126,7 @@ export default {
   news: {
     eyebrow: "Insights",
     title: "Ultimi insights.",
-    subtitle: "Operazioni, cantieri e analisi di mercato — direttamente dal campo.",
+    subtitle: "Operazioni, cantieri e analisi di mercato, direttamente dal campo.",
     linkedin_cta: "Segui su LinkedIn",
     linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
@@ -134,7 +134,7 @@ export default {
         date: "06/2026",
         category: "Gruppo",
         title: "Tiesse Group apre la sede USA a Beverly Hills",
-        description: "468 N Camden Dr, Beverly Hills — una nuova base per servire gli investitori americani che vogliono allocare capitale nel real estate italiano di pregio.",
+        description: "468 N Camden Dr, Beverly Hills, una nuova base per servire gli investitori americani che vogliono allocare capitale nel real estate italiano di pregio.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
       {
@@ -163,7 +163,7 @@ export default {
   partners: {
     eyebrow: "Partner",
     title: "Partner selezionati.",
-    body: "Operiamo all'interno di una rete di soggetti istituzionali — banche, fondi di investimento, imprese di costruzione, network immobiliari internazionali e capitale privato.",
+    body: "Operiamo all'interno di una rete di soggetti istituzionali: banche, fondi di investimento, imprese di costruzione, network immobiliari internazionali e capitale privato.",
     // Tre pilastri di ogni operazione. I loghi dei partner vivono dentro il
     // pilastro giusto. Per aggiungere un partner: metti il file del logo in
     // public/partners/ e aggiungi una riga nell'array "logos" del gruppo.
@@ -201,7 +201,7 @@ export default {
   contatti: {
     eyebrow: "Contatti",
     title: "Iniziamo una conversazione sulla tua prossima operazione.",
-    subtitle: "Ogni progetto inizia con un dialogo. Raccontaci obiettivi e tempistiche — rispondiamo entro 48 ore.",
+    subtitle: "Ogni progetto inizia con un dialogo. Raccontaci obiettivi e tempistiche, rispondiamo entro 48 ore.",
     form: {
       name: "Nome",
       email: "Email",
@@ -242,14 +242,14 @@ export default {
     intro_body: [
       "Interpretiamo il real estate come una strategia di allocazione del capitale di lungo periodo, selezionando solo opportunità in grado di preservare e accrescere il valore nel tempo.",
       "La nostra attività si concentra su asset residenziali di alta qualità, concepiti sia come immobili a uso privato sia come investimenti strutturati all'interno di una più ampia strategia di diversificazione.",
-      "Grazie a un'esperienza consolidata nella ricerca, nello sviluppo e nella gestione di operazioni complesse, seguiamo l'intero ciclo di vita — dall'acquisizione e fattibilità fino allo sviluppo e all'asset management di lungo termine.",
+      "Grazie a un'esperienza consolidata nella ricerca, nello sviluppo e nella gestione di operazioni complesse, seguiamo l'intero ciclo di vita, dall'acquisizione e fattibilità fino allo sviluppo e all'asset management di lungo termine.",
       "Ogni decisione è guidata da un rigoroso framework tecnico e finanziario, che garantisce trasparenza, controllo e coerenza tra risultati attesi e risultati effettivi."
     ],
 
     sardegna_eyebrow: "Regione",
     sardegna_title: "Sardegna",
     sardegna_body: [
-      "La Costa Smeralda — tra le aree più prestigiose e a offerta limitata del Mediterraneo, tra cui Porto Cervo, Porto Rotondo, Palau e Cannigione — rappresenta un segmento unico in cui rarità e complessità normativa incidono direttamente sul valore.",
+      "La Costa Smeralda, tra le aree più prestigiose e a offerta limitata del Mediterraneo, tra cui Porto Cervo, Porto Rotondo, Palau e Cannigione, rappresenta un segmento unico in cui rarità e complessità normativa incidono direttamente sul valore.",
       "Operiamo in un mercato guidato dalla selettività più che dai volumi, dove ogni sviluppo è definito molto prima dell'inizio dei lavori.",
       "La nostra presenza è completata da una pipeline in crescita nel nord della Sardegna, inclusa Costa Paradiso, dove stiamo avviando nuove operazioni allineate alla nostra strategia di investimento e sviluppo di lungo periodo."
     ],
@@ -261,7 +261,7 @@ export default {
     palau_brief_eyebrow: "Brief operazione",
     palau_brief_title: "Cinque ville premium, affacciate su Barrabisa.",
     palau_brief_body: [
-      "Un masterplan residenziale lungo la costa esposta al vento della Sardegna settentrionale, affacciato su uno dei paesaggi più distintivi del Mediterraneo. L'architettura è contenuta, radicata nei materiali e nelle proporzioni locali — pensata per appartenere al luogo piuttosto che per impressionare.",
+      "Un masterplan residenziale lungo la costa esposta al vento della Sardegna settentrionale, affacciato su uno dei paesaggi più distintivi del Mediterraneo. L'architettura è contenuta, radicata nei materiali e nelle proporzioni locali, pensata per appartenere al luogo piuttosto che per impressionare.",
       "Il sito si affaccia direttamente sull'Isola dei Gabbiani, riconosciuta internazionalmente per la costanza dei venti e come una delle destinazioni più consolidate in Europa per il windsurf e il kitesurf.",
       "Ogni villa è concepita come unità indipendente con giardino privato, piscina e vista mare senza ostacoli.",
       "L'operazione è strutturata per investitori italiani e internazionali attraverso un veicolo SPV dedicato, con impegno di capitale definito ed esecuzione per fasi.",
@@ -278,7 +278,7 @@ export default {
     ],
     palau_feature_eyebrow: "Metodo",
     palau_feature_quote: "Un'operazione strutturata attraverso il controllo tecnico.",
-    palau_feature_body: "La validazione tecnica inizia già in fase di fattibilità — vincoli paesaggistici, struttura dei costi, tempistiche autorizzative e quadro fiscale. L'analisi comparativa di mercato e la modellazione finanziaria (ROI, scenari di sensitività) sono parte integrante dell'operazione, non assunzioni esterne.",
+    palau_feature_body: "La validazione tecnica inizia già in fase di fattibilità, vincoli paesaggistici, struttura dei costi, tempistiche autorizzative e quadro fiscale. L'analisi comparativa di mercato e la modellazione finanziaria (ROI, scenari di sensitività) sono parte integrante dell'operazione, non assunzioni esterne.",
     palau_gallery_eyebrow: "Galleria",
     palau_gallery_captions: [
       "Integrazione del masterplan nel terreno naturale",
@@ -296,7 +296,7 @@ export default {
     costa_paradiso_brief_body: [
       "Costa Paradiso, sulla costa nord della Sardegna, è un tratto di litorale tutelato e di forte riconoscibilità, legato da tempo al cinema italiano. Michelangelo Antonioni aveva qui la sua residenza, condivisa con Monica Vitti, e questo paesaggio è entrato nella memoria visiva del Paese.",
       "La costa è segnata anche da una delle architetture sperimentali più distintive del Novecento italiano: La Cupola, progettata da Dante Bini, ancora oggi una delle residenze private più riconoscibili dell'isola.",
-      "La nostra presenza in zona è oggi definita da due lotti edificabili in portafoglio — aree ancora da sviluppare, nella stessa cornice di fattibilità, progetto e disciplina del capitale che governa l'operazione di Palau."
+      "La nostra presenza in zona è oggi definita da due lotti edificabili in portafoglio, aree ancora da sviluppare, nella stessa cornice di fattibilità, progetto e disciplina del capitale che governa l'operazione di Palau."
     ],
     costa_paradiso_specs_label: "Scheda operazione",
     costa_paradiso_specs_items: [
@@ -313,7 +313,7 @@ export default {
       "Costa di granito al tramonto",
       "Caletta riparata · paesaggio tutelato"
     ],
-    costa_paradiso_closing: "Due lotti detenuti in un paesaggio costiero tutelato — una posizione paziente in un mercato dove scarsità e vincoli normativi definiscono il valore.",
+    costa_paradiso_closing: "Due lotti detenuti in un paesaggio costiero tutelato, una posizione paziente in un mercato dove scarsità e vincoli normativi definiscono il valore.",
 
     cta_eyebrow: "Informazioni riservate",
     cta_title: "Scheda tecnica e business plan su richiesta.",
@@ -328,7 +328,7 @@ export default {
     intro_eyebrow: "Metodo",
     intro_title: "Prima di sviluppare un investimento, l'ingegneria decide.",
     intro_body: [
-      "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa — da restauri storici a strutture sanitarie — ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
+      "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa, da restauri storici a strutture sanitarie, ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
     ],
     categories_eyebrow: "Portfolio",
     categories_title: "Settori di intervento",

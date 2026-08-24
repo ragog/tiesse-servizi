@@ -15,4 +15,4 @@ featured: false
 order: 3
 ---
 
-Intervento di riqualificazione energetica su edificio residenziale a Bologna. Il pacchetto tecnico — cappotto termico, nuovi infissi e impianto solare termico — è stato dimensionato per massimizzare il salto di classe energetica e il rendimento degli incentivi fiscali applicabili.
+Intervento di riqualificazione energetica su edificio residenziale a Bologna. Il pacchetto tecnico, cappotto termico, nuovi infissi e impianto solare termico, è stato dimensionato per massimizzare il salto di classe energetica e il rendimento degli incentivi fiscali applicabili.

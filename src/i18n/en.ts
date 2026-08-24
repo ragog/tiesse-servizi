@@ -1,5 +1,5 @@
 export default {
-  site_title: "Tiesse Servizi | Real Estate Investment, Built on Engineering — Tiesse Group",
+  site_title: "Tiesse Servizi | Real Estate Investment, Built on Engineering, Tiesse Group",
   nav: {
     home: "Home",
     about: "About",
@@ -11,9 +11,9 @@ export default {
   hero: {
     eyebrow: "Real Estate · Engineering · Investment",
     subtitle: "We build value.",
-    body: "We engineer and manage real estate investments — from cost control and design to delivery and long-term value.",
+    body: "We engineer and manage real estate investments, from cost control and design to delivery and long-term value.",
     trust: "Independent. Structured. Aligned with investors.",
-    description: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001, we deliver residential real-estate operations with engineering rigor — from feasibility to handover.",
+    description: "Tiesse Servizi is the operating company of Tiesse Group. Since 2001, we deliver residential real-estate operations with engineering rigor, from feasibility to handover.",
     cta_text: "View current operations"
   },
   key_facts: {
@@ -28,8 +28,8 @@ export default {
     eyebrow: "About",
     title: "An engineering-led platform for premium residential real estate.",
     points: [
-      "Tiesse Servizi partners with developers, investment funds, banks and private investors across the full lifecycle of a residential operation — technical, legal and financial.",
-      "We are engineers first, not intermediaries. Every operation is structured with specialist technical oversight, giving investors precise control over timelines, costs and quality — from feasibility to handover.",
+      "Tiesse Servizi partners with developers, investment funds, banks and private investors across the full lifecycle of a residential operation, technical, legal and financial.",
+      "We are engineers first, not intermediaries. Every operation is structured with specialist technical oversight, giving investors precise control over timelines, costs and quality, from feasibility to handover.",
       "We translate the complexity of construction into a governable process. That reduces operational and financial risk, simplifies stakeholder coordination, and protects capital at every stage."
     ]
   },
@@ -37,7 +37,7 @@ export default {
     about_eyebrow: "About",
     about_title: "We think like engineers. We act like investors.",
     about_body: [
-      "We originate and manage real estate investments with full technical and financial control — from land acquisition to exit.",
+      "We originate and manage real estate investments with full technical and financial control, from land acquisition to exit.",
       "Every decision is driven by feasibility, cost discipline and long-term capital preservation."
     ],
     about_closing: "No assumptions. No surprises. Just controlled execution.",
@@ -60,7 +60,7 @@ export default {
     bio: [
       "Civil engineer with a Master's degree from the Università di Bologna. Co-owner of Tiesse Servizi since 2001 and founder of Tiesse Group.",
       "I approach real estate with an engineer's discipline: technical feasibility first, financial commitment second. My background spans structural design, construction management and site supervision across complex commercial and residential developments in Central and Northern Italy.",
-      "That foundation drives how we structure and execute real estate investments — with full lifecycle control from land acquisition to handover, aligned with the investor's objectives at every phase."
+      "That foundation drives how we structure and execute real estate investments, with full lifecycle control from land acquisition to handover, aligned with the investor's objectives at every phase."
     ],
     linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/",
     linkedin_label: "Connect on LinkedIn",
@@ -93,7 +93,7 @@ export default {
     title: "We guide international investors into Italy's premium real-estate market.",
     titleBreak: "INVEST IN<br/>ITALY",
     intro: "A concrete way to allocate capital in an iconic setting, with engineering control and full transparency at every stage.",
-    description: "Sardinia, the Mediterranean islands and selected Italian territories rank among the world's most sought-after destinations for quality of life, cultural heritage and long-term real-estate appreciation — a sector that has proven resilient across cycles.",
+    description: "Sardinia, the Mediterranean islands and selected Italian territories rank among the world's most sought-after destinations for quality of life, cultural heritage and long-term real-estate appreciation, a sector that has proven resilient across cycles.",
     subtitle: "Through Tiesse, investors can:",
     points: [
       "Access premium properties in iconic locations",
@@ -113,7 +113,7 @@ export default {
       "Land search, architectural design, and construction",
       "Escrow account or SPV dedicated to the investment",
       "Certified monthly reports and financial forecasts",
-      "Market analysis using MCA – Market Comparison Approach",
+      "Market analysis using MCA (Market Comparison Approach)",
       "Business plan with return study (ROI and sensitivity)",
       "Exit strategy: tourism/rental management and/or future resale"
     ]
@@ -126,7 +126,7 @@ export default {
   news: {
     eyebrow: "Insights",
     title: "Latest insights.",
-    subtitle: "Operations, construction sites and market thinking — straight from the field.",
+    subtitle: "Operations, construction sites and market thinking, straight from the field.",
     linkedin_cta: "Follow on LinkedIn",
     linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
@@ -134,7 +134,7 @@ export default {
         date: "06/2026",
         category: "Group",
         title: "Tiesse Group opens its US office in Beverly Hills",
-        description: "468 N Camden Dr, Beverly Hills — a new base to serve US-based investors looking to allocate capital into premium Italian real estate.",
+        description: "468 N Camden Dr, Beverly Hills, a new base to serve US-based investors looking to allocate capital into premium Italian real estate.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
       {
@@ -163,7 +163,7 @@ export default {
   partners: {
     eyebrow: "Partners",
     title: "Selected partners.",
-    body: "We operate inside a network of institutional players — banks, investment funds, construction firms, international real-estate networks and private capital.",
+    body: "We operate inside a network of institutional players: banks, investment funds, construction firms, international real-estate networks and private capital.",
     // Three pillars of every operation. Partner logos live inside the right
     // pillar. To add a partner: drop the logo file in public/partners/ and add
     // a line to that group's "logos" array. url is optional (partner website).
@@ -200,7 +200,7 @@ export default {
   contatti: {
     eyebrow: "Contact",
     title: "Start a conversation about your next operation.",
-    subtitle: "Every project begins with a conversation. Share your goals and timeline — we'll respond within 48 hours.",
+    subtitle: "Every project begins with a conversation. Share your goals and timeline, we'll respond within 48 hours.",
     form: {
       name: "Name",
       email: "Email",
@@ -241,14 +241,14 @@ export default {
     intro_body: [
       "We approach real estate as a long-term capital allocation strategy, selecting only opportunities that can preserve and grow value over time.",
       "Our activity focuses on high-quality residential assets, conceived both as private use properties and as structured investment operations within a broader diversification strategy.",
-      "With years of experience in sourcing, developing and managing complex projects, we oversee the entire lifecycle — from acquisition and feasibility to development and long-term asset management.",
+      "With years of experience in sourcing, developing and managing complex projects, we oversee the entire lifecycle, from acquisition and feasibility to development and long-term asset management.",
       "Each operation is structured through dedicated vehicles and transparent financial frameworks, ensuring control over capital deployment, execution and risk management throughout the entire process."
     ],
 
     sardegna_eyebrow: "Region",
     sardegna_title: "Sardinia",
     sardegna_body: [
-      "The Costa Smeralda — among the most prestigious and supply-constrained areas in the Mediterranean, including Porto Cervo, Porto Rotondo, Palau and Cannigione — represents a unique segment where scarcity and regulatory complexity directly influence value.",
+      "The Costa Smeralda, among the most prestigious and supply-constrained areas in the Mediterranean, including Porto Cervo, Porto Rotondo, Palau and Cannigione, represents a unique segment where scarcity and regulatory complexity directly influence value.",
       "We operate in a market driven by selectivity rather than volume, where each development is defined long before construction begins.",
       "Our presence is complemented by a growing pipeline in northern Sardinia, including Costa Paradiso, where we are initiating new operations aligned with our long-term investment and development strategy."
     ],
@@ -260,7 +260,7 @@ export default {
     palau_brief_eyebrow: "Operation brief",
     palau_brief_title: "Five premium villas overlooking Barrabisa.",
     palau_brief_body: [
-      "A residential masterplan set along the wind-exposed coastline of northern Sardinia, overlooking one of the most distinctive landscapes in the Mediterranean. Architecture is restrained, grounded in local materials and proportion — designed to belong rather than to impress.",
+      "A residential masterplan set along the wind-exposed coastline of northern Sardinia, overlooking one of the most distinctive landscapes in the Mediterranean. Architecture is restrained, grounded in local materials and proportion, designed to belong rather than to impress.",
       "The site directly faces the Isola dei Gabbiani, internationally recognized for its constant winds and as one of Europe's most established windsurf and kitesurf destinations.",
       "Each villa is conceived as an independent unit with private garden, pool, and unobstructed sea views.",
       "The operation is structured for Italian and international investors through a defined SPV framework, controlled capital deployment and milestone-based execution.",
@@ -277,7 +277,7 @@ export default {
     ],
     palau_feature_eyebrow: "Method",
     palau_feature_quote: "An investment structured through engineering discipline.",
-    palau_feature_body: "Technical validation begins at feasibility stage — including landscape constraints, cost structure, permitting timelines and fiscal framework. Market comparison analysis and financial modeling (ROI, sensitivity scenarios) are embedded within the operation, not treated as external assumptions.",
+    palau_feature_body: "Technical validation begins at feasibility stage, including landscape constraints, cost structure, permitting timelines and fiscal framework. Market comparison analysis and financial modeling (ROI, sensitivity scenarios) are embedded within the operation, not treated as external assumptions.",
     palau_gallery_eyebrow: "Gallery",
     palau_gallery_captions: [
       "Masterplan integration within natural terrain",
@@ -293,9 +293,9 @@ export default {
     costa_paradiso_brief_eyebrow: "Operation brief",
     costa_paradiso_brief_title: "A storied stretch of the north coast.",
     costa_paradiso_brief_body: [
-      "Costa Paradiso sits on Sardinia's northern coast — a protected, granite-cut stretch long tied to the cultural footprint of Italian cinema. Michelangelo Antonioni kept his residence here, shared with Monica Vitti, and the area entered the visual memory of the country.",
+      "Costa Paradiso sits on Sardinia's northern coast, a protected, granite-cut stretch long tied to the cultural footprint of Italian cinema. Michelangelo Antonioni kept his residence here, shared with Monica Vitti, and the area entered the visual memory of the country.",
       "The coastline is also marked by one of the most distinctive pieces of Italian experimental architecture: La Cupola, designed by Dante Bini, still one of the most recognisable private houses on the island.",
-      "Our current presence in the area is defined by two building lots held in portfolio — plots still to be developed, under the same framework of feasibility, design and capital discipline that shapes our Palau operation."
+      "Our current presence in the area is defined by two building lots held in portfolio, plots still to be developed, under the same framework of feasibility, design and capital discipline that shapes our Palau operation."
     ],
     costa_paradiso_specs_label: "Operation file",
     costa_paradiso_specs_items: [
@@ -312,7 +312,7 @@ export default {
       "Granite coastline at sunset",
       "Sheltered cove · protected landscape"
     ],
-    costa_paradiso_closing: "Two lots held in a protected coastal landscape — a patient position in a market where scarcity and regulatory constraint define value.",
+    costa_paradiso_closing: "Two lots held in a protected coastal landscape, a patient position in a market where scarcity and regulatory constraint define value.",
 
     cta_eyebrow: "Confidential information",
     cta_title: "Technical file and business plan on request.",
@@ -327,7 +327,7 @@ export default {
     intro_eyebrow: "Method",
     intro_title: "Before developing an investment, engineering decides.",
     intro_body: [
-      "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission — from historic renovations to healthcare facilities — refined our ability to evaluate costs, risks and development potential."
+      "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission, from historic renovations to healthcare facilities, refined our ability to evaluate costs, risks and development potential."
     ],
     categories_eyebrow: "Portfolio",
     categories_title: "Project sectors",

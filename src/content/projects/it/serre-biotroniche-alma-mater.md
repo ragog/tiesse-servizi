@@ -6,7 +6,7 @@ year: 2024
 category: "public-sector"
 coverImage: "../_images/serre-biotroniche-alma-mater/cover.webp"
 specs:
-  client: "Alma Mater Studiorum — Università di Bologna"
+  client: "Alma Mater Studiorum, Università di Bologna"
   features:
     - "Serre biotroniche per ricerca scientifica"
     - "Controllo climatico e impianti specialistici"

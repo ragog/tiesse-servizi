@@ -15,4 +15,4 @@ featured: false
 order: 3
 ---
 
-Energy retrofit of a residential building in Bologna. The technical package — external insulation, new windows, and solar thermal — was sized to maximise the energy-class upgrade and the fiscal incentive yield available under Italian legislation.
+Energy retrofit of a residential building in Bologna. The technical package, external insulation, new windows, and solar thermal, was sized to maximise the energy-class upgrade and the fiscal incentive yield available under Italian legislation.

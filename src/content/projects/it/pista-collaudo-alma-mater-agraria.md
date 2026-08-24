@@ -6,7 +6,7 @@ year: 2024
 category: "public-sector"
 coverImage: "../_images/pista-collaudo-alma-mater-agraria/cover.webp"
 specs:
-  client: "Alma Mater Studiorum — Università di Bologna"
+  client: "Alma Mater Studiorum, Università di Bologna"
   features:
     - "Pista di collaudo per macchine agricole"
     - "Infrastruttura tecnica per il Dipartimento di Agraria"
