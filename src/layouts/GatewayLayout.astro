@@ -54,14 +54,30 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 	</head>
 
 	<body class="overflow-x-hidden">
-		<main class="gateway relative w-full min-h-screen overflow-hidden bg-[#0D2417]">
+		<main class="gateway">
+
+			<!-- Testata: fascia in cima sul telefono, sovrimpressione da tablet in su -->
+			<header class="gw-header">
+				<!-- Marchio scontornato su trasparenza: appoggiato sul verde non fa
+				     il "quadrato incollato", e attraversa la diagonale senza stonare. -->
+				<img src="/img/tiesse-group-mark-white.png" alt="Tiesse Group"
+				     class="h-14 w-14 md:h-[4.5rem] md:w-[4.5rem] object-contain mx-auto mb-3 md:mb-5" />
+				<p class="text-[10px] md:text-xs tracking-[0.35em] uppercase text-white/50">{g.eyebrow}</p>
+				<p class="mt-2 text-[11px] md:text-sm font-light tracking-wide text-white/80">{g.tagline}</p>
+			</header>
+
+			<!-- Selettore lingua -->
+			<a href={otherLocaleUrl} class="gw-lang">{g.lang_label}</a>
+
+			<div class="gw-split">
 
 			<!-- LEFT / TOP — Tiesse Servizi -->
-			<a href={leftHref} class="gw-side gw-left group absolute inset-0 bg-[#004719]">
+			<a href={leftHref} class="gw-side gw-left group bg-[#004719]">
 				<div class="gw-inner">
 					<!-- Nessun marchio: quello del gruppo sta in alto, uno solo per tutta la pagina.
-					     Lo spazio resta riservato per tenere i due lati allineati. -->
-					<div class="h-16 w-16 md:h-20 md:w-20 mb-7 md:mb-9" aria-hidden="true"></div>
+					     Da tablet in su lo spazio resta riservato per tenere i due lati allineati;
+					     sul telefono i due blocchi sono impilati e non serve, quindi si toglie. -->
+					<div class="hidden md:block md:h-20 md:w-20 md:mb-9" aria-hidden="true"></div>
 					<div class="gw-head text-3xl md:text-4xl lg:text-5xl">
 						<div class="font-bold tracking-tight leading-none">
 							<span class="text-white">{g.left.name_strong}</span><span class="text-[#8BC34A]">{g.left.name_accent}</span>
@@ -76,10 +92,10 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 
 			<!-- RIGHT / BOTTOM — CT Investing Capital.
 			     NON cliccabile finché la pagina non è finita: è un <div>, non un <a>. -->
-			<div class="gw-side gw-right absolute inset-0 bg-[#0D2417] overflow-hidden">
+			<div class="gw-side gw-right bg-[#0D2417] overflow-hidden">
 				<div class="gw-inner">
 					<img src="/img/ct-investing-capital-logo.svg" alt="CT Investing Capital"
-					     class="h-16 w-16 md:h-20 md:w-20 rounded-sm mb-7 md:mb-9 ring-1 ring-[#C9A227]/25" />
+					     class="gw-badge h-16 w-16 md:h-20 md:w-20 rounded-sm mb-7 md:mb-9 ring-1 ring-[#C9A227]/25" />
 					<div class="gw-head text-3xl md:text-4xl lg:text-5xl">
 						<div class="font-bold tracking-tight leading-none">
 							<span class="text-white">{g.right.name_strong}</span><span class="text-[#C9A227]">{g.right.name_accent}</span>
@@ -87,36 +103,71 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 					</div>
 					<p class="mt-4 md:mt-5 text-sm md:text-base font-light text-white/70">{g.right.line}</p>
 					<p class="mt-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.right.meta}</p>
+					<!-- Occupa lo spazio del richiamo che il lato sinistro ha e questo no,
+					     così i due blocchi affiancati restano centrati alla stessa altezza.
+					     Sul telefono sono impilati: non serve, e ruberebbe spazio. -->
+					<span class="gw-cta hidden md:inline-block invisible md:text-xs" aria-hidden="true">·</span>
 				</div>
 			</div>
 
-			<!-- Header: brand + tagline (non cliccabile, non copre i due lati) -->
-			<header class="absolute top-0 left-0 right-0 z-20 pointer-events-none px-6 pt-7 md:pt-9 text-center">
-				<!-- Marchio scontornato su trasparenza: appoggiato sul verde non fa
-				     il "quadrato incollato", e attraversa la diagonale senza stonare. -->
-				<img src="/img/tiesse-group-mark-white.png" alt="Tiesse Group"
-				     class="h-16 w-16 md:h-[4.5rem] md:w-[4.5rem] object-contain mx-auto mb-4 md:mb-5" />
-				<p class="text-[10px] md:text-xs tracking-[0.35em] uppercase text-white/50">{g.eyebrow}</p>
-				<p class="mt-2 text-[11px] md:text-sm font-light tracking-wide text-white/80">{g.tagline}</p>
-			</header>
-
-			<!-- Selettore lingua -->
-			<a href={otherLocaleUrl}
-			   class="absolute top-6 right-6 md:top-8 md:right-8 z-30 text-[11px] md:text-xs tracking-[0.2em] uppercase font-semibold text-white/60 hover:text-white transition-colors">
-				{g.lang_label}
-			</a>
-
 			<!-- Città -->
-			<footer class="absolute bottom-0 left-0 right-0 z-20 pointer-events-none px-6 pb-7 md:pb-9 text-center">
+			<footer class="gw-cities">
 				<p class="text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.cities}</p>
 			</footer>
+
+			</div><!-- /gw-split -->
 		</main>
 
 		<style>
-			.gw-side {
+			/* ── Impianto ─────────────────────────────────────────────────
+			   Telefono: la testata è una fascia in cima, in flusso normale, e il
+			   bivio si spartisce l'altezza che avanza. Così le scritte non possono
+			   finire sotto la testata, qualunque sia l'altezza dello schermo.
+			   Da tablet in su la testata torna in sovrimpressione sui due lati. */
+
+			.gateway {
+				position: relative;
 				display: flex;
-				align-items: center;
-				justify-content: center;
+				flex-direction: column;
+				min-height: 100vh;
+				background: #0D2417;
+			}
+
+			.gw-header {
+				position: relative;
+				z-index: 20;
+				flex: 0 0 auto;
+				text-align: center;
+				padding: 1.75rem 1.5rem 1.25rem;
+				background: #004719;   /* uguale al lato Tiesse Servizi: la fascia si fonde col blocco sotto */
+			}
+
+			.gw-lang {
+				position: absolute;
+				top: 1.5rem;
+				right: 1.5rem;
+				z-index: 30;
+				font-size: 11px;
+				font-weight: 600;
+				letter-spacing: 0.2em;
+				text-transform: uppercase;
+				color: rgb(255 255 255 / 0.6);
+				text-decoration: none;
+				transition: color 0.3s ease;
+			}
+			.gw-lang:hover { color: #fff; }
+
+			.gw-split {
+				position: relative;
+				flex: 1 1 auto;
+				/* Sotto questa soglia i due blocchi si toccherebbero: meglio far
+				   scorrere di poco la pagina che accavallare le scritte. */
+				min-height: 36rem;
+			}
+
+			.gw-side {
+				position: absolute;
+				inset: 0;
 				text-decoration: none;
 				transition: filter 0.35s ease;
 			}
@@ -124,6 +175,9 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 			a.gw-side:hover { filter: brightness(1.14); }
 
 			.gw-inner {
+				position: absolute;
+				left: 0;
+				right: 0;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -132,14 +186,30 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 				/* min() e non 26rem secco: su un telefono da 390px un blocco
 				   da 416px sborderebbe a destra. */
 				max-width: min(26rem, 100%);
+				margin: 0 auto;
+			}
+
+			.gw-cities {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 20;
+				pointer-events: none;
+				padding: 0 1.5rem 1.75rem;
+				text-align: center;
 			}
 
 			/* Riserva l'altezza del blocco nome + sottotitolo su entrambi i lati:
 			   a sinistra il nome sta su una riga con la scritta sotto, a destra
 			   va a capo su due righe. Così tutto quello che segue resta allineato,
 			   e la scritta "A Tiesse Group Company" sale sotto al nome.
-			   La misura è in em del nome, quindi segue i tre corpi del testo. */
-			.gw-head { min-height: 2.55em; }
+			   La misura è in em del nome, quindi segue i tre corpi del testo.
+			   Serve solo da tablet in su: sul telefono i blocchi sono impilati,
+			   non c'è niente da allineare e quello spazio è solo ingombro. */
+			@media (min-width: 768px) {
+				.gw-head { min-height: 2.55em; }
+			}
 
 			.gw-cta {
 				margin-top: 1.75rem;
@@ -150,16 +220,42 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 			}
 			.gw-side:hover .gw-cta { opacity: 1; }
 
-			/* Mobile: taglio diagonale orizzontale, i due lati impilati.
-			   Il padding confina il contenuto nella propria metà, così i due
-			   blocchi non si sovrappongono a cavallo della diagonale. */
-			.gw-left  { clip-path: polygon(0 0, 100% 0, 100% 46%, 0 54%); padding-bottom: 50vh; }
-			.gw-right { clip-path: polygon(0 54%, 100% 46%, 100% 100%, 0 100%); padding-top: 50vh; }
+			/* Telefono: taglio diagonale orizzontale, i due blocchi impilati.
+			   Ognuno è centrato in un quarto dell'area del bivio, quindi resta
+			   nella propria metà senza toccare né la diagonale né le città. */
+			.gw-left  { clip-path: polygon(0 0, 100% 0, 100% 46%, 0 54%); }
+			.gw-right { clip-path: polygon(0 54%, 100% 46%, 100% 100%, 0 100%); }
+			.gw-left  .gw-inner { top: 23%; transform: translateY(-50%); }
+			.gw-right .gw-inner { top: 74%; transform: translateY(-50%); }
 
-			/* Desktop: taglio diagonale verticale, i due lati affiancati */
+			/* Schermi molto piccoli (iPhone SE e simili): scala ridotta, così i due
+			   blocchi stanno nelle loro metà senza allungare la pagina per tutti. */
+			@media (max-width: 380px) {
+				.gw-header { padding-top: 1.25rem; padding-bottom: 1rem; }
+				.gw-head { font-size: 1.5rem; }
+				.gw-badge { height: 3.25rem; width: 3.25rem; margin-bottom: 1.25rem; }
+				.gw-cta { margin-top: 1.25rem; }
+			}
+
+			/* Da tablet in su: testata in sovrimpressione e taglio verticale */
 			@media (min-width: 768px) {
-				.gw-left  { clip-path: polygon(0 0, 52% 0, 44% 100%, 0 100%); padding: 0 54% 0 0; }
-				.gw-right { clip-path: polygon(52% 0, 100% 0, 100% 100%, 44% 100%); padding: 0 0 0 54%; }
+				.gw-header {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					background: transparent;
+					pointer-events: none;
+					padding: 2.25rem 1.5rem 0;
+				}
+				.gw-lang { top: 2rem; right: 2rem; font-size: 12px; }
+				.gw-split { min-height: 100vh; }
+				.gw-cities { padding-bottom: 2.25rem; }
+
+				.gw-left  { clip-path: polygon(0 0, 52% 0, 44% 100%, 0 100%); }
+				.gw-right { clip-path: polygon(52% 0, 100% 0, 100% 100%, 44% 100%); }
+				.gw-left  .gw-inner { top: 50%; left: 0; right: 54%; transform: translateY(-50%); }
+				.gw-right .gw-inner { top: 50%; left: 54%; right: 0; transform: translateY(-50%); }
 			}
 		</style>
 	</body>
