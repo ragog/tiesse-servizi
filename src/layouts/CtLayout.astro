@@ -1,0 +1,186 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  content: any;
+  locale: 'it' | 'en';
+}
+
+const { content, locale } = Astro.props;
+const ct = content.ct;
+
+const gatewayHref = locale === 'it' ? '/it' : '/';
+const tiesseHref = locale === 'it' ? '/it/tiesse-servizi' : '/tiesse-servizi';
+const otherLocaleUrl = locale === 'it' ? '/ct-investing-capital' : '/it/ct-investing-capital';
+const langLabel = locale === 'it' ? 'EN' : 'IT';
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
+const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.url.origin).toString();
+---
+
+<html lang={locale}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalUrl} />
+		<!-- Pagina non finita: fuori dai motori di ricerca finché non è pronta.
+		     Da togliere insieme al collegamento dal bivio. -->
+		<meta name="robots" content="noindex, nofollow" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<title>{ct.page_title}</title>
+		<meta name="description" content={ct.page_description} />
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFJ9MYKT92"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-GFJ9MYKT92');
+		</script>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Tiesse Group" />
+		<meta property="og:locale" content={locale === 'it' ? 'it_IT' : 'en_US'} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={ct.page_title} />
+		<meta property="og:description" content={ct.page_description} />
+		<meta property="og:image" content={socialImage} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={ct.page_title} />
+		<meta name="twitter:description" content={ct.page_description} />
+		<meta name="twitter:image" content={socialImage} />
+	</head>
+
+	<body class="overflow-x-hidden bg-[#0D2417] text-white">
+
+		<!-- Barra in alto -->
+		<header class="fixed top-0 left-0 right-0 z-50 bg-[#0D2417]/95 backdrop-blur-sm border-b border-white/10">
+			<div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between gap-4 py-3">
+
+					<a href={gatewayHref} class="flex items-center gap-3 min-w-0">
+						<img src="/img/ct-investing-capital-logo.svg" alt="CT Investing Capital"
+						     class="h-10 w-10 sm:h-11 sm:w-11 rounded-sm flex-shrink-0 ring-1 ring-[#C9A227]/25" />
+						<span class="text-sm sm:text-lg font-bold tracking-tight leading-none min-w-0">
+							<span class="text-white">{ct.name_strong}</span><span class="text-[#C9A227]">{ct.name_accent}</span>
+						</span>
+					</a>
+
+					<div class="flex items-center gap-4 sm:gap-6 flex-shrink-0">
+						<a href={gatewayHref}
+						   class="hidden sm:inline text-[11px] tracking-[0.2em] uppercase text-white/50 hover:text-white transition-colors">
+							{ct.nav_back}
+						</a>
+						<a href={otherLocaleUrl}
+						   class="text-[11px] tracking-[0.2em] uppercase font-semibold text-white/60 hover:text-white transition-colors">
+							{langLabel}
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- Apertura: stessa struttura della hero di Tiesse Servizi.
+		     La foto e' /img/ct-hero.jpg — per cambiarla basta sostituire quel file,
+		     non serve toccare questo layout. Ora c'e' un fondo provvisorio. -->
+		<section class="relative h-screen min-h-[620px] flex items-center overflow-hidden">
+			<div class="absolute inset-0 z-0">
+				<img src="/img/ct-hero.jpg" alt="" class="w-full h-full object-cover" />
+				<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/20"></div>
+				<div class="ct-wedge absolute inset-0"></div>
+			</div>
+
+			<div class="relative z-10 w-full pl-5 sm:pl-10 md:pl-16 lg:pl-24 pr-4 -mt-6 md:-mt-14">
+				<div class="max-w-md md:max-w-lg lg:max-w-xl">
+					<p class="text-[10px] md:text-sm tracking-[0.3em] uppercase text-white/60 mb-6">{ct.hero_eyebrow}</p>
+					<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-tight mb-8 md:mb-10">
+						{ct.hero_title}
+					</h1>
+					<p class="text-base md:text-lg text-white/80 font-light leading-relaxed mb-6">{ct.hero_intro}</p>
+					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[#C9A227]">{ct.status}</p>
+				</div>
+			</div>
+
+			<div class="absolute bottom-7 md:bottom-8 left-5 sm:left-10 md:left-16 lg:left-24 right-5 z-10">
+				<p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/45">{ct.cities}</p>
+			</div>
+		</section>
+
+		<!-- Capitoli -->
+		{ct.sections.map((s: { num: string; eyebrow: string; title: string; body: string[] }) => (
+			<section class="py-16 sm:py-20 md:py-32 border-b border-white/10">
+				<div class="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16">
+					<div class="grid md:grid-cols-12 gap-8 md:gap-16 items-start">
+						<div class="md:col-span-7">
+							<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[#C9A227]/70 mb-6 md:mb-10">
+								{s.num} · {s.eyebrow}
+							</p>
+							<h2 class="text-2xl sm:text-3xl md:text-5xl font-light leading-tight tracking-tight">
+								{s.title}
+							</h2>
+						</div>
+						<div class="md:col-span-5 space-y-4 md:space-y-5">
+							{s.body.map((p: string) => (
+								<p class="text-base md:text-lg leading-[1.6] font-light text-white/60">{p}</p>
+							))}
+						</div>
+					</div>
+				</div>
+			</section>
+		))}
+
+		<!-- Chiusura -->
+		<section class="py-20 sm:py-24 md:py-36">
+			<div class="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 text-center">
+				<h2 class="text-2xl sm:text-3xl md:text-4xl font-light leading-tight tracking-tight">
+					{ct.closing_title}
+				</h2>
+				<p class="mt-6 text-base md:text-lg font-light leading-relaxed text-white/60 max-w-xl mx-auto">
+					{ct.closing_body}
+				</p>
+				<a href={tiesseHref}
+				   class="inline-block mt-10 text-[10px] md:text-xs tracking-[0.25em] uppercase text-[#C9A227] border-b border-[#C9A227]/40 hover:border-[#C9A227] pb-1.5 transition-colors">
+					{ct.closing_cta}
+				</a>
+			</div>
+		</section>
+
+		<!-- Fondo pagina -->
+		<footer class="border-t border-white/10 py-10 md:py-12">
+			<div class="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
+				<p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/35">{ct.cities}</p>
+				<a href={gatewayHref}
+				   class="text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/45 hover:text-white transition-colors">
+					{ct.back}
+				</a>
+			</div>
+		</footer>
+
+		<style>
+			/* Il cuneo verde sopra la foto, come nella hero di Tiesse Servizi.
+			   Su telefono niente taglio: una velatura piena da sinistra, altrimenti
+			   il testo finirebbe sopra la parte chiara della foto. */
+			.ct-wedge {
+				background: linear-gradient(
+					to right,
+					rgba(13, 36, 23, 0.95) 0%,
+					rgba(13, 36, 23, 0.88) 50%,
+					rgba(13, 36, 23, 0.30) 100%
+				);
+			}
+
+			@media (min-width: 768px) {
+				.ct-wedge {
+					background: linear-gradient(160deg, #10301C 0%, #0B2013 100%);
+					clip-path: polygon(0 0, 52% 0, 40% 100%, 0 100%);
+				}
+			}
+		</style>
+	</body>
+</html>

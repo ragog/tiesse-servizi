@@ -1,0 +1,8 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import { getTranslations } from '../i18n';
+
+const content = getTranslations('en');
+---
+
+<MainLayout content={content} locale="en" />

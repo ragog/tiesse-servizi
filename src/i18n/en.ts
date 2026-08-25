@@ -371,5 +371,87 @@ export default {
     specs_year: "Year",
     specs_location: "Location",
     specs_category: "Sector"
+  },
+  gateway: {
+    page_title: "Tiesse Group | Real Estate Investment, Built on Engineering",
+    page_description: "Tiesse Group brings together Tiesse Servizi, engineering and development since 2001, and CT Investing Capital, the branch dedicated to real estate investment.",
+    eyebrow: "Tiesse Group",
+    tagline: "Real Estate Investment, Built on Engineering",
+    left: {
+      name_strong: "TIESSE",
+      name_accent: "SERVIZI",
+      sub: "A Tiesse Group Company",
+      line: "Engineering and development",
+      meta: "Since 2001",
+      cta: "Enter"
+    },
+    right: {
+      name_strong: "CT",
+      name_accent: "INVESTING CAPITAL",
+      line: "Real estate investment",
+      meta: "Coming soon",
+      cta: "Discover"
+    },
+    cities: "Bologna (Italy) · Los Angeles (USA) · Dubai (UAE)",
+    lang_label: "IT"
+  },
+  ct: {
+    page_title: "CT Investing Capital | Tiesse Group",
+    page_description: "CT Investing Capital is the Tiesse Group branch dedicated to real estate investment.",
+    eyebrow: "Tiesse Group",
+    name_strong: "CT",
+    name_accent: "INVESTING CAPITAL",
+    status: "Coming soon",
+    back: "Back",
+    nav_back: "Tiesse Group",
+
+    hero_eyebrow: "Vision · Future · Value",
+    hero_title: "We anticipate value.",
+    hero_intro: "CT Investing Capital was born from a way of looking at a changing world: cities that transform, ways of living that get rewritten, places that come to matter again. It is the Tiesse Group branch that recognises beauty before it becomes obvious, and carries it through to value.",
+
+    sections: [
+      {
+        num: "01",
+        eyebrow: "Vision",
+        title: "Where we are going",
+        body: [
+          "Chapter to be completed.",
+          "This is where the vision of CT Investing Capital goes: what kind of operations we want to run, over what horizon, and what sets us apart from those who read real estate as a number alone."
+        ]
+      },
+      {
+        num: "02",
+        eyebrow: "Approach",
+        title: "How we read an operation",
+        body: [
+          "Chapter to be completed.",
+          "This is where the method goes: how an opportunity is selected, how technical feasibility is verified before anything else, how cost and time are controlled throughout."
+        ]
+      },
+      {
+        num: "03",
+        eyebrow: "Where we look",
+        title: "Bologna, Los Angeles, Dubai",
+        body: [
+          "Chapter to be completed.",
+          "This is where the markets go, and the reason for each one: what we look for in Italy, what in the United States, what in the Emirates."
+        ]
+      },
+      {
+        num: "04",
+        eyebrow: "The group",
+        title: "Inside Tiesse Group",
+        body: [
+          "Chapter to be completed.",
+          "This is where the relationship with the rest of the group goes: what Tiesse Servizi brings with its technical structure, and how the two sides work on the same operation."
+        ]
+      }
+    ],
+
+    closing_title: "We are building this page.",
+    closing_body: "The content is in preparation. In the meantime you can enter the technical side of the group.",
+    closing_cta: "Go to Tiesse Servizi",
+
+    cities: "Bologna (Italy) · Los Angeles (USA) · Dubai (UAE)"
   }
 };

@@ -1,0 +1,166 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  content: any;
+  locale: 'it' | 'en';
+}
+
+const { content, locale } = Astro.props;
+const g = content.gateway;
+
+const leftHref = locale === 'it' ? '/it/tiesse-servizi' : '/tiesse-servizi';
+const rightHref = locale === 'it' ? '/it/ct-investing-capital' : '/ct-investing-capital';
+const otherLocaleUrl = locale === 'it' ? '/' : '/it';
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
+const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.url.origin).toString();
+---
+
+<html lang={locale}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<title>{g.page_title}</title>
+		<meta name="description" content={g.page_description} />
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFJ9MYKT92"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-GFJ9MYKT92');
+		</script>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Tiesse Group" />
+		<meta property="og:locale" content={locale === 'it' ? 'it_IT' : 'en_US'} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={g.page_title} />
+		<meta property="og:description" content={g.page_description} />
+		<meta property="og:image" content={socialImage} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={g.page_title} />
+		<meta name="twitter:description" content={g.page_description} />
+		<meta name="twitter:image" content={socialImage} />
+	</head>
+
+	<body class="overflow-x-hidden">
+		<main class="gateway relative w-full min-h-screen overflow-hidden bg-[#0D2417]">
+
+			<!-- LEFT / TOP — Tiesse Servizi -->
+			<a href={leftHref} class="gw-side gw-left group absolute inset-0 bg-[#004719]">
+				<div class="gw-inner">
+					<!-- Nessun marchio: quello del gruppo sta in alto, uno solo per tutta la pagina.
+					     Lo spazio resta riservato per tenere i due lati allineati. -->
+					<div class="h-16 w-16 md:h-20 md:w-20 mb-7 md:mb-9" aria-hidden="true"></div>
+					<div class="gw-head text-3xl md:text-4xl lg:text-5xl">
+						<div class="font-bold tracking-tight leading-none">
+							<span class="text-white">{g.left.name_strong}</span><span class="text-[#8BC34A]">{g.left.name_accent}</span>
+						</div>
+						<p class="mt-3 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/50">{g.left.sub}</p>
+					</div>
+					<p class="mt-4 md:mt-5 text-sm md:text-base font-light text-white/70">{g.left.line}</p>
+					<p class="mt-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.left.meta}</p>
+					<span class="gw-cta text-[10px] md:text-xs tracking-[0.25em] uppercase text-[#8BC34A]">{g.left.cta}</span>
+				</div>
+			</a>
+
+			<!-- RIGHT / BOTTOM — CT Investing Capital.
+			     NON cliccabile finché la pagina non è finita: è un <div>, non un <a>. -->
+			<div class="gw-side gw-right absolute inset-0 bg-[#0D2417] overflow-hidden">
+				<div class="gw-inner">
+					<img src="/img/ct-investing-capital-logo.svg" alt="CT Investing Capital"
+					     class="h-16 w-16 md:h-20 md:w-20 rounded-sm mb-7 md:mb-9 ring-1 ring-[#C9A227]/25" />
+					<div class="gw-head text-3xl md:text-4xl lg:text-5xl">
+						<div class="font-bold tracking-tight leading-none">
+							<span class="text-white">{g.right.name_strong}</span><span class="text-[#C9A227]">{g.right.name_accent}</span>
+						</div>
+					</div>
+					<p class="mt-4 md:mt-5 text-sm md:text-base font-light text-white/70">{g.right.line}</p>
+					<p class="mt-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.right.meta}</p>
+				</div>
+			</div>
+
+			<!-- Header: brand + tagline (non cliccabile, non copre i due lati) -->
+			<header class="absolute top-0 left-0 right-0 z-20 pointer-events-none px-6 pt-7 md:pt-9 text-center">
+				<!-- Marchio scontornato su trasparenza: appoggiato sul verde non fa
+				     il "quadrato incollato", e attraversa la diagonale senza stonare. -->
+				<img src="/img/tiesse-group-mark-white.png" alt="Tiesse Group"
+				     class="h-16 w-16 md:h-[4.5rem] md:w-[4.5rem] object-contain mx-auto mb-4 md:mb-5" />
+				<p class="text-[10px] md:text-xs tracking-[0.35em] uppercase text-white/50">{g.eyebrow}</p>
+				<p class="mt-2 text-[11px] md:text-sm font-light tracking-wide text-white/80">{g.tagline}</p>
+			</header>
+
+			<!-- Selettore lingua -->
+			<a href={otherLocaleUrl}
+			   class="absolute top-6 right-6 md:top-8 md:right-8 z-30 text-[11px] md:text-xs tracking-[0.2em] uppercase font-semibold text-white/60 hover:text-white transition-colors">
+				{g.lang_label}
+			</a>
+
+			<!-- Città -->
+			<footer class="absolute bottom-0 left-0 right-0 z-20 pointer-events-none px-6 pb-7 md:pb-9 text-center">
+				<p class="text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.cities}</p>
+			</footer>
+		</main>
+
+		<style>
+			.gw-side {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				transition: filter 0.35s ease;
+			}
+			/* Solo il lato cliccabile si illumina al passaggio del mouse */
+			a.gw-side:hover { filter: brightness(1.14); }
+
+			.gw-inner {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				padding: 0 1.25rem;
+				/* min() e non 26rem secco: su un telefono da 390px un blocco
+				   da 416px sborderebbe a destra. */
+				max-width: min(26rem, 100%);
+			}
+
+			/* Riserva l'altezza del blocco nome + sottotitolo su entrambi i lati:
+			   a sinistra il nome sta su una riga con la scritta sotto, a destra
+			   va a capo su due righe. Così tutto quello che segue resta allineato,
+			   e la scritta "A Tiesse Group Company" sale sotto al nome.
+			   La misura è in em del nome, quindi segue i tre corpi del testo. */
+			.gw-head { min-height: 2.55em; }
+
+			.gw-cta {
+				margin-top: 1.75rem;
+				padding-bottom: 0.4rem;
+				border-bottom: 1px solid currentColor;
+				opacity: 0.55;
+				transition: opacity 0.3s ease;
+			}
+			.gw-side:hover .gw-cta { opacity: 1; }
+
+			/* Mobile: taglio diagonale orizzontale, i due lati impilati.
+			   Il padding confina il contenuto nella propria metà, così i due
+			   blocchi non si sovrappongono a cavallo della diagonale. */
+			.gw-left  { clip-path: polygon(0 0, 100% 0, 100% 46%, 0 54%); padding-bottom: 50vh; }
+			.gw-right { clip-path: polygon(0 54%, 100% 46%, 100% 100%, 0 100%); padding-top: 50vh; }
+
+			/* Desktop: taglio diagonale verticale, i due lati affiancati */
+			@media (min-width: 768px) {
+				.gw-left  { clip-path: polygon(0 0, 52% 0, 44% 100%, 0 100%); padding: 0 54% 0 0; }
+				.gw-right { clip-path: polygon(52% 0, 100% 0, 100% 100%, 44% 100%); padding: 0 0 0 54%; }
+			}
+		</style>
+	</body>
+</html>

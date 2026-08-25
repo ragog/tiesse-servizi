@@ -372,5 +372,87 @@ export default {
     specs_year: "Anno",
     specs_location: "Luogo",
     specs_category: "Settore"
+  },
+  gateway: {
+    page_title: "Tiesse Group | Real Estate Investment, Built on Engineering",
+    page_description: "Tiesse Group riunisce Tiesse Servizi, ingegneria e sviluppo dal 2001, e CT Investing Capital, il ramo dedicato all'investimento immobiliare.",
+    eyebrow: "Tiesse Group",
+    tagline: "Real Estate Investment, Built on Engineering",
+    left: {
+      name_strong: "TIESSE",
+      name_accent: "SERVIZI",
+      sub: "A Tiesse Group Company",
+      line: "Ingegneria e sviluppo",
+      meta: "Dal 2001",
+      cta: "Entra"
+    },
+    right: {
+      name_strong: "CT",
+      name_accent: "INVESTING CAPITAL",
+      line: "Investimento immobiliare",
+      meta: "In arrivo",
+      cta: "Scopri"
+    },
+    cities: "Bologna (Italia) · Los Angeles (USA) · Dubai (EAU)",
+    lang_label: "EN"
+  },
+  ct: {
+    page_title: "CT Investing Capital | Tiesse Group",
+    page_description: "CT Investing Capital è il ramo di Tiesse Group dedicato all'investimento immobiliare.",
+    eyebrow: "Tiesse Group",
+    name_strong: "CT",
+    name_accent: "INVESTING CAPITAL",
+    status: "In arrivo",
+    back: "Torna indietro",
+    nav_back: "Tiesse Group",
+
+    hero_eyebrow: "Visione · Futuro · Valore",
+    hero_title: "Anticipiamo il valore.",
+    hero_intro: "CT Investing Capital nasce da uno sguardo sul mondo che cambia: città che si trasformano, modi di abitare che si riscrivono, luoghi che tornano a contare. È il ramo di Tiesse Group che riconosce il bello prima che sia evidente, e lo accompagna a diventare valore.",
+
+    sections: [
+      {
+        num: "01",
+        eyebrow: "Visione",
+        title: "Dove vogliamo arrivare",
+        body: [
+          "Capitolo da completare.",
+          "Qui va la visione di CT Investing Capital: che tipo di operazioni vogliamo fare, con che orizzonte temporale, e cosa ci distingue da chi guarda l'immobiliare solo come numero."
+        ]
+      },
+      {
+        num: "02",
+        eyebrow: "Approccio",
+        title: "Come leggiamo un'operazione",
+        body: [
+          "Capitolo da completare.",
+          "Qui va il metodo: come si seleziona un'opportunità, come si verifica la fattibilità tecnica prima di ogni altra cosa, come si controllano costi e tempi lungo tutta l'operazione."
+        ]
+      },
+      {
+        num: "03",
+        eyebrow: "Dove guardiamo",
+        title: "Bologna, Los Angeles, Dubai",
+        body: [
+          "Capitolo da completare.",
+          "Qui vanno i mercati di riferimento e il perché di ciascuno: cosa cerchiamo in Italia, cosa negli Stati Uniti, cosa negli Emirati."
+        ]
+      },
+      {
+        num: "04",
+        eyebrow: "Il gruppo",
+        title: "Dentro Tiesse Group",
+        body: [
+          "Capitolo da completare.",
+          "Qui va il rapporto con il resto del gruppo: cosa porta Tiesse Servizi con la sua struttura tecnica, e come le due parti lavorano sulla stessa operazione."
+        ]
+      }
+    ],
+
+    closing_title: "Stiamo costruendo questa pagina.",
+    closing_body: "I contenuti sono in preparazione. Nel frattempo puoi entrare nella parte tecnica del gruppo.",
+    closing_cta: "Vai a Tiesse Servizi",
+
+    cities: "Bologna (Italia) · Los Angeles (USA) · Dubai (EAU)"
   }
 };

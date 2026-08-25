@@ -16,17 +16,18 @@ const otherLocale = locale === 'it' ? 'en' : 'it';
 const currentPath = Astro.url.pathname;
 const isProjectsPage = currentPath.includes('/progetti') || currentPath.includes('/projects');
 const isRealEstatePage = currentPath.includes('/real-estate');
-const isHome = currentPath === '/' || currentPath === '/it' || currentPath === '/it/';
+const isHome = currentPath === '/tiesse-servizi' || currentPath === '/tiesse-servizi/'
+  || currentPath === '/it/tiesse-servizi' || currentPath === '/it/tiesse-servizi/';
 
-let otherLocaleUrl = locale === 'it' ? '/' : '/it';
+let otherLocaleUrl = locale === 'it' ? '/tiesse-servizi' : '/it/tiesse-servizi';
 if (isProjectsPage) {
   otherLocaleUrl = locale === 'it' ? '/en/projects' : '/progetti';
 } else if (isRealEstatePage) {
   otherLocaleUrl = locale === 'it' ? '/en/real-estate' : '/real-estate';
 }
 
-// Home base path per locale (English is default on /)
-const homeBase = locale === 'it' ? '/it' : '/';
+// Home base path per locale (English is default, no prefix)
+const homeBase = locale === 'it' ? '/it/tiesse-servizi' : '/tiesse-servizi';
 
 // Helper to construct home section links
 function getHomeLink(section: string) {
