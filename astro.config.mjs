@@ -17,10 +17,10 @@ export default defineConfig({
   redirects: {
     '/en': '/tiesse-servizi'
   },
-  // La pagina CT Investing Capital non e' finita: fuori dalla sitemap
+  // La pagina C&T Developments non e' finita: fuori dalla sitemap
   // finche' non viene collegata dal bivio.
   integrations: [sitemap({
-    filter: (page) => !page.includes('ct-investing-capital')
+    filter: (page) => !page.includes('ct-developments')
   })],
   vite: {
     plugins: [tailwindcss()]

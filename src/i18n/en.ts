@@ -374,7 +374,7 @@ export default {
   },
   gateway: {
     page_title: "Tiesse Group | Real Estate Investment, Built on Engineering",
-    page_description: "Tiesse Group brings together Tiesse Servizi, engineering and development since 2001, and CT Investing Capital, the branch dedicated to real estate investment.",
+    page_description: "Tiesse Group brings together Tiesse Servizi, engineering and development since 2001, and C&T Developments, the branch dedicated to real estate investment.",
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Investment, Built on Engineering",
     left: {
@@ -386,9 +386,8 @@ export default {
       cta: "Enter"
     },
     right: {
-      name_strong: "CT",
-      name_accent: "INVESTING CAPITAL",
-      line: "Real estate investment",
+      alt: "C&T Developments",
+      tagline: "Engineering-driven real estate development & investment",
       meta: "Coming soon",
       cta: "Discover"
     },
@@ -396,18 +395,19 @@ export default {
     lang_label: "IT"
   },
   ct: {
-    page_title: "CT Investing Capital | Tiesse Group",
-    page_description: "CT Investing Capital is the Tiesse Group branch dedicated to real estate investment.",
+    page_title: "C&T Developments | Tiesse Group",
+    page_description: "C&T Developments is the Tiesse Group branch dedicated to real estate development and investment.",
     eyebrow: "Tiesse Group",
-    name_strong: "CT",
-    name_accent: "INVESTING CAPITAL",
+    name_strong: "C&T",
+    name_accent: " DEVELOPMENTS",
+    tagline: "Engineering-driven real estate development & investment",
     status: "Coming soon",
     back: "Back",
     nav_back: "Tiesse Group",
 
     hero_eyebrow: "Vision · Future · Value",
     hero_title: "We anticipate value.",
-    hero_intro: "CT Investing Capital was born from a way of looking at a changing world: cities that transform, ways of living that get rewritten, places that come to matter again. It is the Tiesse Group branch that recognises beauty before it becomes obvious, and carries it through to value.",
+    hero_intro: "C&T Developments was born from a way of looking at a changing world: cities that transform, ways of living that get rewritten, places that come to matter again. It is the Tiesse Group branch that recognises beauty before it becomes obvious, and carries it through to value.",
 
     sections: [
       {
@@ -416,7 +416,7 @@ export default {
         title: "Where we are going",
         body: [
           "Chapter to be completed.",
-          "This is where the vision of CT Investing Capital goes: what kind of operations we want to run, over what horizon, and what sets us apart from those who read real estate as a number alone."
+          "This is where the vision of C&T Developments goes: what kind of operations we want to run, over what horizon, and what sets us apart from those who read real estate as a number alone."
         ]
       },
       {

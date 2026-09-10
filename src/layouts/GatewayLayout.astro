@@ -10,7 +10,7 @@ const { content, locale } = Astro.props;
 const g = content.gateway;
 
 const leftHref = locale === 'it' ? '/it/tiesse-servizi' : '/tiesse-servizi';
-const rightHref = locale === 'it' ? '/it/ct-investing-capital' : '/ct-investing-capital';
+const rightHref = locale === 'it' ? '/it/ct-developments' : '/ct-developments';
 const otherLocaleUrl = locale === 'it' ? '/' : '/it';
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
@@ -58,12 +58,13 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 
 			<!-- Testata: fascia in cima sul telefono, sovrimpressione da tablet in su -->
 			<header class="gw-header">
-				<!-- Marchio scontornato su trasparenza: appoggiato sul verde non fa
-				     il "quadrato incollato", e attraversa la diagonale senza stonare. -->
-				<img src="/img/tiesse-group-mark-white.png" alt="Tiesse Group"
-				     class="h-14 w-14 md:h-[4.5rem] md:w-[4.5rem] object-contain mx-auto mb-3 md:mb-5" />
-				<p class="text-[10px] md:text-xs tracking-[0.35em] uppercase text-white/50">{g.eyebrow}</p>
-				<p class="mt-2 text-[11px] md:text-sm font-light tracking-wide text-white/80">{g.tagline}</p>
+				<!-- Blocco unico e compatto: marchio, filo d'oro, riga di descrizione.
+				     Niente occhiello "TIESSE GROUP" sopra la tagline: il nome sta già
+				     dentro il marchio, ripeterlo era quello che sfilacciava la zona.
+				     Il filo d'oro è lo stesso stacco che ha il marchio C&T: li imparenta. -->
+				<img src="/img/tiesse-group-mark.png" alt="Tiesse Group" class="gw-mark" />
+				<span class="gw-rule" aria-hidden="true"></span>
+				<p class="gw-tagline">{g.tagline}</p>
 			</header>
 
 			<!-- Selettore lingua -->
@@ -90,19 +91,18 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 				</div>
 			</a>
 
-			<!-- RIGHT / BOTTOM — CT Investing Capital.
+			<!-- RIGHT / BOTTOM — C&T Developments.
 			     NON cliccabile finché la pagina non è finita: è un <div>, non un <a>. -->
 			<div class="gw-side gw-right bg-[#0D2417] overflow-hidden">
 				<div class="gw-inner">
-					<img src="/img/ct-investing-capital-logo.svg" alt="CT Investing Capital"
-					     class="gw-badge h-16 w-16 md:h-20 md:w-20 rounded-sm mb-7 md:mb-9 ring-1 ring-[#C9A227]/25" />
-					<div class="gw-head text-3xl md:text-4xl lg:text-5xl">
-						<div class="font-bold tracking-tight leading-none">
-							<span class="text-white">{g.right.name_strong}</span><span class="text-[#C9A227]">{g.right.name_accent}</span>
-						</div>
-					</div>
-					<p class="mt-4 md:mt-5 text-sm md:text-base font-light text-white/70">{g.right.line}</p>
-					<p class="mt-2 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.right.meta}</p>
+					<!-- Marchio C&T scontornato su trasparenza: monogramma, nome e filo
+					     d'oro. La riga di descrizione NON è dentro l'immagine, altrimenti
+					     rimpicciolirebbe con lei e diventerebbe illeggibile: è testo vero,
+					     alla stessa misura della riga sotto il marchio Tiesse Group. -->
+					<img src="/img/ct-developments-logo.png" alt={g.right.alt}
+					     class="gw-lockup w-full max-w-[13.5rem] sm:max-w-[17rem] md:max-w-[22rem] h-auto" />
+					<p class="gw-tagline gw-tagline-ct">{g.right.tagline}</p>
+					<p class="mt-4 md:mt-8 text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.right.meta}</p>
 					<!-- Occupa lo spazio del richiamo che il lato sinistro ha e questo no,
 					     così i due blocchi affiancati restano centrati alla stessa altezza.
 					     Sul telefono sono impilati: non serve, e ruberebbe spazio. -->
@@ -138,8 +138,42 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 				z-index: 20;
 				flex: 0 0 auto;
 				text-align: center;
-				padding: 1.75rem 1.5rem 1.25rem;
+				padding: 1.6rem 1.5rem 1.4rem;
 				background: #004719;   /* uguale al lato Tiesse Servizi: la fascia si fonde col blocco sotto */
+			}
+
+			/* Il marchio tiene il suo fondo verde ed è una targa vera: bordo d'oro
+			   sottile e ombra staccata. Così, anche a cavallo della diagonale, si
+			   legge come appoggiato sopra e non come una toppa mal ritagliata. */
+			.gw-mark {
+				display: block;
+				width: 4.5rem;
+				height: 4.5rem;
+				margin: 0 auto;
+				object-fit: cover;
+				border-radius: 3px;
+				box-shadow: 0 0 0 1px rgb(217 199 163 / 0.38), 0 12px 30px rgb(0 0 0 / 0.45);
+			}
+
+			.gw-rule {
+				display: block;
+				width: 3.25rem;
+				height: 1px;
+				margin: 0.95rem auto 0.8rem;
+				background: linear-gradient(to right, transparent, rgb(217 199 163 / 0.8), transparent);
+			}
+
+			.gw-tagline {
+				margin: 0 auto;
+				max-width: 24rem;
+				font-size: 10px;
+				line-height: 1.5;
+				letter-spacing: 0.16em;
+				text-transform: uppercase;
+				color: rgb(255 255 255 / 0.7);
+				/* se proprio deve andare a capo, che spezzi in due righe pari
+				   invece di lasciare una parola sola in fondo */
+				text-wrap: balance;
 			}
 
 			.gw-lang {
@@ -200,15 +234,13 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 				text-align: center;
 			}
 
-			/* Riserva l'altezza del blocco nome + sottotitolo su entrambi i lati:
-			   a sinistra il nome sta su una riga con la scritta sotto, a destra
-			   va a capo su due righe. Così tutto quello che segue resta allineato,
-			   e la scritta "A Tiesse Group Company" sale sotto al nome.
-			   La misura è in em del nome, quindi segue i tre corpi del testo.
-			   Serve solo da tablet in su: sul telefono i blocchi sono impilati,
-			   non c'è niente da allineare e quello spazio è solo ingombro. */
-			@media (min-width: 768px) {
-				.gw-head { min-height: 2.55em; }
+			/* La riga di descrizione del marchio C&T, gemella di quella sotto il
+			   marchio Tiesse Group ma in oro. Sta subito sotto il filo dorato con
+			   cui finisce l'immagine del marchio. */
+			.gw-tagline-ct {
+				margin-top: 0.85rem;
+				color: rgb(217 199 163 / 0.85);
+				max-width: 20rem;
 			}
 
 			.gw-cta {
@@ -233,7 +265,8 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 			@media (max-width: 380px) {
 				.gw-header { padding-top: 1.25rem; padding-bottom: 1rem; }
 				.gw-head { font-size: 1.5rem; }
-				.gw-badge { height: 3.25rem; width: 3.25rem; margin-bottom: 1.25rem; }
+				.gw-lockup { max-width: 10.75rem; }
+				.gw-tagline-ct { margin-top: 0.55rem; }
 				.gw-cta { margin-top: 1.25rem; }
 			}
 
@@ -249,6 +282,12 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 					padding: 2.25rem 1.5rem 0;
 				}
 				.gw-lang { top: 2rem; right: 2rem; font-size: 12px; }
+				.gw-mark { width: 5.25rem; height: 5.25rem; }
+				.gw-rule { width: 4rem; margin: 1.1rem auto 0.9rem; }
+				/* Il blocco si allarga: la riga di descrizione C&T è lunga e dentro
+				   26rem si spezzava lasciando "INVESTMENT" orfano sulla seconda riga. */
+				.gw-inner { max-width: min(32rem, 100%); }
+				.gw-tagline { font-size: 11px; max-width: 32rem; }
 				.gw-split { min-height: 100vh; }
 				.gw-cities { padding-bottom: 2.25rem; }
 

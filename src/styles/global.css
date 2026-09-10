@@ -7,6 +7,11 @@
     --color-dark: #2E2E2E;
     --color-dark-light: #424242;
     --color-light: #F5F5F5;
+    /* Oro del marchio C&T Developments, campionato dall'originale:
+       uno champagne caldo, non un giallo. Usato solo dal bivio e dalla
+       pagina C&T, il sito Tiesse Servizi non lo tocca. */
+    --color-gold: #D9C7A3;
+    --color-gold-deep: #B99B6B;
   }
 
   * {

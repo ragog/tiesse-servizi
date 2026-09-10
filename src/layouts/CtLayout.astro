@@ -11,7 +11,7 @@ const ct = content.ct;
 
 const gatewayHref = locale === 'it' ? '/it' : '/';
 const tiesseHref = locale === 'it' ? '/it/tiesse-servizi' : '/tiesse-servizi';
-const otherLocaleUrl = locale === 'it' ? '/ct-investing-capital' : '/it/ct-investing-capital';
+const otherLocaleUrl = locale === 'it' ? '/ct-developments' : '/it/ct-developments';
 const langLabel = locale === 'it' ? 'EN' : 'IT';
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
@@ -65,10 +65,10 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 				<div class="flex items-center justify-between gap-4 py-3">
 
 					<a href={gatewayHref} class="flex items-center gap-3 min-w-0">
-						<img src="/img/ct-investing-capital-logo.svg" alt="CT Investing Capital"
-						     class="h-10 w-10 sm:h-11 sm:w-11 rounded-sm flex-shrink-0 ring-1 ring-[#C9A227]/25" />
-						<span class="text-sm sm:text-lg font-bold tracking-tight leading-none min-w-0">
-							<span class="text-white">{ct.name_strong}</span><span class="text-[#C9A227]">{ct.name_accent}</span>
+						<img src="/img/ct-developments-mark.png" alt="C&T Developments"
+						     class="h-10 w-10 sm:h-11 sm:w-11 object-contain flex-shrink-0" />
+						<span class="ct-wordmark text-sm sm:text-lg leading-none min-w-0 text-[var(--color-gold)]">
+							{ct.name_strong}{ct.name_accent}
 						</span>
 					</a>
 
@@ -103,7 +103,7 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 						{ct.hero_title}
 					</h1>
 					<p class="text-base md:text-lg text-white/80 font-light leading-relaxed mb-6">{ct.hero_intro}</p>
-					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[#C9A227]">{ct.status}</p>
+					<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[var(--color-gold)]">{ct.status}</p>
 				</div>
 			</div>
 
@@ -118,7 +118,7 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 				<div class="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16">
 					<div class="grid md:grid-cols-12 gap-8 md:gap-16 items-start">
 						<div class="md:col-span-7">
-							<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[#C9A227]/70 mb-6 md:mb-10">
+							<p class="text-[10px] md:text-xs tracking-[0.3em] uppercase text-[var(--color-gold)]/70 mb-6 md:mb-10">
 								{s.num} · {s.eyebrow}
 							</p>
 							<h2 class="text-2xl sm:text-3xl md:text-5xl font-light leading-tight tracking-tight">
@@ -145,7 +145,7 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 					{ct.closing_body}
 				</p>
 				<a href={tiesseHref}
-				   class="inline-block mt-10 text-[10px] md:text-xs tracking-[0.25em] uppercase text-[#C9A227] border-b border-[#C9A227]/40 hover:border-[#C9A227] pb-1.5 transition-colors">
+				   class="inline-block mt-10 text-[10px] md:text-xs tracking-[0.25em] uppercase text-[var(--color-gold)] border-b border-[var(--color-gold)]/40 hover:border-[var(--color-gold)] pb-1.5 transition-colors">
 					{ct.closing_cta}
 				</a>
 			</div>
@@ -154,7 +154,10 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 		<!-- Fondo pagina -->
 		<footer class="border-t border-white/10 py-10 md:py-12">
 			<div class="max-w-7xl mx-auto px-5 sm:px-10 lg:px-16 flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left">
-				<p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/35">{ct.cities}</p>
+				<div>
+					<p class="text-[10px] md:text-xs tracking-[0.2em] uppercase text-[var(--color-gold)]/60">{ct.tagline}</p>
+					<p class="mt-2 text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/35">{ct.cities}</p>
+				</div>
 				<a href={gatewayHref}
 				   class="text-[10px] md:text-xs tracking-[0.25em] uppercase text-white/45 hover:text-white transition-colors">
 					{ct.back}
@@ -163,6 +166,14 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 		</footer>
 
 		<style>
+			/* Il nome ricalca il marchio: graziato e ben spaziato, non Inter grassetto */
+			.ct-wordmark {
+				font-family: Georgia, 'Times New Roman', 'Iowan Old Style', serif;
+				letter-spacing: 0.14em;
+				text-transform: uppercase;
+				white-space: nowrap;
+			}
+
 			/* Il cuneo verde sopra la foto, come nella hero di Tiesse Servizi.
 			   Su telefono niente taglio: una velatura piena da sinistra, altrimenti
 			   il testo finirebbe sopra la parte chiara della foto. */

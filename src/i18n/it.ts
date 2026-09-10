@@ -375,7 +375,7 @@ export default {
   },
   gateway: {
     page_title: "Tiesse Group | Real Estate Investment, Built on Engineering",
-    page_description: "Tiesse Group riunisce Tiesse Servizi, ingegneria e sviluppo dal 2001, e CT Investing Capital, il ramo dedicato all'investimento immobiliare.",
+    page_description: "Tiesse Group riunisce Tiesse Servizi, ingegneria e sviluppo dal 2001, e C&T Developments, il ramo dedicato all'investimento immobiliare.",
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Investment, Built on Engineering",
     left: {
@@ -387,9 +387,8 @@ export default {
       cta: "Entra"
     },
     right: {
-      name_strong: "CT",
-      name_accent: "INVESTING CAPITAL",
-      line: "Investimento immobiliare",
+      alt: "C&T Developments",
+      tagline: "Engineering-driven real estate development & investment",
       meta: "In arrivo",
       cta: "Scopri"
     },
@@ -397,18 +396,19 @@ export default {
     lang_label: "EN"
   },
   ct: {
-    page_title: "CT Investing Capital | Tiesse Group",
-    page_description: "CT Investing Capital è il ramo di Tiesse Group dedicato all'investimento immobiliare.",
+    page_title: "C&T Developments | Tiesse Group",
+    page_description: "C&T Developments è il ramo di Tiesse Group dedicato allo sviluppo e all'investimento immobiliare.",
     eyebrow: "Tiesse Group",
-    name_strong: "CT",
-    name_accent: "INVESTING CAPITAL",
+    name_strong: "C&T",
+    name_accent: " DEVELOPMENTS",
+    tagline: "Sviluppo e investimento immobiliare guidati dall'ingegneria",
     status: "In arrivo",
     back: "Torna indietro",
     nav_back: "Tiesse Group",
 
     hero_eyebrow: "Visione · Futuro · Valore",
     hero_title: "Anticipiamo il valore.",
-    hero_intro: "CT Investing Capital nasce da uno sguardo sul mondo che cambia: città che si trasformano, modi di abitare che si riscrivono, luoghi che tornano a contare. È il ramo di Tiesse Group che riconosce il bello prima che sia evidente, e lo accompagna a diventare valore.",
+    hero_intro: "C&T Developments nasce da uno sguardo sul mondo che cambia: città che si trasformano, modi di abitare che si riscrivono, luoghi che tornano a contare. È il ramo di Tiesse Group che riconosce il bello prima che sia evidente, e lo accompagna a diventare valore.",
 
     sections: [
       {
@@ -417,7 +417,7 @@ export default {
         title: "Dove vogliamo arrivare",
         body: [
           "Capitolo da completare.",
-          "Qui va la visione di CT Investing Capital: che tipo di operazioni vogliamo fare, con che orizzonte temporale, e cosa ci distingue da chi guarda l'immobiliare solo come numero."
+          "Qui va la visione di C&T Developments: che tipo di operazioni vogliamo fare, con che orizzonte temporale, e cosa ci distingue da chi guarda l'immobiliare solo come numero."
         ]
       },
       {
