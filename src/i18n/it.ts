@@ -336,6 +336,10 @@ export default {
     page_description: "Tiesse Group riunisce Tiesse Servizi, ingegneria e sviluppo dal 2001, e C&T Developments, il ramo dedicato all'investimento immobiliare.",
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Development, Built on Engineering",
+    title_html: "Sviluppo immobiliare,<br/><em>fondato sull'ingegneria.</em>",
+    lede: "Due rami, un metodo: l'ingegneria che studia un'operazione è la stessa che la realizza.",
+    left_door: "Progettazione, ingegneria strutturale e direzione lavori. Dal 2001.",
+    right_door: "Sviluppo: troviamo l'opportunità, la portiamo al permesso e la realizziamo.",
     left: {
       name_strong: "TIESSE",
       name_accent: "SERVIZI",

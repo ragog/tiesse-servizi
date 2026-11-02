@@ -55,7 +55,7 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 
 	<!-- APERTURA · la fotografia da sola -->
 	<section class="ct-hero">
-		<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="100vw" loading="eager" />
+		<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="(max-width: 900px) 190vw, 100vw" loading="eager" />
 		<p class="ct-hero-cap">{concepts[0].title}<span>/</span>{concepts[0].place}</p>
 		<div class="ct-scroll"><span>Scroll</span><i></i></div>
 	</section>

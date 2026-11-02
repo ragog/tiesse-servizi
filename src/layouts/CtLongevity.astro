@@ -25,7 +25,7 @@ const langUrls = { it: bases.it + '/longevity', en: bases.en + '/longevity', es:
          title={L.page_title} description={L.page_description} ogImage="/og/longevity.jpg" current="longevity">
 
 	<section class="ct-hero">
-		<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="100vw" loading="eager" />
+		<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="(max-width: 900px) 190vw, 100vw" loading="eager" />
 		<p class="ct-hero-cap">{L.hero_cap_a}<span>/</span>{L.hero_cap_b}</p>
 	</section>
 
@@ -58,7 +58,7 @@ const langUrls = { it: bases.it + '/longevity', en: bases.en + '/longevity', es:
 			</div>
 
 			<figure class="ct-figure" data-reveal>
-				<Image src={spaImg} alt={L.figure_caption} widths={[800, 1200, 1700]} sizes="100vw" />
+				<Image src={spaImg} alt={L.figure_caption} widths={[800, 1200, 1700]} sizes="(max-width: 900px) 190vw, 100vw" />
 				<figcaption>{L.figure_caption}</figcaption>
 			</figure>
 

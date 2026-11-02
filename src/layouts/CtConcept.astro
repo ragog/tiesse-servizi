@@ -76,7 +76,7 @@ const next = visible[(idx + 1) % visible.length];
          ogImage={ogByKey[concept.key] ?? '/og/ct-developments.jpg'} current="concepts">
 
 	<section class="ct-hero">
-		<Image src={set.hero} alt={concept.title} widths={[1000, 1600, 2200]} sizes="100vw" loading="eager" />
+		<Image src={set.hero} alt={concept.title} widths={[1000, 1600, 2200]} sizes="(max-width: 900px) 190vw, 100vw" loading="eager" />
 		<p class="ct-hero-cap">{ct.concepts.label}<span>/</span>{concept.place}</p>
 	</section>
 

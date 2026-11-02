@@ -28,7 +28,7 @@ body.ct {
 .ct-serif { font-family: 'Bodoni Moda', serif; font-weight: 400; }
 
 /* ---------- barra, uguale nei due rami del gruppo ---------- */
-.ct-bar { position: sticky; top: 0; z-index: 40; overflow: hidden; background: rgba(13,36,23,.96); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(217,199,163,.22); color: #fff; }
+.ct-bar { position: sticky; top: 0; z-index: 40; background: rgba(13,36,23,.96); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(217,199,163,.22); color: #fff; }
 .ct-bar-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
 .ct-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; min-width: 0; }
 .ct-brand img { height: 34px; width: 34px; object-fit: contain; flex-shrink: 0; }
@@ -272,4 +272,15 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--ct-gold); outli
 @media (max-width: 820px) {
 	.ct-bar-inner { align-items: flex-start; }
 	.ct-nav a { padding: 10px 0; }
+}
+
+/* ---------- telefono: apertura piu' bassa e niente sovrapposizioni ---------- */
+@media (max-width: 820px) {
+	.ct-hero { height: 62vh; min-height: 380px; }
+	.ct-hero-short { height: 44vh; min-height: 280px; }
+	/* il richiamo a scorrere sparisce: su telefono si scorre e basta,
+	   e finiva sopra la didascalia */
+	.ct-scroll { display: none; }
+	.ct-hero-cap { bottom: 14px; line-height: 1.5; }
+	.ct-nav { padding-right: 4px; }
 }

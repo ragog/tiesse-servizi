@@ -335,6 +335,10 @@ export default {
     page_description: "Tiesse Group brings together Tiesse Servizi, engineering and development since 2001, and C&T Developments, the branch dedicated to real estate investment.",
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Development, Built on Engineering",
+    title_html: "Real estate development,<br/><em>built on engineering.</em>",
+    lede: "Two branches, one method: the engineering that studies an operation is the same that delivers it.",
+    left_door: "Engineering, design and construction management. Since 2001.",
+    right_door: "Development: we find the opportunity, permit it and deliver it.",
     left: {
       name_strong: "TIESSE",
       name_accent: "SERVIZI",

@@ -1,5 +1,12 @@
 ---
+// Il bivio del gruppo: una sola scena, quattro fotografie che si
+// alternano in dissolvenza, e in fondo le due porte dei rami.
 import '../styles/global.css';
+import { Image } from 'astro:assets';
+import coast from '../assets/gateway/coast.webp';
+import engineering from '../assets/gateway/engineering.webp';
+import villa from '../assets/ct/ten-villas-1.webp';
+import spa from '../assets/ct/longevity-1.webp';
 
 interface Props {
   content: any;
@@ -14,7 +21,7 @@ const rightHref = locale === 'it' ? '/it/ct-developments' : '/ct-developments';
 const otherLocaleUrl = locale === 'it' ? '/' : '/it';
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
-const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.url.origin).toString();
+const socialImage = new URL('/og/ct-developments.jpg', Astro.site ?? Astro.url.origin).toString();
 ---
 
 <html lang={locale}>
@@ -27,7 +34,7 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 		<link rel="canonical" href={canonicalUrl} />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 		<title>{g.page_title}</title>
 		<meta name="description" content={g.page_description} />
 
@@ -53,244 +60,80 @@ const socialImage = new URL('/img/tiesse-group-logo.jpeg', Astro.site ?? Astro.u
 		<meta name="twitter:image" content={socialImage} />
 	</head>
 
-	<body class="overflow-x-hidden">
-		<main class="gateway">
+	<body class="gw">
+		<div class="gw-bg">
+			<Image class="gw-img gw-1" src={coast} alt="" widths={[1000, 1600, 2000]} sizes="(max-width: 900px) 190vw, 100vw" loading="eager" />
+			<Image class="gw-img gw-2" src={engineering} alt="" widths={[800, 1200, 1600]} sizes="(max-width: 900px) 190vw, 100vw" />
+			<Image class="gw-img gw-3" src={villa} alt="" widths={[1000, 1600, 2000]} sizes="(max-width: 900px) 190vw, 100vw" />
+			<Image class="gw-img gw-4" src={spa} alt="" widths={[1000, 1600, 2000]} sizes="(max-width: 900px) 190vw, 100vw" />
+		</div>
 
-			<!-- Testata: fascia in cima sul telefono, sovrimpressione da tablet in su -->
-			<header class="gw-header">
-				<!-- Blocco unico e compatto: marchio, filo d'oro, riga di descrizione.
-				     Niente occhiello "TIESSE GROUP" sopra la tagline: il nome sta già
-				     dentro il marchio, ripeterlo era quello che sfilacciava la zona.
-				     Il filo d'oro è lo stesso stacco che ha il marchio C&T: li imparenta. -->
-				<img src="/img/tiesse-group-mark.png" alt="Tiesse Group" class="gw-mark" />
-				<span class="gw-rule" aria-hidden="true"></span>
-				<p class="gw-tagline">{g.tagline}</p>
-			</header>
+		<header class="gw-top">
+			<img src="/img/tiesse-group-mark.png" alt="Tiesse Group" />
+			<a class="gw-lang" href={otherLocaleUrl}>{g.lang_label}</a>
+		</header>
 
-			<!-- Selettore lingua -->
-			<a href={otherLocaleUrl} class="gw-lang">{g.lang_label}</a>
-
-			<div class="gw-split">
-
-			<!-- LEFT / TOP — Tiesse Servizi -->
-			<a href={leftHref} class="gw-side gw-left group bg-[#004719]">
-				<div class="gw-inner">
-					<!-- Nessun marchio: quello del gruppo sta in alto, uno solo per tutta la pagina.
-					     Da tablet in su lo spazio resta riservato per tenere i due lati allineati;
-					     sul telefono i due blocchi sono impilati e non serve, quindi si toglie. -->
-					<div class="hidden md:block md:h-20 md:w-20 md:mb-9" aria-hidden="true"></div>
-					<div class="gw-head text-3xl md:text-4xl lg:text-5xl">
-						<div class="font-bold tracking-tight leading-none">
-							<span class="text-white">{g.left.name_strong}</span><span class="text-[#8BC34A]">{g.left.name_accent}</span>
-						</div>
-						<p class="mt-3 text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/50">{g.left.sub}</p>
-					</div>
-					<p class="mt-4 md:mt-5 text-sm md:text-base font-light text-white/70">{g.left.line}</p>
-					<p class="mt-2 text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.left.meta}</p>
-					<span class="gw-cta text-[11px] md:text-xs tracking-[0.25em] uppercase text-[#8BC34A]">{g.left.cta}</span>
-				</div>
-			</a>
-
-			<!-- RIGHT / BOTTOM — C&T Developments -->
-			<a href={rightHref} class="gw-side gw-right group bg-[#0D2417] overflow-hidden">
-				<div class="gw-inner">
-					<!-- Marchio C&T scontornato su trasparenza: monogramma, nome e filo
-					     d'oro. La riga di descrizione NON è dentro l'immagine, altrimenti
-					     rimpicciolirebbe con lei e diventerebbe illeggibile: è testo vero,
-					     alla stessa misura della riga sotto il marchio Tiesse Group. -->
-					<img src="/img/ct-developments-logo.png" alt={g.right.alt}
-					     class="gw-lockup w-full max-w-[13.5rem] sm:max-w-[17rem] md:max-w-[22rem] h-auto" />
-					<p class="gw-tagline gw-tagline-ct">{g.right.tagline}</p>
-					<span class="gw-cta text-[11px] md:text-xs tracking-[0.25em] uppercase text-[var(--color-gold)]">{g.right.cta}</span>
-				</div>
-			</a>
-
-			<!-- Città -->
-			<footer class="gw-cities">
-				<p class="text-[11px] md:text-xs tracking-[0.25em] uppercase text-white/40">{g.cities}</p>
-			</footer>
-
-			</div><!-- /gw-split -->
+		<main class="gw-mid">
+			<p class="gw-kicker">{g.eyebrow}</p>
+			<h1 set:html={g.title_html}></h1>
+			<p class="gw-lede">{g.lede}</p>
 		</main>
 
-		<style>
-			/* ── Impianto ─────────────────────────────────────────────────
-			   Telefono: la testata è una fascia in cima, in flusso normale, e il
-			   bivio si spartisce l'altezza che avanza. Così le scritte non possono
-			   finire sotto la testata, qualunque sia l'altezza dello schermo.
-			   Da tablet in su la testata torna in sovrimpressione sui due lati. */
+		<nav class="gw-doors">
+			<a href={leftHref}>
+				<span class="gw-door-name">Tiesse Servizi</span>
+				<span class="gw-door-line">{g.left_door}</span>
+				<span class="gw-arrow" aria-hidden="true">&#8594;</span>
+			</a>
+			<a href={rightHref}>
+				<span class="gw-door-name">C&amp;T Developments</span>
+				<span class="gw-door-line">{g.right_door}</span>
+				<span class="gw-arrow" aria-hidden="true">&#8594;</span>
+			</a>
+		</nav>
 
-			.gateway {
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				min-height: 100vh;
-				background: #0D2417;
-			}
+		<footer class="gw-foot">{g.cities}</footer>
 
-			.gw-header {
-				position: relative;
-				z-index: 20;
-				flex: 0 0 auto;
-				text-align: center;
-				padding: 1.6rem 1.5rem 1.4rem;
-				background: #004719;   /* uguale al lato Tiesse Servizi: la fascia si fonde col blocco sotto */
-			}
+		<style is:global>
+			:root { --g-green: #0D2417; --g-gold: #D9C7A3; }
+			html, body { height: 100%; }
+			body.gw { margin: 0; background: var(--g-green); color: #fff; font-family: 'Inter', sans-serif; font-weight: 300;
+				display: flex; flex-direction: column; min-height: 100svh; position: relative; }
 
-			/* Il marchio tiene il suo fondo verde ed è una targa vera: bordo d'oro
-			   sottile e ombra staccata. Così, anche a cavallo della diagonale, si
-			   legge come appoggiato sopra e non come una toppa mal ritagliata. */
-			.gw-mark {
-				display: block;
-				width: 4.5rem;
-				height: 4.5rem;
-				margin: 0 auto;
-				object-fit: cover;
-				border-radius: 3px;
-				box-shadow: 0 0 0 1px rgb(217 199 163 / 0.38), 0 12px 30px rgb(0 0 0 / 0.45);
-			}
+			/* le quattro fotografie, sei secondi ciascuna */
+			.gw-bg { position: fixed; inset: 0; z-index: 0; }
+			.gw-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0;
+				animation: gw-fade 24s cubic-bezier(.4,0,.2,1) infinite; }
+			.gw-1 { animation-delay: 0s; } .gw-2 { animation-delay: 6s; } .gw-3 { animation-delay: 12s; } .gw-4 { animation-delay: 18s; }
+			@keyframes gw-fade { 0% { opacity: 0; transform: scale(1.07); } 4% { opacity: 1; } 21% { opacity: 1; } 27% { opacity: 0; } 100% { opacity: 0; transform: scale(1); } }
+			.gw-bg::after { content: ""; position: absolute; inset: 0; background:
+				linear-gradient(180deg, rgba(13,36,23,.72) 0%, rgba(13,36,23,.42) 34%, rgba(13,36,23,.86) 100%); }
 
-			.gw-rule {
-				display: block;
-				width: 3.25rem;
-				height: 1px;
-				margin: 0.95rem auto 0.8rem;
-				background: linear-gradient(to right, transparent, rgb(217 199 163 / 0.8), transparent);
-			}
-
-			.gw-tagline {
-				margin: 0 auto;
-				max-width: 24rem;
-				font-size: 11px;
-				line-height: 1.5;
-				letter-spacing: 0.16em;
-				text-transform: uppercase;
-				color: rgb(255 255 255 / 0.7);
-				/* se proprio deve andare a capo, che spezzi in due righe pari
-				   invece di lasciare una parola sola in fondo */
-				text-wrap: balance;
-			}
-
-			.gw-lang { padding: 10px 8px; margin: -10px -8px;
-				position: absolute;
-				top: 1.5rem;
-				right: 1.5rem;
-				z-index: 30;
-				font-size: 11px;
-				font-weight: 600;
-				letter-spacing: 0.2em;
-				text-transform: uppercase;
-				color: rgb(255 255 255 / 0.6);
-				text-decoration: none;
-				transition: color 0.3s ease;
-			}
+			.gw-top { position: relative; z-index: 2; display: flex; justify-content: center; padding: 26px 20px 0; }
+			.gw-top img { height: 58px; width: auto; margin: 0 auto; box-shadow: 0 0 0 1px rgb(217 199 163 / .35), 0 12px 30px rgb(0 0 0 / .45); }
+			.gw-lang { position: absolute; right: 16px; top: 18px; padding: 10px 10px; font-size: 12px; letter-spacing: .2em; color: rgba(255,255,255,.75); text-decoration: none; }
 			.gw-lang:hover { color: #fff; }
 
-			.gw-split {
-				position: relative;
-				flex: 1 1 auto;
-				/* Sotto questa soglia i due blocchi si toccherebbero: meglio far
-				   scorrere di poco la pagina che accavallare le scritte. */
-				min-height: 36rem;
-			}
+			.gw-mid { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px clamp(20px, 5vw, 60px); }
+			.gw-kicker { margin: 0 0 18px; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--g-gold); }
+			.gw-mid h1 { margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(30px, 5.4vw, 72px); line-height: 1.08; letter-spacing: -.015em; }
+			.gw-mid h1 em { font-style: italic; color: var(--g-gold); }
+			.gw-lede { margin: 26px 0 0; max-width: 46ch; font-size: clamp(14.5px, 1.2vw, 17px); line-height: 1.6; color: rgba(255,255,255,.86); }
 
-			.gw-side {
-				position: absolute;
-				inset: 0;
-				text-decoration: none;
-				transition: filter 0.35s ease;
-			}
-			/* Solo il lato cliccabile si illumina al passaggio del mouse */
-			a.gw-side:hover { filter: brightness(1.14); }
+			.gw-doors { position: relative; z-index: 2; display: grid; border-top: 1px solid rgba(217,199,163,.28); }
+			@media (min-width: 860px) { .gw-doors { grid-template-columns: 1fr 1fr; } }
+			.gw-doors a { position: relative; display: block; padding: clamp(22px, 2.6vw, 34px) clamp(54px, 5vw, 60px) clamp(22px, 2.6vw, 34px) clamp(20px, 5vw, 60px); text-decoration: none; color: #fff; transition: background-color .5s; }
+			.gw-doors a + a { border-top: 1px solid rgba(217,199,163,.28); }
+			@media (min-width: 860px) { .gw-doors a + a { border-top: 0; border-left: 1px solid rgba(217,199,163,.28); } }
+			.gw-doors a:hover { background: rgba(13,36,23,.72); }
+			.gw-door-name { display: block; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(22px, 2.2vw, 30px); }
+			.gw-door-line { display: block; margin-top: 8px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.78); max-width: 42ch; }
+			.gw-arrow { position: absolute; right: clamp(20px, 5vw, 60px); top: 50%; transform: translateY(-50%); color: var(--g-gold); font-size: 20px; transition: transform .5s; }
+			.gw-doors a:hover .gw-arrow { transform: translateY(-50%) translateX(6px); }
 
-			.gw-inner {
-				position: absolute;
-				left: 0;
-				right: 0;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-				padding: 0 1.25rem;
-				/* min() e non 26rem secco: su un telefono da 390px un blocco
-				   da 416px sborderebbe a destra. */
-				max-width: min(26rem, 100%);
-				margin: 0 auto;
-			}
+			.gw-foot { position: relative; z-index: 2; text-align: center; padding: 16px 20px 20px; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.62); }
 
-			.gw-cities {
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				z-index: 20;
-				pointer-events: none;
-				padding: 0 1.5rem 1.75rem;
-				text-align: center;
-			}
-
-			/* La riga di descrizione del marchio C&T, gemella di quella sotto il
-			   marchio Tiesse Group ma in oro. Sta subito sotto il filo dorato con
-			   cui finisce l'immagine del marchio. */
-			.gw-tagline-ct {
-				margin-top: 0.85rem;
-				color: rgb(217 199 163 / 0.85);
-				max-width: 20rem;
-			}
-
-			.gw-cta {
-				margin-top: 1.75rem;
-				padding-bottom: 0.4rem;
-				border-bottom: 1px solid currentColor;
-				opacity: 0.55;
-				transition: opacity 0.3s ease;
-			}
-			.gw-side:hover .gw-cta { opacity: 1; }
-
-			/* Telefono: taglio diagonale orizzontale, i due blocchi impilati.
-			   Ognuno è centrato in un quarto dell'area del bivio, quindi resta
-			   nella propria metà senza toccare né la diagonale né le città. */
-			.gw-left  { clip-path: polygon(0 0, 100% 0, 100% 46%, 0 54%); }
-			.gw-right { clip-path: polygon(0 54%, 100% 46%, 100% 100%, 0 100%); }
-			.gw-left  .gw-inner { top: 23%; transform: translateY(-50%); }
-			.gw-right .gw-inner { top: 74%; transform: translateY(-50%); }
-
-			/* Schermi molto piccoli (iPhone SE e simili): scala ridotta, così i due
-			   blocchi stanno nelle loro metà senza allungare la pagina per tutti. */
-			@media (max-width: 380px) {
-				.gw-header { padding-top: 1.25rem; padding-bottom: 1rem; }
-				.gw-head { font-size: 1.5rem; }
-				.gw-lockup { max-width: 10.75rem; }
-				.gw-tagline-ct { margin-top: 0.55rem; }
-				.gw-cta { margin-top: 1.25rem; }
-			}
-
-			/* Da tablet in su: testata in sovrimpressione e taglio verticale */
-			@media (min-width: 768px) {
-				.gw-header {
-					position: absolute;
-					top: 0;
-					left: 0;
-					right: 0;
-					background: transparent;
-					pointer-events: none;
-					padding: 2.25rem 1.5rem 0;
-				}
-				.gw-lang { padding: 10px 8px; margin: -10px -8px; top: 2rem; right: 2rem; font-size: 12px; }
-				.gw-mark { width: 5.25rem; height: 5.25rem; }
-				.gw-rule { width: 4rem; margin: 1.1rem auto 0.9rem; }
-				/* Il blocco si allarga: la riga di descrizione C&T è lunga e dentro
-				   26rem si spezzava lasciando "INVESTMENT" orfano sulla seconda riga. */
-				.gw-inner { max-width: min(32rem, 100%); }
-				.gw-tagline { font-size: 11px; max-width: 32rem; }
-				.gw-split { min-height: 100vh; }
-				.gw-cities { padding-bottom: 2.25rem; }
-
-				.gw-left  { clip-path: polygon(0 0, 52% 0, 44% 100%, 0 100%); }
-				.gw-right { clip-path: polygon(52% 0, 100% 0, 100% 100%, 44% 100%); }
-				.gw-left  .gw-inner { top: 50%; left: 0; right: 54%; transform: translateY(-50%); }
-				.gw-right .gw-inner { top: 50%; left: 54%; right: 0; transform: translateY(-50%); }
-			}
+			@media (prefers-reduced-motion: reduce) { .gw-img { animation: none; opacity: 0; } .gw-1 { opacity: 1; } }
 		</style>
 	</body>
 </html>
