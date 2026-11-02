@@ -33,3 +33,4 @@ pnpm-debug.log*
 /chat.html
 /real estate/
 /tmp-hero-options/
+.netlify/

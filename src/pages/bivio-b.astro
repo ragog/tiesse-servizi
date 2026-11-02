@@ -1,0 +1,90 @@
+---
+// BIVIO · PROPOSTA B — "Una fotografia, due porte".
+// Pagina di prova per la scelta. Non collegata, noindex, da cancellare dopo.
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import coast from '../assets/gateway/coast.webp';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Proposta B · Tiesse Group</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="gb">
+		<div class="gb-bg">
+			<Image src={coast} alt="" widths={[1000, 1600, 2000]} sizes="100vw" loading="eager" />
+		</div>
+
+		<header class="gb-top">
+			<img src="/img/tiesse-group-mark.png" alt="Tiesse Group" />
+			<a class="gb-lang" href="/it">IT</a>
+		</header>
+
+		<main class="gb-mid">
+			<p class="gb-kicker">Tiesse Group</p>
+			<h1>Real estate development,<br/><em>built on engineering.</em></h1>
+			<p class="gb-line">Two branches, one method: the engineering that studies an operation is the same that delivers it.</p>
+		</main>
+
+		<nav class="gb-doors">
+			<a href="/tiesse-servizi">
+				<span class="gb-door-name">Tiesse Servizi</span>
+				<span class="gb-door-line">Engineering, design and construction management. Since 2001.</span>
+				<span class="gb-arrow" aria-hidden="true">&#8594;</span>
+			</a>
+			<a href="/ct-developments">
+				<span class="gb-door-name">C&amp;T Developments</span>
+				<span class="gb-door-line">Development: we find it, permit it, deliver it.</span>
+				<span class="gb-arrow" aria-hidden="true">&#8594;</span>
+			</a>
+		</nav>
+
+		<footer class="gb-foot"><span>Bologna</span><i></i><span>Los Angeles</span><i></i><span>Dubai</span></footer>
+
+		<style is:global>
+			:root { --g-green: #0D2417; --g-gold: #D9C7A3; }
+			html, body { height: 100%; }
+			body.gb { margin: 0; background: var(--g-green); color: #fff; font-family: 'Inter', sans-serif; font-weight: 300;
+				display: flex; flex-direction: column; min-height: 100svh; position: relative; }
+
+			.gb-bg { position: fixed; inset: 0; z-index: 0; }
+			.gb-bg img { width: 100%; height: 100%; object-fit: cover; animation: gb-breathe 2.6s cubic-bezier(.16,.84,.32,1) both; }
+			.gb-bg::after { content: ""; position: absolute; inset: 0; background:
+				linear-gradient(180deg, rgba(13,36,23,.72) 0%, rgba(13,36,23,.42) 34%, rgba(13,36,23,.86) 100%); }
+			@keyframes gb-breathe { from { transform: scale(1.06); } to { transform: scale(1); } }
+
+			.gb-top { position: relative; z-index: 2; display: flex; justify-content: center; padding: 26px 20px 0; }
+			.gb-top img { height: 58px; width: auto; margin: 0 auto; box-shadow: 0 0 0 1px rgb(217 199 163 / .35), 0 12px 30px rgb(0 0 0 / .45); }
+			.gb-lang { position: absolute; right: 24px; top: 28px; font-size: 11px; letter-spacing: .2em; color: rgba(255,255,255,.7); text-decoration: none; }
+
+			.gb-mid { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px clamp(20px, 5vw, 60px); }
+			.gb-kicker { margin: 0 0 18px; font-size: 10.5px; letter-spacing: .3em; text-transform: uppercase; color: var(--g-gold); }
+			.gb-mid h1 { margin: 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(30px, 5.4vw, 72px); line-height: 1.08; letter-spacing: -.015em; }
+			.gb-mid h1 em { font-style: italic; color: var(--g-gold); }
+			.gb-line { margin: 26px 0 0; max-width: 46ch; font-size: clamp(14px, 1.2vw, 17px); line-height: 1.6; color: rgba(255,255,255,.82); }
+
+			.gb-doors { position: relative; z-index: 2; display: grid; border-top: 1px solid rgba(217,199,163,.28); }
+			@media (min-width: 860px) { .gb-doors { grid-template-columns: 1fr 1fr; } }
+			.gb-doors a { position: relative; display: block; padding: clamp(22px, 2.6vw, 34px) clamp(20px, 5vw, 60px); text-decoration: none; color: #fff; transition: background-color .5s; }
+			.gb-doors a + a { border-top: 1px solid rgba(217,199,163,.28); }
+			@media (min-width: 860px) { .gb-doors a + a { border-top: 0; border-left: 1px solid rgba(217,199,163,.28); } }
+			.gb-doors a:hover { background: rgba(13,36,23,.72); }
+			.gb-door-name { display: block; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(21px, 2.2vw, 30px); }
+			.gb-door-line { display: block; margin-top: 8px; font-size: 13.5px; line-height: 1.55; color: rgba(255,255,255,.72); max-width: 42ch; }
+			.gb-arrow { position: absolute; right: clamp(20px, 5vw, 60px); top: 50%; transform: translateY(-50%); color: var(--g-gold); font-size: 20px; transition: transform .5s; }
+			.gb-doors a:hover .gb-arrow { transform: translateY(-50%) translateX(6px); }
+
+			.gb-foot { position: relative; z-index: 2; display: flex; justify-content: center; gap: 14px; align-items: center; padding: 16px 20px 20px; font-size: 10.5px; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+			.gb-foot i { width: 3px; height: 3px; border-radius: 50%; background: var(--g-gold); }
+
+			@media (prefers-reduced-motion: reduce) { .gb-bg img { animation: none; } }
+		</style>
+	</body>
+</html>

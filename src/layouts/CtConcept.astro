@@ -1,0 +1,152 @@
+---
+// Fascicolo di un singolo concept. Stesso scheletro per tutti, cosi' si
+// leggono come una serie: foto, titolo, tre dati, il luogo e l'idea,
+// galleria, stato, e il passaggio al concept successivo.
+import { Image } from 'astro:assets';
+import CtShell from './CtShell.astro';
+import six1 from '../assets/ct/six-villas-1.webp';
+import six2 from '../assets/ct/six-villas-2.webp';
+import six3 from '../assets/ct/six-villas-3.webp';
+import six5 from '../assets/ct/six-villas-5.webp';
+import six6 from '../assets/ct/six-villas-6.webp';
+import hotel1 from '../assets/ct/hotel-1.webp';
+import hotel2 from '../assets/ct/hotel-2.webp';
+import ten1 from '../assets/ct/ten-villas-1.webp';
+import ten2 from '../assets/ct/ten-villas-2.webp';
+import ten3 from '../assets/ct/ten-villas-3.webp';
+
+type Lang = 'it' | 'en' | 'es';
+
+interface Concept {
+  key: string;
+  title: string;
+  place: string;
+  body: string;
+  lede?: string;
+  facts?: { label: string; value: string }[];
+  place_title?: string;
+  place_body?: string;
+  idea_title?: string;
+  idea_body?: string[];
+  stage?: string;
+}
+
+interface Props {
+  content: any;
+  locale: Lang;
+  concept: Concept;
+}
+
+const { content, locale, concept } = Astro.props;
+const ct = content.ct;
+
+const bases: Record<Lang, string> = { it: '/it/ct-developments', en: '/ct-developments', es: '/es/ct-developments' };
+const base = bases[locale];
+const langUrls = {
+  it: bases.it + '/concepts/' + concept.key,
+  en: bases.en + '/concepts/' + concept.key,
+  es: bases.es + '/concepts/' + concept.key
+};
+
+// Immagini per concept: la prima apre la pagina, le altre vanno in galleria.
+const images: Record<string, { hero: ImageMetadata; gallery: ImageMetadata[] }> = {
+  // La spa interrata e' fuori finche' il Comune non si esprime sul piano S3.
+  'six-villas': { hero: six2, gallery: [six1, six3, six5, six6] },
+  'hotel': { hero: hotel1, gallery: [hotel2] },
+  'ten-villas': { hero: ten1, gallery: [ten2, ten3] }
+};
+const set = images[concept.key] ?? { hero: six2, gallery: [] };
+
+// Anteprima social: un JPG 1200x630, perche' LinkedIn non mostra il webp.
+const ogByKey: Record<string, string> = {
+  'six-villas': '/og/six-villas.jpg',
+  'hotel': '/og/hotel.jpg',
+  'ten-villas': '/og/ten-villas.jpg'
+};
+
+// Avanti e indietro fra i concept visibili.
+const visible = ct.concepts.items.filter((c: any) => !c.hidden);
+const idx = visible.findIndex((c: any) => c.key === concept.key);
+const prev = visible[(idx - 1 + visible.length) % visible.length];
+const next = visible[(idx + 1) % visible.length];
+---
+
+<CtShell content={content} locale={locale} langUrls={langUrls}
+         title={`${concept.title} | C&T Developments`} description={concept.body}
+         ogImage={ogByKey[concept.key] ?? '/og/ct-developments.jpg'} current="concepts">
+
+	<section class="ct-hero">
+		<Image src={set.hero} alt={concept.title} widths={[1000, 1600, 2200]} sizes="100vw" loading="eager" />
+		<p class="ct-hero-cap">{ct.concepts.label}<span>/</span>{concept.place}</p>
+	</section>
+
+	<section class="ct-title">
+		<div class="ct-wrap">
+			<a class="ct-back" data-reveal href={`${base}/concepts`}>&#8592; {ct.concepts.back}</a>
+			<h1 class="ct-display" data-reveal data-reveal-delay="1">{concept.title}</h1>
+			<div class="ct-hair" data-reveal data-reveal-delay="2"></div>
+			<p class="ct-lede" data-reveal data-reveal-delay="2">{concept.lede ?? concept.body}</p>
+
+			{concept.facts && (
+				<div class="ct-facts" data-reveal data-reveal-delay="3">
+					{concept.facts.map((f) => (
+						<div>
+							<span>{f.label}</span>
+							<strong>{f.value}</strong>
+						</div>
+					))}
+				</div>
+			)}
+		</div>
+	</section>
+
+	<!-- IL LUOGO E L'IDEA -->
+	<section class="ct-band">
+		<div class="ct-wrap ct-two" data-reveal>
+			<div>
+				<h2 class="ct-h2">{concept.place_title}</h2>
+				<p class="ct-sub">{concept.place}</p>
+			</div>
+			<div class="ct-body">
+				<p>{concept.place_body}</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="ct-band ct-band-soft">
+		<div class="ct-wrap">
+			<div class="ct-two" data-reveal>
+				<div><h2 class="ct-h2">{concept.idea_title}</h2></div>
+				<div class="ct-body">
+					{(concept.idea_body ?? [concept.body]).map((p: string) => (<p>{p}</p>))}
+				</div>
+			</div>
+
+			{set.gallery.length > 0 && (
+				<div class="ct-gallery" data-reveal>
+					{set.gallery.map((g: ImageMetadata) => (
+						<Image src={g} alt={concept.title} widths={[500, 800, 1200]} sizes="(max-width:820px) 100vw, 50vw" />
+					))}
+				</div>
+			)}
+
+			<p class="ct-note" data-reveal>{concept.stage}</p>
+		</div>
+	</section>
+
+	<!-- AVANTI E INDIETRO -->
+	<section class="ct-band ct-rule-top" style="padding-top:clamp(36px,4vw,56px);padding-bottom:clamp(36px,4vw,56px)">
+		<div class="ct-wrap ct-prevnext">
+			<a href={`${base}/concepts/${prev.key}`}>
+				<span>&#8592;</span>
+				<strong>{prev.title}</strong>
+			</a>
+			<a href={`${base}/concepts`} class="ct-prevnext-all">{ct.concepts.back}</a>
+			<a href={`${base}/concepts/${next.key}`} class="ct-prevnext-next">
+				<strong>{next.title}</strong>
+				<span>&#8594;</span>
+			</a>
+		</div>
+	</section>
+
+</CtShell>

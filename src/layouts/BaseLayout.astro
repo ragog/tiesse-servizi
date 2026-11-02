@@ -15,15 +15,13 @@ const otherLocale = locale === 'it' ? 'en' : 'it';
 // Smart language switcher - preserve page type
 const currentPath = Astro.url.pathname;
 const isProjectsPage = currentPath.includes('/progetti') || currentPath.includes('/projects');
-const isRealEstatePage = currentPath.includes('/real-estate');
+const isRealEstatePage = currentPath.includes('/ct-developments');
 const isHome = currentPath === '/tiesse-servizi' || currentPath === '/tiesse-servizi/'
   || currentPath === '/it/tiesse-servizi' || currentPath === '/it/tiesse-servizi/';
 
 let otherLocaleUrl = locale === 'it' ? '/tiesse-servizi' : '/it/tiesse-servizi';
 if (isProjectsPage) {
   otherLocaleUrl = locale === 'it' ? '/en/projects' : '/progetti';
-} else if (isRealEstatePage) {
-  otherLocaleUrl = locale === 'it' ? '/en/real-estate' : '/real-estate';
 }
 
 // Home base path per locale (English is default, no prefix)
@@ -91,7 +89,7 @@ const socialImage = new URL(ogImage || '/img/tiesse-group-logo.jpeg', Astro.site
 								<div class="text-xl sm:text-2xl font-bold whitespace-nowrap">
 									<span class="text-gray-900">TIESSE</span><span style="color: var(--color-primary)">SERVIZI</span>
 								</div>
-								<div class="text-[9px] sm:text-[10px] uppercase tracking-widest text-gray-500 mt-0.5 whitespace-nowrap">a Tiesse Group company</div>
+								<div class="text-[10.5px] sm:text-[11px] uppercase tracking-widest text-gray-500 mt-0.5 whitespace-nowrap">{locale === 'it' ? 'marchio Tiesse Group' : 'Tiesse Group brand'}</div>
 							</div>
 						</div>
 					</a>
@@ -110,7 +108,7 @@ const socialImage = new URL(ogImage || '/img/tiesse-group-logo.jpeg', Astro.site
 						   class={`transition-colors text-sm ${isProjectsPage ? 'text-[#8BC34A] font-semibold' : 'text-gray-700 hover:text-[#8BC34A]'}`}>
 							{content.nav.projects}
 						</a>
-						<a href={locale === 'it' ? '/real-estate' : '/en/real-estate'}
+						<a href={locale === 'it' ? '/it/ct-developments' : '/ct-developments'}
 						   class={`transition-colors text-sm ${isRealEstatePage ? 'text-[#8BC34A] font-semibold' : 'text-gray-700 hover:text-[#8BC34A]'}`}>
 							{content.nav.real_estate}
 						</a>
@@ -133,7 +131,7 @@ const socialImage = new URL(ogImage || '/img/tiesse-group-logo.jpeg', Astro.site
 
 					<!-- Mobile Menu Button -->
 					<button id="mobile-menu-button"
-							class="xl:hidden flex items-center text-gray-700 hover:text-[#8BC34A] transition-colors">
+							class="xl:hidden flex items-center -mr-2 p-2 text-gray-700 hover:text-[#8BC34A] transition-colors">
 						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 							<path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
 								  d="M4 6h16M4 12h16M4 18h16"></path>
@@ -161,7 +159,7 @@ const socialImage = new URL(ogImage || '/img/tiesse-group-logo.jpeg', Astro.site
 				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
 					{content.nav.projects}
 				</a>
-				<a href={locale === 'it' ? '/real-estate' : '/en/real-estate'}
+				<a href={locale === 'it' ? '/it/ct-developments' : '/ct-developments'}
 				   class="mobile-menu-link text-gray-700 hover:text-[#8BC34A] transition-colors text-lg py-3 border-b border-gray-200">
 					{content.nav.real_estate}
 				</a>
@@ -225,13 +223,13 @@ const socialImage = new URL(ogImage || '/img/tiesse-group-logo.jpeg', Astro.site
 						<div class="space-y-2 text-sm">
 							<p class="text-gray-400">
 								<span class="font-medium text-white">{content.footer.email_label}:</span><br/>
-								<a href={`mailto:${content.footer.email_value}`} class="hover:text-[#8BC34A] transition-colors">
+								<a href={`mailto:${content.footer.email_value}`} class="inline-block py-1.5 hover:text-[#8BC34A] transition-colors">
 									{content.footer.email_value}
 								</a>
 							</p>
 							<p class="text-gray-400">
 								<span class="font-medium text-white">{content.footer.pec_label}:</span><br/>
-								<a href={`mailto:${content.footer.pec_value}`} class="hover:text-[#8BC34A] transition-colors">
+								<a href={`mailto:${content.footer.pec_value}`} class="inline-block py-1.5 hover:text-[#8BC34A] transition-colors">
 									{content.footer.pec_value}
 								</a>
 							</p>

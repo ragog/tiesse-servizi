@@ -1,0 +1,17 @@
+---
+import CtConcept from '../../../layouts/CtConcept.astro';
+import { getTranslations } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const { getTranslations } = await import('../../../i18n');
+  const c = getTranslations('en');
+  return c.ct.concepts.items
+    .filter((i: any) => !i.hidden)
+    .map((i: any) => ({ params: { slug: i.key }, props: { concept: i } }));
+}
+
+const locale = 'en';
+const content = getTranslations(locale);
+const { concept } = Astro.props;
+---
+<CtConcept content={content} locale={locale} concept={concept} />

@@ -1,0 +1,255 @@
+---
+// PROPOSTA B — "Galleria". Pagina di prova per far scegliere il design ad
+// Angelo. Non e' collegata da nessuna parte e va cancellata dopo la scelta.
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import { getTranslations } from '../i18n';
+
+import heroImg from '../assets/ct/six-villas-2.webp';
+import six1 from '../assets/ct/six-villas-1.webp';
+import hotel1 from '../assets/ct/hotel-1.webp';
+import ten1 from '../assets/ct/ten-villas-1.webp';
+
+const content = getTranslations('en');
+const ct = content.ct;
+const concepts = ct.concepts.items.filter((c: { hidden?: boolean }) => !c.hidden);
+const covers: Record<string, ImageMetadata> = { 'six-villas': six1, 'hotel': hotel1, 'ten-villas': ten1 };
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Proposta B · C&T Developments</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="pb">
+
+		<header class="pb-bar">
+			<div class="pb-wrap pb-bar-inner">
+				<a href="/" class="pb-brand">
+					<img src="/img/ct-developments-mark.png" alt="" />
+					<span>C&amp;T Developments</span>
+				</a>
+				<span class="pb-branch">A Tiesse Group branch</span>
+			</div>
+		</header>
+
+		<!-- HERO · solo fotografia, niente pannello. Il titolo sta sotto, su crema. -->
+		<section class="pb-hero">
+			<Image src={heroImg} alt="" widths={[900, 1400, 2000]} sizes="100vw" />
+			<div class="pb-hero-cap"><span>Six villas</span><span class="pb-sep">/</span><span>Northern Sardinia, near the Costa Smeralda</span></div>
+		</section>
+
+		<section class="pb-title">
+			<div class="pb-wrap">
+				<h1>We anticipate<br/><em>value.</em></h1>
+				<div class="pb-rule"></div>
+				<p class="pb-lede">{ct.hero_lede}</p>
+			</div>
+		</section>
+
+		<!-- MANIFESTO · l'unica banda verde pesante -->
+		<section class="pb-manifesto">
+			<div class="pb-wrap">
+				<p>We develop where scarcity is a matter of <em>permits</em>, not of land. A masterplan, shared spaces, the quality of the whole. Not villas side by side, but a small piece of town.</p>
+			</div>
+		</section>
+
+		<!-- INDICE EDITORIALE · il metodo come tavola numerata -->
+		<section class="pb-index">
+			<div class="pb-wrap">
+				<p class="pb-kicker">Method</p>
+				{ct.approach.steps.map((s: { num: string; title: string; body: string }) => (
+					<div class="pb-row">
+						<span class="pb-row-num">{s.num}</span>
+						<h3>{s.title}</h3>
+						<p>{s.body}</p>
+					</div>
+				))}
+			</div>
+		</section>
+
+		<!-- CONCEPT · immagini grandi, una per riga, con il minimo indispensabile -->
+		<section class="pb-concepts">
+			<div class="pb-wrap pb-concepts-head">
+				<p class="pb-kicker">Concepts in study</p>
+				<p class="pb-concepts-note">{ct.concepts.intro}</p>
+			</div>
+			{concepts.map((c: { key: string; title: string; place: string; body: string }, i: number) => (
+				<a class={`pb-concept ${i % 2 ? 'pb-concept-alt' : ''}`} href="#concepts">
+					<div class="pb-concept-img">
+						<Image src={covers[c.key]} alt={c.title} widths={[700, 1100, 1600]} sizes="(max-width:880px) 100vw, 62vw" />
+					</div>
+					<div class="pb-concept-txt">
+						<h3>{c.title}</h3>
+						<p class="pb-place">{c.place}</p>
+						<p class="pb-concept-body">{c.body}</p>
+						<span class="pb-more">View concept</span>
+					</div>
+				</a>
+			))}
+		</section>
+
+		<!-- DUE GAMBE + CAPITALE · crema, tre colonne strette -->
+		<section class="pb-three">
+			<div class="pb-wrap">
+				<p class="pb-kicker">Where we look</p>
+				<h2 class="pb-h2">Two legs, one method.</h2>
+				<div class="pb-cols">
+					<div><h4>The coast</h4><p>Sardinia, Corsica, Tuscany and the Aeolian Islands. Where planning rules make land scarce and value durable.</p></div>
+					<div><h4>The city</h4><p>Bologna and Emilia-Romagna. Regeneration and reuse of existing buildings, where the risk is technical and our engineering prices it in-house.</p></div>
+					<div><h4>Capital</h4><p>Every operation sits in its own vehicle. Capital commits once the planning risk has been cleared.</p></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GRUPPO · banda verde sottile, solo testo -->
+		<section class="pb-group">
+			<div class="pb-wrap pb-group-inner">
+				<div>
+					<p class="pb-kicker pb-kicker-gold">The group</p>
+					<h2 class="pb-h2 pb-h2-light">Inside Tiesse Group</h2>
+				</div>
+				<div>
+					<p>{ct.group.body[0]}</p>
+					<div class="pb-people">
+						<div><strong>Angelo Matteo Tucci</strong><span>Civil Engineer · Senior Partner · Bologna and Los Angeles</span></div>
+						<div><strong>Ignazio Celardi</strong><span>Structural Engineer · Partner · Dubai</span></div>
+					</div>
+					<a class="pb-link" href="/tiesse-servizi">Go to Tiesse Servizi</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- SEZIONE IN PROVA, NON PUBBLICA. Vive solo in questa pagina di
+		     proposta, che e' noindex e fuori dalla sitemap. Non va portata
+		     nel sito finche' non e' decisa la protezione del marchio. -->
+		<section class="pb-three" style="background:var(--cream-deep)">
+			<div class="pb-wrap">
+				<p class="pb-kicker">Longevity</p>
+				<h2 class="pb-h2">Houses built for a longer life.</h2>
+				<div class="pb-cols">
+				<div><h4>The place</h4><p>Sardinia holds one of the highest concentrations of centenarians in the world, in the inland villages of the centre-east. Researchers have studied this island for twenty years.</p></div>
+				<div><h4>The house</h4><p>Every residence has its own wellness level: gym, sauna and cold room, built in rather than added on.</p></div>
+				<div><h4>The programme</h4><p>Each compound is run to one standard, with a medical director: assessment on arrival, movement, heat and cold, Mediterranean food, sleep.</p></div>
+				</div>
+				<p style="margin-top:34px;font-size:15.5px;line-height:1.7;color:rgba(23,28,24,.68);max-width:60ch"><strong>A format, not a service.</strong> The same standard applies to every compound we develop in the Mediterranean places we select.</p>
+			</div>
+		</section>
+
+		<!-- CHIUSURA · crema, grande e asciutta -->
+		<section class="pb-closing">
+			<div class="pb-wrap">
+				<h2>Start a conversation.</h2>
+				<a class="pb-button" href="mailto:info@tiesseservizi.eu">Write to us</a>
+				<div class="pb-cities"><span>Bologna</span><span>Los Angeles</span><span>Dubai</span></div>
+			</div>
+		</section>
+
+		<footer class="pb-foot">
+			<div class="pb-wrap">
+				<p>C&amp;T Developments is a branch of Tiesse Group.</p>
+				<p class="pb-legal">Tiesse Servizi S.a.s. · VAT 02241091202 · Via Loderingo degli Andalò 5, 40124 Bologna</p>
+			</div>
+		</footer>
+
+		<style is:global>
+			:root {
+				--cream: #FBF8F2;
+				--cream-deep: #F1EBDF;
+				--ink: #171C18;
+				--green: #0D2417;
+				--gold: #B99B6B;
+				--gold-light: #D9C7A3;
+			}
+			body.pb { background: var(--cream); color: var(--ink); font-family: 'Inter', sans-serif; font-weight: 300; }
+			.pb-wrap { max-width: 1240px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 60px); }
+			.pb-kicker { font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-bottom: 26px; }
+			.pb-kicker-gold { color: var(--gold-light); }
+			.pb-h2 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(28px, 3.6vw, 46px); line-height: 1.1; }
+			.pb-h2-light { color: #fff; }
+
+			.pb-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 30; }
+			.pb-bar-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; color: #fff; }
+			.pb-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; font-family: 'Bodoni Moda', serif; font-size: 16px; letter-spacing: .12em; text-transform: uppercase; }
+			.pb-brand img { height: 36px; width: 36px; object-fit: contain; }
+			.pb-branch { font-size: 10px; letter-spacing: .26em; text-transform: uppercase; color: rgba(255,255,255,.6); display: none; }
+			@media (min-width: 720px) { .pb-branch { display: block; } }
+
+			/* hero: la foto e basta */
+			.pb-hero { position: relative; height: 78vh; min-height: 440px; overflow: hidden; background: var(--green); }
+			.pb-hero img { width: 100%; height: 100%; object-fit: cover; }
+			.pb-hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,0) 36%, rgba(0,0,0,.35) 100%); }
+			.pb-hero-cap { position: absolute; left: 0; right: 0; bottom: 20px; z-index: 2; padding: 0 clamp(20px, 5vw, 60px); max-width: 1240px; margin: 0 auto; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.72); display: flex; gap: 10px; flex-wrap: wrap; }
+			.pb-sep { color: var(--gold-light); }
+
+			/* titolo su crema */
+			.pb-title { padding: clamp(50px, 7vw, 96px) 0 clamp(44px, 6vw, 80px); }
+			.pb-title h1 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(44px, 8.4vw, 108px); line-height: .98; letter-spacing: -.015em; }
+			.pb-title h1 em { font-style: italic; color: var(--gold); }
+			.pb-rule { height: 1px; width: 120px; background: var(--gold); margin: 36px 0 26px; }
+			.pb-lede { max-width: 640px; font-size: clamp(16px, 1.45vw, 19px); line-height: 1.6; color: rgba(23,28,24,.7); }
+
+			/* manifesto verde */
+			.pb-manifesto { background: var(--green); color: #fff; padding: clamp(60px, 8vw, 120px) 0; }
+			.pb-manifesto p { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(22px, 3vw, 40px); line-height: 1.32; max-width: 22ch + 20ch; }
+			.pb-manifesto em { font-style: italic; color: var(--gold-light); }
+
+			/* indice metodo */
+			.pb-index { padding: clamp(56px, 7vw, 110px) 0; }
+			.pb-row { display: grid; gap: 10px; padding: 26px 0; border-top: 1px solid rgba(23,28,24,.14); }
+			@media (min-width: 880px) { .pb-row { grid-template-columns: 70px 300px 1fr; gap: 40px; align-items: baseline; } }
+			.pb-row-num { font-family: 'Bodoni Moda', serif; color: var(--gold); font-size: 15px; letter-spacing: .14em; }
+			.pb-row h3 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(21px, 2.2vw, 28px); }
+			.pb-row p { font-size: 15.5px; line-height: 1.7; color: rgba(23,28,24,.68); max-width: 56ch; }
+
+			/* concept a righe piene */
+			.pb-concepts { padding: clamp(56px, 7vw, 100px) 0 clamp(20px, 4vw, 48px); background: var(--cream-deep); }
+			.pb-concepts-head { display: grid; gap: 14px; margin-bottom: 48px; }
+			@media (min-width: 880px) { .pb-concepts-head { grid-template-columns: 1fr 1fr; align-items: end; } }
+			.pb-concepts-note { font-size: 15px; line-height: 1.7; color: rgba(23,28,24,.6); }
+			.pb-concept { display: grid; gap: 26px; text-decoration: none; color: inherit; max-width: 1240px; margin: 0 auto clamp(48px, 6vw, 86px); padding: 0 clamp(20px, 5vw, 60px); }
+			@media (min-width: 880px) { .pb-concept { grid-template-columns: 7fr 4fr; gap: 56px; align-items: center; } .pb-concept-alt .pb-concept-img { order: 2; } }
+			.pb-concept-img { aspect-ratio: 16 / 10; overflow: hidden; }
+			.pb-concept-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s; }
+			.pb-concept:hover .pb-concept-img img { transform: scale(1.03); }
+			.pb-concept-txt h3 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(26px, 3vw, 38px); margin-bottom: 10px; }
+			.pb-place { font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+			.pb-concept-body { font-size: 15.5px; line-height: 1.7; color: rgba(23,28,24,.68); }
+			.pb-more { display: inline-block; margin-top: 20px; font-size: 10.5px; letter-spacing: .22em; text-transform: uppercase; border-bottom: 1px solid var(--gold); padding-bottom: 4px; }
+
+			/* tre colonne */
+			.pb-three { padding: clamp(56px, 7vw, 110px) 0; }
+			.pb-cols { display: grid; gap: 30px; margin-top: 44px; }
+			@media (min-width: 880px) { .pb-cols { grid-template-columns: repeat(3, 1fr); gap: 50px; } }
+			.pb-cols h4 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 21px; margin-bottom: 12px; padding-top: 18px; border-top: 1px solid var(--gold); }
+			.pb-cols p { font-size: 15px; line-height: 1.7; color: rgba(23,28,24,.68); }
+
+			/* gruppo */
+			.pb-group { background: var(--green); color: #fff; padding: clamp(56px, 7vw, 110px) 0; }
+			.pb-group-inner { display: grid; gap: 30px; }
+			@media (min-width: 880px) { .pb-group-inner { grid-template-columns: 5fr 6fr; gap: 80px; } }
+			.pb-group p { font-size: 16px; line-height: 1.72; color: rgba(255,255,255,.66); }
+			.pb-people { display: grid; gap: 16px; margin-top: 28px; }
+			.pb-people div { border-top: 1px solid rgba(255,255,255,.18); padding-top: 12px; display: grid; gap: 5px; }
+			.pb-people strong { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 18px; }
+			.pb-people span { font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+			.pb-link { display: inline-block; margin-top: 24px; font-size: 10.5px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold-light); border-bottom: 1px solid rgba(217,199,163,.45); padding-bottom: 4px; text-decoration: none; }
+
+			/* chiusura */
+			.pb-closing { padding: clamp(64px, 9vw, 130px) 0; text-align: center; }
+			.pb-closing h2 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(32px, 5vw, 62px); margin-bottom: 32px; }
+			.pb-button { display: inline-block; background: var(--green); color: var(--cream); padding: 15px 38px; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; text-decoration: none; }
+			.pb-button:hover { background: var(--gold); color: var(--green); }
+			.pb-cities { margin-top: 40px; display: flex; justify-content: center; gap: 26px; font-size: 10.5px; letter-spacing: .24em; text-transform: uppercase; color: rgba(23,28,24,.45); }
+
+			.pb-foot { border-top: 1px solid rgba(23,28,24,.12); padding: 30px 0; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: rgba(23,28,24,.5); }
+			.pb-legal { text-transform: none; letter-spacing: 0; font-size: 12px; margin-top: 8px; color: rgba(23,28,24,.4); }
+		</style>
+	</body>
+</html>

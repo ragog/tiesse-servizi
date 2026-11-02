@@ -1,0 +1,80 @@
+---
+// Pagina Longevity: vive a se', si raggiunge dalla barra.
+import { Image } from 'astro:assets';
+import CtShell from './CtShell.astro';
+// La costa del Mediterraneo, la stessa fotografia che apre Tiesse Servizi:
+// qui e' il soggetto, perche' il luogo e' il principio attivo.
+import heroImg from '../assets/real-estate/sardinia-hero.jpg';
+import spaImg from '../assets/ct/longevity-1.webp';
+
+type Lang = 'it' | 'en' | 'es';
+
+interface Props {
+  content: any;
+  locale: Lang;
+}
+const { content, locale } = Astro.props;
+const ct = content.ct;
+const L = ct.longevity;
+const bases: Record<Lang, string> = { it: '/it/ct-developments', en: '/ct-developments', es: '/es/ct-developments' };
+const base = bases[locale];
+const langUrls = { it: bases.it + '/longevity', en: bases.en + '/longevity', es: bases.es + '/longevity' };
+---
+
+<CtShell content={content} locale={locale} langUrls={langUrls}
+         title={L.page_title} description={L.page_description} ogImage="/og/longevity.jpg" current="longevity">
+
+	<section class="ct-hero">
+		<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="100vw" loading="eager" />
+		<p class="ct-hero-cap">{L.hero_cap_a}<span>/</span>{L.hero_cap_b}</p>
+	</section>
+
+	<section class="ct-title">
+		<div class="ct-wrap">
+			<a class="ct-back" data-reveal href={base}>&#8592; {ct.name_strong}{ct.name_accent}</a>
+			<h1 class="ct-display" data-reveal data-reveal-delay="1">{L.title} <em>{L.title_em}</em></h1>
+			<div class="ct-hair" data-reveal data-reveal-delay="2"></div>
+			<p class="ct-lede" data-reveal data-reveal-delay="2">{L.lede}</p>
+		</div>
+	</section>
+
+	<section class="ct-manifesto">
+		<div class="ct-wrap">
+			<p>{L.manifesto_a}<em>{L.manifesto_em}</em>{L.manifesto_b}</p>
+		</div>
+	</section>
+
+	<section class="ct-band">
+		<div class="ct-wrap">
+			<div class="ct-two" data-reveal>
+				<div>
+					<h2 class="ct-h2">{L.heading}</h2>
+					<p class="ct-sub">{L.sub}</p>
+				</div>
+				<div class="ct-body">
+					{L.body.map((p: string) => (<p>{p}</p>))}
+					<p><strong>{L.claim_strong}</strong>{L.claim_rest}</p>
+				</div>
+			</div>
+
+			<figure class="ct-figure" data-reveal>
+				<Image src={spaImg} alt={L.figure_caption} widths={[800, 1200, 1700]} sizes="100vw" />
+				<figcaption>{L.figure_caption}</figcaption>
+			</figure>
+
+			<div class="ct-cols" data-reveal>
+				<div>
+					<h3>{L.spa_title}</h3>
+					<ul>{L.spa_items.map((i: string) => (<li>{i}</li>))}</ul>
+				</div>
+				<div>
+					<h3>{L.building_title}</h3>
+					<ul>{L.building_items.map((i: string) => (<li>{i}</li>))}</ul>
+				</div>
+			</div>
+
+			<p class="ct-note" data-reveal><strong>{L.note_strong}</strong>{L.note_rest}</p>
+		</div>
+	</section>
+
+</CtShell>

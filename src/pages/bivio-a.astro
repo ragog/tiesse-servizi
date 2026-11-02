@@ -1,0 +1,95 @@
+---
+// BIVIO · PROPOSTA A — "Due campi fotografici".
+// Pagina di prova per la scelta. Non collegata, noindex, da cancellare dopo.
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import engineering from '../assets/gateway/engineering.webp';
+import development from '../assets/ct/ten-villas-1.webp';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Proposta A · Tiesse Group</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="gw">
+		<header class="gw-top">
+			<img src="/img/tiesse-group-mark.png" alt="Tiesse Group" />
+			<p class="gw-tagline">Real Estate Development, Built on Engineering</p>
+			<a class="gw-lang" href="/it">IT</a>
+		</header>
+
+		<main class="gw-split">
+			<a class="gw-side" href="/tiesse-servizi">
+				<Image class="gw-img" src={engineering} alt="" widths={[700, 1100, 1600]} sizes="50vw" loading="eager" />
+				<span class="gw-veil"></span>
+				<span class="gw-body">
+					<span class="gw-kicker">Engineering</span>
+					<span class="gw-name">Tiesse Servizi</span>
+					<span class="gw-line">Design, structural engineering and construction management. Since 2001.</span>
+					<span class="gw-cta">Enter</span>
+				</span>
+			</a>
+
+			<a class="gw-side gw-side-ct" href="/ct-developments">
+				<Image class="gw-img" src={development} alt="" widths={[700, 1100, 1600]} sizes="50vw" loading="eager" />
+				<span class="gw-veil"></span>
+				<span class="gw-body">
+					<span class="gw-kicker">Development</span>
+					<span class="gw-name">C&amp;T Developments</span>
+					<span class="gw-line">We find the opportunity, take it through permitting and deliver it.</span>
+					<span class="gw-cta">Discover</span>
+				</span>
+			</a>
+		</main>
+
+		<footer class="gw-foot">
+			<span>Bologna</span><i></i><span>Los Angeles</span><i></i><span>Dubai</span>
+		</footer>
+
+		<style is:global>
+			:root { --g-green: #0D2417; --g-gold: #D9C7A3; --g-cream: #F6F2E9; }
+			html, body { height: 100%; }
+			body.gw { margin: 0; background: var(--g-green); color: #fff; font-family: 'Inter', sans-serif; font-weight: 300;
+				display: flex; flex-direction: column; min-height: 100svh; }
+
+			.gw-top { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 22px 20px 18px; }
+			.gw-top img { height: 58px; width: auto; margin: 0 auto; box-shadow: 0 0 0 1px rgb(217 199 163 / .35), 0 12px 30px rgb(0 0 0 / .45); }
+			.gw-tagline { margin: 0; font-size: 10.5px; letter-spacing: .26em; text-transform: uppercase; color: var(--g-gold); text-align: center; }
+			.gw-lang { padding: 10px 8px; margin: -10px -8px; position: absolute; right: 22px; top: 24px; font-size: 11px; letter-spacing: .2em; color: rgba(255,255,255,.6); text-decoration: none; }
+			.gw-lang:hover { color: #fff; }
+
+			.gw-split { flex: 1; display: grid; grid-template-rows: 1fr 1fr; min-height: 0; }
+			@media (min-width: 860px) { .gw-split { grid-template-rows: none; grid-template-columns: 1fr 1fr; transition: grid-template-columns .8s cubic-bezier(.2,.6,.2,1); }
+				.gw-split:has(.gw-side:nth-child(1):hover) { grid-template-columns: 1.25fr .75fr; }
+				.gw-split:has(.gw-side:nth-child(2):hover) { grid-template-columns: .75fr 1.25fr; } }
+
+			.gw-side { position: relative; overflow: hidden; display: flex; align-items: flex-end; text-decoration: none; color: #fff; min-height: 0; }
+			.gw-side + .gw-side { border-top: 1px solid rgba(217,199,163,.25); }
+			@media (min-width: 860px) { .gw-side + .gw-side { border-top: 0; border-left: 1px solid rgba(217,199,163,.25); } }
+			.gw-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); transition: transform 1.4s cubic-bezier(.2,.6,.2,1); }
+			.gw-side:hover .gw-img { transform: scale(1); }
+			.gw-veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,36,23,.74) 0%, rgba(13,36,23,.62) 45%, rgba(13,36,23,.92) 100%); transition: opacity .8s; }
+			.gw-side-ct .gw-veil { background: linear-gradient(180deg, rgba(10,28,18,.74) 0%, rgba(10,28,18,.6) 45%, rgba(10,28,18,.93) 100%); }
+			.gw-side:hover .gw-veil { opacity: .72; }
+
+			.gw-body { position: relative; z-index: 2; display: block; padding: clamp(22px, 4vw, 54px); max-width: 30rem; }
+			.gw-kicker { display: block; font-size: 11px; letter-spacing: .28em; text-transform: uppercase; color: var(--g-gold); margin-bottom: 14px; }
+			.gw-name { display: block; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(27px, 3.6vw, 48px); line-height: 1.05; letter-spacing: -.01em; }
+			.gw-line { display: block; margin-top: 14px; font-size: clamp(13px, 1.1vw, 15.5px); line-height: 1.6; color: rgba(255,255,255,.8); }
+			.gw-cta { display: inline-block; margin-top: 20px; font-size: 10.5px; letter-spacing: .24em; text-transform: uppercase; color: var(--g-gold); border-bottom: 1px solid rgba(217,199,163,.45); padding-bottom: 5px; }
+			.gw-side:hover .gw-cta { border-color: var(--g-gold); }
+
+			.gw-foot { position: relative; z-index: 3; display: flex; justify-content: center; align-items: center; gap: 14px; padding: 16px 20px 20px; font-size: 10.5px; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+			.gw-foot i { width: 3px; height: 3px; border-radius: 50%; background: var(--g-gold); }
+
+			@media (prefers-reduced-motion: reduce) { .gw-img, .gw-veil, .gw-split { transition: none !important; } }
+		</style>
+	</body>
+</html>

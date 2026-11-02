@@ -1,0 +1,7 @@
+---
+import CtConcepts from '../../../../layouts/CtConcepts.astro';
+import { getTranslations } from '../../../../i18n';
+const locale = 'it';
+const content = getTranslations(locale);
+---
+<CtConcepts content={content} locale={locale} />

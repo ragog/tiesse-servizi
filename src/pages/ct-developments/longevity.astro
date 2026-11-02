@@ -1,0 +1,7 @@
+---
+import CtLongevity from '../../layouts/CtLongevity.astro';
+import { getTranslations } from '../../i18n';
+const locale = 'en';
+const content = getTranslations(locale);
+---
+<CtLongevity content={content} locale={locale} />

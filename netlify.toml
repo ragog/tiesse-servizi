@@ -2,7 +2,28 @@
   command = "npm run build"
   publish = "dist"
 
+# Le vecchie pagine Real Estate ora vivono dentro C&T Developments.
+# 301 vero, così i motori di ricerca spostano l'indirizzo invece di duplicarlo.
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  from = "/real-estate"
+  to = "/it/ct-developments"
+  status = 301
+
+[[redirects]]
+  from = "/real-estate/*"
+  to = "/it/ct-developments"
+  status = 301
+
+[[redirects]]
+  from = "/en/real-estate"
+  to = "/ct-developments"
+  status = 301
+
+[[redirects]]
+  from = "/en/real-estate/*"
+  to = "/ct-developments"
+  status = 301
+
+# Niente regola generica "/*": il sito e' statico e ogni pagina ha il suo
+# file. Con quella regola un indirizzo sbagliato rispondeva 200 mostrando il
+# bivio; cosi' invece risponde 404 e mostra la pagina 404.

@@ -1,0 +1,93 @@
+---
+// BIVIO · PROPOSTA C — "Apertura cinematografica".
+// Tre immagini in dissolvenza, poi compaiono le due porte.
+// Pagina di prova per la scelta. Non collegata, noindex, da cancellare dopo.
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import coast from '../assets/gateway/coast.webp';
+import engineering from '../assets/gateway/engineering.webp';
+import villa from '../assets/ct/ten-villas-1.webp';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Proposta C · Tiesse Group</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="gc">
+		<div class="gc-stage">
+			<Image class="gc-img gc-1" src={coast} alt="" widths={[1000, 1600, 2000]} sizes="100vw" loading="eager" />
+			<Image class="gc-img gc-2" src={engineering} alt="" widths={[800, 1200, 1600]} sizes="100vw" />
+			<Image class="gc-img gc-3" src={villa} alt="" widths={[1000, 1600, 2000]} sizes="100vw" />
+		</div>
+
+		<a class="gc-lang" href="/it">IT</a>
+
+		<main class="gc-mid">
+			<img class="gc-mark" src="/img/tiesse-group-mark.png" alt="Tiesse Group" />
+			<h1>Real estate development,<br/><em>built on engineering.</em></h1>
+			<nav class="gc-doors">
+				<a href="/tiesse-servizi"><span>Tiesse Servizi</span><small>Engineering since 2001</small></a>
+				<span class="gc-sep" aria-hidden="true"></span>
+				<a href="/ct-developments"><span>C&amp;T Developments</span><small>Development</small></a>
+			</nav>
+		</main>
+
+		<footer class="gc-foot"><span>Bologna</span><i></i><span>Los Angeles</span><i></i><span>Dubai</span></footer>
+
+		<style is:global>
+			:root { --g-green: #091A10; --g-gold: #D9C7A3; }
+			html, body { height: 100%; }
+			body.gc { margin: 0; background: var(--g-green); color: #fff; font-family: 'Inter', sans-serif; font-weight: 300;
+				display: flex; flex-direction: column; min-height: 100svh; position: relative; overflow: hidden; }
+
+			.gc-stage { position: fixed; inset: 0; z-index: 0; background: var(--g-green); }
+			.gc-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; animation: gc-fade 16s cubic-bezier(.4,0,.2,1) infinite; }
+			.gc-1 { animation-delay: 0s; }
+			.gc-2 { animation-delay: 5.33s; }
+			.gc-3 { animation-delay: 10.66s; }
+			@keyframes gc-fade {
+				0% { opacity: 0; transform: scale(1.08); }
+				6% { opacity: 1; }
+				28% { opacity: 1; }
+				36% { opacity: 0; }
+				100% { opacity: 0; transform: scale(1); }
+			}
+			.gc-stage::after { content: ""; position: absolute; inset: 0; background:
+				radial-gradient(120% 90% at 50% 45%, rgba(9,26,16,.42) 0%, rgba(9,26,16,.86) 72%, rgba(9,26,16,.96) 100%); }
+
+			.gc-lang { padding: 10px 8px; margin: -10px -8px; position: absolute; right: 26px; top: 26px; z-index: 3; font-size: 11px; letter-spacing: .2em; color: rgba(255,255,255,.7); text-decoration: none; }
+
+			.gc-mid { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px clamp(20px, 5vw, 60px); gap: 0; }
+			.gc-mark { height: 66px; width: auto; margin: 0 auto; box-shadow: 0 0 0 1px rgb(217 199 163 / .35), 0 14px 36px rgb(0 0 0 / .5); animation: gc-up 1.2s cubic-bezier(.2,.6,.2,1) both; }
+			.gc-mid h1 { margin: 34px 0 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(28px, 5vw, 66px); line-height: 1.08; letter-spacing: -.015em; animation: gc-up 1.2s cubic-bezier(.2,.6,.2,1) .25s both; }
+			.gc-mid h1 em { font-style: italic; color: var(--g-gold); }
+
+			.gc-doors { display: flex; flex-direction: column; align-items: center; gap: 22px; margin-top: 46px; animation: gc-up 1.2s cubic-bezier(.2,.6,.2,1) .7s both; }
+			@media (min-width: 720px) { .gc-doors { flex-direction: row; gap: 42px; } }
+			.gc-doors a { text-decoration: none; color: #fff; display: grid; gap: 7px; }
+			.gc-doors span { font-family: 'Bodoni Moda', serif; font-size: clamp(19px, 2vw, 26px); border-bottom: 1px solid rgba(217,199,163,.35); padding-bottom: 7px; transition: border-color .5s; }
+			.gc-doors a:hover span { border-color: var(--g-gold); }
+			.gc-doors small { font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.55); }
+			.gc-sep { width: 1px; height: 34px; background: rgba(217,199,163,.3); display: none; }
+			@media (min-width: 720px) { .gc-sep { display: block; } }
+
+			@keyframes gc-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+			.gc-foot { position: relative; z-index: 2; display: flex; justify-content: center; gap: 14px; align-items: center; padding: 16px 20px 22px; font-size: 10.5px; letter-spacing: .24em; text-transform: uppercase; color: rgba(255,255,255,.5); }
+			.gc-foot i { width: 3px; height: 3px; border-radius: 50%; background: var(--g-gold); }
+
+			@media (prefers-reduced-motion: reduce) {
+				.gc-img { animation: none; opacity: 0; }
+				.gc-1 { opacity: 1; }
+				.gc-mark, .gc-mid h1, .gc-doors { animation: none; }
+			}
+		</style>
+	</body>
+</html>

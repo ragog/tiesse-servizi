@@ -1,0 +1,159 @@
+---
+// Guscio comune di C&T Developments: testa, barra, fondo pagina.
+// La barra e' la stessa su tutte le pagine del ramo e porta sempre
+// all'altro ramo (Tiesse Servizi) e al bivio (Tiesse Group).
+import '../styles/global.css';
+import '../styles/ct.css';
+import { ClientRouter } from 'astro:transitions';
+
+type Lang = 'it' | 'en' | 'es';
+
+interface Props {
+  content: any;
+  locale: Lang;
+  /** percorso della stessa pagina in ogni lingua */
+  langUrls: Record<Lang, string>;
+  title?: string;
+  description?: string;
+  /** immagine di anteprima per WhatsApp e LinkedIn: una per pagina */
+  ogImage?: string;
+  /** voce di menu da evidenziare */
+  current?: 'longevity' | 'concepts' | null;
+}
+
+const { content, locale, langUrls, title, description, ogImage, current = null } = Astro.props;
+const ct = content.ct;
+
+const bases: Record<Lang, string> = { it: '/it/ct-developments', en: '/ct-developments', es: '/es/ct-developments' };
+const base = bases[locale];
+// Tiesse Servizi non esiste ancora in spagnolo: dallo spagnolo si va all'inglese.
+const tiesseHref = locale === 'it' ? '/it/tiesse-servizi' : '/tiesse-servizi';
+const gatewayHref = locale === 'it' ? '/it' : '/';
+const otherLangs = (['it', 'en', 'es'] as Lang[]).filter((l) => l !== locale);
+
+const pageTitle = title || ct.page_title;
+const pageDescription = description || ct.page_description;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site ?? Astro.url.origin).toString();
+const socialImage = new URL(ogImage || '/img/ct-developments-logo.png', Astro.site ?? Astro.url.origin).toString();
+---
+
+<html lang={locale}>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+		<title>{pageTitle}</title>
+		<meta name="description" content={pageDescription} />
+
+		<!-- Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFJ9MYKT92"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-GFJ9MYKT92');
+		</script>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Tiesse Group" />
+		<meta property="og:locale" content={locale === 'it' ? 'it_IT' : 'en_US'} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:image" content={socialImage} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={pageDescription} />
+		<meta name="twitter:image" content={socialImage} />
+		<ClientRouter />
+	</head>
+
+	<body class="ct">
+
+		<header class="ct-bar">
+			<div class="ct-wrap ct-bar-inner">
+				<a href={base} class="ct-brand">
+					<img src="/img/ct-developments-mark.png" alt="" />
+					<span>
+						<span class="ct-wordmark">{ct.name_strong}{ct.name_accent}</span>
+						<span class="ct-brand-sub">{ct.branch}</span>
+					</span>
+				</a>
+
+				<nav class="ct-nav">
+					<a href={tiesseHref}>Tiesse Servizi</a>
+					<a href={gatewayHref} class="ct-nav-hide">{ct.nav_back}</a>
+					<span class="ct-nav-sep" aria-hidden="true"></span>
+					<a href={`${base}/concepts`} class={current === 'concepts' ? 'ct-on' : ''}>{ct.concepts.eyebrow}</a>
+					<a href={`${base}/longevity`} class={current === 'longevity' ? 'ct-on' : ''}>{ct.longevity.nav}</a>
+					<a href={`${base}#contact`} class="ct-nav-hide">{ct.nav_contact}</a>
+					<span class="ct-nav-sep" aria-hidden="true"></span>
+					<span class="ct-langs">
+						{otherLangs.map((l) => (<a href={langUrls[l]}>{l.toUpperCase()}</a>))}
+					</span>
+				</nav>
+			</div>
+		</header>
+
+		<slot />
+
+		<!-- CHIUSURA -->
+		<section id="contact" class="ct-band ct-band-dark ct-closing">
+			<div class="ct-wrap">
+				<h2 class="ct-display">{ct.closing_title}</h2>
+				<a class="ct-button" href={`mailto:${ct.closing_email}`}>{ct.closing_cta}</a>
+			</div>
+		</section>
+
+		<footer class="ct-foot">
+			<div class="ct-wrap ct-foot-inner">
+				<p>{ct.footer_line}</p>
+				<p>{ct.cities}</p>
+				<p class="ct-foot-legal">{ct.legal}</p>
+				<div class="ct-foot-links">
+					<a href={tiesseHref}>Tiesse Servizi</a>
+					<a href={gatewayHref}>{ct.nav_back}</a>
+					<a href={`${base}/longevity`}>{ct.longevity.nav}</a>
+				</div>
+			</div>
+		</footer>
+		<script>
+			// Entrata degli elementi allo scorrimento e barra che si ritira:
+			// due comportamenti soli, lenti, e spenti per chi chiede meno movimento.
+			const setup = () => {
+				const slow = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+				const items = document.querySelectorAll('[data-reveal]');
+				if (slow) {
+					items.forEach((el) => el.classList.add('is-in'));
+				} else {
+					const io = new IntersectionObserver((entries) => {
+						entries.forEach((e) => {
+							if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+						});
+					}, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+					items.forEach((el) => io.observe(el));
+				}
+
+				const bar = document.querySelector('.ct-bar');
+				if (!bar) return;
+				let last = window.scrollY;
+				const onScroll = () => {
+					const y = window.scrollY;
+					if (y > 160 && y > last) bar.classList.add('is-hidden');
+					else bar.classList.remove('is-hidden');
+					last = y;
+				};
+				window.removeEventListener('scroll', onScroll);
+				window.addEventListener('scroll', onScroll, { passive: true });
+			};
+			setup();
+			document.addEventListener('astro:after-swap', setup);
+		</script>
+	</body>
+</html>

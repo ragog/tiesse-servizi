@@ -1,0 +1,257 @@
+---
+// PROPOSTA A · pagina LONGEVITY. Vive a se', si raggiunge dalla voce di menu.
+// Sezione in prova: non va portata nel sito finche' non e' decisa la
+// protezione del marchio. Pagina noindex e fuori dalla sitemap.
+import '../../styles/global.css';
+import { Image } from 'astro:assets';
+
+import spaImg from '../../assets/ct/six-villas-4.webp';
+import heroImg from '../../assets/ct/six-villas-1.webp';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Longevity · C&T Developments</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="pa">
+
+		<header class="pa-bar">
+			<div class="pa-wrap pa-bar-inner">
+				<a href="/proposta-a" class="pa-brand">
+					<img src="/img/ct-developments-mark.png" alt="" />
+					<span class="pa-wordmark">C&amp;T Developments</span>
+				</a>
+				<nav class="pa-nav">
+					<a href="/proposta-a/longevity" class="pa-nav-cta">Longevity</a>
+					<a href="/proposta-a#concepts">Concepts</a>
+					<a href="/proposta-a#method">Method</a>
+					<a href="/proposta-a#group">Group</a>
+					<a href="/proposta-a#contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<!-- HERO · la fotografia da sola -->
+		<section class="pa-hero">
+			<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="100vw" />
+			<p class="pa-hero-cap">Under study <span>/</span> A new type of villa compound</p>
+		</section>
+
+		<!-- TITOLO -->
+		<section class="pa-title">
+			<div class="pa-wrap">
+				<a class="pa-back" href="/proposta-a">&#8592; C&amp;T Developments</a>
+				<h1 class="pa-display">Longevity, <em>by design.</em></h1>
+				<div class="pa-hair"></div>
+				<p class="pa-lede">In the Mediterranean the setting is not scenery. It is the active ingredient.</p>
+			</div>
+		</section>
+
+		<!-- MANIFESTO -->
+		<section class="pa-manifesto">
+			<div class="pa-wrap">
+				<p>We are studying a new type of villa compound: places where climate, air, light and water let the body <em>recover</em>, and a building engineered to keep it that way.</p>
+			</div>
+		</section>
+
+		<!-- CORPO -->
+		<section class="pa-band-light">
+			<div class="pa-wrap">
+
+				<div class="pa-two">
+					<div>
+	<h2 class="pa-h2">The idea</h2>
+						<p class="pa-sub">A new type of compound, under study.</p>
+					</div>
+					<div class="pa-body">
+						<p>We are studying a new type of villa compound built on one idea: in the Mediterranean the setting is not scenery, it is the active ingredient. Climate, air, light, water and food are what let the body recover, and we look for the places where that has been measured. Sardinia holds one of the highest concentrations of centenarians in the world.</p>
+						<p>The building does the rest. Each compound is engineered like a clinic and lived in like a private house, with a spa at its centre and, around it, an envelope designed to stay clean: filtered air, filtered water, low electromagnetic load, natural materials, real darkness at night.</p>
+						<p><strong>Technology here is not a promise of years.</strong> It is what lets us build a healthy, low-load environment and keep it that way, under one protocol and a medical director.</p>
+					</div>
+				</div>
+
+				<figure class="pa-figure">
+					<Image src={spaImg} alt="Indoor spa pool with sauna" widths={[800, 1200, 1700]} sizes="100vw" />
+					<figcaption>The spa at the lower level of each villa: pool, sauna, cold room.</figcaption>
+				</figure>
+
+				<div class="pa-tech">
+					<div>
+						<h3>In the spa</h3>
+						<ul>
+							<li>Finnish sauna and infrared sauna</li>
+							<li>Cold plunge and cryotherapy</li>
+							<li>Hot and cold contrast circuit</li>
+							<li>Steam room and salt room</li>
+							<li>Red and near-infrared light therapy</li>
+							<li>Training and recovery room</li>
+							<li>Room for assessment, with a medical director</li>
+						</ul>
+					</div>
+					<div>
+						<h3>In the building</h3>
+						<ul>
+							<li>Low electromagnetic exposure: wired rather than wireless</li>
+							<li>Filtered air, with CO2 and humidity under control</li>
+							<li>Low-emission natural materials</li>
+							<li>Filtered water, pools without chlorine</li>
+							<li>Circadian lighting, and real darkness for sleep</li>
+							<li>Acoustic insulation: silence as a specification</li>
+						</ul>
+					</div>
+				</div>
+
+				<p class="pa-note"><strong>A format, not a service.</strong> The same standard applies to every compound we develop in the Mediterranean places we select.</p>
+			</div>
+		</section>
+
+		<!-- CHIUSURA -->
+		<section class="pa-band-dark pa-closing">
+			<div class="pa-wrap">
+				<h2 class="pa-display pa-display-sm">Start a conversation.</h2>
+				<a class="pa-button" href="mailto:info@tiesseservizi.eu">Write to us</a>
+			</div>
+		</section>
+
+		<footer class="pa-foot">
+			<div class="pa-wrap pa-foot-inner">
+				<p>C&amp;T Developments is a branch of Tiesse Group.</p>
+				<p class="pa-foot-legal">Tiesse Servizi S.a.s. · VAT 02241091202 · Via Loderingo degli Andalò 5, 40124 Bologna</p>
+			</div>
+		</footer>
+
+		<style is:global>
+			:root {
+				--cream: #F6F2E9;
+				--cream-deep: #EDE6D7;
+				--ink: #1B241E;
+				--green: #0D2417;
+				--gold: #B99B6B;
+				--gold-light: #D9C7A3;
+			}
+			body.pa { background: var(--cream); color: var(--ink); font-family: 'Inter', sans-serif; font-weight: 300; }
+			.pa-wrap { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 56px); }
+			.pa-eyebrow { font-size: 11px; letter-spacing: .28em; text-transform: uppercase; }
+			.pa-gold { color: var(--gold-light); }
+			.pa-num { font-family: 'Bodoni Moda', serif; font-size: 13px; letter-spacing: .2em; color: var(--gold); margin-bottom: 22px; }
+
+			/* barra */
+			.pa-bar { position: sticky; top: 0; z-index: 40; background: rgba(246,242,233,.92); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(27,36,30,.1); }
+			.pa-bar-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+			.pa-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+			.pa-brand img { height: 34px; width: 34px; object-fit: contain; }
+			.pa-wordmark { font-family: 'Bodoni Moda', serif; font-size: 17px; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
+			.pa-nav { display: none; gap: 30px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; }
+			.pa-nav a { color: rgba(27,36,30,.65); text-decoration: none; }
+			.pa-nav a:hover { color: var(--ink); }
+			.pa-nav-cta { color: var(--gold) !important; }
+			@media (min-width: 820px) { .pa-nav { display: flex; } }
+
+			/* hero: solo la fotografia, a pieno formato e senza veli */
+			.pa-hero { position: relative; height: 82vh; min-height: 460px; overflow: hidden; background: var(--cream-deep); }
+			.pa-hero img { width: 100%; height: 100%; object-fit: cover; }
+			.pa-hero-cap { position: absolute; left: 0; right: 0; bottom: 18px; padding: 0 clamp(20px, 5vw, 56px); max-width: 1180px; margin: 0 auto; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.8); text-shadow: 0 1px 10px rgba(0,0,0,.45); }
+			.pa-hero-cap span { color: var(--gold-light); margin: 0 6px; }
+
+			/* titolo su crema */
+			.pa-title { padding: clamp(46px, 6.5vw, 96px) 0 clamp(44px, 6vw, 88px); }
+			.pa-eyebrow-ink { color: var(--gold); }
+			.pa-display { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(42px, 7.6vw, 100px); line-height: 1; letter-spacing: -.015em; margin: 20px 0 0; }
+			.pa-hair { height: 1px; width: 120px; background: var(--gold); margin: 34px 0 26px; }
+			.pa-lede { max-width: 640px; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.55; color: rgba(27,36,30,.7); }
+			.pa-cities { margin-top: 40px; display: flex; align-items: center; gap: 14px; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: rgba(27,36,30,.45); }
+			.pa-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gold); }
+
+			/* bande */
+			.pa-band-light { padding: clamp(64px, 9vw, 130px) 0; background: var(--cream); }
+			.pa-band-rule { border-top: 1px solid rgba(27,36,30,.12); }
+			.pa-band-dark { padding: clamp(64px, 9vw, 130px) 0; background: var(--green); color: #fff; }
+			.pa-two { display: grid; gap: 34px; }
+			@media (min-width: 880px) { .pa-two { grid-template-columns: 5fr 6fr; gap: 80px; } }
+			.pa-h2 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(30px, 4vw, 52px); line-height: 1.08; letter-spacing: -.01em; }
+			.pa-h2-wide { max-width: 15ch; }
+			.pa-on-dark { color: #fff; }
+			.pa-body { font-size: 16.5px; line-height: 1.72; color: rgba(27,36,30,.72); display: grid; gap: 18px; }
+			.pa-body strong { color: var(--ink); font-weight: 500; }
+			.pa-on-dark-body { color: rgba(255,255,255,.66); }
+
+			/* manifesto */
+			.pa-manifesto { background: var(--green); color: #fff; padding: clamp(58px, 8vw, 118px) 0; }
+			.pa-manifesto p { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(22px, 3.1vw, 42px); line-height: 1.3; max-width: 24ch; max-width: 46ch; }
+			.pa-manifesto em { font-style: italic; color: var(--gold-light); }
+
+			/* figura */
+			.pa-figure { margin: clamp(38px, 5vw, 64px) 0 0; }
+			.pa-figure img { width: 100%; height: auto; display: block; }
+			.pa-figure figcaption { margin-top: 12px; font-size: 10.5px; letter-spacing: .18em; text-transform: uppercase; color: rgba(27,36,30,.45); }
+
+			/* tecnologie */
+			.pa-tech { display: grid; gap: 30px; margin-top: clamp(38px, 5vw, 60px); }
+			@media (min-width: 820px) { .pa-tech { grid-template-columns: 1fr 1fr; gap: 56px; } }
+			.pa-tech h3 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 21px; padding-bottom: 14px; margin-bottom: 16px; border-bottom: 1px solid var(--gold); }
+			.pa-tech ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+			.pa-tech li { font-size: 15.5px; line-height: 1.5; color: rgba(27,36,30,.72); padding-left: 18px; position: relative; }
+			.pa-tech li::before { content: "·"; position: absolute; left: 4px; color: var(--gold); }
+			.pa-note { margin-top: clamp(34px, 4vw, 52px); font-size: 16.5px; line-height: 1.7; color: rgba(27,36,30,.72); max-width: 62ch; }
+			.pa-note strong { color: var(--ink); font-weight: 500; }
+
+			.pa-back { display: inline-block; margin-bottom: 26px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); text-decoration: none; }
+			.pa-back:hover { color: var(--ink); }
+
+			/* longevity */
+			.pa-band-soft { padding: clamp(64px, 9vw, 130px) 0; background: var(--cream-deep); border-top: 1px solid rgba(185,155,107,.35); }
+			.pa-sub { margin-top: 16px; font-size: 17px; line-height: 1.5; color: rgba(27,36,30,.6); max-width: 22ch; }
+			.pa-triplet { display: grid; gap: 16px; margin-top: 34px; }
+			@media (min-width: 620px) { .pa-triplet { grid-template-columns: repeat(3, 1fr); gap: 22px; } }
+			.pa-triplet div { border-top: 1px solid var(--gold); padding-top: 12px; display: grid; gap: 6px; }
+			.pa-triplet span { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: rgba(27,36,30,.45); }
+			.pa-triplet strong { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 16px; color: var(--ink); }
+
+			/* metodo */
+			.pa-steps { display: grid; gap: 34px; margin-top: 54px; }
+			@media (min-width: 880px) { .pa-steps { grid-template-columns: repeat(3, 1fr); gap: 46px; } }
+			.pa-step { border-top: 1px solid var(--gold); padding-top: 20px; }
+			.pa-step-num { font-family: 'Bodoni Moda', serif; color: var(--gold); font-size: 13px; letter-spacing: .2em; }
+			.pa-step h3 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 23px; margin: 12px 0 10px; }
+			.pa-step p { font-size: 15px; line-height: 1.68; color: rgba(27,36,30,.68); }
+
+			/* concept */
+			.pa-concepts-head { display: grid; gap: 22px; }
+			@media (min-width: 880px) { .pa-concepts-head { grid-template-columns: 6fr 5fr; align-items: end; gap: 80px; } }
+			.pa-concepts { display: grid; gap: 30px; margin-top: 56px; }
+			@media (min-width: 820px) { .pa-concepts { grid-template-columns: repeat(3, 1fr); gap: 34px; } }
+			.pa-concept { text-decoration: none; color: #fff; display: block; }
+			.pa-concept-img { aspect-ratio: 4 / 3; overflow: hidden; margin-bottom: 18px; }
+			.pa-concept-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s; }
+			.pa-concept:hover .pa-concept-img img { transform: scale(1.04); }
+			.pa-concept h3 { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 24px; margin-bottom: 8px; }
+			.pa-place { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.45); }
+			.pa-more { display: inline-block; margin-top: 16px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold-light); border-bottom: 1px solid rgba(217,199,163,.4); padding-bottom: 4px; }
+
+			/* persone */
+			.pa-people { display: grid; gap: 22px; margin-top: 10px; }
+			@media (min-width: 620px) { .pa-people { grid-template-columns: 1fr 1fr; } }
+			.pa-people div { display: grid; gap: 5px; border-top: 1px solid rgba(27,36,30,.15); padding-top: 14px; }
+			.pa-people strong { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 19px; }
+			.pa-people span { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: rgba(27,36,30,.5); }
+			.pa-link { display: inline-block; margin-top: 8px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); border-bottom: 1px solid rgba(185,155,107,.45); padding-bottom: 4px; text-decoration: none; }
+
+			/* chiusura */
+			.pa-closing { text-align: center; }
+			.pa-display-sm { font-size: clamp(32px, 4.6vw, 58px); margin-bottom: 30px; }
+			.pa-button { display: inline-block; border: 1px solid var(--gold-light); color: var(--gold-light); padding: 14px 34px; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; text-decoration: none; }
+			.pa-button:hover { background: var(--gold-light); color: var(--green); }
+
+			.pa-foot { background: var(--cream-deep); padding: 34px 0; }
+			.pa-foot-inner { display: grid; gap: 8px; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: rgba(27,36,30,.55); }
+			.pa-foot-legal { text-transform: none; letter-spacing: 0; font-size: 12px; color: rgba(27,36,30,.45); }
+		</style>
+	</body>
+</html>

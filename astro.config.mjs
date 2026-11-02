@@ -9,18 +9,20 @@ export default defineConfig({
   site: 'https://tiesse-group.com',
   i18n: {
     defaultLocale: 'en',
-    locales: ['it', 'en'],
+    locales: ['it', 'en', 'es'],
     routing: {
       prefixDefaultLocale: false
     }
   },
   redirects: {
+    // Le vecchie pagine Real Estate sono spostate in C&T Developments con un
+    // 301 vero, scritto in netlify.toml: qui non vanno, altrimenti Astro
+    // genererebbe una pagina ponte che copre il 301.
     '/en': '/tiesse-servizi'
   },
-  // La pagina C&T Developments non e' finita: fuori dalla sitemap
-  // finche' non viene collegata dal bivio.
+  // Le pagine /proposta-* sono prove di design: noindex e fuori dalla sitemap.
   integrations: [sitemap({
-    filter: (page) => !page.includes('ct-developments')
+    filter: (page) => !page.includes('/proposta-') && !page.includes('/bivio-')
   })],
   vite: {
     plugins: [tailwindcss()]
