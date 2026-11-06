@@ -3,12 +3,12 @@
 // gruppo e le immagini che si alternano come nel bivio attuale.
 import '../styles/global.css';
 import { Image } from 'astro:assets';
+// Due fotografie per Tiesse Servizi, tre per C&T.
 import eng1 from '../assets/gateway/engineering.webp';
-import eng2 from '../assets/gateway/eng-2.webp';
-import eng3 from '../assets/gateway/eng-3.webp';
+import eng2 from '../assets/projects-hero.webp';
 import dev1 from '../assets/ct/ten-villas-1.webp';
-import dev2 from '../assets/ct/longevity-1.webp';
-import dev3 from '../assets/gateway/coast.webp';
+import dev2 from '../assets/gateway/gw-dev-spa.webp';
+import dev3 from '../assets/gateway/gw-dev-interno.webp';
 ---
 
 <html lang="en">
@@ -31,11 +31,10 @@ import dev3 from '../assets/gateway/coast.webp';
 		</header>
 
 		<main class="gf-split">
-			<a class="gf-side" href="/tiesse-servizi">
+			<a class="gf-side gf-two" href="/tiesse-servizi">
 				<span class="gf-imgs">
 					<Image class="gf-img f1" src={eng1} alt="" widths={[700, 1100, 1600]} sizes="(max-width: 860px) 100vw, 60vw" loading="eager" />
-					<Image class="gf-img f2" src={eng2} alt="" widths={[700, 1100, 1500]} sizes="(max-width: 860px) 100vw, 60vw" />
-					<Image class="gf-img f3" src={eng3} alt="" widths={[700, 1100, 1500]} sizes="(max-width: 860px) 100vw, 60vw" />
+					<Image class="gf-img f2" src={eng2} alt="" widths={[700, 1100, 1600]} sizes="(max-width: 860px) 100vw, 60vw" />
 				</span>
 				<span class="gf-veil"></span>
 				<span class="gf-body">
@@ -94,6 +93,10 @@ import dev3 from '../assets/gateway/coast.webp';
 				animation: gf-fade 21s cubic-bezier(.4,0,.2,1) infinite; }
 			.gf-img.f1 { animation-delay: 0s; } .gf-img.f2 { animation-delay: 7s; } .gf-img.f3 { animation-delay: 14s; }
 			@keyframes gf-fade { 0% { opacity: 0; transform: scale(1.06); } 5% { opacity: 1; } 28% { opacity: 1; } 34% { opacity: 0; } 100% { opacity: 0; transform: scale(1); } }
+			/* il lato con due sole fotografie resta sullo stesso giro di 21 secondi */
+			.gf-two .gf-img { animation-name: gf-fade2; }
+			.gf-two .gf-img.f2 { animation-delay: 10.5s; }
+			@keyframes gf-fade2 { 0% { opacity: 0; transform: scale(1.06); } 4% { opacity: 1; } 50% { opacity: 1; } 56% { opacity: 0; } 100% { opacity: 0; transform: scale(1); } }
 
 			.gf-veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,36,23,.68) 0%, rgba(13,36,23,.52) 42%, rgba(13,36,23,.92) 100%); transition: opacity .8s; }
 			.gf-ct .gf-veil { background: linear-gradient(180deg, rgba(10,28,18,.68) 0%, rgba(10,28,18,.5) 42%, rgba(10,28,18,.93) 100%); }
