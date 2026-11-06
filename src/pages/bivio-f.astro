@@ -1,0 +1,117 @@
+---
+// BIVIO · PROPOSTA F — l'ibrido: la divisione a due della A, il titolo del
+// gruppo e le immagini che si alternano come nel bivio attuale.
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import eng1 from '../assets/gateway/engineering.webp';
+import eng2 from '../assets/gateway/eng-2.webp';
+import eng3 from '../assets/gateway/eng-3.webp';
+import dev1 from '../assets/ct/ten-villas-1.webp';
+import dev2 from '../assets/ct/longevity-1.webp';
+import dev3 from '../assets/gateway/coast.webp';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="noindex, nofollow" />
+		<title>Proposta F · Tiesse Group</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="gf">
+		<header class="gf-top">
+			<img class="gf-mark" src="/img/tiesse-group-mark.png" alt="Tiesse Group" />
+			<h1>Real estate development, <em>built on engineering.</em></h1>
+			<p class="gf-lede">Two branches, one method: the engineering that studies an operation is the same that delivers it.</p>
+			<a class="gf-lang" href="/it">IT</a>
+		</header>
+
+		<main class="gf-split">
+			<a class="gf-side" href="/tiesse-servizi">
+				<span class="gf-imgs">
+					<Image class="gf-img f1" src={eng1} alt="" widths={[700, 1100, 1600]} sizes="(max-width: 860px) 100vw, 60vw" loading="eager" />
+					<Image class="gf-img f2" src={eng2} alt="" widths={[700, 1100, 1500]} sizes="(max-width: 860px) 100vw, 60vw" />
+					<Image class="gf-img f3" src={eng3} alt="" widths={[700, 1100, 1500]} sizes="(max-width: 860px) 100vw, 60vw" />
+				</span>
+				<span class="gf-veil"></span>
+				<span class="gf-body">
+					<span class="gf-kicker">Engineering</span>
+					<span class="gf-name">Tiesse Servizi</span>
+					<span class="gf-line">Design, structural engineering and construction management. Since 2001.</span>
+					<span class="gf-cta">Enter</span>
+				</span>
+			</a>
+
+			<a class="gf-side gf-ct" href="/ct-developments">
+				<span class="gf-imgs">
+					<Image class="gf-img f1" src={dev1} alt="" widths={[700, 1100, 1600]} sizes="(max-width: 860px) 100vw, 60vw" loading="eager" />
+					<Image class="gf-img f2" src={dev2} alt="" widths={[700, 1100, 1600]} sizes="(max-width: 860px) 100vw, 60vw" />
+					<Image class="gf-img f3" src={dev3} alt="" widths={[700, 1100, 1600]} sizes="(max-width: 860px) 100vw, 60vw" />
+				</span>
+				<span class="gf-veil"></span>
+				<span class="gf-body">
+					<span class="gf-kicker">Development</span>
+					<span class="gf-name">C&amp;T Developments</span>
+					<span class="gf-line">We find the opportunity, take it through permitting and deliver it.</span>
+					<span class="gf-cta">Discover</span>
+				</span>
+			</a>
+		</main>
+
+		<footer class="gf-foot">Bologna · Los Angeles · Dubai</footer>
+
+		<style is:global>
+			:root { --g-green: #0D2417; --g-gold: #D9C7A3; }
+			html, body { height: 100%; }
+			body.gf { margin: 0; background: var(--g-green); color: #fff; font-family: 'Inter', sans-serif; font-weight: 300;
+				display: flex; flex-direction: column; min-height: 100svh; }
+
+			/* testata: il marchio e la frase del gruppo, su verde pieno */
+			.gf-top { position: relative; z-index: 3; text-align: center; padding: clamp(22px, 3.4vh, 40px) clamp(20px, 5vw, 60px) clamp(20px, 3vh, 34px); }
+			.gf-mark { height: 52px; width: auto; margin: 0 auto; box-shadow: 0 0 0 1px rgb(217 199 163 / .35), 0 12px 30px rgb(0 0 0 / .45); }
+			.gf-top h1 { margin: 20px 0 0; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(23px, 3.4vw, 46px); line-height: 1.1; letter-spacing: -.012em; }
+			.gf-top h1 em { font-style: italic; color: var(--g-gold); }
+			.gf-lede { margin: 14px auto 0; max-width: 56ch; font-size: clamp(13.5px, 1.05vw, 15.5px); line-height: 1.6; color: rgba(255,255,255,.76); }
+			.gf-lang { position: absolute; right: 14px; top: 14px; padding: 10px; font-size: 12px; letter-spacing: .2em; color: rgba(255,255,255,.75); text-decoration: none; }
+
+			/* i due campi, come nella A */
+			.gf-split { flex: 1; display: grid; grid-template-rows: 1fr 1fr; min-height: 0; }
+			@media (min-width: 860px) {
+				.gf-split { grid-template-rows: none; grid-template-columns: 1fr 1fr; transition: grid-template-columns .8s cubic-bezier(.2,.6,.2,1); }
+				.gf-split:has(.gf-side:nth-child(1):hover) { grid-template-columns: 1.22fr .78fr; }
+				.gf-split:has(.gf-side:nth-child(2):hover) { grid-template-columns: .78fr 1.22fr; }
+			}
+			.gf-side { position: relative; overflow: hidden; display: flex; align-items: flex-end; text-decoration: none; color: #fff; min-height: 0; border-top: 1px solid rgba(217,199,163,.3); }
+			@media (min-width: 860px) { .gf-side + .gf-side { border-left: 1px solid rgba(217,199,163,.3); } }
+
+			/* dentro ogni campo le fotografie si alternano */
+			.gf-imgs { position: absolute; inset: 0; display: block; }
+			.gf-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0;
+				animation: gf-fade 21s cubic-bezier(.4,0,.2,1) infinite; }
+			.gf-img.f1 { animation-delay: 0s; } .gf-img.f2 { animation-delay: 7s; } .gf-img.f3 { animation-delay: 14s; }
+			@keyframes gf-fade { 0% { opacity: 0; transform: scale(1.06); } 5% { opacity: 1; } 28% { opacity: 1; } 34% { opacity: 0; } 100% { opacity: 0; transform: scale(1); } }
+
+			.gf-veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,36,23,.68) 0%, rgba(13,36,23,.52) 42%, rgba(13,36,23,.92) 100%); transition: opacity .8s; }
+			.gf-ct .gf-veil { background: linear-gradient(180deg, rgba(10,28,18,.68) 0%, rgba(10,28,18,.5) 42%, rgba(10,28,18,.93) 100%); }
+			.gf-side:hover .gf-veil { opacity: .7; }
+
+			.gf-body { position: relative; z-index: 2; display: block; padding: clamp(20px, 3.4vw, 50px); max-width: 30rem; }
+			.gf-kicker { display: block; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--g-gold); margin-bottom: 12px; }
+			.gf-name { display: block; font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(25px, 3.2vw, 44px); line-height: 1.05; }
+			.gf-line { display: block; margin-top: 12px; font-size: clamp(13.5px, 1.05vw, 15.5px); line-height: 1.6; color: rgba(255,255,255,.84); }
+			.gf-cta { display: inline-block; margin-top: 16px; padding-bottom: 6px; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--g-gold); border-bottom: 1px solid rgba(217,199,163,.45); }
+			.gf-side:hover .gf-cta { border-color: var(--g-gold); }
+
+			.gf-foot { position: relative; z-index: 3; text-align: center; padding: 14px 20px 18px; font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+
+			@media (prefers-reduced-motion: reduce) {
+				.gf-img { animation: none; opacity: 0; } .gf-img.f1 { opacity: 1; }
+				.gf-split, .gf-veil { transition: none; }
+			}
+		</style>
+	</body>
+</html>
