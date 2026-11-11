@@ -72,7 +72,7 @@ export default {
     team: [
       { name: "Piero Giusti", title: "Consulente Senior · Relazioni Istituzionali e Sviluppo", linkedin: "" },
       { name: "Ignazio Celardi", title: "Ingegnere Strutturista · Partner, C&T Developments · Dubai", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" },
-      { name: "Arturo Tucci", title: "Gare d'Appalto e Gestione Costi", linkedin: "" },
+      { name: "Arturo Tucci", title: "Gare d'Appalto e Gestione Costi", linkedin: "https://www.linkedin.com/in/arturo-tucci-81687b47/" },
       { name: "Andrea Calidori", title: "Ingegnere Strutturista · Consulente Esterno", linkedin: "" }
     ]
   },
@@ -170,7 +170,8 @@ export default {
     // Tre pilastri di ogni operazione. I loghi dei partner vivono dentro il
     // pilastro giusto. Per aggiungere un partner: metti il file del logo in
     // public/partners/ e aggiungi una riga nell'array "logos" del gruppo.
-    // url è opzionale (link al sito del partner).
+    // url è opzionale (link al sito del partner). Senza src (logo non ancora
+    // arrivato) al posto del logo compare il nome scritto.
     groups: [
       {
         title: "Membro di",
@@ -185,6 +186,9 @@ export default {
         logos: [
           { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png" },
           { name: "EPM Costruzione e Servizi S.r.l.", src: "/partners/epm.png" },
+          { name: "AEC Costruzioni S.r.l.", src: "/partners/aec-costruzioni.svg", url: "https://aeccostruzioni.com/" },
+          { name: "Fargo S.r.l.", src: "/partners/fargo.png", url: "https://fargoservizi.eu/" },
+          { name: "Edilizia Gio S.r.l." },
         ]
       },
       {

@@ -173,7 +173,7 @@ const h = content.home_sections;
 			     colonne restava un riquadro grigio vuoto. Niente bordi a tabella,
 			     loghi tutti alla stessa altezza. -->
 			<div class={`grid gap-10 md:gap-14 sm:grid-cols-2 ${content.partners.groups.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'}`}>
-				{content.partners.groups.map((group: { title: string; description: string; logos: { name: string; src: string; url?: string }[] }, i: number) => (
+				{content.partners.groups.map((group: { title: string; description: string; logos: { name: string; src?: string; url?: string }[] }, i: number) => (
 					<div class="flex flex-col border-t border-gray-300 pt-6">
 						<div class="text-[11px] tracking-[0.25em] text-gray-400 mb-5 tabular-nums">{String(i + 1).padStart(2, '0')}</div>
 						<h3 class="text-lg md:text-xl font-light text-gray-900 leading-snug mb-3 tracking-tight">{group.title}</h3>
@@ -182,9 +182,14 @@ const h = content.home_sections;
 						{group.logos.length > 0 && (
 							<div class="mt-8 flex flex-wrap items-center gap-x-10 gap-y-6">
 								{group.logos.map((logo) => {
-									const inner = (
+									// Senza file del logo scriviamo il nome, alto quanto i loghi.
+									const inner = logo.src ? (
 										<img src={logo.src} alt={logo.name} loading="lazy"
 											class="h-12 md:h-14 w-auto max-w-[13rem] object-contain" />
+									) : (
+										<span class="h-12 md:h-14 flex items-center text-sm md:text-[15px] font-medium tracking-[0.18em] uppercase text-gray-700 whitespace-nowrap">
+											{logo.name}
+										</span>
 									);
 									return logo.url
 										? <a href={logo.url} target="_blank" rel="noopener" aria-label={logo.name}>{inner}</a>
