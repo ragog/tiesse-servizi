@@ -1,5 +1,5 @@
 export default {
-  site_title: "Tiesse Servizi | Real Estate Development, Built on Engineering, Tiesse Group",
+  site_title: "Tiesse Servizi | Ingegneria dal 2001 · Tiesse Group",
   nav: {
     home: "Home",
     about: "Chi Siamo",
@@ -13,7 +13,7 @@ export default {
     subtitle: "Creiamo valore.",
     body: "Dal 2001 progettazione, ingegneria strutturale e direzione lavori per interventi residenziali, sanitari e pubblici. La base tecnica dietro ogni operazione di Tiesse Group.",
     trust: "Indipendenti. Tecnici. Responsabili.",
-    description: "Tiesse Servizi opera con il marchio Tiesse Group. Dal 2001 realizziamo operazioni immobiliari residenziali con rigore ingegneristico, dalla fattibilità alla consegna.",
+    description: "Ingegneria dal 2001: progettazione, strutture, direzione lavori e sicurezza per edifici residenziali, sanitari e pubblici.",
     cta_text: "Scopri i progetti"
   },
   key_facts: {
@@ -21,16 +21,8 @@ export default {
       { value: "2001", label: "Anno di fondazione" },
       { value: "25+", label: "Anni di ingegneria" },
       { value: "5", label: "Settori" },
-      { value: "3", label: "Bologna · Los Angeles · Dubai" }
-    ]
-  },
-  chi_siamo: {
-    eyebrow: "Chi siamo",
-    title: "Una piattaforma ingegneristica per l'immobiliare residenziale di pregio.",
-    points: [
-      "Tiesse Servizi affianca imprese, fondi di investimento, istituti bancari e privati nell'intera gestione tecnica, legale ed economica della commessa edilizia.",
-      "Non siamo venditori improvvisati: strutturiamo ogni operazione con visione ingegneristica specialistica, garantendo controllo puntuale di tempi, costi e qualità, dalla fattibilità alla consegna.",
-      "Il nostro lavoro trasforma la complessità del processo edilizio in un percorso governabile. Riduce rischi operativi e finanziari, semplifica le interazioni tra i soggetti e tutela l'investimento."
+      // senza value: niente numero sopra le citta', la frase si legge da sola
+      { value: "", label: "Sede a Bologna, con nostri collaboratori a Los Angeles e a Dubai." }
     ]
   },
   home_sections: {
@@ -45,13 +37,6 @@ export default {
     technical_title: "Le competenze tecniche guidano ogni progetto.",
     technical_body: "Applichiamo competenze ingegneristiche in contesti complessi.<br><br>Dalla sanità al residenziale fino al settore pubblico, ogni progetto è guidato da controllo tecnico, integrazione progettuale e processi basati su metodologia BIM.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Progettazione · Ingegneria · BIM · Realizzazione</span>",
     technical_cta: "Scopri l'ingegneria",
-    investment_eyebrow: "Real Estate · Investimenti",
-    investment_title: "Dove l'ingegneria incontra il real estate.",
-    investment_body: "Progetti immobiliari sviluppati con un approccio integrato tra progettazione architettonica e strutturale, coordinamento tecnico e controllo dell'esecuzione.",
-    investment_location: "A partire dalla Sardegna del nord.",
-    investment_cta: "Dove guardiamo",
-    investment_featured_label: "Dove guardiamo",
-    investment_project_tag: "Progettazione residenziale integrata",
     ct_banner_eyebrow: "Sviluppo",
     ct_banner_title: "Il nostro ramo di sviluppo: C&T Developments.",
     ct_banner_body: "È dove il gruppo trova le opportunità, le porta fino al permesso e le realizza. L'ingegneria è la nostra.",
@@ -92,40 +77,6 @@ export default {
     ],
     closing: "Un unico interlocutore per governare tutte le fasi operative."
   },
-  invest_in_italy: {
-    eyebrow: "Invest in Italy",
-    title: "Accompagniamo investitori esteri nel mercato immobiliare italiano di alto profilo.",
-    titleBreak: "INVEST IN<br/>ITALY",
-    intro: "Un'opportunità concreta per allocare capitali in uno scenario iconico, con controllo tecnico e trasparenza su ogni fase.",
-    description: "Sardegna, isole del Mediterraneo e territori italiani selezionati rappresentano oggi tra le destinazioni più ricercate al mondo per qualità della vita, patrimonio culturale e potenziale di valorizzazione immobiliare, un settore che non conosce crisi.",
-    subtitle: "Attraverso Tiesse, gli investitori possono:",
-    points: [
-      "Accedere a immobili di pregio in zone iconiche",
-      "Realizzare operazioni ad alto valore estetico e tecnologico",
-      "Valorizzare gli asset con design e materiali made in Italy",
-      "Avere un'unica regia ingegneristica dalla fattibilità alla consegna"
-    ],
-    closing: "Dall'analisi di fattibilità alla commercializzazione: un'unica regia ingegneristica."
-  },
-  garanzie: {
-    eyebrow: "Garanzie e trasparenza",
-    title: "Un modello di tutela basato su strumenti internazionali.",
-    description: "Il nostro metodo si fonda su controllo, tracciabilità e comunicazione costante con il committente. Forniamo una protezione economica, contrattuale e gestionale pensata per investitori italiani ed esteri.",
-    points: [
-      "Contrattualistica bilingue (ENG/ITA)",
-      "Timeline operativa tracciata e milestone condivise",
-      "Ricerca del terreno, progettazione architettonica e costruzione",
-      "Escrow account o SPV dedicata all’investimento",
-      "Report mensili e forecast finanziari",
-      "Analisi di mercato tramite MCA (Market Comparison Approach)",
-      "Exit strategy: gestione turistica/affittuaria e/o futura rivendita"
-    ]
-  },
-  sostenibilita: {
-    eyebrow: "Sostenibilità",
-    title: "Un futuro dove innovazione e territorio si fondono.",
-    description: "Materiali rinnovabili, tecnologie avanzate e rispetto dell'armonia paesaggistica: ogni nostra operazione nasce per integrarsi nel contesto, non per imporsi ad esso."
-  },
   news: {
     eyebrow: "Insights",
     title: "Ultimi insights.",
@@ -150,7 +101,7 @@ export default {
       {
         date: "12/2025",
         category: "Gruppo",
-        title: "Nasce Tiesse Group: la piattaforma strategica per il real estate",
+        title: "Tiesse Group: ingegneria e sviluppo sotto un solo marchio",
         description: "Il gruppo mette insieme ingegneria e sviluppo immobiliare sotto un marchio solo.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
@@ -175,9 +126,9 @@ export default {
     groups: [
       {
         title: "Membro di",
-        description: "Camere di commercio ed enti istituzionali di cui facciamo parte.",
+        // caption: il nome si legge scritto sotto il logo
         logos: [
-          { name: "Italy-America Chamber of Commerce West", src: "/partners/iaccw-west.png", url: "https://www.iaccw.net/" },
+          { name: "Italy-America Chamber of Commerce West", src: "/partners/iaccw-west.png", url: "https://www.iaccw.net/", caption: true },
         ]
       },
       {
@@ -232,66 +183,11 @@ export default {
     group_line: "Opera con il marchio Tiesse Group",
     established: "Fondata nel 2001"
   },
-  real_estate: {
-    page_title: "Real Estate · Dove guardiamo nel Mediterraneo",
-    hero_eyebrow: "Real Estate · Dove guardiamo",
-    hero_title: "Real Estate",
-    hero_subtitle: "Le aree costiere e urbane che seguiamo in Italia e nel Mediterraneo.",
-    hero_meta: ["Sardegna", "Toscana", "Corsica", "Isole Eolie", "Emilia-Romagna"],
-
-    intro_eyebrow: "Dove guardiamo",
-    intro_title: "Dove il paesaggio protegge il valore, l'ingegneria protegge l'investimento.",
-    intro_body: [
-      "Interpretiamo il real estate come una strategia di allocazione del capitale di lungo periodo, selezionando solo opportunità in grado di preservare e accrescere il valore nel tempo.",
-      "La nostra attività si concentra su asset residenziali di alta qualità, concepiti sia come immobili a uso privato sia come investimenti strutturati all'interno di una più ampia strategia di diversificazione.",
-      "Grazie a un'esperienza consolidata nella ricerca, nello sviluppo e nella gestione di operazioni complesse, seguiamo l'intero ciclo di vita, dall'acquisizione e fattibilità fino allo sviluppo e all'asset management di lungo termine.",
-      "Ogni decisione è guidata da un rigoroso framework tecnico e finanziario, che garantisce trasparenza, controllo e coerenza tra risultati attesi e risultati effettivi."
-    ],
-
-    sardegna_eyebrow: "Regione",
-    sardegna_title: "Sardegna",
-    sardegna_body: [
-      "La Sardegna del nord, dalla Costa Smeralda alla costa di granito più a ovest, è tra i tratti a offerta più limitata del Mediterraneo: un mercato in cui a decidere il valore sono la rarità e le regole urbanistiche, non i volumi.",
-      "La leggiamo come leggiamo ogni sito, con selettività e molto prima che si costruisca: cosa consente il piano, cosa regge il paesaggio, quanto costa farlo bene.",
-      "È l'area che seguiamo più da vicino, ed è qui che si collocano i concept allo studio del nostro team."
-    ],
-
-    costa_paradiso_eyebrow: "Luogo",
-    costa_paradiso_title: "Costa Paradiso",
-    costa_paradiso_subtitle: "Una costa di granito tutelata, sul versante nord dell'isola.",
-    costa_paradiso_meta: ["Sardegna nord", "Paesaggio costiero tutelato"],
-    costa_paradiso_brief_eyebrow: "Contesto",
-    costa_paradiso_brief_title: "Un tratto di costa nord dalla memoria densa.",
-    costa_paradiso_brief_body: [
-      "Costa Paradiso, sulla costa nord della Sardegna, è un tratto di litorale tutelato e di forte riconoscibilità, legato da tempo al cinema italiano. Michelangelo Antonioni aveva qui la sua residenza, condivisa con Monica Vitti, e questo paesaggio è entrato nella memoria visiva del Paese.",
-      "La costa è segnata anche da una delle architetture sperimentali più distintive del Novecento italiano: La Cupola, progettata da Dante Bini, ancora oggi una delle residenze private più riconoscibili dell'isola.",
-      "È uno dei tratti di costa che seguiamo più da vicino. Qui la scarsità è una questione di regole urbanistiche prima che di terreno, ed è questo a rendere il valore duraturo."
-    ],
-    costa_paradiso_feature_eyebrow: "Contesto",
-    costa_paradiso_feature_quote: "Un luogo che precede l'architettura.",
-    costa_paradiso_feature_body: "Costa Paradiso occupa un tratto della costa nord-occidentale definito da formazioni granitiche, paesaggio tutelato e una storia culturale che ne ha segnato l'identità molto prima di qualsiasi sviluppo. Qui scarsità, normativa e posizione convergono a proteggere il valore nel lungo periodo.",
-    costa_paradiso_gallery_eyebrow: "Location",
-    costa_paradiso_gallery_captions: [
-      "Costa di granito al tramonto",
-      "Caletta riparata · paesaggio tutelato"
-    ],
-    costa_paradiso_closing: "Un paesaggio costiero tutelato, in un mercato dove scarsità e vincoli normativi definiscono il valore.",
-
-    cta_eyebrow: "Contatti",
-    cta_title: "Iniziamo una conversazione.",
-    cta_body: "Se stai guardando alla costa italiana, raccontaci che cosa hai in mente. Rispondiamo entro 48 ore.",
-    cta_button: "Scrivici"
-  },
   projects: {
     page_title: "Ingegneria, eseguita con precisione e controllo.",
     hero_eyebrow: "Opere Selezionate · Esperienza Ingegneristica dal 2001",
     subtitle: "Progetti selezionati che rappresentano il nostro approccio all'ingegneria, all'integrazione progettuale e al controllo tecnico in contesti complessi.",
     hero_tag: "Progettazione · Ingegneria · BIM · Esecuzione",
-    intro_eyebrow: "Metodo",
-    intro_title: "Prima di sviluppare un investimento, l'ingegneria decide.",
-    intro_body: [
-      "Questi progetti non sono un portfolio, ma la base tecnica dietro le nostre decisioni immobiliari. Ogni commessa, da restauri storici a strutture sanitarie, ha affinato la nostra capacità di valutare costi, rischi e potenziale di sviluppo."
-    ],
     categories_eyebrow: "Portfolio",
     categories_title: "Settori di intervento",
     categories_subtitle: "Competenze ingegneristiche applicate in settori diversi.",
@@ -305,10 +201,6 @@ export default {
       { value: "5", label: "Settori chiave" },
       { value: "IT", label: "Area operativa" }
     ],
-    real_estate_banner_eyebrow: "Operazioni immobiliari",
-    real_estate_banner_title: "Operazioni Real Estate in corso",
-    real_estate_banner_text: "Sviluppo residenziale di pregio per investitori italiani ed esteri. Operazioni selezionate, dettagli riservati.",
-    real_estate_banner_cta: "Operazioni Real Estate",
     technical_eyebrow: "Track Record",
     technical_title: "Le opere realizzate, per settore.",
     technical_subtitle: "Ogni commessa è una scheda tecnica: committente, anno, sito, ruolo, esito. Raggruppate per settore per restituire la misura reale dell'esperienza tecnica.",
@@ -337,7 +229,7 @@ export default {
   },
   gateway: {
     page_title: "Tiesse Group | Real Estate Development, Built on Engineering",
-    page_description: "Tiesse Group riunisce Tiesse Servizi, ingegneria e sviluppo dal 2001, e C&T Developments, il ramo dedicato all'investimento immobiliare.",
+    page_description: "Tiesse Group riunisce Tiesse Servizi, ingegneria dal 2001, e C&T Developments, piattaforma per operazioni immobiliari nel Mediterraneo.",
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Development, Built on Engineering",
     title_html: "Sviluppo immobiliare,<br/><em>fondato sull'ingegneria.</em>",
@@ -348,7 +240,7 @@ export default {
       name_strong: "TIESSE",
       name_accent: "SERVIZI",
       sub: "Opera con il marchio Tiesse Group",
-      line: "Ingegneria e sviluppo",
+      line: "Ingegneria",
       meta: "Dal 2001",
       cta: "Entra"
     },
@@ -362,7 +254,7 @@ export default {
   },
   ct: {
     page_title: "C&T Developments | Tiesse Group",
-    page_description: "C&T Developments è il ramo di Tiesse Group dedicato allo sviluppo immobiliare.",
+    page_description: "C&T Developments, piattaforma per operazioni immobiliari nel Mediterraneo.",
     name_strong: "C&T",
     name_accent: " DEVELOPMENTS",
     tagline: "Engineering-driven real estate development",
@@ -417,18 +309,28 @@ export default {
     },
 
     hero_eyebrow: "Visione · Futuro · Valore",
-    hero_title: "Anticipiamo il valore.",
-    hero_title_html: "Anticipiamo il <em>valore.</em>",
-    manifesto_html: "Sviluppiamo dove la scarsità è una questione di <em>permessi</em>, non di terreno. Un masterplan, gli spazi comuni, la qualità dell'insieme. Non ville una accanto all'altra, ma <em>un pezzo di paese.</em>",
+    hero_title: "Luoghi esclusivi, una sola piattaforma.",
+    hero_title_html: "Luoghi esclusivi, <em>una sola piattaforma.</em>",
+    manifesto_html: "Sviluppiamo ville e compound pensati interamente per la longevità: un livello spa privato con sauna, infrarossi, crioterapia e camera iperbarica con supervisione medica, la palestra, e un edificio che tiene puliti l'aria, l'acqua e il silenzio. Non ville una accanto all'altra, ma <em>un posto costruito per vivere bene.</em>",
     hero_lede: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto di mezzo.",
-    hero_intro: "C&T Developments nasce da un modo di guardare un mondo che cambia: città che si trasformano, modi di abitare che si riscrivono, luoghi che tornano a contare. È il ramo di Tiesse Group che riconosce la bellezza prima che diventi evidente, e la porta fino al valore.",
+    hero_intro: "C&T Developments seleziona operazioni immobiliari in Italia e soprattutto nel Mediterraneo, nei luoghi dove aria e acqua pulite, clima e luce fanno vivere a lungo e bene. Due delle cinque Blue Zone originarie del mondo sono nel Mediterraneo: una in Sardegna, una in Grecia. Cerchiamo i posti dove la natura fa già questo lavoro, e ogni progetto lo costruiamo attorno a lei.",
+    based: "Sede a Bologna, con nostri collaboratori a Los Angeles e a Dubai.",
+
+    value: {
+      title: "Il valore che dura",
+      body: [
+        "Ogni operazione la scegliamo due volte: per il luogo e per il valore che può creare e mantenere nel tempo.",
+        "Costruiamo nei luoghi più ricercati del Mediterraneo, dove le regole urbanistiche limitano l'offerta, con materiali, tecnologie e impianti di qualità che tengono una casa di valore per decenni.",
+        "Il valore nasce con il permesso e si mantiene con la qualità di ciò che costruiamo."
+      ]
+    },
 
     vision: {
       num: "01",
       eyebrow: "Visione",
       title: "Dove vogliamo arrivare",
       body: [
-        "Sviluppiamo dove la scarsità è una questione di permessi, non di terreno: sulla costa, dove è il piano a decidere cosa si può costruire, e in città, dove gli edifici esistenti aspettano una vita nuova.",
+        "Sviluppiamo dove a rendere raro il costruito sono i permessi, non il terreno: sulla costa, dove è il piano a decidere cosa si può costruire, e in città, dove gli edifici esistenti aspettano una vita nuova.",
         "Portiamo la disciplina dello sviluppo urbano dove quasi nessuno la applica: un masterplan, gli spazi comuni, la qualità dell'insieme. Non ville una accanto all'altra, ma un pezzo di paese.",
         "Il nostro orizzonte è una piattaforma: una squadra di cui il capitale si fida prima ancora di vedere la singola operazione, perché è la squadra che la realizza."
       ]
@@ -457,7 +359,7 @@ export default {
       region_labels: { sardinia: "Sardegna", corsica: "Corsica", tuscany: "Toscana", aeolian: "Isole Eolie", emilia: "Emilia-Romagna" },
       region_count_one: "concept allo studio",
       region_count_many: "concept allo studio",
-      counters: ["3 concept allo studio", "16 residenze", "1 boutique hotel"],
+      counters: ["5 concept allo studio", "4 compound di ville", "1 boutique residence"],
       // hidden: true tiene la scheda fuori dalla pagina finche' non arriva l'ok.
       items: [
         {
@@ -482,23 +384,23 @@ export default {
           hidden: false
         },
         {
-          key: "hotel",
+          key: "four-villas",
           region: "sardinia",
-          title: "Boutique hotel",
-          place: "Costa nord della Sardegna",
-          body: "Volumi esistenti su una costa di granito, riuniti in un albergo di piccole dimensioni.",
-          lede: "Quello che è già costruito, riunito in un albergo piccolo.",
+          title: "Quattro ville",
+          place: "Sardegna del nord, vicino alla Costa Smeralda",
+          body: "Quattro ville, ognuna con piscina, giardino, spa e palestra private.",
+          lede: "Quattro case, ognuna con la sua spa.",
           facts: [
-            { label: "Tipologia", value: "Boutique hotel" },
-            { label: "In comune", value: "Ristorante, giardino, piscina" },
+            { label: "Tipologia", value: "Quattro ville su due piani" },
+            { label: "Wellness", value: "Spa e palestra private" },
             { label: "Stato", value: "Concept, allo studio" }
           ],
           place_title: "Il luogo",
-          place_body: "La costa nord della Sardegna, un litorale di granito sotto tutela paesaggistica, dove quello che già esiste vale più di quello che si potrebbe aggiungere.",
+          place_body: "Sardegna del nord, alle porte della Costa Smeralda: ulivi, muretti a secco e campagna aperta, in un tratto dove le regole urbanistiche tengono raro il costruito.",
           idea_title: "L'idea",
           idea_body: [
-            "Il progetto non aggiunge volume. Rimette insieme gli edifici che ci sono già in un unico albergo di piccole dimensioni, con un ristorante, un giardino e una piscina.",
-            "L'architettura resta bassa e locale: granito, calce, legno, e piante che appartengono al posto."
+            "Quattro ville su due piani, ognuna nel suo giardino con piscina e pergola, e un piano inferiore dedicato al recupero: spa privata con sauna, infrarossi e vasca fredda, e una palestra.",
+            "Meno case e più terreno intorno a ciascuna: un'alternativa al concept delle sei ville, sullo stesso terreno."
           ],
           stage: "Fase di concept. Fattibilità, urbanistica e costi sono allo studio. Località e dettagli si condividono in riservatezza.",
           hidden: false
@@ -526,26 +428,48 @@ export default {
           hidden: false
         },
         {
-          key: "sixteen-villas",
+          key: "compound",
           region: "sardinia",
-          title: "Sedici ville",
-          place: "Sardegna",
-          body: "Un piccolo borgo di sedici ville tra gli ulivi, con servizi condivisi.",
-          lede: "Un piccolo borgo tra gli ulivi.",
+          title: "Compound con spa",
+          place: "Sardegna del nord, a sud della Costa Smeralda",
+          body: "Nove ville a un piano tra gli ulivi, ognuna nel suo giardino con loggia e piscina, e una spa comune all'ingresso.",
+          lede: "Nove ville tra gli ulivi, e una spa.",
           facts: [
-            { label: "Tipologia", value: "Sedici ville" },
-            { label: "In comune", value: "Servizi e parco" },
+            { label: "Tipologia", value: "Nove ville a un piano" },
+            { label: "In comune", value: "Spa e palestra" },
             { label: "Stato", value: "Concept, allo studio" }
           ],
           place_title: "Il luogo",
-          place_body: "Sardegna interna, tra gli ulivi, su un terreno che ha già la forma di un piccolo insediamento.",
+          place_body: "Sardegna del nord, nell'entroterra a sud della Costa Smeralda: un uliveto su un terreno in leggero pendio, con le colline all'orizzonte.",
           idea_title: "L'idea",
           idea_body: [
-            "Sedici case impostate come un borgo e non come una lottizzazione: strade brevi, servizi condivisi, e l'uliveto lasciato com'è.",
-            "Ogni casa è pensata per essere abitata tutto l'anno, non solo ad agosto."
+            "Nove ville a un piano disposte tra gli ulivi, ognuna nel suo giardino con loggia e piscina. Soggiorno, cucina e camere si aprono sul giardino; l'uliveto resta com'è.",
+            "All'ingresso una spa comune incassata nel terreno, sotto un tetto verde: palestra, sauna, infrarossi, vasca fredda e camera iperbarica con supervisione medica."
           ],
           stage: "Fase di concept. Fattibilità, urbanistica e costi sono allo studio. Località e dettagli si condividono in riservatezza.",
-          hidden: true
+          hidden: false
+        },
+        {
+          key: "boutique-residence",
+          region: "sardinia",
+          title: "Boutique residence",
+          place: "Costa nord della Sardegna",
+          body: "Undici residenze e una lounge con ristorante, al posto di un edificio esistente su una costa di granito.",
+          lede: "Un edificio esistente, ricostruito in undici residenze e un ristorante.",
+          facts: [
+            { label: "Tipologia", value: "Undici residenze" },
+            { label: "In comune", value: "Lounge, ristorante, spa" },
+            { label: "Stato", value: "Concept, allo studio" }
+          ],
+          place_title: "Il luogo",
+          place_body: "La costa nord della Sardegna, un litorale di granito sotto tutela paesaggistica, dove quello che già esiste vale più di quello che si potrebbe aggiungere.",
+          idea_title: "L'idea",
+          idea_body: [
+            "L'edificio esistente si demolisce e si ricostruisce con lo stesso volume: undici residenze, ognuna con terrazza o giardino.",
+            "Intorno, una lounge con un ristorante aperto al pubblico, un giardino con piscina, una piccola spa con palestra. L'architettura resta bassa e locale: granito, calce, legno, e piante che appartengono al posto."
+          ],
+          stage: "Fase di concept. Fattibilità, urbanistica e costi sono allo studio. Località e dettagli si condividono in riservatezza.",
+          hidden: false
         }
       ]
     },
@@ -553,11 +477,10 @@ export default {
     where: {
       num: "04",
       eyebrow: "Dove guardiamo",
-      title: "Due gambe, un metodo.",
+      title: "Prima il Mediterraneo, poi la città.",
       blocks: [
-        { title: "La costa", body: "Sardegna, Corsica, Toscana e Isole Eolie. Dove le regole urbanistiche rendono il terreno raro e il valore duraturo." },
-        { title: "La città", body: "Bologna e l'Emilia-Romagna. Rigenerazione e riuso del costruito, dove il rischio è tecnico e la nostra ingegneria lo valuta in casa." },
-        { title: "Il capitale", body: "Lavoriamo con partner in Italia, negli Stati Uniti e nel Golfo." }
+        { title: "Il Mediterraneo", body: "Sardegna, Corsica, Toscana e Isole Eolie. Dove le regole urbanistiche rendono il terreno raro e il valore duraturo." },
+        { title: "La città", body: "Bologna e l'Emilia-Romagna. Rigenerazione e riuso del costruito, dove il rischio è tecnico e la nostra ingegneria lo valuta in casa." }
       ],
       tiles: ["Sardegna", "Corsica", "Toscana", "Isole Eolie", "Emilia-Romagna"]
     },
@@ -569,6 +492,7 @@ export default {
       body: [
         "Ogni operazione sta dentro il proprio veicolo, con il rischio separato da tutte le altre.",
         "Lavoriamo con banche, investitori privati, family office e piattaforme vigilate. Il capitale si impegna quando il rischio urbanistico è già stato superato.",
+        "Ogni operazione la valutiamo in modo prudente e la mettiamo alla prova con prezzi più bassi e costi più alti, prima che entri il capitale. I numeri si condividono di persona, con un accordo di riservatezza.",
         "Le schede tecniche si condividono in riservatezza."
       ]
     },
@@ -601,6 +525,7 @@ export default {
 
     footer_line: "C&T Developments è un ramo di Tiesse Group.",
     legal: "Tiesse Servizi S.a.s. · P.IVA 02241091202 · Via Loderingo degli Andalò 5, 40124 Bologna",
+    disclaimer: "I concept sono illustrativi e allo studio. Nulla in questo sito costituisce offerta o sollecitazione all'acquisto o alla vendita di strumenti finanziari o di partecipazioni in alcun progetto.",
     cities: "Bologna · Los Angeles · Dubai"
   }
 };

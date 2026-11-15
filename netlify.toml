@@ -24,6 +24,23 @@
   to = "/ct-developments"
   status = 301
 
+# Il concept "Boutique hotel" e' diventato "Boutique residence" (15/11/2026):
+# chi ha il vecchio link arriva alla pagina nuova.
+[[redirects]]
+  from = "/ct-developments/concepts/hotel"
+  to = "/ct-developments/concepts/boutique-residence"
+  status = 301
+
+[[redirects]]
+  from = "/it/ct-developments/concepts/hotel"
+  to = "/it/ct-developments/concepts/boutique-residence"
+  status = 301
+
+[[redirects]]
+  from = "/es/ct-developments/concepts/hotel"
+  to = "/es/ct-developments/concepts/boutique-residence"
+  status = 301
+
 # Niente regola generica "/*": il sito e' statico e ogni pagina ha il suo
 # file. Con quella regola un indirizzo sbagliato rispondeva 200 mostrando il
 # bivio; cosi' invece risponde 404 e mostra la pagina 404.

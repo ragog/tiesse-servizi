@@ -51,10 +51,17 @@ const h = content.home_sections;
 		<div class="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
 			<div class="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
 				{content.key_facts.items.map((item: { value: string; label: string }) => (
-					<div class="py-10 px-4 md:px-6 text-center">
-						<div class="text-3xl md:text-5xl font-light text-gray-900 mb-2">{item.value}</div>
-						<div class="text-[11px] md:text-xs tracking-widest uppercase text-gray-500">{item.label}</div>
-					</div>
+					item.value ? (
+						<div class="py-10 px-4 md:px-6 text-center">
+							<div class="text-3xl md:text-5xl font-light text-gray-900 mb-2">{item.value}</div>
+							<div class="text-[11px] md:text-xs tracking-widest uppercase text-gray-500">{item.label}</div>
+						</div>
+					) : (
+						// Senza numero: la frase da sola, centrata, a grandezza di lettura.
+						<div class="py-10 px-4 md:px-6 flex items-center justify-center text-center">
+							<p class="text-sm md:text-[15px] leading-snug font-normal text-gray-700 max-w-[17rem]">{item.label}</p>
+						</div>
+					)
 				))}
 			</div>
 		</div>
@@ -133,9 +140,11 @@ const h = content.home_sections;
 			<!-- Team grid -->
 			<div>
 				<p class="text-[11px] md:text-xs tracking-[0.3em] uppercase text-gray-400 mb-10">{content.founder.team_eyebrow}</p>
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-gray-200 border border-gray-200">
+				<!-- Una colonna sul telefono e quattro solo da 1024 px: con colonne
+				     strette le parole lunghe ("INSTITUTIONAL") si spezzavano. -->
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-200 border border-gray-200">
 					{content.founder.team.map((member: { name: string; title: string; linkedin: string }) => (
-						<div class="bg-white p-8 md:p-10 flex flex-col">
+						<div class="bg-white p-7 sm:p-8 lg:p-10 flex flex-col">
 							<p class="text-base md:text-lg font-light text-gray-900 mb-1">{member.name}</p>
 							<p class="text-[11px] tracking-[0.15em] uppercase text-gray-500 mb-6 leading-relaxed flex-1">{member.title}</p>
 							{member.linkedin && (
@@ -173,19 +182,30 @@ const h = content.home_sections;
 			     colonne restava un riquadro grigio vuoto. Niente bordi a tabella,
 			     loghi tutti alla stessa altezza. -->
 			<div class={`grid gap-10 md:gap-14 sm:grid-cols-2 ${content.partners.groups.length >= 3 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'}`}>
-				{content.partners.groups.map((group: { title: string; description: string; logos: { name: string; src?: string; url?: string }[] }, i: number) => (
+				{content.partners.groups.map((group: { title: string; description?: string; logos: { name: string; src?: string; url?: string; caption?: boolean }[] }, i: number) => (
 					<div class="flex flex-col border-t border-gray-300 pt-6">
 						<div class="text-[11px] tracking-[0.25em] text-gray-400 mb-5 tabular-nums">{String(i + 1).padStart(2, '0')}</div>
 						<h3 class="text-lg md:text-xl font-light text-gray-900 leading-snug mb-3 tracking-tight">{group.title}</h3>
-						<p class="text-sm md:text-[15px] text-gray-600 font-light leading-relaxed">{group.description}</p>
+						{group.description && (
+							<p class="text-sm md:text-[15px] text-gray-600 font-light leading-relaxed">{group.description}</p>
+						)}
 
 						{group.logos.length > 0 && (
 							<div class="mt-8 flex flex-wrap items-center gap-x-10 gap-y-6">
 								{group.logos.map((logo) => {
 									// Senza file del logo scriviamo il nome, alto quanto i loghi.
-									const inner = logo.src ? (
+									// Con caption il nome si legge anche scritto, sotto il logo.
+									const img = logo.src && (
 										<img src={logo.src} alt={logo.name} loading="lazy"
 											class="h-12 md:h-14 w-auto max-w-[13rem] object-contain" />
+									);
+									const inner = logo.src ? (
+										logo.caption ? (
+											<span class="flex flex-col items-start gap-3">
+												{img}
+												<span class="text-sm md:text-[15px] font-normal text-gray-700 leading-snug">{logo.name}</span>
+											</span>
+										) : img
 									) : (
 										<span class="h-12 md:h-14 flex items-center text-sm md:text-[15px] font-medium tracking-[0.18em] uppercase text-gray-700 whitespace-nowrap">
 											{logo.name}

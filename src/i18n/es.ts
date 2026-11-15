@@ -5,7 +5,7 @@ import en from './en';
 // decide di tradurre anche il sito Tiesse Servizi.
 const ct = {
   page_title: "C&T Developments | Tiesse Group",
-  page_description: "C&T Developments es la rama de Tiesse Group dedicada al desarrollo inmobiliario.",
+  page_description: "C&T Developments, una plataforma para proyectos inmobiliarios en el Mediterráneo.",
   name_strong: "C&T",
   name_accent: " DEVELOPMENTS",
   tagline: "Engineering-driven real estate development",
@@ -59,11 +59,21 @@ const ct = {
   },
 
   hero_eyebrow: "Visión · Futuro · Valor",
-  hero_title: "Anticipamos el valor.",
-  hero_title_html: "Anticipamos el <em>valor.</em>",
-  manifesto_html: "Desarrollamos donde la escasez es una cuestión de <em>licencias</em>, no de suelo. Un plan maestro, los espacios comunes, la calidad del conjunto. No villas una al lado de otra, sino <em>un pequeño trozo de pueblo.</em>",
+  hero_title: "Lugares exclusivos, una sola plataforma.",
+  hero_title_html: "Lugares exclusivos, <em>una sola plataforma.</em>",
+  manifesto_html: "Desarrollamos villas y conjuntos pensados por completo para la longevidad: un nivel de spa privado con sauna, infrarrojos, crioterapia y cámara hiperbárica con supervisión médica, una sala de entrenamiento, y un edificio que mantiene limpios el aire, el agua y el silencio. No villas una al lado de otra, sino <em>un lugar hecho para vivir bien.</em>",
   hero_lede: "Encontramos la oportunidad, la llevamos hasta la licencia y la ejecutamos. El capital entra cuando el riesgo urbanístico ya se ha eliminado.",
-  hero_intro: "C&T Developments nace de una manera de mirar un mundo que cambia: ciudades que se transforman, formas de vivir que se reescriben, lugares que vuelven a importar.",
+  hero_intro: "C&T Developments selecciona proyectos inmobiliarios en Italia y, sobre todo, en el Mediterráneo, en lugares donde el aire y el agua limpios, el clima y la luz permiten vivir mucho y vivir bien. Dos de las cinco Blue Zones originales del mundo están en el Mediterráneo: una en Cerdeña y otra en Grecia. Buscamos los lugares donde la naturaleza ya hace este trabajo, y construimos cada proyecto en torno a ella.",
+  based: "Con sede en Bolonia y con nuestra gente sobre el terreno en Los Ángeles y Dubái.",
+
+  value: {
+    title: "El valor que perdura",
+    body: [
+      "Elegimos cada proyecto dos veces: por el lugar, y por el valor que puede crear y mantener en el tiempo.",
+      "Construimos en los lugares más buscados del Mediterráneo, donde el planeamiento limita la oferta, con materiales, tecnología e instalaciones de calidad que mantienen el valor de una casa durante décadas.",
+      "El valor nace con la licencia y se mantiene con la calidad de lo que construimos."
+    ]
+  },
 
   vision: {
     num: "01",
@@ -99,7 +109,7 @@ const ct = {
     region_labels: { sardinia: "Cerdeña", corsica: "Córcega", tuscany: "Toscana", aeolian: "Islas Eolias", emilia: "Emilia-Romaña" },
     region_count_one: "concept en estudio",
     region_count_many: "concepts en estudio",
-    counters: ["3 concepts en estudio", "16 residencias", "1 boutique hotel"],
+    counters: ["5 concepts en estudio", "4 conjuntos de villas", "1 boutique residence"],
     items: [
       {
         key: "six-villas",
@@ -123,23 +133,23 @@ const ct = {
         hidden: false
       },
       {
-        key: "hotel",
+        key: "four-villas",
         region: "sardinia",
-        title: "Boutique hotel",
-        place: "Costa norte de Cerdeña",
-        body: "Volúmenes existentes sobre una costa de granito, reunidos en un hotel pequeño.",
-        lede: "Lo que ya está construido, reunido en un hotel pequeño.",
+        title: "Cuatro villas",
+        place: "Norte de Cerdeña, cerca de la Costa Smeralda",
+        body: "Cuatro villas, cada una con piscina, jardín, spa y gimnasio privados.",
+        lede: "Cuatro casas, cada una con su spa.",
         facts: [
-          { label: "Tipología", value: "Boutique hotel" },
-          { label: "En común", value: "Restaurante, jardín, piscina" },
+          { label: "Tipología", value: "Cuatro villas de dos plantas" },
+          { label: "Wellness", value: "Spa y gimnasio privados" },
           { label: "Estado", value: "Concept, en estudio" }
         ],
         place_title: "El lugar",
-        place_body: "La costa norte de Cerdeña, un litoral de granito bajo protección paisajística, donde lo que ya existe vale más que lo que se podría añadir.",
+        place_body: "Norte de Cerdeña, a las puertas de la Costa Smeralda: olivos, muros de piedra seca y campo abierto, en un tramo donde el planeamiento mantiene escaso lo construido.",
         idea_title: "La idea",
         idea_body: [
-          "El proyecto no añade volumen. Reorganiza los edificios que ya están en un único hotel pequeño, con un restaurante, un jardín y una piscina.",
-          "La arquitectura se mantiene baja y local: granito, cal, madera y plantas que pertenecen al lugar."
+          "Cuatro villas de dos plantas, cada una en su jardín con piscina y pérgola, y una planta inferior dedicada a la recuperación: spa privado con sauna, infrarrojos y baño frío, y un gimnasio.",
+          "Menos casas y más terreno alrededor de cada una: una alternativa al concept de seis villas, sobre el mismo terreno."
         ],
         stage: "Fase de concept. Viabilidad, urbanismo y costes están en estudio. La ubicación y los detalles se comparten bajo confidencialidad.",
         hidden: false
@@ -167,26 +177,48 @@ const ct = {
         hidden: false
       },
       {
-        key: "sixteen-villas",
+        key: "compound",
         region: "sardinia",
-        title: "Dieciséis villas",
-        place: "Cerdeña",
-        body: "Una pequeña aldea de dieciséis villas entre olivos, con servicios compartidos.",
-        lede: "Una pequeña aldea entre olivos.",
+        title: "Conjunto con spa",
+        place: "Norte de Cerdeña, al sur de la Costa Smeralda",
+        body: "Nueve villas de una planta entre olivos, cada una en su jardín con logia y piscina, y un spa común a la entrada.",
+        lede: "Nueve villas entre olivos, y un spa.",
         facts: [
-          { label: "Tipología", value: "Dieciséis villas" },
-          { label: "En común", value: "Servicios y parque" },
+          { label: "Tipología", value: "Nueve villas de una planta" },
+          { label: "En común", value: "Spa y gimnasio" },
           { label: "Estado", value: "Concept, en estudio" }
         ],
         place_title: "El lugar",
-        place_body: "Cerdeña interior, entre olivos, sobre un terreno que ya tiene la forma de un pequeño asentamiento.",
+        place_body: "Norte de Cerdeña, en el interior y al sur de la Costa Smeralda: un olivar sobre un terreno en suave pendiente, con las colinas en el horizonte.",
         idea_title: "La idea",
         idea_body: [
-          "Dieciséis casas planteadas como una aldea y no como una parcelación: calles cortas, servicios compartidos y el olivar dejado como está.",
-          "Cada casa está pensada para vivirse todo el año, no solo en agosto."
+          "Nueve villas de una planta dispuestas entre los olivos, cada una en su jardín con logia y piscina. Salón, cocina y dormitorios se abren al jardín; el olivar se queda como está.",
+          "A la entrada, un spa común encajado en el terreno bajo una cubierta vegetal: gimnasio, sauna, infrarrojos, baño frío y cámara hiperbárica con supervisión médica."
         ],
         stage: "Fase de concept. Viabilidad, urbanismo y costes están en estudio. La ubicación y los detalles se comparten bajo confidencialidad.",
-        hidden: true
+        hidden: false
+      },
+      {
+        key: "boutique-residence",
+        region: "sardinia",
+        title: "Boutique residence",
+        place: "Costa norte de Cerdeña",
+        body: "Once residencias y un lounge con restaurante, en lugar de un edificio existente sobre una costa de granito.",
+        lede: "Un edificio existente, reconstruido en once residencias y un restaurante.",
+        facts: [
+          { label: "Tipología", value: "Once residencias" },
+          { label: "En común", value: "Lounge, restaurante, spa" },
+          { label: "Estado", value: "Concept, en estudio" }
+        ],
+        place_title: "El lugar",
+        place_body: "La costa norte de Cerdeña, un litoral de granito bajo protección paisajística, donde lo que ya existe vale más que lo que se podría añadir.",
+        idea_title: "La idea",
+        idea_body: [
+          "El edificio existente se derriba y se reconstruye con el mismo volumen: once residencias, cada una con terraza o jardín.",
+          "Alrededor, un lounge con un restaurante abierto al público, un jardín con piscina y un pequeño spa con gimnasio. La arquitectura se mantiene baja y local: granito, cal, madera y plantas que pertenecen al lugar."
+        ],
+        stage: "Fase de concept. Viabilidad, urbanismo y costes están en estudio. La ubicación y los detalles se comparten bajo confidencialidad.",
+        hidden: false
       }
     ]
   },
@@ -194,11 +226,10 @@ const ct = {
   where: {
     num: "04",
     eyebrow: "Dónde miramos",
-    title: "Dos piernas, un método.",
+    title: "Primero el Mediterráneo, después la ciudad.",
     blocks: [
-      { title: "La costa", body: "Cerdeña, Córcega, Toscana e Islas Eolias. Donde el planeamiento hace escaso el suelo y duradero el valor." },
-      { title: "La ciudad", body: "Bolonia y Emilia-Romaña. Regeneración y reutilización de lo construido, donde el riesgo es técnico y nuestra ingeniería lo valora en casa." },
-      { title: "El capital", body: "Trabajamos con socios en Italia, Estados Unidos y el Golfo." }
+      { title: "El Mediterráneo", body: "Cerdeña, Córcega, Toscana e Islas Eolias. Donde el planeamiento hace escaso el suelo y duradero el valor." },
+      { title: "La ciudad", body: "Bolonia y Emilia-Romaña. Regeneración y reutilización de lo construido, donde el riesgo es técnico y nuestra ingeniería lo valora en casa." }
     ],
     tiles: ["Cerdeña", "Córcega", "Toscana", "Islas Eolias", "Emilia-Romaña"]
   },
@@ -210,6 +241,7 @@ const ct = {
     body: [
       "Cada operación vive dentro de su propio vehículo, con el riesgo separado de las demás.",
       "Trabajamos con bancos, inversores privados, family offices y plataformas reguladas. El capital se compromete cuando el riesgo urbanístico ya se ha superado.",
+      "Evaluamos cada proyecto con prudencia y lo ponemos a prueba con precios más bajos y costes más altos antes de que entre el capital. Las cifras se comparten en persona, bajo un acuerdo de confidencialidad.",
       "Los dosieres técnicos se comparten bajo confidencialidad."
     ]
   },
@@ -242,6 +274,7 @@ const ct = {
 
   footer_line: "C&T Developments es una rama de Tiesse Group.",
   legal: "Tiesse Servizi S.a.s. · CIF 02241091202 · Via Loderingo degli Andalò 5, 40124 Bolonia",
+  disclaimer: "Los conceptos son ilustrativos y están en estudio. Nada en este sitio constituye una oferta o una invitación a comprar o vender valores o participaciones en ningún proyecto.",
   cities: "Bolonia · Los Ángeles · Dubái"
 };
 

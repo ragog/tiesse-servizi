@@ -7,8 +7,10 @@ import CtShell from './CtShell.astro';
 
 import heroImg from '../assets/ct/six-villas-2.webp';
 import six1 from '../assets/ct/six-villas-1.webp';
-import hotel1 from '../assets/ct/hotel-1.webp';
-import ten1 from '../assets/ct/ten-villas-1.webp';
+import four1 from '../assets/ct/four-1.jpg';
+import ten1 from '../assets/ct/ten-b1.jpg';
+import compound1 from '../assets/ct/compound-1.jpg';
+import boutique1 from '../assets/ct/boutique-1.jpg';
 
 import tileSardinia from '../assets/real-estate/sardinia-tile.webp';
 import tileAeolian from '../assets/real-estate/eolie/cover.webp';
@@ -33,10 +35,14 @@ const langUrls = bases;
 
 const covers: Record<string, ImageMetadata> = {
   'six-villas': six1,
-  'hotel': hotel1,
-  'ten-villas': ten1
+  'four-villas': four1,
+  'ten-villas': ten1,
+  'compound': compound1,
+  'boutique-residence': boutique1
 };
 const concepts = ct.concepts.items.filter((c: { hidden?: boolean }) => !c.hidden);
+// Apertura: la foto delle Sei ville da sola, senza scritte (Angelo, 15/11:
+// "in home sempre la copertina di prima", e via didascalia e "Scroll").
 
 // I concept si presentano divisi per regione: oggi c'e' solo la Sardegna,
 // ma la struttura regge Corsica, Toscana, Eolie ed Emilia senza modifiche.
@@ -56,8 +62,6 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 	<!-- APERTURA · la fotografia da sola -->
 	<section class="ct-hero">
 		<Image src={heroImg} alt="" widths={[1000, 1600, 2200]} sizes="(max-width: 900px) 190vw, 100vw" loading="eager" />
-		<p class="ct-hero-cap">{concepts[0].title}<span>/</span>{concepts[0].place}</p>
-		<div class="ct-scroll"><span>Scroll</span><i></i></div>
 	</section>
 
 	<!-- TITOLO -->
@@ -67,7 +71,8 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 				<p class="ct-eyebrow" data-reveal>{ct.branch}</p>
 				<h1 class="ct-display" data-reveal data-reveal-delay="1" set:html={ct.hero_title_html} />
 				<div class="ct-hair" data-reveal data-reveal-delay="2"></div>
-				<p class="ct-lede" data-reveal data-reveal-delay="2">{ct.hero_lede}</p>
+				<p class="ct-lede" data-reveal data-reveal-delay="2">{ct.hero_intro}</p>
+				<p class="ct-lede ct-key" data-reveal data-reveal-delay="2">{ct.hero_lede}</p>
 				<div class="ct-figures" data-reveal data-reveal-delay="3">
 					{ct.concepts.counters.map((c: string) => {
 						const parts = c.split(' ');
@@ -79,9 +84,7 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 						);
 					})}
 				</div>
-				<div class="ct-cities" data-reveal data-reveal-delay="3">
-					<span>Bologna</span><span class="ct-dot"></span><span>Los Angeles</span><span class="ct-dot"></span><span>Dubai</span>
-				</div>
+				<p class="ct-based" data-reveal data-reveal-delay="3">{ct.based}</p>
 			</div>
 		</div>
 	</section>
@@ -93,8 +96,20 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 		</div>
 	</section>
 
+	<!-- IL VALORE CHE DURA · accanto alla longevita' -->
+	<section id="value" class="ct-band">
+		<div class="ct-wrap ct-two" data-reveal>
+			<div>
+				<h2 class="ct-h2">{ct.value.title}</h2>
+			</div>
+			<div class="ct-body">
+				{ct.value.body.map((p: string) => (<p>{p}</p>))}
+			</div>
+		</div>
+	</section>
+
 	<!-- 01 · METODO -->
-	<section id="method" class="ct-band">
+	<section id="method" class="ct-band ct-rule-top">
 		<div class="ct-wrap">
 			<p class="ct-num" data-reveal>01</p>
 			<h2 class="ct-h2" style="max-width:15ch" data-reveal data-reveal-delay="1">{ct.approach.title}</h2>

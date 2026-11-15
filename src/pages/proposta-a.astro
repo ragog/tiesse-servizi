@@ -13,7 +13,8 @@ import spaImg from '../assets/ct/six-villas-4.webp';
 
 const content = getTranslations('en');
 const ct = content.ct;
-const concepts = ct.concepts.items.filter((c: { hidden?: boolean }) => !c.hidden);
+// pagina di prova ferma al 31/10: mostra solo i concept che hanno una foto qui
+const concepts = ct.concepts.items.filter((c: { hidden?: boolean; key: string }) => !c.hidden && ['six-villas', 'hotel', 'ten-villas'].includes(c.key));
 const covers: Record<string, ImageMetadata> = { 'six-villas': six1, 'hotel': hotel1, 'ten-villas': ten1 };
 ---
 

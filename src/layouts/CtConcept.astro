@@ -9,11 +9,39 @@ import six2 from '../assets/ct/six-villas-2.webp';
 import six3 from '../assets/ct/six-villas-3.webp';
 import six5 from '../assets/ct/six-villas-5.webp';
 import six6 from '../assets/ct/six-villas-6.webp';
-import hotel1 from '../assets/ct/hotel-1.webp';
-import hotel2 from '../assets/ct/hotel-2.webp';
-import ten1 from '../assets/ct/ten-villas-1.webp';
-import ten2 from '../assets/ct/ten-villas-2.webp';
-import ten3 from '../assets/ct/ten-villas-3.webp';
+import four_1 from '../assets/ct/four-1.jpg';
+import four_2 from '../assets/ct/four-2.jpg';
+import four_3 from '../assets/ct/four-3.jpg';
+import four_4 from '../assets/ct/four-4.jpg';
+import four_5 from '../assets/ct/four-5.jpg';
+import four_6 from '../assets/ct/four-6.jpg';
+import four_7 from '../assets/ct/four-7.jpg';
+import four_8 from '../assets/ct/four-8.jpg';
+import ten_b1 from '../assets/ct/ten-b1.jpg';
+import ten_b2 from '../assets/ct/ten-b2.jpg';
+import ten_b3 from '../assets/ct/ten-b3.jpg';
+import ten_b4 from '../assets/ct/ten-b4.jpg';
+import ten_b5 from '../assets/ct/ten-b5.jpg';
+import ten_b6 from '../assets/ct/ten-b6.jpg';
+import ten_b7 from '../assets/ct/ten-b7.jpg';
+import ten_b8 from '../assets/ct/ten-b8.jpg';
+import compound_1 from '../assets/ct/compound-1.jpg';
+import compound_2 from '../assets/ct/compound-2.jpg';
+import compound_3 from '../assets/ct/compound-3.jpg';
+import compound_4 from '../assets/ct/compound-4.jpg';
+import compound_5 from '../assets/ct/compound-5.jpg';
+import compound_6 from '../assets/ct/compound-6.jpg';
+import compound_7 from '../assets/ct/compound-7.jpg';
+import compound_8 from '../assets/ct/compound-8.jpg';
+import compound_9 from '../assets/ct/compound-9.jpg';
+import compound_10 from '../assets/ct/compound-10.jpg';
+import compound_11 from '../assets/ct/compound-11.jpg';
+import compound_12 from '../assets/ct/compound-12.jpg';
+import compound_13 from '../assets/ct/compound-13.jpg';
+import boutique_1 from '../assets/ct/boutique-1.jpg';
+import boutique_2 from '../assets/ct/boutique-2.jpg';
+import boutique_3 from '../assets/ct/boutique-3.jpg';
+import boutique_4 from '../assets/ct/boutique-4.jpg';
 
 type Lang = 'it' | 'en' | 'es';
 
@@ -52,16 +80,20 @@ const langUrls = {
 const images: Record<string, { hero: ImageMetadata; gallery: ImageMetadata[] }> = {
   // La spa interrata e' fuori finche' il Comune non si esprime sul piano S3.
   'six-villas': { hero: six2, gallery: [six1, six3, six5, six6] },
-  'hotel': { hero: hotel1, gallery: [hotel2] },
-  'ten-villas': { hero: ten1, gallery: [ten2, ten3] }
+  'four-villas': { hero: four_1, gallery: [four_3, four_2, four_4, four_6, four_5, four_7, four_8] },
+  'ten-villas': { hero: ten_b1, gallery: [ten_b2, ten_b3, ten_b4, ten_b5, ten_b6, ten_b7, ten_b8] },
+  'compound': { hero: compound_1, gallery: [compound_2, compound_3, compound_4, compound_5, compound_6, compound_7, compound_8, compound_9, compound_10, compound_11, compound_12, compound_13] },
+  'boutique-residence': { hero: boutique_1, gallery: [boutique_2, boutique_3, boutique_4] }
 };
 const set = images[concept.key] ?? { hero: six2, gallery: [] };
 
 // Anteprima social: un JPG 1200x630, perche' LinkedIn non mostra il webp.
 const ogByKey: Record<string, string> = {
   'six-villas': '/og/six-villas.jpg',
-  'hotel': '/og/hotel.jpg',
-  'ten-villas': '/og/ten-villas.jpg'
+  'four-villas': '/og/four-villas.jpg',
+  'ten-villas': '/og/ten-villas.jpg',
+  'compound': '/og/compound.jpg',
+  'boutique-residence': '/og/boutique-residence.jpg'
 };
 
 // Avanti e indietro fra i concept visibili.

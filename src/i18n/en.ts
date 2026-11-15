@@ -1,5 +1,5 @@
 export default {
-  site_title: "Tiesse Servizi | Real Estate Development, Built on Engineering, Tiesse Group",
+  site_title: "Tiesse Servizi | Engineering since 2001 · Tiesse Group",
   nav: {
     home: "Home",
     about: "About",
@@ -13,7 +13,7 @@ export default {
     subtitle: "We build value.",
     body: "Since 2001, design, structural engineering and construction management for residential, healthcare and public projects. The technical foundation behind every Tiesse Group operation.",
     trust: "Independent. Technical. Accountable.",
-    description: "Tiesse Servizi operates under the Tiesse Group brand. Since 2001, we deliver residential real-estate operations with engineering rigor, from feasibility to handover.",
+    description: "Engineering since 2001: design, structural engineering, works supervision and site safety for residential, healthcare and public buildings.",
     cta_text: "Explore projects"
   },
   key_facts: {
@@ -21,16 +21,8 @@ export default {
       { value: "2001", label: "Established" },
       { value: "25+", label: "Years of engineering" },
       { value: "5", label: "Sectors" },
-      { value: "3", label: "Bologna · Los Angeles · Dubai" }
-    ]
-  },
-  chi_siamo: {
-    eyebrow: "About",
-    title: "An engineering-led platform for premium residential real estate.",
-    points: [
-      "Tiesse Servizi partners with developers, investment funds, banks and private investors across the full lifecycle of a residential operation, technical, legal and financial.",
-      "We are engineers first, not intermediaries. Every operation is structured with specialist technical oversight, giving investors precise control over timelines, costs and quality, from feasibility to handover.",
-      "We translate the complexity of construction into a governable process. That reduces operational and financial risk, simplifies stakeholder coordination, and protects capital at every stage."
+      // senza value: niente numero sopra le citta', la frase si legge da sola
+      { value: "", label: "Based in Bologna, with our people on the ground in Los Angeles and Dubai." }
     ]
   },
   home_sections: {
@@ -45,13 +37,6 @@ export default {
     technical_title: "Technical expertise drives every project.",
     technical_body: "Engineering expertise applied to complex environments.<br><br>From healthcare to residential and public sector, our projects are driven by technical control, design integration and BIM-based processes.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Design · Engineering · BIM · Execution</span>",
     technical_cta: "Explore engineering",
-    investment_eyebrow: "Real Estate · Investment",
-    investment_title: "Real estate, driven by engineering.",
-    investment_body: "Real estate projects developed through integrated design, engineering and execution control.",
-    investment_location: "Starting with northern Sardinia.",
-    investment_cta: "Where we look",
-    investment_featured_label: "Where we look",
-    investment_project_tag: "Integrated residential design",
     ct_banner_eyebrow: "Development",
     ct_banner_title: "Our development branch: C&T Developments.",
     ct_banner_body: "Where the group finds opportunities, takes them through permitting and delivers them. The engineering is ours.",
@@ -92,40 +77,6 @@ export default {
     ],
     closing: "A single point of contact to manage all operational phases."
   },
-  invest_in_italy: {
-    eyebrow: "Invest in Italy",
-    title: "We guide international investors into Italy's premium real-estate market.",
-    titleBreak: "INVEST IN<br/>ITALY",
-    intro: "A concrete way to allocate capital in an iconic setting, with engineering control and full transparency at every stage.",
-    description: "Sardinia, the Mediterranean islands and selected Italian territories rank among the world's most sought-after destinations for quality of life, cultural heritage and long-term real-estate appreciation, a sector that has proven resilient across cycles.",
-    subtitle: "Through Tiesse, investors can:",
-    points: [
-      "Access premium properties in iconic locations",
-      "Execute operations with high aesthetic and technological value",
-      "Enhance assets with Italian-made design and materials",
-      "Work with a single engineering-led team from feasibility to handover"
-    ],
-    closing: "From feasibility to commercialization: a single engineering-led command."
-  },
-  garanzie: {
-    eyebrow: "Guarantees & transparency",
-    title: "A protection framework built on international instruments.",
-    description: "Our method rests on control, traceability and constant dialogue with the client. We deliver contractual, financial and operational safeguards designed for Italian and international investors alike.",
-    points: [
-      "Bilingual contracts (ENG/ITA)",
-      "Mapped out operational timeline and shared milestones",
-      "Land search, architectural design, and construction",
-      "Escrow account or SPV dedicated to the investment",
-      "Monthly reports and financial forecasts",
-      "Market analysis using MCA (Market Comparison Approach)",
-      "Exit strategy: tourism/rental management and/or future resale"
-    ]
-  },
-  sostenibilita: {
-    eyebrow: "Sustainability",
-    title: "A future where innovation and landscape merge.",
-    description: "Renewable materials, advanced construction technology and respect for landscape harmony: every operation we deliver is designed to integrate with its context, not impose on it."
-  },
   news: {
     eyebrow: "Insights",
     title: "Latest insights.",
@@ -150,7 +101,7 @@ export default {
       {
         date: "12/2025",
         category: "Group",
-        title: "Tiesse Group: a strategic platform for real estate",
+        title: "Tiesse Group: engineering and development under one brand",
         description: "The group brings engineering and real-estate development together under one brand.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
@@ -174,9 +125,9 @@ export default {
     groups: [
       {
         title: "Member of",
-        description: "Chambers of commerce and institutional bodies we belong to.",
+        // caption: il nome si legge scritto sotto il logo
         logos: [
-          { name: "Italy-America Chamber of Commerce West", src: "/partners/iaccw-west.png", url: "https://www.iaccw.net/" },
+          { name: "Italy-America Chamber of Commerce West", src: "/partners/iaccw-west.png", url: "https://www.iaccw.net/", caption: true },
         ]
       },
       {
@@ -231,66 +182,11 @@ export default {
     group_line: "Operating under the Tiesse Group brand",
     established: "Established 2001"
   },
-  real_estate: {
-    page_title: "Real Estate · Where we look in the Mediterranean",
-    hero_eyebrow: "Real Estate · Where we look",
-    hero_title: "Real Estate",
-    hero_subtitle: "The coastal and urban areas we follow in Italy and the Mediterranean.",
-    hero_meta: ["Sardinia", "Tuscany", "Corsica", "Aeolian Islands", "Emilia-Romagna"],
-
-    intro_eyebrow: "Where we look",
-    intro_title: "Where the landscape protects value, engineering protects the investment.",
-    intro_body: [
-      "We approach real estate as a long-term capital allocation strategy, selecting only opportunities that can preserve and grow value over time.",
-      "Our activity focuses on high-quality residential assets, conceived both as private use properties and as structured investment operations within a broader diversification strategy.",
-      "With years of experience in sourcing, developing and managing complex projects, we oversee the entire lifecycle, from acquisition and feasibility to development and long-term asset management.",
-      "Each operation is structured through dedicated vehicles and transparent financial frameworks, ensuring control over capital deployment, execution and risk management throughout the entire process."
-    ],
-
-    sardegna_eyebrow: "Region",
-    sardegna_title: "Sardinia",
-    sardegna_body: [
-      "Northern Sardinia, from the Costa Smeralda to the granite coast further west, is among the most supply-constrained stretches of the Mediterranean: a market where scarcity and planning rules, not volume, decide value.",
-      "We read it the way we read any site, selectively, long before anything is built: what the plan allows, what the landscape will carry, what it costs to do properly.",
-      "It is the area we follow most closely, and where the concepts our team is studying are set."
-    ],
-
-    costa_paradiso_eyebrow: "Location",
-    costa_paradiso_title: "Costa Paradiso",
-    costa_paradiso_subtitle: "A protected granite coast on the northern shore.",
-    costa_paradiso_meta: ["Northern Sardinia", "Protected coastal landscape"],
-    costa_paradiso_brief_eyebrow: "Context",
-    costa_paradiso_brief_title: "A storied stretch of the north coast.",
-    costa_paradiso_brief_body: [
-      "Costa Paradiso sits on Sardinia's northern coast, a protected, granite-cut stretch long tied to the cultural footprint of Italian cinema. Michelangelo Antonioni kept his residence here, shared with Monica Vitti, and the area entered the visual memory of the country.",
-      "The coastline is also marked by one of the most distinctive pieces of Italian experimental architecture: La Cupola, designed by Dante Bini, still one of the most recognisable private houses on the island.",
-      "It is one of the stretches of coast we follow most closely. Here scarcity is a matter of planning rules rather than land, which is what makes value durable."
-    ],
-    costa_paradiso_feature_eyebrow: "Context",
-    costa_paradiso_feature_quote: "A location that precedes architecture.",
-    costa_paradiso_feature_body: "Costa Paradiso occupies a stretch of the north-western coast defined by granite formations, protected landscape and a cultural history that shaped its identity long before any development. Scarcity, regulation and location converge here to protect long-term value.",
-    costa_paradiso_gallery_eyebrow: "Location",
-    costa_paradiso_gallery_captions: [
-      "Granite coastline at sunset",
-      "Sheltered cove · protected landscape"
-    ],
-    costa_paradiso_closing: "A protected coastal landscape, in a market where scarcity and regulatory constraint define value.",
-
-    cta_eyebrow: "Contact",
-    cta_title: "Start a conversation.",
-    cta_body: "If you are looking at the Italian coast, tell us what you have in mind. We reply within 48 hours.",
-    cta_button: "Write to us"
-  },
   projects: {
     page_title: "Engineering, delivered with precision and control.",
     hero_eyebrow: "Selected Projects · Engineering Experience Since 2001",
     subtitle: "Selected projects demonstrating our approach to engineering, design integration and technical control across complex environments.",
     hero_tag: "Design · Engineering · BIM · Execution",
-    intro_eyebrow: "Method",
-    intro_title: "Before developing an investment, engineering decides.",
-    intro_body: [
-      "These projects are not a portfolio, but the technical foundation behind our real estate decisions. Each commission, from historic renovations to healthcare facilities, refined our ability to evaluate costs, risks and development potential."
-    ],
     categories_eyebrow: "Portfolio",
     categories_title: "Project sectors",
     categories_subtitle: "Engineering expertise applied across different sectors.",
@@ -304,10 +200,6 @@ export default {
       { value: "5", label: "Key sectors" },
       { value: "IT", label: "Operating region" }
     ],
-    real_estate_banner_eyebrow: "Real estate operations",
-    real_estate_banner_title: "Current Real Estate operations",
-    real_estate_banner_text: "Premium residential development for Italian and international investors. Selected operations, details under confidentiality.",
-    real_estate_banner_cta: "Real Estate operations",
     technical_eyebrow: "Track Record",
     technical_title: "Realized work, by sector.",
     technical_subtitle: "Every commission is a technical file: client, year, site, role, outcome. Grouped by sector so the depth of technical experience reads at a glance.",
@@ -336,18 +228,18 @@ export default {
   },
   gateway: {
     page_title: "Tiesse Group | Real Estate Development, Built on Engineering",
-    page_description: "Tiesse Group brings together Tiesse Servizi, engineering and development since 2001, and C&T Developments, the branch dedicated to real estate investment.",
+    page_description: "Tiesse Group brings together Tiesse Servizi, engineering since 2001, and C&T Developments, a platform for real estate across the Mediterranean.",
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Development, Built on Engineering",
     title_html: "Real estate development,<br/><em>built on engineering.</em>",
     lede: "Two branches, one method: the engineering that studies an operation is the same that delivers it.",
-    left_door: "Engineering, design and construction management. Since 2001.",
+    left_door: "Engineering, design and works supervision. Since 2001.",
     right_door: "Development: we find the opportunity, permit it and deliver it.",
     left: {
       name_strong: "TIESSE",
       name_accent: "SERVIZI",
       sub: "Operating under the Tiesse Group brand",
-      line: "Engineering and development",
+      line: "Engineering",
       meta: "Since 2001",
       cta: "Enter"
     },
@@ -361,7 +253,7 @@ export default {
   },
   ct: {
     page_title: "C&T Developments | Tiesse Group",
-    page_description: "C&T Developments is the Tiesse Group branch dedicated to real estate development.",
+    page_description: "C&T Developments, a platform for real estate across the Mediterranean.",
     name_strong: "C&T",
     name_accent: " DEVELOPMENTS",
     tagline: "Engineering-driven real estate development",
@@ -416,11 +308,21 @@ export default {
     },
 
     hero_eyebrow: "Vision · Future · Value",
-    hero_title: "We anticipate value.",
-    hero_title_html: "We anticipate <em>value.</em>",
-    manifesto_html: "We develop where scarcity is a matter of <em>permits</em>, not of land. A masterplan, shared spaces, the quality of the whole. Not villas side by side, but <em>a small piece of town.</em>",
+    hero_title: "Exclusive places, one platform.",
+    hero_title_html: "Exclusive places, <em>one platform.</em>",
+    manifesto_html: "We develop villas and compounds designed entirely around longevity: a private spa level with sauna, infrared, cryotherapy and a hyperbaric chamber under medical supervision, a training room, and a building that keeps air, water and silence clean. Not villas side by side, but <em>a place built for living well.</em>",
     hero_lede: "We find the opportunity, take it through permitting and deliver it. Capital comes in once the planning risk has been removed.",
-    hero_intro: "C&T Developments was born from a way of looking at a changing world: cities that transform, ways of living that get rewritten, places that come to matter again. It is the Tiesse Group branch that recognises beauty before it becomes obvious, and carries it through to value.",
+    hero_intro: "C&T Developments selects real estate projects in Italy and, above all, across the Mediterranean, in places where clean air and water, climate and light let people live long and live well. Two of the world's five original Blue Zones are in the Mediterranean: one in Sardinia, one in Greece. We look for the places where nature already does this work, and we build every project around it.",
+    based: "Based in Bologna, with our people on the ground in Los Angeles and Dubai.",
+
+    value: {
+      title: "Value that lasts",
+      body: [
+        "We select every project twice: for the place, and for the value it can create and hold over time.",
+        "We build in the most sought-after places of the Mediterranean, where planning rules limit supply, with quality materials, technology and building systems that keep a home valuable for decades.",
+        "Value is created at the permit and held by the quality of what we build."
+      ]
+    },
 
     vision: {
       num: "01",
@@ -456,7 +358,7 @@ export default {
       region_labels: { sardinia: "Sardinia", corsica: "Corsica", tuscany: "Tuscany", aeolian: "Aeolian Islands", emilia: "Emilia-Romagna" },
       region_count_one: "concept in study",
       region_count_many: "concepts in study",
-      counters: ["3 concepts in study", "16 residences", "1 boutique hotel"],
+      counters: ["5 concepts in study", "4 villa compounds", "1 boutique residence"],
       // hidden: true tiene la scheda fuori dalla pagina finche' non arriva l'ok.
       items: [
         {
@@ -481,23 +383,23 @@ export default {
           hidden: false
         },
         {
-          key: "hotel",
+          key: "four-villas",
           region: "sardinia",
-          title: "Boutique hotel",
-          place: "North coast of Sardinia",
-          body: "Existing volumes on a granite coast, brought together into a small hotel.",
-          lede: "What is already built, made into one small hotel.",
+          title: "Four villas",
+          place: "Northern Sardinia, near the Costa Smeralda",
+          body: "Four villas, each with its own pool, garden, private spa and gym.",
+          lede: "Four houses, each with its own spa.",
           facts: [
-            { label: "Typology", value: "Boutique hotel" },
-            { label: "Shared", value: "Restaurant, garden, pool" },
+            { label: "Typology", value: "Four two-storey villas" },
+            { label: "Wellness", value: "Private spa and gym" },
             { label: "Stage", value: "Concept, under study" }
           ],
           place_title: "The place",
-          place_body: "The north coast of Sardinia, a granite shore under landscape protection, where what already exists is worth more than what could be added.",
+          place_body: "Northern Sardinia, on the doorstep of the Costa Smeralda: olive trees, dry-stone walls and open country, in a stretch where planning rules keep building rare.",
           idea_title: "The idea",
           idea_body: [
-            "The project adds no volume. It reorganises the buildings that are already there into a single small hotel, with a restaurant, a garden and a pool.",
-            "The architecture stays low and local: granite, lime, timber, and planting that belongs to the place."
+            "Four two-storey villas, each in its own garden with a pool and a pergola, and a lower floor given over to recovery: a private spa with sauna, infrared and cold plunge, and a gym.",
+            "Fewer houses, more land around each one: an alternative to the six-villa concept, on the same ground."
           ],
           stage: "Concept stage. Feasibility, planning and costs are under study. Location and details are shared under confidentiality.",
           hidden: false
@@ -525,26 +427,48 @@ export default {
           hidden: false
         },
         {
-          key: "sixteen-villas",
+          key: "compound",
           region: "sardinia",
-          title: "Sixteen villas",
-          place: "Sardinia",
-          body: "A small village of sixteen villas among olive trees, with shared services.",
-          lede: "A small village among olive trees.",
+          title: "Compound with spa",
+          place: "Northern Sardinia, south of the Costa Smeralda",
+          body: "Nine single-storey villas among the olive trees, each in its own garden with a loggia and a pool, and a shared spa at the entrance.",
+          lede: "Nine villas among the olive trees, and a spa.",
           facts: [
-            { label: "Typology", value: "Sixteen villas" },
-            { label: "Shared", value: "Services and grounds" },
+            { label: "Typology", value: "Nine single-storey villas" },
+            { label: "Shared", value: "Spa and gym" },
             { label: "Stage", value: "Concept, under study" }
           ],
           place_title: "The place",
-          place_body: "Inland Sardinia, among olive trees, on ground that already holds the shape of a small settlement.",
+          place_body: "Northern Sardinia, inland and south of the Costa Smeralda: an olive grove on gently sloping ground, with the hills on the horizon.",
           idea_title: "The idea",
           idea_body: [
-            "Sixteen houses laid out as a village rather than a subdivision: short streets, shared services, and the olive grove left as it is.",
-            "Each house is designed to be lived in all year, not only in August."
+            "Nine single-storey villas laid out among the olive trees, each in its own garden with a loggia and a pool. Living room, kitchen and bedrooms open onto the garden; the olive grove stays as it is.",
+            "At the entrance, a shared spa set into the ground under a planted roof: gym, sauna, infrared, cold plunge and a hyperbaric chamber under medical supervision."
           ],
           stage: "Concept stage. Feasibility, planning and costs are under study. Location and details are shared under confidentiality.",
-          hidden: true
+          hidden: false
+        },
+        {
+          key: "boutique-residence",
+          region: "sardinia",
+          title: "Boutique residence",
+          place: "North coast of Sardinia",
+          body: "Eleven residences and a lounge with a restaurant, in place of an existing building on a granite coast.",
+          lede: "An existing building, rebuilt as eleven residences and a restaurant.",
+          facts: [
+            { label: "Typology", value: "Eleven residences" },
+            { label: "Shared", value: "Lounge, restaurant, spa" },
+            { label: "Stage", value: "Concept, under study" }
+          ],
+          place_title: "The place",
+          place_body: "The north coast of Sardinia, a granite shore under landscape protection, where what already exists is worth more than what could be added.",
+          idea_title: "The idea",
+          idea_body: [
+            "The existing building is taken down and rebuilt within the same volume: eleven residences, each with a terrace or a garden.",
+            "Around them, a lounge with a restaurant open to the public, a garden with a pool, and a small spa with a gym. The architecture stays low and local: granite, lime, timber, and planting that belongs to the place."
+          ],
+          stage: "Concept stage. Feasibility, planning and costs are under study. Location and details are shared under confidentiality.",
+          hidden: false
         }
       ]
     },
@@ -552,11 +476,10 @@ export default {
     where: {
       num: "04",
       eyebrow: "Where we look",
-      title: "Two legs, one method.",
+      title: "The Mediterranean first, then the city.",
       blocks: [
-        { title: "The coast", body: "Sardinia, Corsica, Tuscany and the Aeolian Islands. Where planning rules make land scarce and value durable." },
-        { title: "The city", body: "Bologna and Emilia-Romagna. Regeneration and reuse of existing buildings, where the risk is technical and our engineering prices it in-house." },
-        { title: "Capital", body: "We work with partners in Italy, the United States and the Gulf." }
+        { title: "The Mediterranean", body: "Sardinia, Corsica, Tuscany and the Aeolian Islands. Where planning rules make land scarce and value durable." },
+        { title: "The city", body: "Bologna and Emilia-Romagna. Regeneration and reuse of existing buildings, where the risk is technical and our engineering prices it in-house." }
       ],
       tiles: ["Sardinia", "Corsica", "Tuscany", "Aeolian Islands", "Emilia-Romagna"]
     },
@@ -568,6 +491,7 @@ export default {
       body: [
         "Every operation sits in its own vehicle, with its risk ring-fenced from the others.",
         "We work with banks, private investors, family offices and regulated platforms. Capital commits once the planning risk has been cleared.",
+        "We underwrite every project conservatively and test it against lower prices and higher costs before any capital commits. Figures are shared one to one, under a confidentiality agreement.",
         "Technical files are shared under confidentiality."
       ]
     },
@@ -600,6 +524,7 @@ export default {
 
     footer_line: "C&T Developments is a branch of Tiesse Group.",
     legal: "Tiesse Servizi S.a.s. · VAT 02241091202 · Via Loderingo degli Andalò 5, 40124 Bologna",
+    disclaimer: "Concepts are illustrative and under study. Nothing on this website is an offer or solicitation to buy or sell any security or interest in any project.",
     cities: "Bologna · Los Angeles · Dubai"
   }
 };

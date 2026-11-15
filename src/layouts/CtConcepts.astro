@@ -2,10 +2,12 @@
 // Indice dei concept: si apre dalla barra e si dirama per regione.
 import { Image } from 'astro:assets';
 import CtShell from './CtShell.astro';
-import heroImg from '../assets/ct/six-villas-5.webp';
+import heroImg from '../assets/ct/compound-1.jpg';
 import six1 from '../assets/ct/six-villas-1.webp';
-import hotel1 from '../assets/ct/hotel-1.webp';
-import ten1 from '../assets/ct/ten-villas-1.webp';
+import four1 from '../assets/ct/four-1.jpg';
+import ten1 from '../assets/ct/ten-b1.jpg';
+import compound1 from '../assets/ct/compound-1.jpg';
+import boutique1 from '../assets/ct/boutique-1.jpg';
 
 type Lang = 'it' | 'en' | 'es';
 
@@ -20,7 +22,7 @@ const bases: Record<Lang, string> = { it: '/it/ct-developments', en: '/ct-develo
 const base = bases[locale];
 const langUrls = { it: bases.it + '/concepts', en: bases.en + '/concepts', es: bases.es + '/concepts' };
 
-const covers: Record<string, ImageMetadata> = { 'six-villas': six1, 'hotel': hotel1, 'ten-villas': ten1 };
+const covers: Record<string, ImageMetadata> = { 'six-villas': six1, 'four-villas': four1, 'ten-villas': ten1, 'compound': compound1, 'boutique-residence': boutique1 };
 const visible = ct.concepts.items.filter((c: any) => !c.hidden);
 const grouped = (ct.concepts.region_order as string[])
   .map((r) => ({ key: r, label: ct.concepts.region_labels[r], items: visible.filter((c: any) => c.region === r) }))

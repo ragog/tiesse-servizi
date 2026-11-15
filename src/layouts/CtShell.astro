@@ -86,15 +86,20 @@ const socialImage = new URL(ogImage || '/img/ct-developments-logo.png', Astro.si
 					</span>
 				</a>
 
+				<!-- sul telefono le lingue stanno accanto al marchio -->
+				<span class="ct-langs ct-langs-m">
+					{otherLangs.map((l) => (<a href={langUrls[l]}>{l.toUpperCase()}</a>))}
+				</span>
+
 				<nav class="ct-nav">
-					<a href={tiesseHref}>Tiesse Servizi</a>
-					<a href={gatewayHref} class="ct-nav-hide">{ct.nav_back}</a>
-					<span class="ct-nav-sep" aria-hidden="true"></span>
-					<a href={`${base}/concepts`} class={current === 'concepts' ? 'ct-on' : ''}>{ct.concepts.eyebrow}</a>
-					<a href={`${base}/longevity`} class={current === 'longevity' ? 'ct-on' : ''}>{ct.longevity.nav}</a>
-					<a href={`${base}#contact`} class="ct-nav-hide">{ct.nav_contact}</a>
-					<span class="ct-nav-sep" aria-hidden="true"></span>
-					<span class="ct-langs">
+					<a href={tiesseHref} class="ct-nav-grp">Tiesse Servizi</a>
+					<a href={gatewayHref} class="ct-nav-grp ct-nav-hide">{ct.nav_back}</a>
+					<span class="ct-nav-sep ct-nav-break" aria-hidden="true"></span>
+					<a href={`${base}/concepts`} class={`ct-nav-own ${current === 'concepts' ? 'ct-on' : ''}`}>{ct.concepts.eyebrow}</a>
+					<a href={`${base}/longevity`} class={`ct-nav-own ${current === 'longevity' ? 'ct-on' : ''}`}>{ct.longevity.nav}</a>
+					<a href={`${base}#contact`} class="ct-nav-own">{ct.nav_contact}</a>
+					<span class="ct-nav-sep ct-nav-sep-langs" aria-hidden="true"></span>
+					<span class="ct-langs ct-langs-d">
 						{otherLangs.map((l) => (<a href={langUrls[l]}>{l.toUpperCase()}</a>))}
 					</span>
 				</nav>
@@ -116,6 +121,7 @@ const socialImage = new URL(ogImage || '/img/ct-developments-logo.png', Astro.si
 				<p>{ct.footer_line}</p>
 				<p>{ct.cities}</p>
 				<p class="ct-foot-legal">{ct.legal}</p>
+				<p class="ct-foot-disclaimer">{ct.disclaimer}</p>
 				<div class="ct-foot-links">
 					<a href={tiesseHref}>Tiesse Servizi</a>
 					<a href={gatewayHref}>{ct.nav_back}</a>
