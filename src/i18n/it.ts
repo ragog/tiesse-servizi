@@ -311,17 +311,16 @@ export default {
     hero_eyebrow: "Visione · Futuro · Valore",
     hero_title: "Luoghi esclusivi, una sola piattaforma.",
     hero_title_html: "Luoghi esclusivi, <em>una sola piattaforma.</em>",
-    manifesto_html: "Sviluppiamo ville e compound pensati interamente per la longevità: un livello spa privato con sauna, infrarossi, crioterapia e camera iperbarica con supervisione medica, la palestra, e un edificio che tiene puliti l'aria, l'acqua e il silenzio. Non ville una accanto all'altra, ma <em>un posto costruito per vivere bene.</em>",
+    manifesto_html: "Ville e compound pensati per la longevità, con spa privata e camera iperbarica con supervisione medica. <em>Un posto costruito per vivere bene.</em>",
     hero_lede: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto di mezzo.",
     hero_intro: "C&T Developments seleziona operazioni immobiliari in Italia e nel Mediterraneo, nei luoghi dove la natura fa vivere a lungo e bene. Due delle cinque Blue Zone originarie del mondo sono qui: la Sardegna e la Grecia.",
     based: "Sede a Bologna, con nostri collaboratori a Los Angeles e a Dubai.",
 
     value: {
+      eyebrow: "Valore",
       title: "Il valore che dura",
       body: [
-        "Ogni operazione la scegliamo due volte: per il luogo e per il valore che può creare e mantenere nel tempo.",
-        "Costruiamo nei luoghi più ricercati del Mediterraneo, dove le regole urbanistiche limitano l'offerta, con materiali, tecnologie e impianti di qualità che tengono una casa di valore per decenni.",
-        "Il valore nasce con il permesso e si mantiene con la qualità di ciò che costruiamo."
+        "Ogni operazione la scegliamo due volte: per il luogo e per il valore che può mantenere. Il valore nasce con il permesso, dove le regole urbanistiche limitano l'offerta, e si mantiene con la qualità di ciò che costruiamo."
       ]
     },
 
@@ -513,8 +512,8 @@ export default {
       eyebrow: "Persone",
       title: "Chi la guida",
       items: [
-        { name: "Angelo Matteo Tucci", role: "Ingegnere Civile · Senior Partner", place: "Bologna e Los Angeles" },
-        { name: "Ignazio Celardi", role: "Ingegnere Strutturista · Partner", place: "Dubai" }
+        { name: "Angelo Matteo Tucci", role: "Ingegnere Civile · Senior Partner", place: "Bologna e Los Angeles", linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/" },
+        { name: "Ignazio Celardi", role: "Ingegnere Strutturista · Partner", place: "Dubai", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" }
       ]
     },
 

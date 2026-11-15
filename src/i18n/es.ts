@@ -61,17 +61,16 @@ const ct = {
   hero_eyebrow: "Visión · Futuro · Valor",
   hero_title: "Lugares exclusivos, una sola plataforma.",
   hero_title_html: "Lugares exclusivos, <em>una sola plataforma.</em>",
-  manifesto_html: "Desarrollamos villas y conjuntos pensados por completo para la longevidad: un nivel de spa privado con sauna, infrarrojos, crioterapia y cámara hiperbárica con supervisión médica, una sala de entrenamiento, y un edificio que mantiene limpios el aire, el agua y el silencio. No villas una al lado de otra, sino <em>un lugar hecho para vivir bien.</em>",
+  manifesto_html: "Villas y conjuntos pensados para la longevidad, con spa privado y cámara hiperbárica con supervisión médica. <em>Un lugar hecho para vivir bien.</em>",
   hero_lede: "Encontramos la oportunidad, la llevamos hasta la licencia y la ejecutamos. El capital entra cuando el riesgo urbanístico ya se ha eliminado.",
   hero_intro: "C&T Developments selecciona proyectos inmobiliarios en Italia y en el Mediterráneo, en lugares donde la naturaleza permite vivir mucho y bien. Dos de las cinco Blue Zones originales del mundo están aquí: Cerdeña y Grecia.",
   based: "Con sede en Bolonia y con nuestra gente sobre el terreno en Los Ángeles y Dubái.",
 
   value: {
+    eyebrow: "Valor",
     title: "El valor que perdura",
     body: [
-      "Elegimos cada proyecto dos veces: por el lugar, y por el valor que puede crear y mantener en el tiempo.",
-      "Construimos en los lugares más buscados del Mediterráneo, donde el planeamiento limita la oferta, con materiales, tecnología e instalaciones de calidad que mantienen el valor de una casa durante décadas.",
-      "El valor nace con la licencia y se mantiene con la calidad de lo que construimos."
+      "Elegimos cada proyecto dos veces: por el lugar y por el valor que puede mantener. El valor nace con la licencia, donde el planeamiento limita la oferta, y se mantiene con la calidad de lo que construimos."
     ]
   },
 
@@ -262,8 +261,8 @@ const ct = {
     eyebrow: "Personas",
     title: "Quién la dirige",
     items: [
-      { name: "Angelo Matteo Tucci", role: "Ingeniero Civil · Senior Partner", place: "Bolonia y Los Ángeles" },
-      { name: "Ignazio Celardi", role: "Ingeniero Estructural · Partner", place: "Dubái" }
+      { name: "Angelo Matteo Tucci", role: "Ingeniero Civil · Senior Partner", place: "Bolonia y Los Ángeles", linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/" },
+      { name: "Ignazio Celardi", role: "Ingeniero Estructural · Partner", place: "Dubái", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" }
     ]
   },
 

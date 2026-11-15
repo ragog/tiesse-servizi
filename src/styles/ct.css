@@ -298,3 +298,27 @@ a:focus-visible, button:focus-visible { outline: 1px solid var(--ct-gold); outli
 	.ct-hero-cap { bottom: 14px; line-height: 1.5; }
 	.ct-nav { padding-right: 4px; }
 }
+
+/* ===========================================================
+   HOME C&T, TERZA PASSATA (15/11): capitoli numerati
+   Ogni capitolo apre allo stesso modo: filetto dorato a tutta
+   larghezza, numero in Bodoni, nome in maiuscoletto. Testi corti,
+   manifesto piu' grande, bande alternate senza due verdi di fila.
+   =========================================================== */
+.ct-chapter { display: flex; align-items: baseline; gap: 16px; border-top: 1px solid rgba(185,155,107,.55); padding-top: 18px; margin: 0 0 clamp(30px, 3.6vw, 52px); }
+.ct-chapter b { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: 15px; letter-spacing: .14em; color: var(--ct-gold); }
+.ct-chapter span { font-size: 11.5px; font-weight: 400; letter-spacing: .26em; text-transform: uppercase; color: rgba(27,36,30,.62); }
+.ct-band-dark .ct-chapter { border-color: rgba(217,199,163,.34); }
+.ct-band-dark .ct-chapter b { color: var(--ct-gold-light); }
+.ct-band-dark .ct-chapter span { color: rgba(255,255,255,.62); }
+.ct-band-tint { background: var(--ct-cream-deep); }
+.ct-two > .ct-h2 { margin: 0; }
+.ct-two > .ct-lede { margin: 0; align-self: start; }
+.ct-body-lg { font-size: clamp(18px, 1.6vw, 21px); line-height: 1.6; }
+.ct-band-dark .ct-counters { margin-top: 8px; }
+#concepts .ct-region-head { margin-top: clamp(44px, 5vw, 72px); }
+.ct-manifesto p { font-size: clamp(26px, 3.6vw, 50px); line-height: 1.2; max-width: 26ch; }
+.ct-manifesto .ct-link { margin-top: clamp(28px, 3vw, 40px); color: var(--ct-gold-light); border-color: rgba(217,199,163,.45); }
+.ct-title .ct-figures { margin-top: clamp(30px, 3.4vw, 46px); }
+.ct-person-in { justify-self: start; margin-top: 6px; padding: 6px 0 8px; font-size: 11.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--ct-gold); text-decoration: none; border-bottom: 1px solid rgba(185,155,107,.45); }
+.ct-person-in:hover { color: var(--ct-ink); }

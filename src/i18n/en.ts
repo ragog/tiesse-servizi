@@ -310,17 +310,16 @@ export default {
     hero_eyebrow: "Vision · Future · Value",
     hero_title: "Exclusive places, one platform.",
     hero_title_html: "Exclusive places, <em>one platform.</em>",
-    manifesto_html: "We develop villas and compounds designed entirely around longevity: a private spa level with sauna, infrared, cryotherapy and a hyperbaric chamber under medical supervision, a training room, and a building that keeps air, water and silence clean. Not villas side by side, but <em>a place built for living well.</em>",
+    manifesto_html: "Villas and compounds built around longevity, with a private spa and a hyperbaric chamber under medical supervision. <em>A place built for living well.</em>",
     hero_lede: "We find the opportunity, take it through permitting and deliver it. Capital comes in once the planning risk has been removed.",
     hero_intro: "C&T Developments selects real estate projects in Italy and across the Mediterranean, in places where nature lets people live long and well. Two of the world's five original Blue Zones are here: Sardinia and Greece.",
     based: "Based in Bologna, with our people on the ground in Los Angeles and Dubai.",
 
     value: {
+      eyebrow: "Value",
       title: "Value that lasts",
       body: [
-        "We select every project twice: for the place, and for the value it can create and hold over time.",
-        "We build in the most sought-after places of the Mediterranean, where planning rules limit supply, with quality materials, technology and building systems that keep a home valuable for decades.",
-        "Value is created at the permit and held by the quality of what we build."
+        "We choose every project twice: for the place, and for the value it can hold. Value is created at the permit, where planning limits supply, and kept by the quality of what we build."
       ]
     },
 
@@ -512,8 +511,8 @@ export default {
       eyebrow: "People",
       title: "Who runs it",
       items: [
-        { name: "Angelo Matteo Tucci", role: "Civil Engineer · Senior Partner", place: "Bologna and Los Angeles" },
-        { name: "Ignazio Celardi", role: "Structural Engineer · Partner", place: "Dubai" }
+        { name: "Angelo Matteo Tucci", role: "Civil Engineer · Senior Partner", place: "Bologna and Los Angeles", linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/" },
+        { name: "Ignazio Celardi", role: "Structural Engineer · Partner", place: "Dubai", linkedin: "https://www.linkedin.com/in/ignazio-celardi-gistructe-8525a4209/" }
       ]
     },
 

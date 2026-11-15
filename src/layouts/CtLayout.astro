@@ -72,7 +72,6 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 				<h1 class="ct-display" data-reveal data-reveal-delay="1" set:html={ct.hero_title_html} />
 				<div class="ct-hair" data-reveal data-reveal-delay="2"></div>
 				<p class="ct-lede" data-reveal data-reveal-delay="2">{ct.hero_intro}</p>
-				<p class="ct-lede ct-key" data-reveal data-reveal-delay="2">{ct.hero_lede}</p>
 				<div class="ct-figures" data-reveal data-reveal-delay="3">
 					{ct.concepts.counters.map((c: string) => {
 						const parts = c.split(' ');
@@ -89,30 +88,37 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 		</div>
 	</section>
 
-	<!-- MANIFESTO -->
+	<!-- MANIFESTO · la longevita', con il passaggio alla sua pagina -->
 	<section class="ct-manifesto">
 		<div class="ct-wrap">
-			<p set:html={ct.manifesto_html} />
+			<p set:html={ct.manifesto_html} data-reveal />
+			<a class="ct-link" href={`${base}/longevity`} data-reveal>{ct.longevity.title} {ct.longevity.title_em}</a>
 		</div>
 	</section>
 
-	<!-- IL VALORE CHE DURA · accanto alla longevita' -->
+	<!-- Ogni capitolo apre allo stesso modo: filetto, numero, nome. -->
+
+	<!-- 01 · IL VALORE CHE DURA -->
 	<section id="value" class="ct-band">
-		<div class="ct-wrap ct-two" data-reveal>
-			<div>
+		<div class="ct-wrap">
+			<header class="ct-chapter" data-reveal><b>01</b><span>{ct.value.eyebrow}</span></header>
+			<div class="ct-two" data-reveal>
 				<h2 class="ct-h2">{ct.value.title}</h2>
-			</div>
-			<div class="ct-body">
-				{ct.value.body.map((p: string) => (<p>{p}</p>))}
+				<div class="ct-body ct-body-lg">
+					{ct.value.body.map((p: string) => (<p>{p}</p>))}
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- 01 · METODO -->
-	<section id="method" class="ct-band ct-rule-top">
+	<!-- 02 · METODO -->
+	<section id="method" class="ct-band ct-band-tint">
 		<div class="ct-wrap">
-			<p class="ct-num" data-reveal>01</p>
-			<h2 class="ct-h2" style="max-width:15ch" data-reveal data-reveal-delay="1">{ct.approach.title}</h2>
+			<header class="ct-chapter" data-reveal><b>02</b><span>{ct.approach.eyebrow}</span></header>
+			<div class="ct-two" data-reveal>
+				<h2 class="ct-h2">{ct.approach.title}</h2>
+				<p class="ct-lede ct-key">{ct.hero_lede}</p>
+			</div>
 			<div class="ct-steps">
 				{ct.approach.steps.map((s: { num: string; title: string; body: string }) => (
 					<div class="ct-step" data-reveal>
@@ -125,21 +131,15 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 		</div>
 	</section>
 
-	<!-- 02 · CONCEPT · solo l'indice, ogni scheda ha la sua pagina -->
+	<!-- 03 · CONCEPT · solo l'indice, ogni scheda ha la sua pagina -->
 	<section id="concepts" class="ct-band ct-band-dark">
 		<div class="ct-wrap">
-			<div class="ct-concepts-head">
-				<div data-reveal>
-					<p class="ct-num">02</p>
-					<h2 class="ct-h2">{ct.concepts.title}</h2>
-				</div>
+			<header class="ct-chapter" data-reveal><b>03</b><span>{ct.concepts.eyebrow}</span></header>
+			<div class="ct-two" data-reveal>
+				<h2 class="ct-h2">{ct.concepts.title}</h2>
 				<div class="ct-body">
 					<p>{ct.concepts.intro}</p>
 				</div>
-			</div>
-
-			<div class="ct-counters">
-				{ct.concepts.counters.map((c: string) => (<span>{c}</span>))}
 			</div>
 
 			{grouped.map((g) => (
@@ -168,14 +168,12 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 		</div>
 	</section>
 
-	<!-- 03 · DOVE GUARDIAMO -->
+	<!-- 04 · DOVE GUARDIAMO -->
 	<section id="where" class="ct-band">
 		<div class="ct-wrap">
-			<div class="ct-two">
-				<div>
-					<p class="ct-num">03</p>
-					<h2 class="ct-h2">{ct.where.title}</h2>
-				</div>
+			<header class="ct-chapter" data-reveal><b>04</b><span>{ct.where.eyebrow}</span></header>
+			<div class="ct-two" data-reveal>
+				<h2 class="ct-h2">{ct.where.title}</h2>
 				<div class="ct-body">
 					{ct.where.blocks.map((b: { title: string; body: string }) => (
 						<p><strong>{b.title}.</strong> {b.body}</p>
@@ -196,38 +194,39 @@ const areaTiles: (ImageMetadata | null)[] = [tileSardinia, tileCorsica, tileTusc
 		</div>
 	</section>
 
-	<!-- 04 · CAPITALE -->
+	<!-- 05 · CAPITALE -->
 	<section id="capital" class="ct-band ct-band-dark">
-		<div class="ct-wrap ct-two" data-reveal>
-			<div>
-				<p class="ct-num">04</p>
+		<div class="ct-wrap">
+			<header class="ct-chapter" data-reveal><b>05</b><span>{ct.capital.eyebrow}</span></header>
+			<div class="ct-two" data-reveal>
 				<h2 class="ct-h2">{ct.capital.title}</h2>
-			</div>
-			<div class="ct-body">
-				{ct.capital.body.map((p: string) => (<p>{p}</p>))}
+				<div class="ct-body">
+					{ct.capital.body.map((p: string) => (<p>{p}</p>))}
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- 05 · IL GRUPPO E LE PERSONE -->
-	<section id="group" class="ct-band ct-rule-top">
-		<div class="ct-wrap ct-two" data-reveal>
-			<div>
-				<p class="ct-num">05</p>
+	<!-- 06 · IL GRUPPO E LE PERSONE -->
+	<section id="group" class="ct-band">
+		<div class="ct-wrap">
+			<header class="ct-chapter" data-reveal><b>06</b><span>{ct.group.eyebrow}</span></header>
+			<div class="ct-two" data-reveal>
 				<h2 class="ct-h2">{ct.group.title}</h2>
-			</div>
-			<div class="ct-body">
-				{ct.group.body.map((p: string) => (<p>{p}</p>))}
-				<div class="ct-people">
-					{ct.people.items.map((p: { name: string; role: string; place: string }) => (
-						<div class="ct-person">
-							<strong>{p.name}</strong>
-							<span>{p.role}</span>
-							<span>{p.place}</span>
-						</div>
-					))}
+				<div class="ct-body">
+					{ct.group.body.map((p: string) => (<p>{p}</p>))}
+					<div class="ct-people">
+						{ct.people.items.map((p: { name: string; role: string; place: string; linkedin?: string }) => (
+							<div class="ct-person">
+								<strong>{p.name}</strong>
+								<span>{p.role}</span>
+								<span>{p.place}</span>
+								{p.linkedin && (<a class="ct-person-in" href={p.linkedin} target="_blank" rel="noopener">LinkedIn &#8599;</a>)}
+							</div>
+						))}
+					</div>
+					<a class="ct-link" href={tiesseHref}>{ct.group.cta}</a>
 				</div>
-				<a class="ct-link" href={tiesseHref}>{ct.group.cta}</a>
 			</div>
 		</div>
 	</section>
