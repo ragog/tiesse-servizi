@@ -70,7 +70,11 @@ const socialImage = new URL('/og/ct-developments.jpg', Astro.site ?? Astro.url.o
 
 		<header class="gw-top">
 			<img src="/img/tiesse-group-mark.png" alt="Tiesse Group" />
-			<a class="gw-lang" href={otherLocaleUrl}>{g.lang_label}</a>
+			<!-- Lo spagnolo c'e' solo per C&T: ES porta li' (Angelo, 15/11) -->
+			<span class="gw-langs">
+				<a class="gw-lang" href={otherLocaleUrl}>{g.lang_label}</a>
+				<a class="gw-lang" href="/es/ct-developments" lang="es">ES</a>
+			</span>
 		</header>
 
 		<main class="gw-mid">
@@ -111,7 +115,8 @@ const socialImage = new URL('/og/ct-developments.jpg', Astro.site ?? Astro.url.o
 
 			.gw-top { position: relative; z-index: 2; display: flex; justify-content: center; padding: 26px 20px 0; }
 			.gw-top img { height: 58px; width: auto; margin: 0 auto; box-shadow: 0 0 0 1px rgb(217 199 163 / .35), 0 12px 30px rgb(0 0 0 / .45); }
-			.gw-lang { position: absolute; right: 16px; top: 18px; padding: 10px 10px; font-size: 12px; letter-spacing: .2em; color: rgba(255,255,255,.75); text-decoration: none; }
+			.gw-langs { position: absolute; right: 16px; top: 18px; display: flex; gap: 2px; z-index: 5; }
+			.gw-lang { padding: 10px 10px; font-size: 12px; letter-spacing: .2em; color: rgba(255,255,255,.75); text-decoration: none; }
 			.gw-lang:hover { color: #fff; }
 
 			.gw-mid { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px clamp(20px, 5vw, 60px); }

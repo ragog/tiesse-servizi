@@ -312,7 +312,7 @@ export default {
     hero_title_html: "Exclusive places, <em>one platform.</em>",
     manifesto_html: "We develop villas and compounds designed entirely around longevity: a private spa level with sauna, infrared, cryotherapy and a hyperbaric chamber under medical supervision, a training room, and a building that keeps air, water and silence clean. Not villas side by side, but <em>a place built for living well.</em>",
     hero_lede: "We find the opportunity, take it through permitting and deliver it. Capital comes in once the planning risk has been removed.",
-    hero_intro: "C&T Developments selects real estate projects in Italy and, above all, across the Mediterranean, in places where clean air and water, climate and light let people live long and live well. Two of the world's five original Blue Zones are in the Mediterranean: one in Sardinia, one in Greece. We look for the places where nature already does this work, and we build every project around it.",
+    hero_intro: "C&T Developments selects real estate projects in Italy and across the Mediterranean, in places where nature lets people live long and well. Two of the world's five original Blue Zones are here: Sardinia and Greece.",
     based: "Based in Bologna, with our people on the ground in Los Angeles and Dubai.",
 
     value: {
@@ -355,7 +355,7 @@ export default {
       more: "View concept",
       back: "All concepts",
       region_order: ["sardinia", "corsica", "tuscany", "aeolian", "emilia"],
-      region_labels: { sardinia: "Sardinia", corsica: "Corsica", tuscany: "Tuscany", aeolian: "Aeolian Islands", emilia: "Emilia-Romagna" },
+      region_labels: { sardinia: "Sardinia", corsica: "Corsica", tuscany: "Tuscany", aeolian: "Sicily", emilia: "Emilia-Romagna" },
       region_count_one: "concept in study",
       region_count_many: "concepts in study",
       counters: ["5 concepts in study", "4 villa compounds", "1 boutique residence"],
@@ -478,10 +478,10 @@ export default {
       eyebrow: "Where we look",
       title: "The Mediterranean first, then the city.",
       blocks: [
-        { title: "The Mediterranean", body: "Sardinia, Corsica, Tuscany and the Aeolian Islands. Where planning rules make land scarce and value durable." },
+        { title: "The Mediterranean", body: "Sardinia, Corsica, Tuscany and Sicily. Where planning rules make land scarce and value durable." },
         { title: "The city", body: "Bologna and Emilia-Romagna. Regeneration and reuse of existing buildings, where the risk is technical and our engineering prices it in-house." }
       ],
-      tiles: ["Sardinia", "Corsica", "Tuscany", "Aeolian Islands", "Emilia-Romagna"]
+      tiles: ["Sardinia", "Corsica", "Tuscany", "Sicily", "Emilia-Romagna"]
     },
 
     capital: {

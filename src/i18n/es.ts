@@ -63,7 +63,7 @@ const ct = {
   hero_title_html: "Lugares exclusivos, <em>una sola plataforma.</em>",
   manifesto_html: "Desarrollamos villas y conjuntos pensados por completo para la longevidad: un nivel de spa privado con sauna, infrarrojos, crioterapia y cámara hiperbárica con supervisión médica, una sala de entrenamiento, y un edificio que mantiene limpios el aire, el agua y el silencio. No villas una al lado de otra, sino <em>un lugar hecho para vivir bien.</em>",
   hero_lede: "Encontramos la oportunidad, la llevamos hasta la licencia y la ejecutamos. El capital entra cuando el riesgo urbanístico ya se ha eliminado.",
-  hero_intro: "C&T Developments selecciona proyectos inmobiliarios en Italia y, sobre todo, en el Mediterráneo, en lugares donde el aire y el agua limpios, el clima y la luz permiten vivir mucho y vivir bien. Dos de las cinco Blue Zones originales del mundo están en el Mediterráneo: una en Cerdeña y otra en Grecia. Buscamos los lugares donde la naturaleza ya hace este trabajo, y construimos cada proyecto en torno a ella.",
+  hero_intro: "C&T Developments selecciona proyectos inmobiliarios en Italia y en el Mediterráneo, en lugares donde la naturaleza permite vivir mucho y bien. Dos de las cinco Blue Zones originales del mundo están aquí: Cerdeña y Grecia.",
   based: "Con sede en Bolonia y con nuestra gente sobre el terreno en Los Ángeles y Dubái.",
 
   value: {
@@ -106,7 +106,7 @@ const ct = {
     more: "Ver el concept",
     back: "Todos los concepts",
     region_order: ["sardinia", "corsica", "tuscany", "aeolian", "emilia"],
-    region_labels: { sardinia: "Cerdeña", corsica: "Córcega", tuscany: "Toscana", aeolian: "Islas Eolias", emilia: "Emilia-Romaña" },
+    region_labels: { sardinia: "Cerdeña", corsica: "Córcega", tuscany: "Toscana", aeolian: "Sicilia", emilia: "Emilia-Romaña" },
     region_count_one: "concept en estudio",
     region_count_many: "concepts en estudio",
     counters: ["5 concepts en estudio", "4 conjuntos de villas", "1 boutique residence"],
@@ -228,10 +228,10 @@ const ct = {
     eyebrow: "Dónde miramos",
     title: "Primero el Mediterráneo, después la ciudad.",
     blocks: [
-      { title: "El Mediterráneo", body: "Cerdeña, Córcega, Toscana e Islas Eolias. Donde el planeamiento hace escaso el suelo y duradero el valor." },
+      { title: "El Mediterráneo", body: "Cerdeña, Córcega, Toscana y Sicilia. Donde el planeamiento hace escaso el suelo y duradero el valor." },
       { title: "La ciudad", body: "Bolonia y Emilia-Romaña. Regeneración y reutilización de lo construido, donde el riesgo es técnico y nuestra ingeniería lo valora en casa." }
     ],
-    tiles: ["Cerdeña", "Córcega", "Toscana", "Islas Eolias", "Emilia-Romaña"]
+    tiles: ["Cerdeña", "Córcega", "Toscana", "Sicilia", "Emilia-Romaña"]
   },
 
   capital: {

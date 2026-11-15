@@ -313,7 +313,7 @@ export default {
     hero_title_html: "Luoghi esclusivi, <em>una sola piattaforma.</em>",
     manifesto_html: "Sviluppiamo ville e compound pensati interamente per la longevità: un livello spa privato con sauna, infrarossi, crioterapia e camera iperbarica con supervisione medica, la palestra, e un edificio che tiene puliti l'aria, l'acqua e il silenzio. Non ville una accanto all'altra, ma <em>un posto costruito per vivere bene.</em>",
     hero_lede: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto di mezzo.",
-    hero_intro: "C&T Developments seleziona operazioni immobiliari in Italia e soprattutto nel Mediterraneo, nei luoghi dove aria e acqua pulite, clima e luce fanno vivere a lungo e bene. Due delle cinque Blue Zone originarie del mondo sono nel Mediterraneo: una in Sardegna, una in Grecia. Cerchiamo i posti dove la natura fa già questo lavoro, e ogni progetto lo costruiamo attorno a lei.",
+    hero_intro: "C&T Developments seleziona operazioni immobiliari in Italia e nel Mediterraneo, nei luoghi dove la natura fa vivere a lungo e bene. Due delle cinque Blue Zone originarie del mondo sono qui: la Sardegna e la Grecia.",
     based: "Sede a Bologna, con nostri collaboratori a Los Angeles e a Dubai.",
 
     value: {
@@ -356,7 +356,7 @@ export default {
       more: "Scopri il concept",
       back: "Tutti i concept",
       region_order: ["sardinia", "corsica", "tuscany", "aeolian", "emilia"],
-      region_labels: { sardinia: "Sardegna", corsica: "Corsica", tuscany: "Toscana", aeolian: "Isole Eolie", emilia: "Emilia-Romagna" },
+      region_labels: { sardinia: "Sardegna", corsica: "Corsica", tuscany: "Toscana", aeolian: "Sicilia", emilia: "Emilia-Romagna" },
       region_count_one: "concept allo studio",
       region_count_many: "concept allo studio",
       counters: ["5 concept allo studio", "4 compound di ville", "1 boutique residence"],
@@ -479,10 +479,10 @@ export default {
       eyebrow: "Dove guardiamo",
       title: "Prima il Mediterraneo, poi la città.",
       blocks: [
-        { title: "Il Mediterraneo", body: "Sardegna, Corsica, Toscana e Isole Eolie. Dove le regole urbanistiche rendono il terreno raro e il valore duraturo." },
+        { title: "Il Mediterraneo", body: "Sardegna, Corsica, Toscana e Sicilia. Dove le regole urbanistiche rendono il terreno raro e il valore duraturo." },
         { title: "La città", body: "Bologna e l'Emilia-Romagna. Rigenerazione e riuso del costruito, dove il rischio è tecnico e la nostra ingegneria lo valuta in casa." }
       ],
-      tiles: ["Sardegna", "Corsica", "Toscana", "Isole Eolie", "Emilia-Romagna"]
+      tiles: ["Sardegna", "Corsica", "Toscana", "Sicilia", "Emilia-Romagna"]
     },
 
     capital: {
