@@ -135,19 +135,19 @@ export default {
         title: "Le nostre imprese",
         description: "Imprese di costruzione e specialisti tecnici selezionati che realizzano i progetti insieme a noi.",
         logos: [
-          { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png" },
-          { name: "EPM Costruzione e Servizi S.r.l.", src: "/partners/epm.png" },
-          { name: "AEC Costruzioni S.r.l.", src: "/partners/aec-costruzioni.svg", url: "https://aeccostruzioni.com/" },
-          { name: "Fargo S.r.l.", src: "/partners/fargo.png", url: "https://fargoservizi.eu/" },
-          { name: "SIDEL S.p.A.", src: "/partners/sidel.png" },
-          { name: "Edilizia Gio S.r.l.", src: "/partners/edilizia-gio.png" },
+          { name: "Falco Costruzioni S.r.l.", src: "/partners/falco-costruzioni.png", h: 46 },
+          { name: "EPM Costruzione e Servizi S.r.l.", src: "/partners/epm.png", h: 42 },
+          { name: "AEC Costruzioni S.r.l.", src: "/partners/aec-costruzioni.svg", h: 30, url: "https://aeccostruzioni.com/" },
+          { name: "Fargo S.r.l.", src: "/partners/fargo.png", h: 36, url: "https://fargoservizi.eu/" },
+          { name: "SIDEL S.p.A.", src: "/partners/sidel.png", h: 40 },
+          { name: "Edilizia Gio S.r.l.", src: "/partners/edilizia-gio.png", h: 38 },
         ]
       },
       {
         title: "Network immobiliari",
         description: "Brokerage internazionale e canali di distribuzione per la commercializzazione.",
         logos: [
-          { name: "Desiderata Domus", src: "/partners/desiderata-domus.png", url: "https://desideratadomus.it/" },
+          { name: "Desiderata Domus", src: "/partners/desiderata-domus.png", h: 44, url: "https://desideratadomus.it/" },
         ]
       }
     ]
