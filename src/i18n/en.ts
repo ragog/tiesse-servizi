@@ -38,7 +38,7 @@ export default {
     technical_body: "Engineering expertise applied to complex environments.<br><br>From healthcare to residential and public sector, our projects are driven by technical control, design integration and BIM-based processes.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Design · Engineering · BIM · Execution</span>",
     technical_cta: "Explore engineering",
     ct_banner_eyebrow: "Development",
-    ct_banner_title: "Our development arm: C&T Developments.",
+    ct_banner_title: "Development within the group: C&T Developments.",
     ct_banner_body: "Where the group finds opportunities, takes them through entitlement and delivers them. The engineering is ours.",
     ct_banner_cta: "Go to C&T Developments"
   },
@@ -87,7 +87,7 @@ export default {
       {
         date: "11/2026",
         category: "Group",
-        title: "C&T Developments, our development arm",
+        title: "C&T Developments, development within the group",
         description: "We find the opportunity, take it through entitlement and deliver it. Capital comes in once the planning risk is off the table.",
         href: "/ct-developments"
       },
@@ -257,7 +257,7 @@ export default {
     name_strong: "C&T",
     name_accent: " DEVELOPMENTS",
     tagline: "Engineering-driven real estate development",
-    branch: "The development arm of Tiesse Group",
+    branch: "Part of Tiesse Group",
     back: "Back",
     nav_back: "Tiesse Group",
 
@@ -265,6 +265,7 @@ export default {
 
     longevity: {
       nav: "Longevity",
+      link: "Longevity concept",
       page_title: "Longevity | C&T Developments",
       page_description: "A new type of villa compound under study: Mediterranean places where the body recovers, and a building engineered to keep it that way.",
       hero_cap_a: "Under study",
@@ -510,7 +511,7 @@ export default {
     closing_cta: "Write to us",
     closing_email: "a.tucci@tiesseservizi.eu",
 
-    footer_line: "C&T Developments is the development arm of Tiesse Group.",
+    footer_line: "C&T Developments is part of Tiesse Group.",
     legal: "Tiesse Servizi S.a.s. · VAT 02241091202 · Via Loderingo degli Andalò 5, 40124 Bologna",
     disclaimer: "Concepts are illustrative and under study. Nothing on this website is an offer or solicitation to buy or sell any security or interest in any project.",
     cities: "Bologna · Los Angeles · Dubai"

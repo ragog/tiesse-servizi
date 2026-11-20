@@ -16,6 +16,7 @@ const ct = {
 
   longevity: {
     nav: "Longevity",
+    link: "El concept Longevity",
     page_title: "Longevity | C&T Developments",
     page_description: "Una nueva tipología de conjunto de villas en estudio: lugares del Mediterráneo donde el cuerpo se recupera, y un edificio construido para mantenerlos así.",
     hero_cap_a: "En estudio",

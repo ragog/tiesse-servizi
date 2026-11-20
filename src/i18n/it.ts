@@ -266,6 +266,7 @@ export default {
 
     longevity: {
       nav: "Longevity",
+      link: "Il concept Longevity",
       page_title: "Longevity | C&T Developments",
       page_description: "Una nuova tipologia di compound di ville allo studio: luoghi del Mediterraneo dove il fisico si rigenera, e un edificio costruito per mantenerli così.",
       hero_cap_a: "Allo studio",
