@@ -9,11 +9,11 @@ export default {
     contact: "Contact"
   },
   hero: {
-    eyebrow: "Engineering · Design · Construction management",
+    eyebrow: "Engineering · Design · Construction supervision",
     subtitle: "We build value.",
-    body: "Since 2001, design, structural engineering and construction management for residential, healthcare and public projects. The technical foundation behind every Tiesse Group operation.",
+    body: "Since 2001, design, structural engineering and construction supervision for residential, healthcare and public projects. The technical foundation behind every Tiesse Group project.",
     trust: "Independent. Technical. Accountable.",
-    description: "Engineering since 2001: design, structural engineering, works supervision and site safety for residential, healthcare and public buildings.",
+    description: "Engineering since 2001: design, structural engineering, construction supervision and site safety for residential, healthcare and public buildings.",
     cta_text: "Explore projects"
   },
   key_facts: {
@@ -29,7 +29,7 @@ export default {
     about_eyebrow: "About",
     about_title: "We think like engineers.",
     about_body: [
-      "Design, structural engineering and construction management, with full technical control from the first drawing to handover.",
+      "Design, structural engineering and construction supervision, with full technical control from the first drawing to handover.",
       "Every decision is driven by feasibility, cost discipline and time."
     ],
     about_closing: "No assumptions. No surprises. Just controlled execution.",
@@ -38,8 +38,8 @@ export default {
     technical_body: "Engineering expertise applied to complex environments.<br><br>From healthcare to residential and public sector, our projects are driven by technical control, design integration and BIM-based processes.<br><br><span class=\"tracking-[0.2em] uppercase text-xs text-gray-500\">Design · Engineering · BIM · Execution</span>",
     technical_cta: "Explore engineering",
     ct_banner_eyebrow: "Development",
-    ct_banner_title: "Our development branch: C&T Developments.",
-    ct_banner_body: "Where the group finds opportunities, takes them through permitting and delivers them. The engineering is ours.",
+    ct_banner_title: "Our development arm: C&T Developments.",
+    ct_banner_body: "Where the group finds opportunities, takes them through entitlement and delivers them. The engineering is ours.",
     ct_banner_cta: "Go to C&T Developments"
   },
   founder: {
@@ -48,8 +48,8 @@ export default {
     title: "Civil Engineer · Senior Partner, Tiesse Group",
     bio: [
       "Civil engineer with a Master's degree from the Università di Bologna. Co-owner of Tiesse Servizi since 2001 and Senior Partner of Tiesse Group.",
-      "I approach real estate with an engineer's discipline: technical feasibility first, financial commitment second. My background spans structural design, construction management and site supervision across complex commercial and residential developments in Central and Northern Italy.",
-      "Today that foundation is what Tiesse Group brings to every operation: the engineering stays in-house, from the first study to handover."
+      "I approach real estate with an engineer's discipline: technical feasibility first, financial commitment second. My background spans structural design and construction supervision across complex commercial and residential developments in Central and Northern Italy.",
+      "Today that foundation is what Tiesse Group brings to every project: the engineering stays in-house, from the first study to handover."
     ],
     linkedin: "https://www.linkedin.com/in/angelo-matteo-tucci-330380192/",
     linkedin_label: "Connect on LinkedIn",
@@ -69,7 +69,7 @@ export default {
       "Technical-economic feasibility study",
       "Construction site planning and logistics",
       "Structural and architectural technical design",
-      "Safety coordination and construction management",
+      "Safety coordination and construction supervision",
       "Supplier, contractor, and specification management",
       "Work accounting, progress reports, and cost monitoring",
       "Public and private tenders",
@@ -80,21 +80,21 @@ export default {
   news: {
     eyebrow: "Insights",
     title: "Latest insights.",
-    subtitle: "Operations, construction sites and market thinking, straight from the field.",
+    subtitle: "Projects, construction sites and market thinking, straight from the field.",
     linkedin_cta: "Follow on LinkedIn",
     linkedin_url: "https://www.linkedin.com/company/tiesse-group/",
     items: [
       {
         date: "11/2026",
         category: "Group",
-        title: "C&T Developments, our development branch",
-        description: "We find the opportunity, take it through permitting and deliver it. Capital comes in once the planning risk has been removed.",
+        title: "C&T Developments, our development arm",
+        description: "We find the opportunity, take it through entitlement and deliver it. Capital comes in once the planning risk is off the table.",
         href: "/ct-developments"
       },
       {
         date: "01/2026",
-        category: "Operation",
-        title: "Premium residential operations in Sardinia",
+        category: "Project",
+        title: "Premium residential projects in Sardinia",
         description: "High-end residential development in the Italian Mediterranean, structured with engineering control from feasibility to handover. Details under confidentiality.",
         href: "https://www.linkedin.com/company/tiesse-group/"
       },
@@ -152,7 +152,7 @@ export default {
   },
   contatti: {
     eyebrow: "Contact",
-    title: "Start a conversation about your next operation.",
+    title: "Start a conversation about your next project.",
     subtitle: "Every project begins with a conversation. Share your goals and timeline, we'll respond within 48 hours.",
     form: {
       name: "Name",
@@ -232,9 +232,9 @@ export default {
     eyebrow: "Tiesse Group",
     tagline: "Real Estate Development, Built on Engineering",
     title_html: "Real estate development,<br/><em>built on engineering.</em>",
-    lede: "Two branches, one method: the engineering that studies an operation is the same that delivers it.",
-    left_door: "Engineering, design and works supervision. Since 2001.",
-    right_door: "Development: we find the opportunity, permit it and deliver it.",
+    lede: "Two sides, one method: the engineers who study a project are the ones who see it built.",
+    left_door: "Engineering, design and construction supervision. Since 2001.",
+    right_door: "Development: we find the opportunity, entitle it and deliver it.",
     left: {
       name_strong: "TIESSE",
       name_accent: "SERVIZI",
@@ -257,7 +257,7 @@ export default {
     name_strong: "C&T",
     name_accent: " DEVELOPMENTS",
     tagline: "Engineering-driven real estate development",
-    branch: "A Tiesse Group branch",
+    branch: "The development arm of Tiesse Group",
     back: "Back",
     nav_back: "Tiesse Group",
 
@@ -292,6 +292,7 @@ export default {
         "Steam room and salt room",
         "Red and near-infrared light therapy",
         "Training and recovery room",
+        "Hyperbaric chamber, under medical supervision",
         "Assessment room, with a reference physician"
       ],
       building_title: "In the building",
@@ -310,38 +311,27 @@ export default {
     hero_eyebrow: "Vision · Future · Value",
     hero_title: "Exclusive places, one platform.",
     hero_title_html: "Exclusive places, <em>one platform.</em>",
-    manifesto_html: "Villas and compounds built around longevity, with a private spa and a hyperbaric chamber under medical supervision. <em>A place built for living well.</em>",
-    hero_lede: "We find the opportunity, take it through permitting and deliver it. Capital comes in once the planning risk has been removed.",
-    hero_intro: "C&T Developments selects real estate projects in Italy and across the Mediterranean, in places where nature lets people live long and well. Two of the world's five original Blue Zones are here: Sardinia and Greece.",
+    manifesto_html: "Villas and compounds built around longevity, with a spa and a hyperbaric chamber under medical supervision. <em>A place built for living well.</em>",
+    hero_lede: "We find the opportunity, take it through entitlement and deliver it. Capital comes in once the planning risk is off the table.",
+    hero_intro: "C&T Developments selects real estate projects in Italy and across the Mediterranean, in places where nature lets people live long and well. Sardinia is one of the world's five original Blue Zones.",
     based: "Based in Bologna, with our people on the ground in Los Angeles and Dubai.",
 
     value: {
       eyebrow: "Value",
       title: "Value that lasts",
       body: [
-        "We choose every project twice: for the place, and for the value it can hold. Value is created at the permit, where planning limits supply, and kept by the quality of what we build."
-      ]
-    },
-
-    vision: {
-      num: "01",
-      eyebrow: "Vision",
-      title: "Where we are going",
-      body: [
-        "We develop where scarcity is a matter of permits, not of land: on the coast, where planning rules decide what can be built, and in the city, where existing buildings wait for a new life.",
-        "We bring the discipline of urban development where it is rarely applied: a masterplan, shared spaces, the quality of the whole. Not villas side by side, but a small piece of town.",
-        "Our horizon is a platform: a team that capital trusts before it sees the single operation, because it is the team that executes."
+        "We choose every project twice: for the place, and for the value it can hold. Value is created at entitlement, in places where planning limits supply, and kept by the quality of what we deliver."
       ]
     },
 
     approach: {
       num: "02",
       eyebrow: "Approach",
-      title: "How we read an operation",
+      title: "How we work",
       steps: [
         { num: "01", title: "Find and study", body: "Planning, technical feasibility, costs and market are verified before any financial commitment." },
-        { num: "02", title: "Permit", body: "We take the operation through permitting. That is where risk is removed and value is created." },
-        { num: "03", title: "Deliver", body: "Each operation has its own dedicated vehicle. Construction is contracted to selected firms from our network: we are engineers, not builders. Cost and time are controlled from the first drawing to handover." }
+        { num: "02", title: "Entitle", body: "We take the project through entitlement. That is where the biggest risk, planning, comes off the table, and where value is created." },
+        { num: "03", title: "Deliver", body: "Each project sits in its own dedicated vehicle. We know construction from the inside: design, cost planning, tendering, construction supervision and site safety have been our work for twenty-five years. The works are carried out by selected contractors from our network, with price and schedule set by contract; we control cost and quality ourselves, from the first drawing to handover." }
       ]
     },
 
@@ -365,8 +355,8 @@ export default {
           region: "sardinia",
           title: "Six villas",
           place: "Northern Sardinia, near the Costa Smeralda",
-          body: "Six villas with gardens and pools, set around a shared club.",
-          lede: "Six houses, drawn on a single plan.",
+          body: "Six villas with gardens and pools, set around shared grounds.",
+          lede: "Six houses, drawn as one masterplan.",
           facts: [
             { label: "Typology", value: "Six detached villas" },
             { label: "Shared", value: "Grounds and outdoor lounge" },
@@ -376,7 +366,7 @@ export default {
           place_body: "Northern Sardinia, set back from the coast and within reach of the Costa Smeralda: olive trees, dry-stone walls and long views, in a stretch where planning rules keep building rare.",
           idea_title: "The idea",
           idea_body: [
-            "Six villas, each with its own garden, pool and private wellness, drawn on a single plan around shared grounds. Not six houses side by side, but a small place with a centre."
+            "Six villas, each with its own garden, pool and private wellness, drawn as one masterplan around shared grounds. Not six houses side by side, but a small place with a centre."
           ],
           stage: "Concept stage. Feasibility, planning and costs are under study. Location and details are shared under confidentiality.",
           hidden: false
@@ -398,7 +388,7 @@ export default {
           idea_title: "The idea",
           idea_body: [
             "Four two-storey villas, each in its own garden with a pool and a pergola, and a lower floor given over to recovery: a private spa with sauna, infrared and cold plunge, and a gym.",
-            "Fewer houses, more land around each one: an alternative to the six-villa concept, on the same ground."
+            "Fewer houses, more land around each one."
           ],
           stage: "Concept stage. Feasibility, planning and costs are under study. Location and details are shared under confidentiality.",
           hidden: false
@@ -408,7 +398,7 @@ export default {
           region: "sardinia",
           title: "Ten villas",
           place: "Northern Sardinia, near the Costa Smeralda",
-          body: "Ten sea-view villas, each with its own wellness level: gym and sauna opening onto the sea.",
+          body: "Ten sea-view villas, each with its own wellness level: gym, sauna and cold room.",
           lede: "Ten houses on a slope, each one facing the water.",
           facts: [
             { label: "Typology", value: "Ten detached villas" },
@@ -463,7 +453,7 @@ export default {
           place_body: "The north coast of Sardinia, a granite shore under landscape protection, where what already exists is worth more than what could be added.",
           idea_title: "The idea",
           idea_body: [
-            "The existing building is taken down and rebuilt within the same volume: eleven residences, each with a terrace or a garden.",
+            "The existing building is taken down and rebuilt as eleven residences, each with a terrace or a garden.",
             "Around them, a lounge with a restaurant open to the public, a garden with a pool, and a small spa with a gym. The architecture stays low and local: granite, lime, timber, and planting that belongs to the place."
           ],
           stage: "Concept stage. Feasibility, planning and costs are under study. Location and details are shared under confidentiality.",
@@ -488,10 +478,9 @@ export default {
       eyebrow: "Capital",
       title: "How we work with capital partners",
       body: [
-        "Every operation sits in its own vehicle, with its risk ring-fenced from the others.",
-        "We work with banks, private investors, family offices and regulated platforms. Capital commits once the planning risk has been cleared.",
-        "We underwrite every project conservatively and test it against lower prices and higher costs before any capital commits. Figures are shared one to one, under a confidentiality agreement.",
-        "Technical files are shared under confidentiality."
+        "Every project sits in its own vehicle, with its risk ring-fenced from the others.",
+        "We structure projects for banks, private investors, family offices and regulated platforms. Capital commits once the planning risk is off the table.",
+        "We underwrite every project conservatively and test it against lower prices and higher costs before any capital commits. Figures are shared on request, one to one; names and locations under a confidentiality agreement."
       ]
     },
 
@@ -500,7 +489,7 @@ export default {
       eyebrow: "The group",
       title: "Inside Tiesse Group",
       body: [
-        "Tiesse Servizi brings twenty-five years of design, structural engineering and site management. On every operation the two sides work together: one finds and structures, the other designs and controls.",
+        "Tiesse Servizi brings twenty-five years of design, structural engineering and construction supervision. On every project the two sides work together: one finds and structures, the other designs and controls.",
         "Both operate under the Tiesse Group brand."
       ],
       cta: "Go to Tiesse Servizi"
@@ -521,7 +510,7 @@ export default {
     closing_cta: "Write to us",
     closing_email: "a.tucci@tiesseservizi.eu",
 
-    footer_line: "C&T Developments is a branch of Tiesse Group.",
+    footer_line: "C&T Developments is the development arm of Tiesse Group.",
     legal: "Tiesse Servizi S.a.s. · VAT 02241091202 · Via Loderingo degli Andalò 5, 40124 Bologna",
     disclaimer: "Concepts are illustrative and under study. Nothing on this website is an offer or solicitation to buy or sell any security or interest in any project.",
     cities: "Bologna · Los Angeles · Dubai"

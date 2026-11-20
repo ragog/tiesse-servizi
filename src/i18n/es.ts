@@ -9,7 +9,7 @@ const ct = {
   name_strong: "C&T",
   name_accent: " DEVELOPMENTS",
   tagline: "Engineering-driven real estate development",
-  branch: "Una rama de Tiesse Group",
+  branch: "La división de desarrollo de Tiesse Group",
   back: "Volver",
   nav_back: "Tiesse Group",
   nav_contact: "Contacto",
@@ -43,6 +43,7 @@ const ct = {
       "Baño de vapor y sala de sal",
       "Luz roja e infrarroja",
       "Sala de entrenamiento y recuperación",
+      "Cámara hiperbárica, con supervisión médica",
       "Sala de valoración, con un médico de referencia"
     ],
     building_title: "En el edificio",
@@ -61,38 +62,27 @@ const ct = {
   hero_eyebrow: "Visión · Futuro · Valor",
   hero_title: "Lugares exclusivos, una sola plataforma.",
   hero_title_html: "Lugares exclusivos, <em>una sola plataforma.</em>",
-  manifesto_html: "Villas y conjuntos pensados para la longevidad, con spa privado y cámara hiperbárica con supervisión médica. <em>Un lugar hecho para vivir bien.</em>",
+  manifesto_html: "Villas y conjuntos pensados para la longevidad, con spa y cámara hiperbárica con supervisión médica. <em>Un lugar hecho para vivir bien.</em>",
   hero_lede: "Encontramos la oportunidad, la llevamos hasta la licencia y la ejecutamos. El capital entra cuando el riesgo urbanístico ya se ha eliminado.",
-  hero_intro: "C&T Developments selecciona proyectos inmobiliarios en Italia y en el Mediterráneo, en lugares donde la naturaleza permite vivir mucho y bien. Dos de las cinco Blue Zones originales del mundo están aquí: Cerdeña y Grecia.",
+  hero_intro: "C&T Developments selecciona proyectos inmobiliarios en Italia y en el Mediterráneo, en lugares donde la naturaleza permite vivir mucho y bien. Cerdeña es una de las cinco Blue Zones originales del mundo.",
   based: "Con sede en Bolonia y con nuestra gente sobre el terreno en Los Ángeles y Dubái.",
 
   value: {
     eyebrow: "Valor",
     title: "El valor que perdura",
     body: [
-      "Elegimos cada proyecto dos veces: por el lugar y por el valor que puede mantener. El valor nace con la licencia, donde el planeamiento limita la oferta, y se mantiene con la calidad de lo que construimos."
-    ]
-  },
-
-  vision: {
-    num: "01",
-    eyebrow: "Visión",
-    title: "Hacia dónde vamos",
-    body: [
-      "Desarrollamos donde la escasez es una cuestión de licencias, no de suelo: en la costa, donde el planeamiento decide qué se puede construir, y en la ciudad, donde los edificios existentes esperan una nueva vida.",
-      "Llevamos la disciplina del desarrollo urbano donde casi nunca se aplica: un plan maestro, los espacios comunes, la calidad del conjunto.",
-      "Nuestro horizonte es una plataforma: un equipo en el que el capital confía antes incluso de ver la operación concreta."
+      "Elegimos cada proyecto dos veces: por el lugar y por el valor que puede mantener. El valor nace con la licencia, en los lugares donde el planeamiento limita la oferta, y se mantiene con la calidad de lo que realizamos."
     ]
   },
 
   approach: {
     num: "02",
     eyebrow: "Método",
-    title: "Cómo leemos una operación",
+    title: "Cómo trabajamos",
     steps: [
       { num: "01", title: "Buscar y estudiar", body: "Urbanismo, viabilidad técnica, costes y mercado se verifican antes de cualquier compromiso financiero." },
-      { num: "02", title: "Licenciar", body: "Llevamos la operación hasta la licencia. Ahí es donde se elimina el riesgo y se crea el valor." },
-      { num: "03", title: "Ejecutar", body: "Cada operación tiene su propio vehículo. La construcción se encarga a empresas seleccionadas de nuestra red: somos ingenieros, no constructores. Coste y plazo se controlan desde el primer plano hasta la entrega." }
+      { num: "02", title: "Obtener la licencia", body: "Llevamos la operación hasta la licencia. Ahí se elimina el riesgo más grande, el urbanístico, y nace el valor." },
+      { num: "03", title: "Ejecutar", body: "Cada operación tiene su propio vehículo. Conocemos la obra desde dentro: proyecto, mediciones, licitaciones, dirección de obra y seguridad son nuestro trabajo desde hace veinticinco años. Las obras las ejecutan empresas seleccionadas de nuestra red, con precio y plazos fijados por contrato; coste y calidad los controlamos nosotros, desde el primer plano hasta la entrega." }
     ]
   },
 
@@ -115,8 +105,8 @@ const ct = {
         region: "sardinia",
         title: "Seis villas",
         place: "Norte de Cerdeña, cerca de la Costa Smeralda",
-        body: "Seis villas con jardín y piscina, dispuestas alrededor de un club común.",
-        lede: "Seis casas, dibujadas en un solo plan.",
+        body: "Seis villas con jardín y piscina, dispuestas alrededor de un parque común.",
+        lede: "Seis casas, en un único proyecto.",
         facts: [
           { label: "Tipología", value: "Seis villas independientes" },
           { label: "En común", value: "Parque y lounge al aire libre" },
@@ -126,7 +116,7 @@ const ct = {
         place_body: "Norte de Cerdeña, algo retirado de la costa y cerca de la Costa Smeralda: olivos, muros de piedra seca y vistas largas, en un tramo donde el planeamiento mantiene escaso lo construido.",
         idea_title: "La idea",
         idea_body: [
-          "Seis villas, cada una con su jardín, piscina y wellness privado, dibujadas en un solo plan alrededor de espacios comunes. No seis casas una al lado de otra, sino un pequeño lugar con un centro."
+          "Seis villas, cada una con su jardín, piscina y wellness privado, en un único proyecto alrededor de espacios comunes. No seis casas una al lado de otra, sino un pequeño lugar con un centro."
         ],
         stage: "Fase de concept. Viabilidad, urbanismo y costes están en estudio. La ubicación y los detalles se comparten bajo confidencialidad.",
         hidden: false
@@ -148,7 +138,7 @@ const ct = {
         idea_title: "La idea",
         idea_body: [
           "Cuatro villas de dos plantas, cada una en su jardín con piscina y pérgola, y una planta inferior dedicada a la recuperación: spa privado con sauna, infrarrojos y baño frío, y un gimnasio.",
-          "Menos casas y más terreno alrededor de cada una: una alternativa al concept de seis villas, sobre el mismo terreno."
+          "Menos casas y más terreno alrededor de cada una."
         ],
         stage: "Fase de concept. Viabilidad, urbanismo y costes están en estudio. La ubicación y los detalles se comparten bajo confidencialidad.",
         hidden: false
@@ -158,7 +148,7 @@ const ct = {
         region: "sardinia",
         title: "Diez villas",
         place: "Norte de Cerdeña, cerca de la Costa Smeralda",
-        body: "Diez villas con vistas al mar, cada una con su planta de bienestar: gimnasio y sauna abiertos al mar.",
+        body: "Diez villas con vistas al mar, cada una con su planta de bienestar: gimnasio, sauna y sala de frío.",
         lede: "Diez casas en una ladera, cada una girada hacia el agua.",
         facts: [
           { label: "Tipología", value: "Diez villas independientes" },
@@ -213,7 +203,7 @@ const ct = {
         place_body: "La costa norte de Cerdeña, un litoral de granito bajo protección paisajística, donde lo que ya existe vale más que lo que se podría añadir.",
         idea_title: "La idea",
         idea_body: [
-          "El edificio existente se derriba y se reconstruye con el mismo volumen: once residencias, cada una con terraza o jardín.",
+          "El edificio existente se derriba y se reconstruye: once residencias, cada una con terraza o jardín.",
           "Alrededor, un lounge con un restaurante abierto al público, un jardín con piscina y un pequeño spa con gimnasio. La arquitectura se mantiene baja y local: granito, cal, madera y plantas que pertenecen al lugar."
         ],
         stage: "Fase de concept. Viabilidad, urbanismo y costes están en estudio. La ubicación y los detalles se comparten bajo confidencialidad.",
@@ -239,9 +229,8 @@ const ct = {
     title: "Cómo trabajamos con los socios financieros",
     body: [
       "Cada operación vive dentro de su propio vehículo, con el riesgo separado de las demás.",
-      "Trabajamos con bancos, inversores privados, family offices y plataformas reguladas. El capital se compromete cuando el riesgo urbanístico ya se ha superado.",
-      "Evaluamos cada proyecto con prudencia y lo ponemos a prueba con precios más bajos y costes más altos antes de que entre el capital. Las cifras se comparten en persona, bajo un acuerdo de confidencialidad.",
-      "Los dosieres técnicos se comparten bajo confidencialidad."
+      "Estructuramos las operaciones para bancos, inversores privados, family offices y plataformas reguladas. El capital se compromete cuando el riesgo urbanístico ya se ha eliminado.",
+      "Evaluamos cada proyecto con prudencia y lo ponemos a prueba con precios más bajos y costes más altos antes de que entre el capital. Las cifras se comparten a petición, en persona; nombres y ubicaciones, tras un acuerdo de confidencialidad."
     ]
   },
 
@@ -250,7 +239,7 @@ const ct = {
     eyebrow: "El grupo",
     title: "Dentro de Tiesse Group",
     body: [
-      "Tiesse Servizi aporta veinticinco años de proyecto, ingeniería estructural y dirección de obra. En cada operación los dos lados trabajan juntos: uno encuentra y estructura, el otro proyecta y controla.",
+      "Tiesse Servizi aporta veinticinco años de proyecto, ingeniería estructural y dirección de obra. En cada operación las dos divisiones trabajan juntas: una encuentra y estructura, la otra proyecta y controla.",
       "Ambos operan bajo la marca Tiesse Group."
     ],
     cta: "Ir a Tiesse Servizi"
@@ -267,12 +256,12 @@ const ct = {
   },
 
   closing_title: "Empecemos a hablar.",
-  closing_body: "Cuéntanos qué estás mirando. Respondemos en 48 horas.",
+  closing_body: "Cuéntanos la operación que tienes en mente. Respondemos en 48 horas.",
   closing_cta: "Escríbenos",
   closing_email: "a.tucci@tiesseservizi.eu",
 
-  footer_line: "C&T Developments es una rama de Tiesse Group.",
-  legal: "Tiesse Servizi S.a.s. · CIF 02241091202 · Via Loderingo degli Andalò 5, 40124 Bolonia",
+  footer_line: "C&T Developments es la división de desarrollo de Tiesse Group.",
+  legal: "Tiesse Servizi S.a.s. · P. IVA (Italia) 02241091202 · Via Loderingo degli Andalò 5, 40124 Bolonia",
   disclaimer: "Los conceptos son ilustrativos y están en estudio. Nada en este sitio constituye una oferta o una invitación a comprar o vender valores o participaciones en ningún proyecto.",
   cities: "Bolonia · Los Ángeles · Dubái"
 };

@@ -39,7 +39,7 @@ export default {
     technical_cta: "Scopri l'ingegneria",
     ct_banner_eyebrow: "Sviluppo",
     ct_banner_title: "Il nostro ramo di sviluppo: C&T Developments.",
-    ct_banner_body: "È dove il gruppo trova le opportunità, le porta fino al permesso e le realizza. L'ingegneria è la nostra.",
+    ct_banner_body: "È dove il gruppo trova le opportunità, le porta fino al permesso e le realizza. L'ingegneria è nostra.",
     ct_banner_cta: "Vai a C&T Developments"
   },
   founder: {
@@ -88,7 +88,7 @@ export default {
         date: "11/2026",
         category: "Gruppo",
         title: "C&T Developments, il nostro ramo di sviluppo",
-        description: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto di mezzo.",
+        description: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto.",
         href: "/it/ct-developments"
       },
       {
@@ -293,6 +293,7 @@ export default {
         "Bagno turco e stanza del sale",
         "Luce rossa e infrarossa",
         "Sala allenamento e recupero",
+        "Camera iperbarica, con supervisione medica",
         "Stanza per la valutazione, con un medico di riferimento"
       ],
       building_title: "Nell'edificio",
@@ -311,38 +312,27 @@ export default {
     hero_eyebrow: "Visione · Futuro · Valore",
     hero_title: "Luoghi esclusivi, una sola piattaforma.",
     hero_title_html: "Luoghi esclusivi, <em>una sola piattaforma.</em>",
-    manifesto_html: "Ville e compound pensati per la longevità, con spa privata e camera iperbarica con supervisione medica. <em>Un posto costruito per vivere bene.</em>",
-    hero_lede: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto di mezzo.",
-    hero_intro: "C&T Developments seleziona operazioni immobiliari in Italia e nel Mediterraneo, nei luoghi dove la natura fa vivere a lungo e bene. Due delle cinque Blue Zone originarie del mondo sono qui: la Sardegna e la Grecia.",
-    based: "Sede a Bologna, con nostri collaboratori a Los Angeles e a Dubai.",
+    manifesto_html: "Ville e compound pensati per la longevità, con spa e camera iperbarica con supervisione medica. <em>Un luogo costruito per vivere bene.</em>",
+    hero_lede: "Troviamo l'opportunità, la portiamo fino al permesso e la realizziamo. Il capitale entra quando il rischio urbanistico è già stato tolto.",
+    hero_intro: "C&T Developments seleziona operazioni immobiliari in Italia e nel Mediterraneo, nei luoghi dove la natura fa vivere a lungo e bene. La Sardegna è una delle cinque Blue Zone originarie del mondo.",
+    based: "Sede a Bologna, con collaboratori a Los Angeles e a Dubai.",
 
     value: {
       eyebrow: "Valore",
       title: "Il valore che dura",
       body: [
-        "Ogni operazione la scegliamo due volte: per il luogo e per il valore che può mantenere. Il valore nasce con il permesso, dove le regole urbanistiche limitano l'offerta, e si mantiene con la qualità di ciò che costruiamo."
-      ]
-    },
-
-    vision: {
-      num: "01",
-      eyebrow: "Visione",
-      title: "Dove vogliamo arrivare",
-      body: [
-        "Sviluppiamo dove a rendere raro il costruito sono i permessi, non il terreno: sulla costa, dove è il piano a decidere cosa si può costruire, e in città, dove gli edifici esistenti aspettano una vita nuova.",
-        "Portiamo la disciplina dello sviluppo urbano dove quasi nessuno la applica: un masterplan, gli spazi comuni, la qualità dell'insieme. Non ville una accanto all'altra, ma un pezzo di paese.",
-        "Il nostro orizzonte è una piattaforma: una squadra di cui il capitale si fida prima ancora di vedere la singola operazione, perché è la squadra che la realizza."
+        "Ogni operazione la scegliamo due volte: per il luogo e per il valore che può mantenere. Il valore nasce con il permesso, nei luoghi dove le regole urbanistiche limitano l'offerta, e si mantiene con la qualità di ciò che realizziamo."
       ]
     },
 
     approach: {
       num: "02",
       eyebrow: "Metodo",
-      title: "Come leggiamo un'operazione",
+      title: "Come lavoriamo",
       steps: [
         { num: "01", title: "Trovare e studiare", body: "Urbanistica, fattibilità tecnica, costi e mercato sono verificati prima di qualsiasi impegno finanziario." },
-        { num: "02", title: "Autorizzare", body: "Portiamo l'operazione fino al permesso. È lì che il rischio si toglie e il valore si crea." },
-        { num: "03", title: "Realizzare", body: "Ogni operazione ha il suo veicolo dedicato. La costruzione è affidata a imprese selezionate della nostra rete: siamo ingegneri, non costruttori. Costi e tempi sono controllati dal primo disegno alla consegna." }
+        { num: "02", title: "Portare al permesso", body: "Portiamo l'operazione fino al permesso. È lì che si toglie il rischio più grande, quello urbanistico, e che nasce il valore." },
+        { num: "03", title: "Realizzare", body: "Ogni operazione ha il suo veicolo dedicato. Il cantiere lo conosciamo da dentro: progetto, computi, gare, direzione lavori e sicurezza sono il nostro lavoro da venticinque anni. Le opere le eseguono imprese selezionate della nostra rete, con prezzi e tempi definiti nel contratto; costi e qualità li controlliamo noi, dal primo disegno alla consegna." }
       ]
     },
 
@@ -366,8 +356,8 @@ export default {
           region: "sardinia",
           title: "Sei ville",
           place: "Sardegna del nord, vicino alla Costa Smeralda",
-          body: "Sei ville con giardino e piscina, disposte attorno a un club comune.",
-          lede: "Sei case, disegnate su un unico piano.",
+          body: "Sei ville con giardino e piscina, disposte attorno a un parco comune.",
+          lede: "Sei case, disegnate in un unico progetto.",
           facts: [
             { label: "Tipologia", value: "Sei ville indipendenti" },
             { label: "In comune", value: "Parco e lounge all'aperto" },
@@ -377,7 +367,7 @@ export default {
           place_body: "Sardegna del nord, arretrata rispetto alla costa e a poca distanza dalla Costa Smeralda: ulivi, muretti a secco e vedute lunghe, in un tratto dove le regole urbanistiche tengono raro il costruito.",
           idea_title: "L'idea",
           idea_body: [
-            "Sei ville, ognuna con giardino, piscina e wellness privato, disegnate su un unico piano intorno a spazi comuni. Non sei case una accanto all'altra, ma un piccolo luogo con un centro."
+            "Sei ville, ognuna con giardino, piscina e wellness privato, disegnate in un unico progetto intorno a spazi comuni. Non sei case una accanto all'altra, ma un piccolo luogo con un centro."
           ],
           stage: "Fase di concept. Fattibilità, urbanistica e costi sono allo studio. Località e dettagli si condividono in riservatezza.",
           hidden: false
@@ -399,7 +389,7 @@ export default {
           idea_title: "L'idea",
           idea_body: [
             "Quattro ville su due piani, ognuna nel suo giardino con piscina e pergola, e un piano inferiore dedicato al recupero: spa privata con sauna, infrarossi e vasca fredda, e una palestra.",
-            "Meno case e più terreno intorno a ciascuna: un'alternativa al concept delle sei ville, sullo stesso terreno."
+            "Meno case e più terreno intorno a ciascuna."
           ],
           stage: "Fase di concept. Fattibilità, urbanistica e costi sono allo studio. Località e dettagli si condividono in riservatezza.",
           hidden: false
@@ -409,7 +399,7 @@ export default {
           region: "sardinia",
           title: "Dieci ville",
           place: "Sardegna del nord, vicino alla Costa Smeralda",
-          body: "Dieci ville vista mare, ognuna con il suo piano benessere: palestra e sauna affacciate sul mare.",
+          body: "Dieci ville vista mare, ognuna con il suo piano benessere: palestra, sauna e stanza del freddo.",
           lede: "Dieci case su un pendio, ognuna girata verso l'acqua.",
           facts: [
             { label: "Tipologia", value: "Dieci ville indipendenti" },
@@ -464,7 +454,7 @@ export default {
           place_body: "La costa nord della Sardegna, un litorale di granito sotto tutela paesaggistica, dove quello che già esiste vale più di quello che si potrebbe aggiungere.",
           idea_title: "L'idea",
           idea_body: [
-            "L'edificio esistente si demolisce e si ricostruisce con lo stesso volume: undici residenze, ognuna con terrazza o giardino.",
+            "L'edificio esistente si demolisce e si ricostruisce: undici residenze, ognuna con terrazza o giardino.",
             "Intorno, una lounge con un ristorante aperto al pubblico, un giardino con piscina, una piccola spa con palestra. L'architettura resta bassa e locale: granito, calce, legno, e piante che appartengono al posto."
           ],
           stage: "Fase di concept. Fattibilità, urbanistica e costi sono allo studio. Località e dettagli si condividono in riservatezza.",
@@ -490,9 +480,8 @@ export default {
       title: "Come lavoriamo con i partner finanziari",
       body: [
         "Ogni operazione sta dentro il proprio veicolo, con il rischio separato da tutte le altre.",
-        "Lavoriamo con banche, investitori privati, family office e piattaforme vigilate. Il capitale si impegna quando il rischio urbanistico è già stato superato.",
-        "Ogni operazione la valutiamo in modo prudente e la mettiamo alla prova con prezzi più bassi e costi più alti, prima che entri il capitale. I numeri si condividono di persona, con un accordo di riservatezza.",
-        "Le schede tecniche si condividono in riservatezza."
+        "Strutturiamo le operazioni per banche, investitori privati, family office e piattaforme vigilate. Il capitale si impegna quando il rischio urbanistico è già stato tolto.",
+        "Ogni operazione la valutiamo in modo prudente e la mettiamo alla prova con prezzi più bassi e costi più alti, prima che entri il capitale. I numeri si condividono su richiesta, di persona; nomi e luoghi dopo un accordo di riservatezza."
       ]
     },
 
@@ -501,7 +490,7 @@ export default {
       eyebrow: "Il gruppo",
       title: "Dentro Tiesse Group",
       body: [
-        "Tiesse Servizi porta venticinque anni di progettazione, ingegneria strutturale e direzione lavori. Su ogni operazione i due lati lavorano insieme: uno trova e struttura, l'altro progetta e controlla.",
+        "Tiesse Servizi porta venticinque anni di progettazione, ingegneria strutturale e direzione lavori. Su ogni operazione i due rami lavorano insieme: uno trova e struttura, l'altro progetta e controlla.",
         "Entrambi operano con il marchio Tiesse Group."
       ],
       cta: "Vai a Tiesse Servizi"
@@ -518,7 +507,7 @@ export default {
     },
 
     closing_title: "Iniziamo una conversazione.",
-    closing_body: "Raccontaci che cosa stai guardando. Rispondiamo entro 48 ore.",
+    closing_body: "Raccontaci l'operazione che hai in mente. Rispondiamo entro 48 ore.",
     closing_cta: "Scrivici",
     closing_email: "a.tucci@tiesseservizi.eu",
 
