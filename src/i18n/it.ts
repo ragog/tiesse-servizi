@@ -139,7 +139,8 @@ export default {
           { name: "EPM Costruzione e Servizi S.r.l.", src: "/partners/epm.png" },
           { name: "AEC Costruzioni S.r.l.", src: "/partners/aec-costruzioni.svg", url: "https://aeccostruzioni.com/" },
           { name: "Fargo S.r.l.", src: "/partners/fargo.png", url: "https://fargoservizi.eu/" },
-          { name: "Edilizia Gio S.r.l." },
+          { name: "SIDEL S.p.A.", src: "/partners/sidel.png" },
+          { name: "Edilizia Gio S.r.l.", src: "/partners/edilizia-gio.png" },
         ]
       },
       {
