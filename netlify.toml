@@ -8,8 +8,9 @@
 # resta nel repository ma non si vede.
 # PER TORNARE AL SITO ASTRO: togliere tutto questo blocco (o git revert).
 #
-# Vecchi indirizzi: rinvii TEMPORANEI (302) alla pagina piu' vicina, cosi'
-# quando il sito nuovo avra' le stesse pagine si potranno togliere.
+# Vecchi indirizzi: rinvii TEMPORANEI (302) alla pagina piu' vicina, solo per
+# quelli che il sito nuovo non ha. Tolti il 24/11 sera /it, /es, concept e
+# Longevity: ora li gestisce il sito nuovo.
 # force = true: altrimenti i file del sito Astro coprirebbero i rinvii.
 # Il pannello /admin va sul suo indirizzo Higgsfield, dove l'accesso funziona.
 # ============================================================
@@ -22,18 +23,6 @@
 [[redirects]]
   from = "/admin/*"
   to = "https://tiesse-group.higgsfield.app/admin/:splat"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/it/tiesse-servizi"
-  to = "/tiesse-servizi"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/it/tiesse-servizi/*"
-  to = "/tiesse-servizi"
   status = 302
   force = true
 
@@ -62,48 +51,6 @@
   force = true
 
 [[redirects]]
-  from = "/it/ct-developments"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/it/ct-developments/*"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/es"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/es/*"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/ct-developments/concepts"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/ct-developments/concepts/*"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/ct-developments/longevity"
-  to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
   from = "/real-estate"
   to = "/ct-developments"
   status = 302
@@ -124,18 +71,6 @@
 [[redirects]]
   from = "/en/real-estate/*"
   to = "/ct-developments"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/it"
-  to = "/"
-  status = 302
-  force = true
-
-[[redirects]]
-  from = "/it/*"
-  to = "/"
   status = 302
   force = true
 
