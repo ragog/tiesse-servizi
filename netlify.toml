@@ -2,45 +2,212 @@
   command = "npm run build"
   publish = "dist"
 
-# Le vecchie pagine Real Estate ora vivono dentro C&T Developments.
-# 301 vero, così i motori di ricerca spostano l'indirizzo invece di duplicarlo.
+# ============================================================
+# 24/11/2026 · tiesse-group.com mostra il sito fatto su Higgsfield
+# (tiesse-group.higgsfield.app), deciso da Angelo. Il sito Astro qui sotto
+# resta nel repository ma non si vede.
+# PER TORNARE AL SITO ASTRO: togliere tutto questo blocco (o git revert).
+#
+# Vecchi indirizzi: rinvii TEMPORANEI (302) alla pagina piu' vicina, cosi'
+# quando il sito nuovo avra' le stesse pagine si potranno togliere.
+# force = true: altrimenti i file del sito Astro coprirebbero i rinvii.
+# Il pannello /admin va sul suo indirizzo Higgsfield, dove l'accesso funziona.
+# ============================================================
+[[redirects]]
+  from = "/admin"
+  to = "https://tiesse-group.higgsfield.app/admin"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/admin/*"
+  to = "https://tiesse-group.higgsfield.app/admin/:splat"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/it/tiesse-servizi"
+  to = "/tiesse-servizi"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/it/tiesse-servizi/*"
+  to = "/tiesse-servizi"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/progetti"
+  to = "/tiesse-servizi"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/progetti/*"
+  to = "/tiesse-servizi"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/en/projects"
+  to = "/tiesse-servizi"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/en/projects/*"
+  to = "/tiesse-servizi"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/it/ct-developments"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/it/ct-developments/*"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/es"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/es/*"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/ct-developments/concepts"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/ct-developments/concepts/*"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/ct-developments/longevity"
+  to = "/ct-developments"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/real-estate"
-  to = "/it/ct-developments"
-  status = 301
+  to = "/ct-developments"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/real-estate/*"
-  to = "/it/ct-developments"
-  status = 301
+  to = "/ct-developments"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/en/real-estate"
   to = "/ct-developments"
-  status = 301
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/en/real-estate/*"
   to = "/ct-developments"
-  status = 301
-
-# Il concept "Boutique hotel" e' diventato "Boutique residence" (15/11/2026):
-# chi ha il vecchio link arriva alla pagina nuova.
-[[redirects]]
-  from = "/ct-developments/concepts/hotel"
-  to = "/ct-developments/concepts/boutique-residence"
-  status = 301
+  status = 302
+  force = true
 
 [[redirects]]
-  from = "/it/ct-developments/concepts/hotel"
-  to = "/it/ct-developments/concepts/boutique-residence"
-  status = 301
+  from = "/it"
+  to = "/"
+  status = 302
+  force = true
 
 [[redirects]]
-  from = "/es/ct-developments/concepts/hotel"
-  to = "/es/ct-developments/concepts/boutique-residence"
-  status = 301
+  from = "/it/*"
+  to = "/"
+  status = 302
+  force = true
 
-# Niente regola generica "/*": il sito e' statico e ogni pagina ha il suo
-# file. Con quella regola un indirizzo sbagliato rispondeva 200 mostrando il
-# bivio; cosi' invece risponde 404 e mostra la pagina 404.
+[[redirects]]
+  from = "/en"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/en/*"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bivio-a"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bivio-b"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bivio-c"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bivio-d"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bivio-e"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/bivio-f"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/proposta-a"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/proposta-a/*"
+  to = "/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/proposta-b"
+  to = "/"
+  status = 302
+  force = true
+
+# Tutto il resto: il sito Higgsfield, con tiesse-group.com nella barra.
+[[redirects]]
+  from = "/*"
+  to = "https://tiesse-group.higgsfield.app/:splat"
+  status = 200
+  force = true
